@@ -1,15 +1,19 @@
 "use client";
 import React from 'react'
 import Link from 'next/link'
+import createCookie from '../components/cookies/cookiecreator';
 
 const Login = () => {
-
   const handleSubmit = async (e: any) => {
       e.preventDefault();
       const email = e.target[0].value;
       const password = e.target[1].value;
 
-      console.log(email, password)
+      const expiringIn = 24 * 60 * 60 * 1000 // Cookie expiring in one day
+      createCookie('authorisation', 'true', expiringIn)
+      setTimeout(() => {
+        window.location.replace("/")
+      }, 100);
   }
 
   return (

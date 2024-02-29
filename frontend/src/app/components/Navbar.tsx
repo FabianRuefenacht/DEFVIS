@@ -1,7 +1,11 @@
 import React from "react";
 import Link from "next/link";
+import { cookies } from "next/headers";
 
 const Navbar = () => {
+  const cookiesList = cookies();
+  const hasAuthorisation = cookiesList.has("authorisation");
+
   return (
     <div>
       <ul className="flex justify-between m-10 items-center">
@@ -10,14 +14,20 @@ const Navbar = () => {
             <li>Home</li>
           </Link>
         </div>
-        <div className="flex gap-10">
-          <Link href="/login">
-            <li>Login</li>
+        {hasAuthorisation ? (
+          <Link href={"/logout"}>
+            <h1>logout</h1>
           </Link>
-          <Link href="/register">
-            <li>Register</li>
-          </Link>
-        </div>
+        ) : (
+          <div className="flex gap-10">
+            <Link href="/login">
+              <li>Login</li>
+            </Link>
+            <Link href="/register">
+              <li>Register</li>
+            </Link>
+          </div>
+        )}
       </ul>
     </div>
   );
