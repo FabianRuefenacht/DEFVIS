@@ -16,7 +16,6 @@ const Register = () => {
     const password = e.target[1].value;
 
     const hashedPassword = await bcrypt.hash(password, 10);
-    console.log(hashedPassword)
 
     try {
       const response = await axios.post("http://localhost:8000/user/", {

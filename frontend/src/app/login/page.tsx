@@ -2,18 +2,56 @@
 import React from 'react'
 import Link from 'next/link'
 import createCookie from '../components/cookies/cookiecreator';
+import axios from 'axios';
+import { useState } from 'react';
+import bcrypt from 'bcryptjs';
 
 const Login = () => {
+  const [errorMessage, setErrorMessage] = useState("") // Error-Message in Login-Form
+
   const handleSubmit = async (e: any) => {
       e.preventDefault();
       const email = e.target[0].value;
       const password = e.target[1].value;
 
-      const expiringIn = 24 * 60 * 60 * 1000 // Cookie expiring in one day
-      createCookie('authorisation', 'true', expiringIn)
-      setTimeout(() => {
-        window.location.replace("/")
-      }, 100);
+      
+      const hashedPassword = await bcrypt.hash(password, 10);
+
+
+      try {
+        const response = await axios.post("http://localhost:8000/login/", { // send API-request
+          email,
+          password: hashedPassword
+        });
+  
+        if (response.data.email == "noUserFound@notfound.ch"){ // If user was not found
+          setErrorMessage("UserNotFound")
+        } else {
+          setErrorMessage("")
+
+          bcrypt.compare(password, response.data.password, function(err: any, res: any) {
+            if (err){ // if an error occurs
+              console.log(err)
+            }
+            if (res) { // if passwords do match
+              const expiringIn = 24 * 60 * 60 * 1000 // Cookie expiring in one day
+              createCookie('authorisation', 'true', expiringIn)
+      
+              setTimeout(() => {
+                window.location.replace("/")
+              }, 100)
+            } else {
+              setErrorMessage("WrongPW") // If password do not match
+            }
+          });
+          
+          console.log("Success")
+          console.log(response.data)
+        }
+  
+      } catch (error) {
+        console.error("Fehler", error);
+      }
   }
 
   return (
@@ -39,6 +77,8 @@ const Login = () => {
           >
             Login
           </button>
+          {errorMessage == "UserNotFound" ? <p>Nutzer nicht gefunden!</p> : ""}
+          {errorMessage == "WrongPW" ? <p>Passwort inkorrekt!</p> : ""}
         </form>
         <div className="text-center text-gray-500 mt-4">- ODER -</div>
         <Link className="block text-center text-blue-500 hover:underline mt-2" href="/register">Neu registrieren</Link>
