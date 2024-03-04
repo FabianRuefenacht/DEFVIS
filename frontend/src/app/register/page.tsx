@@ -1,17 +1,35 @@
 "use client";
 import React from "react";
 import Link from "next/link";
+import axios from "axios";
+import createCookie from '../components/cookies/cookiecreator';
+
 
 const Register = () => {
+  const handleSubmit = async (e: any) => {
+    e.preventDefault();
+    const email = e.target[0].value;
+    const password = e.target[1].value;
 
-    const handleSubmit = async (e: any) => {
-        e.preventDefault();
-        const email = e.target[0].value;
-        const password = e.target[1].value;
+    try {
+      const response = await axios.post("http://localhost:8000/user/", {
+        email,
+        password,
+      });
+      console.log("Benutzer erstellt:", response.data)
 
-        console.log(email, password)
+      const expiringIn = 24 * 60 * 60 * 1000 // Cookie expiring in one day
+      createCookie('authorisation', 'true', expiringIn)
+
+      setTimeout(() => {
+        window.location.replace("/")
+      }, 100)
+      
+    } catch (error) {
+      console.error("Fehler", error);
     }
-    
+  };
+
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div className="bg-zinc-700 p-8 rounded shadow-md w-96">
@@ -33,7 +51,7 @@ const Register = () => {
             type="submit"
             className="w-full bg-blue-500 my-2 text-white py-2 rounded hover:bg-blue-600"
           >
-            Register{" "}
+            Registrieren{" "}
           </button>
         </form>
         <div className="text-center text-gray-500 mt-4">- ODER -</div>
