@@ -3,28 +3,38 @@ import React from "react";
 import Link from "next/link";
 import axios from "axios";
 import createCookie from '../components/cookies/cookiecreator';
+import bcrypt from 'bcryptjs';
+import { useState } from "react";
 
 
 const Register = () => {
+  const [regError, setRegError] = useState(false)
+
   const handleSubmit = async (e: any) => {
     e.preventDefault();
     const email = e.target[0].value;
     const password = e.target[1].value;
 
+    const hashedPassword = await bcrypt.hash(password, 10);
+    console.log(hashedPassword)
+
     try {
       const response = await axios.post("http://localhost:8000/user/", {
         email,
-        password,
+        password: hashedPassword,
       });
-      console.log("Benutzer erstellt:", response.data)
 
-      const expiringIn = 24 * 60 * 60 * 1000 // Cookie expiring in one day
-      createCookie('authorisation', 'true', expiringIn)
+      if (response.data.created == "true"){
+        const expiringIn = 24 * 60 * 60 * 1000 // Cookie expiring in one day
+        createCookie('authorisation', 'true', expiringIn)
 
-      setTimeout(() => {
-        window.location.replace("/")
-      }, 100)
-      
+        setTimeout(() => {
+          window.location.replace("/")
+        }, 100)
+      } else {
+        setRegError(true)
+      }
+
     } catch (error) {
       console.error("Fehler", error);
     }
@@ -53,6 +63,9 @@ const Register = () => {
           >
             Registrieren{" "}
           </button>
+          {regError == true &&
+          <p>User existiert bereits</p>
+          }
         </form>
         <div className="text-center text-gray-500 mt-4">- ODER -</div>
         <Link className="block text-center text-blue-500 hover:underline mt-2" href="/login">Mit Account anmelden</Link>
