@@ -7,8 +7,8 @@ const Navbar = () => {
   const hasAuthorisation = cookiesList.has("authorisation");
 
   return (
-    <div>
-      <ul className="flex justify-between m-10 items-center">
+    <div className="row-span-1">
+      <ul className="flex justify-between m-7 items-center">
         <div>
           <Link href="/">
             <li>Home</li>

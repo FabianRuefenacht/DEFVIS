@@ -16,9 +16,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className} >
-        <div className="mx-auto max-w-5xl text-2xl gap-2 mb-10">
+    <html lang="en" className="h-full p-0 m-0">
+      <body className="p-0 m-0 h-dvh max-h-full top-0" >
+        <div className="m-0 p-0 w-full h-dvh max-h-full text-2xl gap-2 grid grid-rows-12 grid-cols-1 gap-4">
           <Navbar />
           {children}
         </div>
