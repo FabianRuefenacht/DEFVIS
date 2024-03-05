@@ -5,24 +5,26 @@ import Map from "./components/Map";
 import Detail from "./components/Detail";
 
 export default function Home() {
-  const cookiesList = cookies()
-  const hasAuthorisation = cookiesList.has('authorisation')
-
+  const cookiesList = cookies();
+  const hasAuthorisation = cookiesList.has("authorisation");
 
   if (hasAuthorisation == true) {
     return (
-      <main className="grid grid-rows-4 grid-cols-4 gap-4 bg-slate-900 w-full row-span-11">
-        <Settings />
-        <Map />
-        <Detail />
+      <main className="flex row-span-11 gap-4">
+        <div className="h-full">
+          <Settings />
+        </div>
+        <div className="grid grid-rows-2 gap-4">
+          <Map />
+          <Detail />
+        </div>
       </main>
     );
   } else {
-    return(
+    return (
       <main className="flex min-h-screen flex-col items-center justify-between p-24">
         <h1>Bitte melden Sie sich an um Ihre Projekte zu sehen!</h1>
       </main>
-    )
-
+    );
   }
 }

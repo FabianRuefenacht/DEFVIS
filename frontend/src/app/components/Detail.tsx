@@ -2,7 +2,7 @@ import React from 'react'
 
 const Detail = () => {
   return (
-    <div className='bg-slate-500 col-span-3 row-span-2'>Detail</div>
+    <div className='bg-slate-500 row-span-1'>Detail</div>
   )
 }
 
