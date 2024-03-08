@@ -9,6 +9,7 @@ const Logout = () => {
 
       const expiringIn = 0 // Cookie expiring now
       createCookie('authorisation', 'true', expiringIn)
+      createCookie('user', "email", expiringIn)
       setTimeout(() => {
         window.location.replace("/")
       }, 100);

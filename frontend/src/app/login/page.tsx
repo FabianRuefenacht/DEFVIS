@@ -36,6 +36,7 @@ const Login = () => {
             if (res) { // if passwords do match
               const expiringIn = 24 * 60 * 60 * 1000 // Cookie expiring in one day
               createCookie('authorisation', 'true', expiringIn)
+              createCookie('user', email, expiringIn)
       
               setTimeout(() => {
                 window.location.replace("/")

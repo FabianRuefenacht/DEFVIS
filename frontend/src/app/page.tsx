@@ -7,12 +7,16 @@ import Detail from "./components/Detail";
 export default function Home() {
   const cookiesList = cookies();
   const hasAuthorisation = cookiesList.has("authorisation");
+  const user = cookiesList.has("user")
 
-  if (hasAuthorisation == true) {
+  if (user == true) {
+
+    const userName:any = cookiesList.get("user")?.value
+
     return (
       <main className="flex row-span-11 gap-4">
         <div className="h-full">
-          <Settings />
+          <Settings userName={userName} />
         </div>
         <div className="grid grid-rows-2 gap-4">
           <Map />
