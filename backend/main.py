@@ -1,4 +1,4 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, UploadFile, File, Form
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, EmailStr
 import uvicorn
@@ -100,6 +100,51 @@ async def open_Project(user: UserIn) -> dict:
         return {"userId": userId, "exec": projects}
     except:
         return {"exec": "error"}
+    
+@app.post("/newSession/")
+async def new_session(
+    username: str = Form(...),
+    projectName: str = Form(...),
+    SessionName: str = Form(...),
+    datetime: str = Form(...),
+    file: UploadFile = File(...)
+) -> dict:
+    try:
+        try:
+            user = DBM.get_user_by_email(username)
+            userId, email, password = user
+        except:
+            return {"message": "User Not Found"}
+        
+        try:
+            project = DBM.get_project_by_name(userId=userId, projectName=projectName)
+            projectId, creatorId, viewerId, projectname = project
+        except:
+            return {"message": "Project Not Found"}
+        
+        session = DBM.get_Session_by_SessionName(sessionname=SessionName, projectId=projectId)
+        if session:
+            return {"message": "Session already exists"}
+        
+        try:
+            DBM.create_session(mainProjectId=projectId, sessionName=SessionName, MeasDate=datetime)
+        except:
+            return {"message": "Session Not created"}
+        
+        # Hier kannst du den Dateiinhalt verarbeiten
+        file_content = await file.read()
+        for line in file_content.decode().splitlines():
+            print(line)
+
+        # Füge hier den Rest deiner Logik hinzu, z.B. das Speichern der Daten in der Datenbank usw.
+
+        return {"message": "Session Created"}
+
+    except Exception as e:
+        print(f"Fehler beim Verarbeiten der Anfrage: {e}")
+        return {"message": "Ein Fehler ist aufgetreten"}
+
+
 
 
 

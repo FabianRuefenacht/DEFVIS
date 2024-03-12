@@ -85,21 +85,63 @@ const Settings = ({ userName }: { userName: string }) => {
   };
 
   const loadSessionsInProject = async (loadP: any) => {
-
-  }
+    console.log("loading Project: ",loadP)
+    //ToDo
+  };
 
   const loadProject = async (loadP: any) => {
-    setProject(loadP)
-    loadSessionsInProject(loadP)
-    setOpenProj(false)
-  }
+    setProject(loadP);
+    loadSessionsInProject(loadP);
+    setOpenProj(false);
+  };
 
   // capture new session functinalities
   const [newSession, setNewSession] = useState(false);
+  const [newSessionError, setNewSessionError] = useState("")
 
   function changeNewSession() {
     setNewSession(!newSession);
   }
+
+  const handleCreateSessionSubmit = async (e: any) => {
+    e.preventDefault();
+
+    const fileInput = e.target[0];
+    const datetimeOfMeas = e.target[1].value;
+    const file = fileInput.files[0];
+    const fileName = fileInput.files[0].name;
+
+    const dotIndex = fileName.lastIndexOf(".");
+    const fileNameWithoutExtension =
+      dotIndex !== -1 ? fileName.slice(0, dotIndex) : fileName;
+
+    try {
+      const formData = new FormData();
+      formData.append("file", file);
+      formData.append("username", userName); // Hinzugefügt
+      formData.append("projectName", project); // Hinzugefügt
+      formData.append("SessionName", fileNameWithoutExtension); // Hinzugefügt
+      formData.append("datetime", datetimeOfMeas); // Hinzugefügt
+
+      const response = await axios.post(
+        "http://localhost:8000/newSession/",
+        formData,
+        {
+          headers: {
+            "Content-Type": "multipart/form-data",
+          },
+        }
+      );
+      if (response.data.message  == "Session Created") {
+          setNewSession(false)
+          loadSessionsInProject(project)
+      } else {
+        setNewSessionError(response.data.message)
+      }
+    } catch (error: any) {
+      setNewSessionError("Some error occured. Please try again later!")
+      }
+    }
 
   return (
     <main className="bg-slate-500 row-span-4 pl-7 pr-2 h-full">
@@ -110,7 +152,7 @@ const Settings = ({ userName }: { userName: string }) => {
           onClick={handleOutsideClick}
           className=" fixed inset-0 flex items-center justify-center  bg-zinc-600/40"
         >
-          <div className=" bg-zinc-600 m-auto w-1/2 p-5 rounded-3xl relative">
+          <div className=" bg-zinc-600 m-auto w-1/2 p-5 rounded-3xl relative min-w-fit">
             <button
               onClick={changeNewProj}
               className=" px-2 float-right text-5xl absolute top-0 right-0"
@@ -156,7 +198,7 @@ const Settings = ({ userName }: { userName: string }) => {
           onClick={handleOutsideClick}
           className=" fixed inset-0 flex items-center justify-center  bg-zinc-600/40"
         >
-          <div className=" bg-zinc-600 m-auto w-1/2 p-5 rounded-3xl relative flex flex-col">
+          <div className=" bg-zinc-600 m-auto w-1/2 p-5 rounded-3xl relative flex flex-col min-w-fit">
             <button
               onClick={changeOpenProj}
               className=" px-2 float-right text-5xl absolute top-0 right-0"
@@ -164,18 +206,30 @@ const Settings = ({ userName }: { userName: string }) => {
               &times;
             </button>
             <h1 className=" text-3xl font-semibold mb-8">Eigene Projekte</h1>
-            {userProjects.map((project) => (
-              project[1] == userId && (
-                <button key={project[0]} onClick={() => loadProject(project[3])}>{project[3]}</button>
-              )
-            ))}
+            {userProjects.map(
+              (project) =>
+                project[1] == userId && (
+                  <button
+                    key={project[0]}
+                    onClick={() => loadProject(project[3])}
+                  >
+                    {project[3]}
+                  </button>
+                )
+            )}
             <br />
             <h1 className=" text-3xl font-semibold mb-8">Fremde Projekte</h1>
-            {userProjects.map((project) => (
-              project[2] == userId && (
-                <button key={project[0]}>{project[3]}</button>
-              )
-            ))}
+            {userProjects.map(
+              (project) =>
+                project[2] == userId && (
+                  <button
+                    key={project[0]}
+                    onClick={() => loadProject(project[3])}
+                  >
+                    {project[3]}
+                  </button>
+                )
+            )}
           </div>
         </div>
       )}
@@ -188,7 +242,7 @@ const Settings = ({ userName }: { userName: string }) => {
               onClick={handleOutsideClick}
               className=" fixed inset-0 flex items-center justify-center  bg-zinc-600/40"
             >
-              <div className=" bg-zinc-600 m-auto w-1/2 p-5 rounded-3xl relative">
+              <div className=" bg-zinc-600 m-auto w-1/2 p-5 rounded-3xl relative min-w-fit">
                 <button
                   onClick={changeNewSession}
                   className=" px-2 float-right text-5xl absolute top-0 right-0"
@@ -196,12 +250,30 @@ const Settings = ({ userName }: { userName: string }) => {
                   &times;
                 </button>
                 <h1 className=" text-3xl font-semibold">Session erfassen</h1>
-                <h1 className=" text-2xl font-semibold mb-8">Projekt: {project}</h1>
-                <p>Die Session wird gleich benannt wie die hochgeladene Datei!</p> <br />
+                <h1 className=" text-2xl font-semibold mb-8">
+                  Projekt: {project}
+                </h1>
+                <p>
+                  Die Session wird gleich benannt wie die hochgeladene Datei!
+                </p>
+                <br />
                 <p>Format:</p>
                 <p>Nr,E,N,H</p> <br /> <br />
-                <input type="file" /> <br /> <br />
-                <button>Session hochladen</button>
+                <form onSubmit={handleCreateSessionSubmit}>
+                  <input type="file" accept=".csv" required /> <br /> <br />
+                  <p>Aufnahmezeitpunkt:</p>
+                  <input
+                    className=" text-zinc-900"
+                    type="datetime-local"
+                    placeholder="Datum auswählen"
+                    required
+                  />{" "}
+                  <br /> <br />
+                  {newSessionError !== "" &&
+                  <p>{newSessionError}</p>
+                  }
+                  <button type="submit">Session hochladen</button>
+                </form>
               </div>
             </div>
           )}

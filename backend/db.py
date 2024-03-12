@@ -41,6 +41,7 @@ class DatabaseManager:
                     sessionId INTEGER PRIMARY KEY,
                     mainProjectId INTEGER,
                     sessionName TEXT,
+                    dateTime TEXT,
                     FOREIGN KEY(mainProjectId) REFERENCES projects(projectId)
                     )""")
 
@@ -106,9 +107,9 @@ class DatabaseManager:
 
         
     # Interaction with sessions table
-    def create_session(self, mainProjectId: int, sessionName: str) -> None:
+    def create_session(self, mainProjectId: int, sessionName: str, MeasDate: str) -> None:
         self.connect_DB()
-        self.cursor.execute("INSERT INTO sessions (mainProjectId, sessionName) VALUES (?, ?)", (mainProjectId, sessionName))
+        self.cursor.execute("INSERT INTO sessions (mainProjectId, sessionName, dateTime) VALUES (?, ?, ?)", (mainProjectId, sessionName, MeasDate))
         self.close_DB()
 
     def get_sessions_by_projectId(self, mainProjectId: int) -> list:
@@ -117,7 +118,14 @@ class DatabaseManager:
         sessions = self.cursor.fetchall()
         self.close_DB()
         return sessions
-
+    
+    def get_Session_by_SessionName(self, sessionname: str, projectId: int) -> list:
+        self.connect_DB()
+        self.cursor.execute("SELECT * FROM sessions WHERE sessionName = ? AND mainProjectId = ?", (sessionname, projectId))
+        session = self.cursor.fetchone()
+        self.close_DB()
+        return session
+    
     # Interaction with points table
     def create_point(self, mainSessionId: int, points: list) -> None:
         self.connect_DB()
