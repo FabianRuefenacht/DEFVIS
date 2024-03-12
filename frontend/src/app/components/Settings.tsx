@@ -84,6 +84,16 @@ const Settings = ({ userName }: { userName: string }) => {
     }
   };
 
+  const loadSessionsInProject = async (loadP: any) => {
+
+  }
+
+  const loadProject = async (loadP: any) => {
+    setProject(loadP)
+    loadSessionsInProject(loadP)
+    setOpenProj(false)
+  }
+
   // capture new session functinalities
   const [newSession, setNewSession] = useState(false);
 
@@ -93,11 +103,6 @@ const Settings = ({ userName }: { userName: string }) => {
 
   return (
     <main className="bg-slate-500 row-span-4 pl-7 pr-2 h-full">
-      <h1>
-        Projekt:
-        <br />
-        {project}
-      </h1>
       <Button clickFunc={changeNewProj} text="Neues Projekt" />
       {newProj && (
         <div
@@ -161,48 +166,50 @@ const Settings = ({ userName }: { userName: string }) => {
             <h1 className=" text-3xl font-semibold mb-8">Eigene Projekte</h1>
             {userProjects.map((project) => (
               project[1] == userId && (
-              <button key={project[0]}>{project[3]}</button>
+                <button key={project[0]} onClick={() => loadProject(project[3])}>{project[3]}</button>
               )
             ))}
             <br />
             <h1 className=" text-3xl font-semibold mb-8">Fremde Projekte</h1>
             {userProjects.map((project) => (
               project[2] == userId && (
-              <button key={project[0]}>{project[3]}</button>
+                <button key={project[0]}>{project[3]}</button>
               )
             ))}
           </div>
         </div>
       )}
-
-      <Button clickFunc={changeNewSession} text="Session erfassen" />
-      {newSession && (
-        <div
-          id="modal"
-          onClick={handleOutsideClick}
-          className=" fixed inset-0 flex items-center justify-center  bg-zinc-600/40"
-        >
-          <div className=" bg-zinc-600 m-auto w-1/2 p-5 rounded-3xl relative">
-            <button
-              onClick={changeNewSession}
-              className=" px-2 float-right text-5xl absolute top-0 right-0"
-            >
-              &times;
-            </button>
-            <h1 className=" text-3xl font-semibold">Session erfassen</h1>
-            <h1 className=" text-2xl font-semibold mb-8">{project}</h1>
-            <button>Datei öffnen</button>
-            <p>Pt1,Data</p>
-            <p>Pt2,Data</p>
-            <p>Pt3,Data</p>
-            <p>Pt4,Data</p>
-            <p>Pt5,Data</p>
-            <button>Session hochladen</button>
-          </div>
-        </div>
-      )}
       {project !== "nicht gewählt" && (
         <>
+          <Button clickFunc={changeNewSession} text="Session erfassen" />
+          {newSession && (
+            <div
+              id="modal"
+              onClick={handleOutsideClick}
+              className=" fixed inset-0 flex items-center justify-center  bg-zinc-600/40"
+            >
+              <div className=" bg-zinc-600 m-auto w-1/2 p-5 rounded-3xl relative">
+                <button
+                  onClick={changeNewSession}
+                  className=" px-2 float-right text-5xl absolute top-0 right-0"
+                >
+                  &times;
+                </button>
+                <h1 className=" text-3xl font-semibold">Session erfassen</h1>
+                <h1 className=" text-2xl font-semibold mb-8">Projekt: {project}</h1>
+                <p>Die Session wird gleich benannt wie die hochgeladene Datei!</p> <br />
+                <p>Format:</p>
+                <p>Nr,E,N,H</p> <br /> <br />
+                <input type="file" /> <br /> <br />
+                <button>Session hochladen</button>
+              </div>
+            </div>
+          )}
+          <h1>
+            Projekt:
+            <br />
+            {project}
+          </h1>
           <p>Sessionen:</p>
         </>
       )}
