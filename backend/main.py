@@ -128,6 +128,8 @@ async def new_session(
         
         try:
             DBM.create_session(mainProjectId=projectId, sessionName=SessionName, MeasDate=datetime)
+            session = DBM.get_Session_by_SessionName(sessionname=SessionName, projectId=projectId)
+            sessionId, _, _, _ = session
         except:
             return {"message": "Session Not created"}
         
