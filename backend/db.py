@@ -126,12 +126,13 @@ class DatabaseManager:
         self.close_DB()
         return session
     
-    # Interaction with points table
+
     def create_point(self, mainSessionId: int, points: list) -> None:
         self.connect_DB()
         data = [(mainSessionId, point.get('name', ''), point.get('E', 0.0), point.get('N', 0.0), point.get('H', 0.0)) for point in points]
         self.cursor.executemany("INSERT INTO points (mainSessionId, name, E, N, H) VALUES (?, ?, ?, ?, ?)", data)
         self.close_DB()
+
 
 
     def get_points_by_sessionId(self, mainSessionId: int) -> list:

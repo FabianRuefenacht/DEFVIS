@@ -36,6 +36,10 @@ class ProjectIn(BaseModel):
     userEmail: EmailStr
     clientEmail: EmailStr
 
+class ProjectNameIn(BaseModel):
+    projectName: str
+    user: int
+
 # Post-Route for Registration
 @app.post("/user/")
 async def create_user(user: UserIn) -> UserCreated:
@@ -134,9 +138,15 @@ async def new_session(
             return {"message": "Session Not created"}
         
         # Hier kannst du den Dateiinhalt verarbeiten
-        file_content = await file.read()
-        for line in file_content.decode().splitlines():
-            print(line)
+        data = await file.read()
+        lines = data.decode().split('\n')  # Split the content by lines
+
+        for line in lines:
+            parts = line.strip().split(',')  # Split each line into parts using comma
+            if len(parts) == 4:  # Ensure each line has 4 parts (name, E, N, H)
+                name, E, N, H = parts
+                DBM.create_point(sessionId, [{"name": name, "E": float(E), "N": float(N), "H": float(H)}])
+
 
         # Füge hier den Rest deiner Logik hinzu, z.B. das Speichern der Daten in der Datenbank usw.
 
@@ -145,6 +155,47 @@ async def new_session(
     except Exception as e:
         print(f"Fehler beim Verarbeiten der Anfrage: {e}")
         return {"message": "Ein Fehler ist aufgetreten"}
+    
+@app.post("/getSessions/")
+async def get_sessions(project: ProjectNameIn) -> dict:
+    print(project.projectName)
+    project = DBM.get_project_by_name(projectName=project.projectName, userId=project.user)
+    try:
+        projectId, creatorId, viewerId, name = project
+    except:
+        return {"message": "Error"}
+
+    sessions = DBM.get_sessions_by_projectId(projectId)
+    try:
+        sessions_data = []
+        for session in sessions:
+            sessionId, _, sessionName, datetime = session
+            points = DBM.get_points_by_sessionId(sessionId)
+            session_points = []
+            for point in points:
+                print(point)
+                pointId, name, _, E, N, H = point
+                session_points.append({
+                    "pointId": pointId,
+                    "name": name,
+                    "E": E,
+                    "N": N,
+                    "H": H,
+                })
+            sessions_data.append({
+                "sessionId": sessionId,
+                "sessionName": sessionName,
+                "datetime": datetime,
+                "points": session_points
+            })
+        return {"message": "success",
+                "sessions": sessions_data}
+    except:
+        print("Error")
+        return {"message": "Error"}
+
+
+
 
 
 

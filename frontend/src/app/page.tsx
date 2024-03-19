@@ -18,10 +18,6 @@ export default function Home() {
         <div className="h-full">
           <Settings userName={userName} />
         </div>
-        <div className="grid grid-rows-2 gap-4">
-          <Map />
-          <Detail />
-        </div>
       </main>
     );
   } else {
