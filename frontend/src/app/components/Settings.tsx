@@ -116,13 +116,11 @@ const Settings = ({ userName }: { userName: string }) => {
   ]);
 
   const loadSessionsInProject = async (loadP: string) => {
-    console.log("loading Project: ", loadP);
     try {
       const response = await axios.post("http://localhost:8000/getSessions/", {
         projectName: loadP,
         user: userId,
       });
-      console.log(response);
 
       if (response.data.message !== "success") {
         setGetSessionerror("An error occured!");
@@ -203,16 +201,17 @@ const Settings = ({ userName }: { userName: string }) => {
       (session) => session.sessionName === selectedBaseSessionName
     );
     setBaseSessionPoints(basePts);
-    console.log(basePts);
   };
 
   const handleNextSessionChange = (event: any) => {
     const selectedNextSessionName = event.target.value;
     setNextSession(selectedNextSessionName);
+    const nextPts = sessionData.filter(
+      (session) => session.sessionName === selectedNextSessionName
+    );
+    setNextSessionPoints(nextPts);
   };
 
-  // Detail state
-  const [viewwModel, setViewwModel] = useState("Text");
 
   return (
     <main className="h-full grid grid-rows-2 grid-cols-4 gap-4">
@@ -388,17 +387,7 @@ const Settings = ({ userName }: { userName: string }) => {
       </div>
       <div className="grid grid-rows-2 col-span-3 row-span-2 gap-4">
         <Map />
-        <main>
-          <button onClick={() => setViewwModel("Text")}>Text</button>
-          <button onClick={() => setViewwModel("ZRA")}>ZRA</button>
-          <button onClick={() => setViewwModel("3D")}>3D</button>
-          <div className=" overflow-y-auto h-full  p-4 pb-10">
-          {viewwModel === "Text" && baseSessionPoints[0] &&
-            baseSessionPoints[0].points.map((point) => (
-              <p key={point.name}>{point.name}</p>
-            ))}
-            </div>
-        </main>
+        <Detail baseSessionPoints={baseSessionPoints[0]} nextSessionPoints={nextSessionPoints[0]} />
       </div>
     </main>
   );
