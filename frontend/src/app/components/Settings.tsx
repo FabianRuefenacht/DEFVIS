@@ -4,7 +4,7 @@ import { useState, useRef, useEffect } from "react";
 import Button from "./Button";
 import axios from "axios";
 
-import Map from "./Map";
+import OlMap from "./OlMap";
 import Detail from "./Detail";
 import CalculateDisplacement from "./CalculateDisplacement";
 
@@ -32,6 +32,19 @@ const Settings = ({ userName }: { userName: string }) => {
       setNewSession(false);
     }
   };
+
+
+  const points = [
+    { pointId: 1, name: 'Point A', E: 2600000, N: 1200000 },
+    { pointId: 2, name: 'Point B', E: 2600001, N: 1200001 }
+    // Weitere Punkte hier...
+  ];
+
+  
+
+
+
+
 
   const [project, setProject] = useState("nicht gewählt");
 
@@ -210,11 +223,12 @@ const Settings = ({ userName }: { userName: string }) => {
       (session) => session.sessionName === selectedNextSessionName
     );
     setNextSessionPoints(nextPts);
+    console.log(baseSessionPoints[0].points)
   };
 
 
   return (
-    <main className="h-full grid grid-rows-2 grid-cols-4 gap-4">
+    <main className="h-full w-full grid grid-rows-2 grid-cols-4 gap-4">
       <div className="h-full row-span-2 col-span-1 min-w-fit">
         <div className="bg-slate-500 pl-7 pr-2 h-full">
           <Button clickFunc={changeNewProj} text="Neues Projekt" />
@@ -222,7 +236,7 @@ const Settings = ({ userName }: { userName: string }) => {
             <div
               id="modal"
               onClick={handleOutsideClick}
-              className=" fixed inset-0 flex items-center justify-center  bg-zinc-600/40"
+              className=" fixed inset-0 flex items-center justify-center  bg-zinc-600/40 z-50"
             >
               <div className=" bg-zinc-600 m-auto w-1/2 p-5 rounded-3xl relative min-w-fit">
                 <button
@@ -268,7 +282,7 @@ const Settings = ({ userName }: { userName: string }) => {
             <div
               id="modal"
               onClick={handleOutsideClick}
-              className=" fixed inset-0 flex items-center justify-center  bg-zinc-600/40"
+              className=" fixed inset-0 flex items-center justify-center  bg-zinc-600/40 z-50"
             >
               <div className=" bg-zinc-600 m-auto w-1/2 p-5 rounded-3xl relative flex flex-col min-w-fit">
                 <button
@@ -386,8 +400,9 @@ const Settings = ({ userName }: { userName: string }) => {
         </div>
       </div>
       <div className="grid grid-rows-2 col-span-3 row-span-2 gap-4">
-        <Map />
-        <Detail baseSessionPoints={baseSessionPoints[0]} nextSessionPoints={nextSessionPoints[0]} />
+        {baseSessionPoints[0] &&<><OlMap bbox={[baseSessionPoints[0].points[0].E, baseSessionPoints[0].points[0].N]} pts={baseSessionPoints[0].points} /></>}
+        {/* {!baseSessionPoints[0] &&<><OlMap bbox={[2600000, 1200000]} /></>} */}
+        <Detail baseSessionPoints={baseSessionPoints[0]} nextSessionPoints={nextSessionPoints[0]}  />
       </div>
     </main>
   );

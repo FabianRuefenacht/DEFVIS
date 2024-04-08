@@ -1,7 +1,7 @@
 import { cookies } from "next/headers";
 import Image from "next/image";
 import Settings from "./components/Settings";
-import Map from "./components/Map";
+import Map from "./components/OlMap";
 import Detail from "./components/Detail";
 
 export default function Home() {
@@ -14,7 +14,7 @@ export default function Home() {
     const userName:any = cookiesList.get("user")?.value
 
     return (
-      <main className="flex row-span-11 gap-4">
+      <main className="flex row-span-11">
         <div className="h-full">
           <Settings userName={userName} />
         </div>
