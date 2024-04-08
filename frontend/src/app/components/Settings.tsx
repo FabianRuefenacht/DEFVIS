@@ -33,18 +33,11 @@ const Settings = ({ userName }: { userName: string }) => {
     }
   };
 
-
   const points = [
-    { pointId: 1, name: 'Point A', E: 2600000, N: 1200000 },
-    { pointId: 2, name: 'Point B', E: 2600001, N: 1200001 }
+    { pointId: 1, name: "Point A", E: 2600000, N: 1200000 },
+    { pointId: 2, name: "Point B", E: 2600001, N: 1200001 },
     // Weitere Punkte hier...
   ];
-
-  
-
-
-
-
 
   const [project, setProject] = useState("nicht gewählt");
 
@@ -223,9 +216,19 @@ const Settings = ({ userName }: { userName: string }) => {
       (session) => session.sessionName === selectedNextSessionName
     );
     setNextSessionPoints(nextPts);
-    console.log(baseSessionPoints[0].points)
+    console.log(baseSessionPoints[0].points);
   };
 
+// Map handle 3DClick
+  const [view3DPoint, setView3DPoint] = useState<string | null>(null);
+
+  // Function to handle button click
+  const handle3DClick = (pointName: string | null) => {
+    console.log("Button clicked for pointId:", pointName);
+    setView3DPoint(pointName);
+
+    // Hier können Sie Ihre gewünschte Aktion ausführen
+  };
 
   return (
     <main className="h-full w-full grid grid-rows-2 grid-cols-4 gap-4">
@@ -400,9 +403,24 @@ const Settings = ({ userName }: { userName: string }) => {
         </div>
       </div>
       <div className="grid grid-rows-2 col-span-3 row-span-2 gap-4">
-        {baseSessionPoints[0] &&<><OlMap bbox={[baseSessionPoints[0].points[0].E, baseSessionPoints[0].points[0].N]} pts={baseSessionPoints[0].points} /></>}
+        {baseSessionPoints[0] && (
+          <>
+            <OlMap
+              bbox={[
+                baseSessionPoints[0].points[0].E,
+                baseSessionPoints[0].points[0].N,
+              ]}
+              pts={baseSessionPoints[0].points}
+              handle3DClick={handle3DClick}
+            />
+          </>
+        )}
         {/* {!baseSessionPoints[0] &&<><OlMap bbox={[2600000, 1200000]} /></>} */}
-        <Detail baseSessionPoints={baseSessionPoints[0]} nextSessionPoints={nextSessionPoints[0]}  />
+        <Detail
+          baseSessionPoints={baseSessionPoints[0]}
+          nextSessionPoints={nextSessionPoints[0]}
+          view3DPoint={view3DPoint}
+        />
       </div>
     </main>
   );
