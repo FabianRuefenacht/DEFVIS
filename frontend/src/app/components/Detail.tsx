@@ -153,7 +153,7 @@ function Detail({
 
       {viewwModel === "3D" && view3DPointInMap && view3DPointNextEasting && view3DPointNextNorthing && (
         <div className=" pl-5">
-          {view3DPoint ? <ThreeScene width={300} height={300} point={view3DPoint} /> : ""}
+          {view3DPoint ? <ThreeScene width={700} height={300} point={view3DPoint} /> : ""}
           
           {/* <p>Punktnummer: {view3DPoint}</p>
           <p>Ost: {view3DPointInMapEasting}</p>

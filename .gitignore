@@ -1,0 +1,11 @@
+
+*.ply
+*.pts
+*.xyz
+*.xml
+*.obj
+/backend/folder
+*.tif
+*.gltf
+*.glb
+/frontend/public/models
