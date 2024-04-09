@@ -8,6 +8,7 @@ import OlMap from "./OlMap";
 import Detail from "./Detail";
 import CalculateDisplacement from "./CalculateDisplacement";
 
+
 interface Point {
   pointId: number;
   name: string;
@@ -216,7 +217,6 @@ const Settings = ({ userName }: { userName: string }) => {
       (session) => session.sessionName === selectedNextSessionName
     );
     setNextSessionPoints(nextPts);
-    console.log(baseSessionPoints[0].points);
   };
 
 // Map handle 3DClick
@@ -403,7 +403,7 @@ const Settings = ({ userName }: { userName: string }) => {
         </div>
       </div>
       <div className="grid grid-rows-2 col-span-3 row-span-2 gap-4">
-        {baseSessionPoints[0] && (
+        {baseSessionPoints[0] && nextSessionPoints[0] &&(
           <>
             <OlMap
               bbox={[
@@ -411,6 +411,7 @@ const Settings = ({ userName }: { userName: string }) => {
                 baseSessionPoints[0].points[0].N,
               ]}
               pts={baseSessionPoints[0].points}
+              nextPts={nextSessionPoints[0].points}
               handle3DClick={handle3DClick}
             />
           </>

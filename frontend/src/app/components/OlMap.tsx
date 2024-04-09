@@ -8,7 +8,7 @@ import Feature from "ol/Feature";
 import Point from "ol/geom/Point";
 import { Vector as VectorLayer } from "ol/layer";
 import { Vector as VectorSource } from "ol/source";
-import { Style, Circle, Fill, Stroke, Text } from "ol/style";
+import { Style, Circle, Fill, Stroke, Text, Icon } from "ol/style";
 import Overlay from "ol/Overlay";
 
 import {
@@ -19,6 +19,9 @@ import {
 import Projection from "ol/proj/Projection.js";
 import TileWMS from "ol/source/TileWMS.js";
 import { FullScreen, Rotate, defaults as defaultControls } from "ol/control.js";
+import { LineString } from "ol/geom";
+
+import arrow from "../../../public/images/arrow.png"
 
 interface IfPoint {
   pointId: number;
@@ -28,7 +31,15 @@ interface IfPoint {
   H: number;
 }
 
-const OlMap = ({ bbox, pts, handle3DClick }: { bbox: [number, number]; pts: IfPoint[]; handle3DClick: (pointId: string | null) => void }) => {
+interface Deviations {
+  pointId: number;
+  name: string;
+  dE: number;
+  dN: number;
+  dH: number;
+}
+
+const OlMap = ({ bbox, pts, nextPts, handle3DClick }: { bbox: [number, number]; pts: IfPoint[]; nextPts: IfPoint[]; handle3DClick: (pointId: string | null) => void }) => {
   const mapRef = useRef<HTMLDivElement>(null);
   const overlayRef = useRef<HTMLDivElement>(null);
   const [overlayContent, setOverlayContent] = useState("");
@@ -119,6 +130,65 @@ const OlMap = ({ bbox, pts, handle3DClick }: { bbox: [number, number]; pts: IfPo
 
     map.addLayer(vectorLayer);
 
+    // Create displacement vectors
+    const displacementFeatures = pts.map((point) => {
+      const correspondingNextPoint = findCorrespondingNextPoint(point, nextPts);
+      if (correspondingNextPoint) {
+        const displacementVector = calculateDisplacement(point, correspondingNextPoint);
+        if (displacementVector) {
+          const displacementGeometry = new LineString([[point.E, point.N], [point.E + displacementVector.E, point.N + displacementVector.N]])
+
+          return new Feature({
+            geometry: displacementGeometry,
+            name: point.name,
+            dEasting: displacementVector.E,
+            dNorthing: displacementVector.N,
+            dHeight: displacementVector.H
+          });
+        };
+      };
+    });
+    console.log(displacementFeatures)
+
+    // displacementFeatures.forEach((displacementFeature, index) => {
+    //   displacementFeature?.setStyle(
+    //     new Style({
+    //       image: new Icon({
+    //         src: 'images/arrow.png',
+    //         anchor: [0, 0],
+    //         rotateWithView: true,
+    //         rotation: Math.atan2(displacementFeature.get('dNorthing'), displacementFeature.get('dEasting'))
+    //       })
+    //     })
+    //   );
+    // });
+    displacementFeatures.forEach((displacementFeature, index) => {
+      displacementFeature?.setStyle(
+        new Style({
+          stroke: new Stroke({
+            color: 'lightgreen', // Farbe der Linie
+            width: 2, // Breite der Linie
+          }),
+        })
+      );
+    });
+    
+
+    const filteredDisplacementFeatures = displacementFeatures.filter(feature => feature !== undefined) as Feature<LineString>[];
+    console.log("fil", filteredDisplacementFeatures)
+
+    const vectorDisplacementSource = new VectorSource({
+      features: filteredDisplacementFeatures
+    });
+    console.log(vectorDisplacementSource)
+
+    const vectorDisplacementLayer = new VectorLayer({
+      source: vectorDisplacementSource,
+      zIndex: 999
+    });
+
+    map.addLayer(vectorDisplacementLayer);
+
     // Create overlay
     const overlay = new Overlay({
       element: overlayRef.current,
@@ -149,7 +219,29 @@ const OlMap = ({ bbox, pts, handle3DClick }: { bbox: [number, number]; pts: IfPo
     return () => {
       map.dispose(); // Dispose the map when component unmounts
     };
-  }, [bbox, pts]); // Include bbox and points in the dependency array
+  }, [bbox, pts, nextPts]); // Include bbox and points in the dependency array
+
+  function findCorrespondingNextPoint(
+    basePoint: IfPoint,
+    nextPoints: IfPoint[]
+  ): IfPoint | undefined {
+    return nextPoints.find((point) => point.name === basePoint.name);
+  }
+
+  const displacementFactor = 1000
+
+  function calculateDisplacement(
+    basePoint: IfPoint,
+    nextPoint: IfPoint
+  ): IfPoint | undefined {
+    return {
+      pointId: nextPoint.pointId,
+      name: nextPoint.name,
+      E: (nextPoint.E - basePoint.E) * displacementFactor,
+      N: (nextPoint.N - basePoint.N) * displacementFactor,
+      H: (nextPoint.H - basePoint.H) * displacementFactor
+    };
+  }
 
 
 
@@ -170,6 +262,7 @@ const OlMap = ({ bbox, pts, handle3DClick }: { bbox: [number, number]; pts: IfPo
             className=" bg-cyan-700 text-cyan-50 px-4 py-2 rounded-2xl"
             onClick={() => handle3DClick(selectedPointName)}
           >
+
             3D-Modell laden
           </button>
         )}
