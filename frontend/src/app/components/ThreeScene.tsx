@@ -1,16 +1,24 @@
 import React, { useEffect, useRef } from "react";
 import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
-import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
-import { OBJLoader } from "three/addons/loaders/OBJLoader.js";
+import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
+import { OBJLoader } from "three/examples/jsm/loaders/OBJLoader";
+
+interface Point {
+  name: string;
+  E: number;
+  N: number;
+  H: number;
+}
 
 interface ThreeSceneProps {
   width: number;
   height: number;
   point: string;
+  basePts: Point[];
 }
 
-const ThreeScene: React.FC<ThreeSceneProps> = ({ width, height, point }) => {
+const ThreeScene: React.FC<ThreeSceneProps> = ({ width, height, point, basePts }) => {
   const threeContainerRef = useRef<HTMLDivElement>(null);
   const rendererRef = useRef<THREE.WebGLRenderer | null>(null);
 
@@ -19,7 +27,6 @@ const ThreeScene: React.FC<ThreeSceneProps> = ({ width, height, point }) => {
 
     // Szene, Kamera und Renderer erstellen
     const scene = new THREE.Scene();
-    // scene.background = new THREE.Color('#52525b');
     scene.background = new THREE.Color("#000000");
     const camera = new THREE.PerspectiveCamera(75, width / height, 0.1, 1000);
     const renderer = new THREE.WebGLRenderer();
@@ -28,17 +35,35 @@ const ThreeScene: React.FC<ThreeSceneProps> = ({ width, height, point }) => {
     const loader = new GLTFLoader();
 
     loader.load(
-      "models/output.gltf",
+      "models/GO.gltf",
       function (gltf: any) {
         scene.add(gltf.scene);
-    
+
         // Hier das Zentrum des geladenen Modells bestimmen
         const boundingBox = new THREE.Box3().setFromObject(gltf.scene);
         const center = boundingBox.getCenter(new THREE.Vector3());
-    
+
         // Setze die Kamera-Position und das OrbitControls-Ziel auf das Zentrum des Modells
         camera.position.copy(center);
         controls.target.copy(center);
+        if (basePts) {
+          // `basePts` ist definiert und ein Array
+          if (Array.isArray(basePts)) {
+            basePts.map((pt) => {
+              console.log(pt.name)
+              const sphereGeometry = new THREE.SphereGeometry(3, 32, 32); // Erstelle eine Kugelgeometrie
+              const sphereMaterial = new THREE.MeshBasicMaterial({ color: 0xff0000 });
+              const sphere = new THREE.Mesh(sphereGeometry, sphereMaterial);
+              sphere.position.set(pt.E, center.y + pt.H / 2, Math.floor(center.y / 1000) * 1000 + 500 - pt.N ); // Setze die Position der Kugel basierend auf den Koordinaten des Punktes
+              scene.add(sphere);
+            })
+          } else{
+            console.log("not an Array")
+          }
+        } else {
+          // `basePts` ist nicht definiert oder kein Array
+          console.error("basePts is not defined .");
+        }
       },
       undefined,
       function (error: any) {
@@ -48,7 +73,9 @@ const ThreeScene: React.FC<ThreeSceneProps> = ({ width, height, point }) => {
 
     const light = new THREE.AmbientLight(0x404040, 100); // soft white light
     scene.add(light);
-
+    
+    
+    // Punkt hinzufügen
 
     // OrbitControls erstellen und der Szene hinzufügen
     const controls = new OrbitControls(camera, renderer.domElement);
@@ -57,7 +84,7 @@ const ThreeScene: React.FC<ThreeSceneProps> = ({ width, height, point }) => {
       camera.position.x,
       camera.position.y
     );
-    controls.maxDistance = 10000; // Maximaler Abstand zur Kamera
+    controls.maxDistance = 20000; // Maximaler Abstand zur Kamera
     controls.minDistance = 10; // Minimaler Abstand zur Kamera
 
     // Animationsfunktion

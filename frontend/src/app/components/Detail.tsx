@@ -9,13 +9,14 @@ function Detail({
   baseSessionPoints,
   nextSessionPoints,
   view3DPoint,
+  viewModel,
 }: {
   baseSessionPoints: any;
   nextSessionPoints: any;
   view3DPoint: string | null;
+  viewModel: string;
 }) {
 
-  const [viewwModel, setViewwModel] = useState("Text");
   const [basePts, setBasePts] = useState<Point[]>([]);
   const [nextPts, setNextPts] = useState<Point[]>([]);
 
@@ -71,7 +72,6 @@ function Detail({
       const view3DPointNextHeight = nextPts.find((point) => point.name === view3DPoint)?.H;
 
       setView3DPointInMap(view3DPoint);
-      setViewwModel("3D");
       setView3DPointInMapEasting(view3DPointInMapEasting ?? null);
       setView3DPointNextEasting(view3DPointNextEasting ?? null);
       setView3DPointInMapNorthing(view3DPointInMapNorthing ?? null);
@@ -93,16 +93,7 @@ function Detail({
 
   return (
     <main>
-      <button onClick={() => setViewwModel("Text")} className="pl-5">
-        Text
-      </button>
-      <button onClick={() => setViewwModel("ZRA")} className="pl-5">
-        ZRA
-      </button>
-      <button onClick={() => setViewwModel("3D")} className="pl-5">
-        3D
-      </button>
-      {viewwModel === "Text" && basePts[0] && nextPts[0] && (
+      {viewModel === "Text" && basePts[0] && nextPts[0] && (
         <div className="overflow-y-auto h-full p-4 pb-10">
           <table>
             <thead>
@@ -151,9 +142,9 @@ function Detail({
         </div>
       )}
 
-      {viewwModel === "3D" && view3DPointInMap && view3DPointNextEasting && view3DPointNextNorthing && (
+      {viewModel === "3D" && view3DPointInMap && view3DPointNextEasting && view3DPointNextNorthing && (
         <div className=" pl-5">
-          {view3DPoint ? <ThreeScene width={700} height={300} point={view3DPoint} /> : ""}
+          {view3DPoint ? <ThreeScene width={800} height={600} point={view3DPoint} basePts={basePts} /> : ""}
           
           {/* <p>Punktnummer: {view3DPoint}</p>
           <p>Ost: {view3DPointInMapEasting}</p>

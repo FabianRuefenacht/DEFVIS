@@ -6,7 +6,6 @@ import axios from "axios";
 
 import OlMap from "./OlMap";
 import Detail from "./Detail";
-import CalculateDisplacement from "./CalculateDisplacement";
 
 
 interface Point {
@@ -39,6 +38,9 @@ const Settings = ({ userName }: { userName: string }) => {
     { pointId: 2, name: "Point B", E: 2600001, N: 1200001 },
     // Weitere Punkte hier...
   ];
+
+
+  const [viewModel, setViewModel] = useState("2D");
 
   const [project, setProject] = useState("nicht gewählt");
 
@@ -219,13 +221,14 @@ const Settings = ({ userName }: { userName: string }) => {
     setNextSessionPoints(nextPts);
   };
 
-// Map handle 3DClick
+  // Map handle 3DClick
   const [view3DPoint, setView3DPoint] = useState<string | null>(null);
 
   // Function to handle button click
   const handle3DClick = (pointName: string | null) => {
     console.log("Button clicked for pointId:", pointName);
     setView3DPoint(pointName);
+    setViewModel("3D")
 
     // Hier können Sie Ihre gewünschte Aktion ausführen
   };
@@ -402,8 +405,19 @@ const Settings = ({ userName }: { userName: string }) => {
           )}
         </div>
       </div>
-      <div className="grid grid-rows-2 col-span-3 row-span-2 gap-4">
-        {baseSessionPoints[0] && nextSessionPoints[0] &&(
+      <div className="col-span-3 row-span-2 gap-4 flex flex-col">
+        <div>
+          <button onClick={() => setViewModel("Text")} className="pl-5">
+            Text
+          </button>
+          <button onClick={() => setViewModel("2D")} className="pl-5">
+            2D
+          </button>
+          <button onClick={() => setViewModel("3D")} className="pl-5">
+            3D
+          </button>
+        </div>
+        {viewModel === "2D" && baseSessionPoints[0] && nextSessionPoints[0] && (
           <>
             <OlMap
               bbox={[
@@ -416,12 +430,22 @@ const Settings = ({ userName }: { userName: string }) => {
             />
           </>
         )}
-        {/* {!baseSessionPoints[0] &&<><OlMap bbox={[2600000, 1200000]} /></>} */}
-        <Detail
-          baseSessionPoints={baseSessionPoints[0]}
-          nextSessionPoints={nextSessionPoints[0]}
-          view3DPoint={view3DPoint}
-        />
+        {viewModel === "Text" &&
+          <Detail
+            baseSessionPoints={baseSessionPoints[0]}
+            nextSessionPoints={nextSessionPoints[0]}
+            view3DPoint={view3DPoint}
+            viewModel="Text"
+          />
+        }
+        {viewModel === "3D" &&
+          <Detail
+            baseSessionPoints={baseSessionPoints[0]}
+            nextSessionPoints={nextSessionPoints[0]}
+            view3DPoint={view3DPoint}
+            viewModel="3D"
+          />
+        }
       </div>
     </main>
   );
