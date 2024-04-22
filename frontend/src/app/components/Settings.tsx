@@ -78,7 +78,7 @@ const Settings = ({ userName }: { userName: string }) => {
         setNewProjectError("Fehler, bitte erneut versuchen!");
       }
     } catch (error) {
-      console.log(error);
+      console.error(error);
     }
   };
 
@@ -108,7 +108,7 @@ const Settings = ({ userName }: { userName: string }) => {
         setuserId(response.data.userId);
       }
     } catch (error) {
-      console.log(error);
+      console.error(error);
     }
   };
 
@@ -138,7 +138,7 @@ const Settings = ({ userName }: { userName: string }) => {
         setGetSessionerror("");
       }
     } catch (error) {
-      console.log(error);
+      console.error(error);
     }
   };
 
@@ -226,7 +226,6 @@ const Settings = ({ userName }: { userName: string }) => {
 
   // Function to handle button click
   const handle3DClick = (pointName: string | null) => {
-    console.log("Button clicked for pointId:", pointName);
     setView3DPoint(pointName);
     setViewModel("3D")
 

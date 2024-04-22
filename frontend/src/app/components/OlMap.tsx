@@ -148,7 +148,7 @@ const OlMap = ({ bbox, pts, nextPts, handle3DClick }: { bbox: [number, number]; 
         };
       };
     });
-    console.log(displacementFeatures)
+    
 
     // displacementFeatures.forEach((displacementFeature, index) => {
     //   displacementFeature?.setStyle(
@@ -175,12 +175,10 @@ const OlMap = ({ bbox, pts, nextPts, handle3DClick }: { bbox: [number, number]; 
     
 
     const filteredDisplacementFeatures = displacementFeatures.filter(feature => feature !== undefined) as Feature<LineString>[];
-    console.log("fil", filteredDisplacementFeatures)
 
     const vectorDisplacementSource = new VectorSource({
       features: filteredDisplacementFeatures
     });
-    console.log(vectorDisplacementSource)
 
     const vectorDisplacementLayer = new VectorLayer({
       source: vectorDisplacementSource,

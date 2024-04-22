@@ -50,7 +50,6 @@ const ThreeScene: React.FC<ThreeSceneProps> = ({ width, height, point, basePts }
           // `basePts` ist definiert und ein Array
           if (Array.isArray(basePts)) {
             basePts.map((pt) => {
-              console.log(pt.name)
               const sphereGeometry = new THREE.SphereGeometry(3, 32, 32); // Erstelle eine Kugelgeometrie
               const sphereMaterial = new THREE.MeshBasicMaterial({ color: 0xff0000 });
               const sphere = new THREE.Mesh(sphereGeometry, sphereMaterial);
