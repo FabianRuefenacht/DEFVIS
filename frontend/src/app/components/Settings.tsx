@@ -7,7 +7,6 @@ import axios from "axios";
 import OlMap from "./OlMap";
 import Detail from "./Detail";
 
-
 interface Point {
   pointId: number;
   name: string;
@@ -38,7 +37,6 @@ const Settings = ({ userName }: { userName: string }) => {
     { pointId: 2, name: "Point B", E: 2600001, N: 1200001 },
     // Weitere Punkte hier...
   ];
-
 
   const [viewModel, setViewModel] = useState("2D");
 
@@ -78,7 +76,7 @@ const Settings = ({ userName }: { userName: string }) => {
         setNewProjectError("Fehler, bitte erneut versuchen!");
       }
     } catch (error) {
-      console.error(error);
+      console.log(error);
     }
   };
 
@@ -108,7 +106,7 @@ const Settings = ({ userName }: { userName: string }) => {
         setuserId(response.data.userId);
       }
     } catch (error) {
-      console.error(error);
+      console.log(error);
     }
   };
 
@@ -138,7 +136,7 @@ const Settings = ({ userName }: { userName: string }) => {
         setGetSessionerror("");
       }
     } catch (error) {
-      console.error(error);
+      console.log(error);
     }
   };
 
@@ -226,8 +224,9 @@ const Settings = ({ userName }: { userName: string }) => {
 
   // Function to handle button click
   const handle3DClick = (pointName: string | null) => {
+    console.log("Button clicked for pointId:", pointName);
     setView3DPoint(pointName);
-    setViewModel("3D")
+    setViewModel("3D");
 
     // Hier können Sie Ihre gewünschte Aktion ausführen
   };
@@ -235,7 +234,7 @@ const Settings = ({ userName }: { userName: string }) => {
   return (
     <main className="h-full w-full grid grid-rows-2 grid-cols-4 gap-4">
       <div className="h-full row-span-2 col-span-1 min-w-fit">
-        <div className="bg-slate-500 pl-7 pr-2 h-full">
+        <div className="bg-white pl-7 pr-2 h-full border-r border-primaryLight">
           <Button clickFunc={changeNewProj} text="Neues Projekt" />
           {newProj && (
             <div
@@ -243,7 +242,7 @@ const Settings = ({ userName }: { userName: string }) => {
               onClick={handleOutsideClick}
               className=" fixed inset-0 flex items-center justify-center  bg-zinc-600/40 z-50"
             >
-              <div className=" bg-zinc-600 m-auto w-1/2 p-5 rounded-3xl relative min-w-fit">
+              <div className=" bg-zinc-600 m-auto w-1/2 p-5 rounded-none relative min-w-fit">
                 <button
                   onClick={changeNewProj}
                   className=" px-2 float-right text-5xl absolute top-0 right-0"
@@ -257,7 +256,7 @@ const Settings = ({ userName }: { userName: string }) => {
                   <p>Projektname</p>
                   <input
                     type="text"
-                    className="w-full border border-gray-300 my-2 mb-8 text-black rounded px-3 py-2 focus:outline-none focus:border-blue-400 focus:text-black"
+                    className="w-full border border-gray-300 my-2 mb-8 text-black rounded-none px-3 py-2 focus:outline-none focus:border-blue-400 focus:text-black"
                     placeholder="Projektname"
                     required
                   />
@@ -266,14 +265,14 @@ const Settings = ({ userName }: { userName: string }) => {
                   <p>Kunde</p>
                   <input
                     type="email"
-                    className="w-full border border-gray-300 my-2 mb-8 text-black rounded px-3 py-2 focus:outline-none focus:border-blue-400 focus:text-black"
+                    className="w-full border border-gray-300 my-2 mb-8 text-black rounded-none px-3 py-2 focus:outline-none focus:border-blue-400 focus:text-black"
                     placeholder="Kunde"
                     required
                   />
                   <p>{newProjectError}</p>
                   <button
                     type="submit"
-                    className="w-full bg-blue-500 my-2 text-white py-2 rounded hover:bg-blue-600"
+                    className="w-full bg-blue-500 my-2 text-white py-2 rounded-none hover:bg-blue-600"
                   >
                     Projekt erstellen
                   </button>
@@ -289,7 +288,7 @@ const Settings = ({ userName }: { userName: string }) => {
               onClick={handleOutsideClick}
               className=" fixed inset-0 flex items-center justify-center  bg-zinc-600/40 z-50"
             >
-              <div className=" bg-zinc-600 m-auto w-1/2 p-5 rounded-3xl relative flex flex-col min-w-fit">
+              <div className=" bg-zinc-600 m-auto w-1/2 p-5 rounded-none relative flex flex-col min-w-fit">
                 <button
                   onClick={changeOpenProj}
                   className=" px-2 float-right text-5xl absolute top-0 right-0"
@@ -337,7 +336,7 @@ const Settings = ({ userName }: { userName: string }) => {
                   onClick={handleOutsideClick}
                   className=" fixed inset-0 flex items-center justify-center  bg-zinc-600/40"
                 >
-                  <div className=" bg-zinc-600 m-auto w-1/2 p-5 rounded-3xl relative min-w-fit">
+                  <div className=" bg-zinc-600 m-auto w-1/2 p-5 rounded-none relative min-w-fit">
                     <button
                       onClick={changeNewSession}
                       className=" px-2 float-right text-5xl absolute top-0 right-0"
@@ -368,38 +367,63 @@ const Settings = ({ userName }: { userName: string }) => {
                       />{" "}
                       <br /> <br />
                       {newSessionError !== "" && <p>{newSessionError}</p>}
-                      <button type="submit">Session hochladen</button>
+                      <button
+                        type="submit"
+                        className="border border-gray-300 px-4 py-2"
+                      >
+                        Session hochladen
+                      </button>
                     </form>
                   </div>
                 </div>
               )}
-              <h1>
-                Projekt:
-                <br />
-                {project}
-              </h1>
-              <p>Sessionen:</p>
-              <p>{getSessionerror}</p>
+              <h3 className="mt-8 flex justify-between items-center">
+                <span>Projekt:</span>
+                <span className="text-end">{project}</span>
+              </h3>
+              <h3 className="mt-4 flex justify-between items-center">
+                <span>Sessionen auswählen:</span>
+                <span className="text-end">{getSessionerror}</span>
+              </h3>
               <form>
-                <label>Nullmessung: </label>
-                <select onChange={handleBaseSessionChange}>
-                  <option value="placeholder">Select a session</option>
-                  {sessionData.map((session) => (
-                    <option key={session.sessionId} value={session.sessionName}>
-                      {session.sessionName}
-                    </option>
-                  ))}
-                </select>
-                <label>Folgemessung: </label>
-                <select onChange={handleNextSessionChange}>
-                  <option value="placeholder">Select a session</option>
-                  {sessionData.map((session) => (
-                    <option key={session.sessionId} value={session.sessionName}>
-                      {session.sessionName}
-                    </option>
-                  ))}
-                </select>
+                <div className="flex justify-between items-center">
+                  <label className="w-1/3">Nullmessung:</label>
+                  <select
+                    onChange={handleBaseSessionChange}
+                    className="w-2/3 ml-2 text-end"
+                  >
+                    <option value="placeholder">select a session</option>
+                    {sessionData.map((session) => (
+                      <option
+                        key={session.sessionId}
+                        value={session.sessionName}
+                      >
+                        {session.sessionName}
+                      </option>
+                    ))}
+                  </select>
+                </div>
+                <div className="flex justify-between items-center">
+                  <label className="w-1/3">Folgemessung:</label>
+                  <select
+                    onChange={handleNextSessionChange}
+                    className="w-2/3 ml-2 text-end"
+                  >
+                    <option value="placeholder">select a session</option>
+                    {sessionData.map((session) => (
+                      <option
+                        key={session.sessionId}
+                        value={session.sessionName}
+                      >
+                        {session.sessionName}
+                      </option>
+                    ))}
+                  </select>
+                </div>
               </form>
+              <p className="mt-32">
+                wenn Projekt gewählt wird, Daten in text laden.
+              </p>
             </>
           )}
         </div>
@@ -429,22 +453,22 @@ const Settings = ({ userName }: { userName: string }) => {
             />
           </>
         )}
-        {viewModel === "Text" &&
+        {viewModel === "Text" && (
           <Detail
             baseSessionPoints={baseSessionPoints[0]}
             nextSessionPoints={nextSessionPoints[0]}
             view3DPoint={view3DPoint}
             viewModel="Text"
           />
-        }
-        {viewModel === "3D" &&
+        )}
+        {viewModel === "3D" && (
           <Detail
             baseSessionPoints={baseSessionPoints[0]}
             nextSessionPoints={nextSessionPoints[0]}
             view3DPoint={view3DPoint}
             viewModel="3D"
           />
-        }
+        )}
       </div>
     </main>
   );
