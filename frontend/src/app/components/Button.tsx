@@ -13,7 +13,7 @@ const Button = ({
       <p>
         <button
           onClick={clickFunc}
-          className="whitespace-nowrap px-2 py-2 bg-primary hover:bg-primaryDark my-0 border-b border-primaryLight w-full text-base text-gray-600"
+          className="whitespace-nowrap px-2 py-2 bg-primary hover:bg-primaryDark my-0 border-b border-primaryLight w-full text-base text-black"
         >
           {text}
         </button>

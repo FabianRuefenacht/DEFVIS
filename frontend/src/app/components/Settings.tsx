@@ -22,7 +22,7 @@ interface Session {
   points: Point[];
 }
 
-const Settings = ({ userName }: { userName: string}) => {
+const Settings = ({ userName }: { userName: string }) => {
   // handling klick outside the modal
   const handleOutsideClick = (e: any) => {
     if (e.target.id == "modal") {
@@ -32,18 +32,17 @@ const Settings = ({ userName }: { userName: string}) => {
     }
   };
 
-  
   const points = [
     { pointId: 1, name: "Point A", E: 2600000, N: 1200000 },
     { pointId: 2, name: "Point B", E: 2600001, N: 1200001 },
     // Weitere Punkte hier...
   ];
-    
+
   const [viewModel, setViewModel] = useState("2D");
-  
+
   const [project, setProject] = useState("nicht gewählt");
-  
-    // create new project functionalities
+
+  // create new project functionalities
   const [newProj, setNewProj] = useState(false);
   const [newProjectError, setNewProjectError] = useState("");
 
@@ -235,7 +234,7 @@ const Settings = ({ userName }: { userName: string}) => {
   return (
     <main className="h-full w-full grid grid-rows-2 grid-cols-4 gap-4">
       <div className="h-full row-span-2 col-span-1 min-w-fit">
-        <div className="bg-white pl-7 pr-2 h-full border-r border-primaryLight">
+        <div className="bg-white pl-7 pr-2 h-full border-r border-primaryLight text-white">
           <Button clickFunc={changeNewProj} text="Neues Projekt" />
           {newProj && (
             <div
@@ -289,7 +288,7 @@ const Settings = ({ userName }: { userName: string}) => {
               onClick={handleOutsideClick}
               className=" fixed inset-0 flex items-center justify-center  bg-zinc-600/40 z-50"
             >
-              <div className=" bg-zinc-600 m-auto w-1/2 p-5 rounded-none relative flex flex-col min-w-fit">
+              <div className=" bg-zinc-600 m-auto w-1/2 p-5 rounded-none relative flex flex-col min-w-fit text-white">
                 <button
                   onClick={changeOpenProj}
                   className=" px-2 float-right text-base absolute top-0 right-0"
@@ -370,7 +369,7 @@ const Settings = ({ userName }: { userName: string}) => {
                       {newSessionError !== "" && <p>{newSessionError}</p>}
                       <button
                         type="submit"
-                        className="border border-gray-300 px-4 py-2"
+                        className="w-full bg-blue-500 my-2 text-white py-2 rounded-none hover:bg-blue-600"
                       >
                         Session hochladen
                       </button>

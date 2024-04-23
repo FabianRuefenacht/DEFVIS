@@ -28,7 +28,7 @@ export default function Home() {
     );
   } else {
     return (
-      <div className="m-0 p-0 w-full h-dvh max-h-full text-2xl gap-2 grid grid-rows-12 grid-cols-1 justify-center items-center">
+      <div className="m-0 p-0 w-full h-dvh max-h-full text-base gap-2 grid grid-rows-12 grid-cols-1 justify-center items-center text-black">
         <main className=" row-span-1">
           <Navbar user="" />
         </main>
@@ -39,6 +39,5 @@ export default function Home() {
         </main>
       </div>
     );
-
   }
 }
