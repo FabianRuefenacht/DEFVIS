@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { cookies } from "next/headers";
 
-const Navbar = ({user}: {user: string}) => {
+const Navbar = ({ user }: { user: string }) => {
   const cookiesList = cookies();
   const hasAuthorisation = cookiesList.has("authorisation");
 
@@ -15,11 +15,7 @@ const Navbar = ({user}: {user: string}) => {
           </Link>
         </div>
         <div>
-          <Link href="/">
-            <li>
-              {user}
-            </li>
-          </Link>
+          <li>{user}</li>
         </div>
         {hasAuthorisation ? (
           <Link href={"/logout"}>
