@@ -421,7 +421,7 @@ const Settings = ({ userName }: { userName: string }) => {
                   </select>
                 </div>
               </form>
-              <p className="mt-32">
+              <p className="mt-32 text-neutral-600">
                 wenn Projekt gewählt wird, Daten in text laden.
               </p>
             </>

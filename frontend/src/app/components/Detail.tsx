@@ -4,7 +4,6 @@ import { useEffect, useRef } from "react";
 
 import ThreeScene from "./ThreeScene";
 
-
 function Detail({
   baseSessionPoints,
   nextSessionPoints,
@@ -16,7 +15,6 @@ function Detail({
   view3DPoint: string | null;
   viewModel: string;
 }) {
-
   const [basePts, setBasePts] = useState<Point[]>([]);
   const [nextPts, setNextPts] = useState<Point[]>([]);
 
@@ -40,9 +38,6 @@ function Detail({
     }
   }, [nextSessionPoints]);
 
-
-
-
   interface Point {
     name: string;
     E: number;
@@ -52,24 +47,47 @@ function Detail({
 
   const [view3DPointInMap, setView3DPointInMap] = useState<string | null>(null);
 
-  const [view3DPointInMapEasting, setView3DPointInMapEasting] = useState<number | null>(null);
-  const [view3DPointNextEasting, setView3DPointNextEasting] = useState<number | null>(null);
+  const [view3DPointInMapEasting, setView3DPointInMapEasting] = useState<
+    number | null
+  >(null);
+  const [view3DPointNextEasting, setView3DPointNextEasting] = useState<
+    number | null
+  >(null);
 
-  const [view3DPointInMapNorthing, setView3DPointInMapNorthing] = useState<number | null>(null);
-  const [view3DPointNextNorthing, setView3DPointNextNorthing] = useState<number | null>(null);
+  const [view3DPointInMapNorthing, setView3DPointInMapNorthing] = useState<
+    number | null
+  >(null);
+  const [view3DPointNextNorthing, setView3DPointNextNorthing] = useState<
+    number | null
+  >(null);
 
-  const [view3DPointInMapHeight, setView3DPointInMapHeight] = useState<number | null>(null);
-  const [view3DPointNextHeight, setView3DPointNextHeight] = useState<number | null>(null);
-  
+  const [view3DPointInMapHeight, setView3DPointInMapHeight] = useState<
+    number | null
+  >(null);
+  const [view3DPointNextHeight, setView3DPointNextHeight] = useState<
+    number | null
+  >(null);
 
   useEffect(() => {
     if (view3DPoint && basePts && nextPts) {
-      const view3DPointInMapEasting = basePts.find((point) => point.name === view3DPoint)?.E;
-      const view3DPointNextEasting = nextPts.find((point) => point.name === view3DPoint)?.E;
-      const view3DPointInMapNorthing = basePts.find((point) => point.name === view3DPoint)?.N;
-      const view3DPointNextNorthing = nextPts.find((point) => point.name === view3DPoint)?.N;
-      const view3DPointInMapHeight = basePts.find((point) => point.name === view3DPoint)?.H;
-      const view3DPointNextHeight = nextPts.find((point) => point.name === view3DPoint)?.H;
+      const view3DPointInMapEasting = basePts.find(
+        (point) => point.name === view3DPoint
+      )?.E;
+      const view3DPointNextEasting = nextPts.find(
+        (point) => point.name === view3DPoint
+      )?.E;
+      const view3DPointInMapNorthing = basePts.find(
+        (point) => point.name === view3DPoint
+      )?.N;
+      const view3DPointNextNorthing = nextPts.find(
+        (point) => point.name === view3DPoint
+      )?.N;
+      const view3DPointInMapHeight = basePts.find(
+        (point) => point.name === view3DPoint
+      )?.H;
+      const view3DPointNextHeight = nextPts.find(
+        (point) => point.name === view3DPoint
+      )?.H;
 
       setView3DPointInMap(view3DPoint);
       setView3DPointInMapEasting(view3DPointInMapEasting ?? null);
@@ -79,10 +97,14 @@ function Detail({
       setView3DPointInMapHeight(view3DPointInMapHeight ?? null);
       setView3DPointNextHeight(view3DPointNextHeight ?? null);
     }
-  }, [view3DPoint, basePts, nextPts, view3DPointNextEasting, view3DPointNextNorthing, view3DPointNextHeight]);
-
-
-
+  }, [
+    view3DPoint,
+    basePts,
+    nextPts,
+    view3DPointNextEasting,
+    view3DPointNextNorthing,
+    view3DPointNextHeight,
+  ]);
 
   function findCorrespondingNextPoint(
     basePoint: Point,
@@ -145,7 +167,7 @@ function Detail({
       {viewModel === "3D" && basePts[0] && (
         <div className=" pl-5">
           <ThreeScene width={800} height={600} basePts={basePts} />
-          
+
           {/* <p>Punktnummer: {view3DPoint}</p>
           <p>Ost: {view3DPointInMapEasting}</p>
           <p>Δ Ost: {view3DPointNextEasting && view3DPointInMapEasting ? `${((view3DPointNextEasting - view3DPointInMapEasting) * 1000).toFixed(1)} mm` : ""}</p>
@@ -153,11 +175,10 @@ function Detail({
           <p>Δ Nord: {view3DPointNextNorthing && view3DPointInMapNorthing ? `${((view3DPointNextNorthing - view3DPointInMapNorthing) * 1000).toFixed(1)} mm` : ""}</p>
           <p>Höhe: {view3DPointInMapHeight}</p>
           <p>Δ Höhe: {view3DPointNextHeight && view3DPointInMapHeight ? `${((view3DPointNextHeight - view3DPointInMapHeight) * 1000).toFixed(1)} mm` : ""}</p> */}
-
         </div>
       )}
     </main>
   );
-};
+}
 
 export default Detail;
