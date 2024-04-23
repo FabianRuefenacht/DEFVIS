@@ -346,25 +346,28 @@ const Settings = ({ userName }: { userName: string }) => {
                     >
                       &times;
                     </button>
-                    <h1 className=" text-base font-semibold">
+                    <h1 className="text-base font-semibold mb-4">
                       Session erfassen
                     </h1>
-                    <h1 className=" text- font-semibold mb-8">
-                      Projekt: {project}
-                    </h1>
-                    <p>
-                      Die Session wird gleich benannt wie die hochgeladene
-                      Datei!
+                    <p className="text-base mb-4">
+                      geladenes Projekt: {project}
                     </p>
-                    <br />
-                    <p>Format (kommagetrennte CSV-Datei):</p>
-                    <p>Punkt-Nr,E,N,H</p> <br /> <br />
+                    <p className="mb-2">
+                      Session aus kommagetrennter CSV-Datei importieren:
+                    </p>
+                    <p className="text-xs mb-4">
+                      Punkt-Nr,E-Koordinate,N-Koordinate,Höhe
+                    </p>
                     <form onSubmit={handleCreateSessionSubmit}>
-                      <input type="file" accept=".csv" required /> <br /> <br />
-                      <p>Aufnahmezeitpunkt:</p>
+                      <input type="file" accept=".csv" required />
+                      <p className="text-xs mt-4">
+                        ##hier wäre ein info-icon schön## Die importierte
+                        Session wird gleich benannt wie die hochgeladene Datei.
+                      </p>
+                      <p className="mt-4 mb-2">Zeitpunkt der Aufnahme:</p>
                       <input
                         type="datetime-local"
-                        className="w-full border border-gray-300 my-2 text-black rounded px-3 py-2 focus:outline-none focus:border-blue-400 focus:text-black"
+                        className="w-full border border-neutral-300 my-2 text-black rounded px-3 py-2 focus:outline-none focus:border-blue-400 focus:text-black"
                         placeholder="Datum auswählen"
                         required
                       />{" "}
