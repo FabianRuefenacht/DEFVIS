@@ -18,10 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="h-full p-0 m-0 max-h-full overflow-hidden">
       <body className="p-0 m-0 h-dvh max-h-full top-0" >
-        <div className="m-0 p-0 w-full h-dvh max-h-full text-2xl gap-2 grid grid-rows-12 grid-cols-1">
-          <Navbar />
-          {children}
-        </div>
+        {children}
       </body>
     </html>
   );

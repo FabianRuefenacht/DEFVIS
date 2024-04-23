@@ -14,11 +14,10 @@ interface Point {
 interface ThreeSceneProps {
   width: number;
   height: number;
-  point: string;
   basePts: Point[];
 }
 
-const ThreeScene: React.FC<ThreeSceneProps> = ({ width, height, point, basePts }) => {
+const ThreeScene: React.FC<ThreeSceneProps> = ({ width, height, basePts }) => {
   const threeContainerRef = useRef<HTMLDivElement>(null);
   const rendererRef = useRef<THREE.WebGLRenderer | null>(null);
 
@@ -44,8 +43,9 @@ const ThreeScene: React.FC<ThreeSceneProps> = ({ width, height, point, basePts }
         const center = boundingBox.getCenter(new THREE.Vector3());
 
         // Setze die Kamera-Position und das OrbitControls-Ziel auf das Zentrum des Modells
-        camera.position.copy(center);
-        controls.target.copy(center);
+        camera.position.copy(new THREE.Vector3(center.x, center.y + boundingBox.max.z / 2, center.z));
+        controls.target.copy(new THREE.Vector3(center.x, center.y, center.z));
+
         if (basePts) {
           // `basePts` ist definiert und ein Array
           if (Array.isArray(basePts)) {
@@ -56,7 +56,7 @@ const ThreeScene: React.FC<ThreeSceneProps> = ({ width, height, point, basePts }
               sphere.position.set(pt.E, center.y + pt.H / 2, Math.floor(center.y / 1000) * 1000 + 500 - pt.N ); // Setze die Position der Kugel basierend auf den Koordinaten des Punktes
               scene.add(sphere);
             })
-          } else{
+          } else {
             console.log("not an Array")
           }
         } else {
@@ -72,9 +72,6 @@ const ThreeScene: React.FC<ThreeSceneProps> = ({ width, height, point, basePts }
 
     const light = new THREE.AmbientLight(0x404040, 100); // soft white light
     scene.add(light);
-    
-    
-    // Punkt hinzufügen
 
     // OrbitControls erstellen und der Szene hinzufügen
     const controls = new OrbitControls(camera, renderer.domElement);
@@ -110,7 +107,7 @@ const ThreeScene: React.FC<ThreeSceneProps> = ({ width, height, point, basePts }
         rendererDomElement.parentNode.removeChild(rendererDomElement);
       }
     };
-  }, [width, height, point]);
+  }, [width, height]);
 
   return (
     <div

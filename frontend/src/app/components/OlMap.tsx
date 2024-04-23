@@ -67,6 +67,8 @@ const OlMap = ({ bbox, pts, nextPts, handle3DClick }: { bbox: [number, number]; 
       }),
     });
 
+    swisstopolayer.setOpacity(0.4)
+
     const map = new Map({
       controls: defaultControls().extend([
         new FullScreen(),

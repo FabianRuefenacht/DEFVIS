@@ -3,6 +3,7 @@ import Image from "next/image";
 import Settings from "./components/Settings";
 import Map from "./components/OlMap";
 import Detail from "./components/Detail";
+import Navbar from "./components/Navbar";
 
 export default function Home() {
   const cookiesList = cookies();
@@ -11,14 +12,19 @@ export default function Home() {
 
   if (user == true) {
 
-    const userName:any = cookiesList.get("user")?.value
+    const userName: any = cookiesList.get("user")?.value
 
     return (
-      <main className="flex row-span-11">
-        <div className="h-full">
-          <Settings userName={userName} />
-        </div>
-      </main>
+      <div className="m-0 p-0 w-full h-dvh max-h-full text-2xl gap-2 grid grid-rows-12 grid-cols-1">
+        <main className=" row-span-1">
+          <Navbar user={userName} />
+        </main>
+        <main className="flex row-span-11">
+          <div className="h-full">
+            <Settings userName={userName} />
+          </div>
+        </main>
+      </div>
     );
   } else {
     return (
