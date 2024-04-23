@@ -2,13 +2,12 @@
 import React from "react";
 import Link from "next/link";
 import axios from "axios";
-import createCookie from '../components/cookies/cookiecreator';
-import bcrypt from 'bcryptjs';
+import createCookie from "../components/cookies/cookiecreator";
+import bcrypt from "bcryptjs";
 import { useState } from "react";
 
-
 const Register = () => {
-  const [regError, setRegError] = useState(false)
+  const [regError, setRegError] = useState(false);
 
   const handleSubmit = async (e: any) => {
     e.preventDefault();
@@ -23,18 +22,17 @@ const Register = () => {
         password: hashedPassword,
       });
 
-      if (response.data.created == "true"){
-        const expiringIn = 24 * 60 * 60 * 1000 // Cookie expiring in one day
-        createCookie('authorisation', 'true', expiringIn)
-        createCookie('user', email, expiringIn)
+      if (response.data.created == "true") {
+        const expiringIn = 24 * 60 * 60 * 1000; // Cookie expiring in one day
+        createCookie("authorisation", "true", expiringIn);
+        createCookie("user", email, expiringIn);
 
         setTimeout(() => {
-          window.location.replace("/")
-        }, 100)
+          window.location.replace("/");
+        }, 100);
       } else {
-        setRegError(true)
+        setRegError(true);
       }
-
     } catch (error) {
       console.error("Fehler", error);
     }
@@ -43,7 +41,9 @@ const Register = () => {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div className="bg-zinc-700 p-8 rounded shadow-md w-96">
-        <h1 className="text-4xl text-center font-semibold mb-8">Registrieren</h1>
+        <h1 className="text-4xl text-center font-semibold mb-8 text-white">
+          Registrieren
+        </h1>
         <form onSubmit={handleSubmit}>
           <input
             type="email"
@@ -63,12 +63,15 @@ const Register = () => {
           >
             Registrieren{" "}
           </button>
-          {regError == true &&
-          <p>User existiert bereits</p>
-          }
+          {regError == true && <p>User existiert bereits</p>}
         </form>
-        <div className="text-center text-gray-500 mt-4">- ODER -</div>
-        <Link className="block text-center text-blue-500 hover:underline mt-2" href="/login">Mit Account anmelden</Link>
+        <div className="text-center text-white mt-4">- ODER -</div>
+        <Link
+          className="block text-center text-blue-500 hover:underline mt-2"
+          href="/login"
+        >
+          Mit Account anmelden
+        </Link>
       </div>
     </main>
   );
