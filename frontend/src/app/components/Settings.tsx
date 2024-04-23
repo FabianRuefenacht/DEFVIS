@@ -242,7 +242,8 @@ const Settings = ({ userName }: { userName: string }) => {
               onClick={handleOutsideClick}
               className=" fixed inset-0 flex items-center justify-center  bg-zinc-600/40 z-50"
             >
-              <div className=" bg-zinc-600 m-auto w-1/2 p-5 rounded-none relative min-w-fit">
+              {/* <div className=" bg-zinc-600 m-auto w-1/2 p-5 rounded-none relative min-w-fit"> */}
+              <div className="bg-neutral-400 text-white p-8 rounded shadow-md w-96">
                 <button
                   onClick={changeNewProj}
                   className=" px-2 float-right text-base absolute top-0 right-0"
@@ -256,7 +257,7 @@ const Settings = ({ userName }: { userName: string }) => {
                   <p>Projektname</p>
                   <input
                     type="text"
-                    className="w-full border border-gray-300 my-2 mb-8 text-black rounded-none px-3 py-2 focus:outline-none focus:border-blue-400 focus:text-black"
+                    className="w-full border border-gray-300 my-2 text-black rounded px-3 py-2 focus:outline-none focus:border-blue-400 focus:text-black"
                     placeholder="Projektname"
                     required
                   />
@@ -265,14 +266,14 @@ const Settings = ({ userName }: { userName: string }) => {
                   <p>Kunde</p>
                   <input
                     type="email"
-                    className="w-full border border-gray-300 my-2 mb-8 text-black rounded-none px-3 py-2 focus:outline-none focus:border-blue-400 focus:text-black"
+                    className="w-full border border-gray-300 my-2 text-black rounded px-3 py-2 focus:outline-none focus:border-blue-400 focus:text-black"
                     placeholder="Kunde"
                     required
                   />
                   <p>{newProjectError}</p>
                   <button
                     type="submit"
-                    className="w-full bg-blue-500 my-2 text-white py-2 rounded-none hover:bg-blue-600"
+                    className="w-full bg-blue-500 my-2 text-white py-2 rounded hover:bg-blue-600"
                   >
                     Projekt erstellen
                   </button>
@@ -288,14 +289,15 @@ const Settings = ({ userName }: { userName: string }) => {
               onClick={handleOutsideClick}
               className=" fixed inset-0 flex items-center justify-center  bg-zinc-600/40 z-50"
             >
-              <div className=" bg-zinc-600 m-auto w-1/2 p-5 rounded-none relative flex flex-col min-w-fit text-white">
+              {/* <div className=" bg-zinc-600 m-auto w-1/2 p-5 rounded-none relative flex flex-col min-w-fit text-white"> */}
+              <div className="bg-neutral-400 text-white p-8 rounded shadow-md w-96">
                 <button
                   onClick={changeOpenProj}
                   className=" px-2 float-right text-base absolute top-0 right-0"
                 >
                   &times;
                 </button>
-                <h1 className=" text-base font-semibold mb-8">
+                <h1 className=" text-base font-semibold mb-4">
                   Eigene Projekte
                 </h1>
                 {userProjects.map(
@@ -310,7 +312,7 @@ const Settings = ({ userName }: { userName: string }) => {
                     )
                 )}
                 <br />
-                <h1 className=" text-base font-semibold mb-8">
+                <h1 className="text-base font-semibold mt-4 mb-4">
                   Fremde Projekte
                 </h1>
                 {userProjects.map(
@@ -334,9 +336,10 @@ const Settings = ({ userName }: { userName: string }) => {
                 <div
                   id="modal"
                   onClick={handleOutsideClick}
-                  className=" fixed inset-0 flex items-center justify-center  bg-zinc-600/40"
+                  className=" fixed inset-0 flex items-center justify-center  bg-zinc-600/40 z-50"
                 >
-                  <div className=" bg-zinc-600 m-auto w-1/2 p-5 rounded-none relative min-w-fit">
+                  {/* <div className=" bg-zinc-600 m-auto w-1/2 p-5 rounded-none relative min-w-fit"> */}
+                  <div className="bg-neutral-400 text-white p-8 rounded shadow-md w-96">
                     <button
                       onClick={changeNewSession}
                       className=" px-2 float-right text-base absolute top-0 right-0"
@@ -354,14 +357,14 @@ const Settings = ({ userName }: { userName: string }) => {
                       Datei!
                     </p>
                     <br />
-                    <p>Format:</p>
-                    <p>Nr,E,N,H</p> <br /> <br />
+                    <p>Format (kommagetrennte CSV-Datei):</p>
+                    <p>Punkt-Nr,E,N,H</p> <br /> <br />
                     <form onSubmit={handleCreateSessionSubmit}>
                       <input type="file" accept=".csv" required /> <br /> <br />
                       <p>Aufnahmezeitpunkt:</p>
                       <input
-                        className=" text-zinc-900"
                         type="datetime-local"
+                        className="w-full border border-gray-300 my-2 text-black rounded px-3 py-2 focus:outline-none focus:border-blue-400 focus:text-black"
                         placeholder="Datum auswählen"
                         required
                       />{" "}
@@ -369,7 +372,7 @@ const Settings = ({ userName }: { userName: string }) => {
                       {newSessionError !== "" && <p>{newSessionError}</p>}
                       <button
                         type="submit"
-                        className="w-full bg-blue-500 my-2 text-white py-2 rounded-none hover:bg-blue-600"
+                        className="w-full bg-blue-500 my-2 text-white py-2 rounded hover:bg-blue-600"
                       >
                         Session hochladen
                       </button>
@@ -422,7 +425,7 @@ const Settings = ({ userName }: { userName: string }) => {
                 </div>
               </form>
               <p className="mt-32 text-neutral-600">
-                wenn Projekt gewählt wird, Daten in text laden.
+                ##wenn Projekt gewählt wird, Daten von text laden.##
               </p>
             </>
           )}
