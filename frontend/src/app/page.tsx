@@ -13,6 +13,7 @@ export default function Home() {
   if (user == true) {
 
     const userName: any = cookiesList.get("user")?.value
+    var project = ""
 
     return (
       <div className="m-0 p-0 w-full h-dvh max-h-full text-2xl gap-2 grid grid-rows-12 grid-cols-1">
@@ -28,9 +29,17 @@ export default function Home() {
     );
   } else {
     return (
-      <main className="flex min-h-screen flex-col items-center justify-between p-24">
-        <h1>Bitte melden Sie sich an um Ihre Projekte zu sehen!</h1>
+    <div className="m-0 p-0 w-full h-dvh max-h-full text-2xl gap-2 grid grid-rows-12 grid-cols-1 justify-center items-center">
+      <main className=" row-span-1">
+        <Navbar user="" />
       </main>
-    );
+      <main className="flex row-span-11 justify-center items-center">
+        <div className="h-full">
+          Bitte melden Sie sich an, um Ihre Projekte zu sehen!
+        </div>
+      </main>
+    </div>
+  );
+  
   }
 }
