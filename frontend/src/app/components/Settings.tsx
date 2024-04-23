@@ -245,12 +245,12 @@ const Settings = ({ userName }: { userName: string }) => {
               <div className=" bg-zinc-600 m-auto w-1/2 p-5 rounded-none relative min-w-fit">
                 <button
                   onClick={changeNewProj}
-                  className=" px-2 float-right text-5xl absolute top-0 right-0"
+                  className=" px-2 float-right text-base absolute top-0 right-0"
                 >
                   &times;
                 </button>
                 <form onSubmit={handleNewProjectSubmit}>
-                  <h1 className=" text-3xl font-semibold mb-8">
+                  <h1 className=" text-base font-semibold mb-8">
                     Neues Projekt erstellen
                   </h1>
                   <p>Projektname</p>
@@ -291,11 +291,11 @@ const Settings = ({ userName }: { userName: string }) => {
               <div className=" bg-zinc-600 m-auto w-1/2 p-5 rounded-none relative flex flex-col min-w-fit">
                 <button
                   onClick={changeOpenProj}
-                  className=" px-2 float-right text-5xl absolute top-0 right-0"
+                  className=" px-2 float-right text-base absolute top-0 right-0"
                 >
                   &times;
                 </button>
-                <h1 className=" text-3xl font-semibold mb-8">
+                <h1 className=" text-base font-semibold mb-8">
                   Eigene Projekte
                 </h1>
                 {userProjects.map(
@@ -310,7 +310,7 @@ const Settings = ({ userName }: { userName: string }) => {
                     )
                 )}
                 <br />
-                <h1 className=" text-3xl font-semibold mb-8">
+                <h1 className=" text-base font-semibold mb-8">
                   Fremde Projekte
                 </h1>
                 {userProjects.map(
@@ -339,14 +339,14 @@ const Settings = ({ userName }: { userName: string }) => {
                   <div className=" bg-zinc-600 m-auto w-1/2 p-5 rounded-none relative min-w-fit">
                     <button
                       onClick={changeNewSession}
-                      className=" px-2 float-right text-5xl absolute top-0 right-0"
+                      className=" px-2 float-right text-base absolute top-0 right-0"
                     >
                       &times;
                     </button>
-                    <h1 className=" text-3xl font-semibold">
+                    <h1 className=" text-base font-semibold">
                       Session erfassen
                     </h1>
-                    <h1 className=" text-2xl font-semibold mb-8">
+                    <h1 className=" text- font-semibold mb-8">
                       Projekt: {project}
                     </h1>
                     <p>

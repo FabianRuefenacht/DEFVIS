@@ -8,20 +8,19 @@ import Navbar from "./components/Navbar";
 export default function Home() {
   const cookiesList = cookies();
   const hasAuthorisation = cookiesList.has("authorisation");
-  const user = cookiesList.has("user")
+  const user = cookiesList.has("user");
 
   if (user == true) {
-
-    const userName: any = cookiesList.get("user")?.value
-    var project = ""
+    const userName: any = cookiesList.get("user")?.value;
+    var project = "";
 
     return (
-      <div className="m-0 p-0 w-full h-dvh max-h-full text-2xl gap-2 grid grid-rows-12 grid-cols-1">
+      <div className="m-0 p-0 w-full h-dvh max-h-full text-base gap-2 grid grid-rows-12 grid-cols-1">
         <main className=" row-span-1">
           <Navbar user={userName} />
         </main>
         <main className="flex row-span-11">
-          <div className="h-full">
+          <div className="h-full w-full">
             <Settings userName={userName} />
           </div>
         </main>
@@ -29,17 +28,16 @@ export default function Home() {
     );
   } else {
     return (
-    <div className="m-0 p-0 w-full h-dvh max-h-full text-2xl gap-2 grid grid-rows-12 grid-cols-1 justify-center items-center">
-      <main className=" row-span-1">
-        <Navbar user="" />
-      </main>
-      <main className="flex row-span-11 justify-center items-center">
-        <div className="h-full">
-          Bitte melden Sie sich an, um Ihre Projekte zu sehen!
-        </div>
-      </main>
-    </div>
-  );
-  
+      <div className="m-0 p-0 w-full h-dvh max-h-full text-base gap-2 grid grid-rows-12 grid-cols-1 justify-center items-center">
+        <main className=" row-span-1">
+          <Navbar user="" />
+        </main>
+        <main className="flex row-span-11 justify-center items-center">
+          <div className="h-full">
+            Bitte melden Sie sich an, um Ihre Projekte zu sehen!
+          </div>
+        </main>
+      </div>
+    );
   }
 }
