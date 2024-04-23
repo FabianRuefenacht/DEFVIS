@@ -23,7 +23,7 @@ interface Session {
   points: Point[];
 }
 
-const Settings = ({ userName }: { userName: string }) => {
+const Settings = ({ userName }: { userName: string}) => {
   // handling klick outside the modal
   const handleOutsideClick = (e: any) => {
     if (e.target.id == "modal") {
@@ -33,18 +33,19 @@ const Settings = ({ userName }: { userName: string }) => {
     }
   };
 
+  
   const points = [
     { pointId: 1, name: "Point A", E: 2600000, N: 1200000 },
     { pointId: 2, name: "Point B", E: 2600001, N: 1200001 },
     // Weitere Punkte hier...
   ];
-
-
+  
+  
   const [viewModel, setViewModel] = useState("2D");
-
+  
   const [project, setProject] = useState("nicht gewählt");
-
-  // create new project functionalities
+  
+    // create new project functionalities
   const [newProj, setNewProj] = useState(false);
   const [newProjectError, setNewProjectError] = useState("");
 
