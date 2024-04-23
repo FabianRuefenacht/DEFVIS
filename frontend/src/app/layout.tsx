@@ -17,9 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="h-full p-0 m-0 max-h-full overflow-hidden">
-      <body className="p-0 m-0 h-dvh max-h-full top-0" >
-        {children}
-      </body>
+      <body className="p-0 m-0 h-dvh max-h-full top-0">{children}</body>
     </html>
   );
 }
