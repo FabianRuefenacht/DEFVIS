@@ -387,7 +387,7 @@ const Settings = ({ userName }: { userName: string }) => {
               </h3>
               <form>
                 <div className="flex justify-between items-center text-neutral-600">
-                  <label className="w-1/3">Nullmessung:</label>
+                  <p className="w-1/3">Nullmessung:</p>
                   <select
                     onChange={handleBaseSessionChange}
                     className="w-2/3 ml-2 text-end"
@@ -404,7 +404,7 @@ const Settings = ({ userName }: { userName: string }) => {
                   </select>
                 </div>
                 <div className="flex justify-between items-center text-neutral-600">
-                  <label className="w-1/3">Folgemessung:</label>
+                  <p className="w-1/3">Folgemessung:</p>
                   <select
                     onChange={handleNextSessionChange}
                     className="w-2/3 ml-2 text-end"
