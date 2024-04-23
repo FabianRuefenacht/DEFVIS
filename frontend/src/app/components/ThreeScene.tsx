@@ -26,7 +26,7 @@ const ThreeScene: React.FC<ThreeSceneProps> = ({ width, height, basePts }) => {
 
     // Szene, Kamera und Renderer erstellen
     const scene = new THREE.Scene();
-    scene.background = new THREE.Color("#000000");
+    scene.background = new THREE.Color("#FFFFFF");
     const camera = new THREE.PerspectiveCamera(75, width / height, 0.1, 1000);
     const renderer = new THREE.WebGLRenderer();
     renderer.setSize(width, height);
