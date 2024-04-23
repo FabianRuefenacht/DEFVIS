@@ -6,6 +6,7 @@ import axios from "axios";
 
 import OlMap from "./OlMap";
 import Detail from "./Detail";
+import { AiOutlineInfoCircle } from "react-icons/ai";
 
 interface Point {
   pointId: number;
@@ -360,9 +361,15 @@ const Settings = ({ userName }: { userName: string }) => {
                     </p>
                     <form onSubmit={handleCreateSessionSubmit}>
                       <input type="file" accept=".csv" required />
-                      <p className="text-xs mt-4">
-                        ##hier wäre ein info-icon schön## Die importierte
-                        Session wird gleich benannt wie die hochgeladene Datei.
+                      <p className="text-xs mt-4 flex items-center">
+                        <AiOutlineInfoCircle
+                          className="text-white mr-2"
+                          size={20}
+                        />
+                        <span>
+                          Die importierte Session wird gleich benannt wie die
+                          hochgeladene Datei.
+                        </span>
                       </p>
                       <p className="mt-4 mb-2">Zeitpunkt der Aufnahme:</p>
                       <input
