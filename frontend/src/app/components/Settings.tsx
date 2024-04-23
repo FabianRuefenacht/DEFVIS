@@ -377,7 +377,7 @@ const Settings = ({ userName }: { userName: string }) => {
                   </div>
                 </div>
               )}
-              <h3 className="mt-8 flex justify-between items-center">
+              <h3 className="mt-8 flex justify-between items-center text-neutral-600">
                 <span>Projekt:</span>
                 <span className="text-end">{project}</span>
               </h3>
@@ -386,7 +386,7 @@ const Settings = ({ userName }: { userName: string }) => {
                 <span className="text-end">{getSessionerror}</span>
               </h3>
               <form>
-                <div className="flex justify-between items-center">
+                <div className="flex justify-between items-center text-neutral-600">
                   <label className="w-1/3">Nullmessung:</label>
                   <select
                     onChange={handleBaseSessionChange}
@@ -403,7 +403,7 @@ const Settings = ({ userName }: { userName: string }) => {
                     ))}
                   </select>
                 </div>
-                <div className="flex justify-between items-center">
+                <div className="flex justify-between items-center text-neutral-600">
                   <label className="w-1/3">Folgemessung:</label>
                   <select
                     onChange={handleNextSessionChange}

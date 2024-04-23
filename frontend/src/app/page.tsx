@@ -15,7 +15,7 @@ export default function Home() {
     var project = "";
 
     return (
-      <div className="m-0 p-0 w-full h-dvh max-h-full text-base gap-2 grid grid-rows-12 grid-cols-1">
+      <div className="m-0 p-0 w-full h-dvh max-h-full text-base gap-2 grid grid-rows-12 grid-cols-1 text-neutral-600">
         <main className=" row-span-1">
           <Navbar user={userName} />
         </main>
