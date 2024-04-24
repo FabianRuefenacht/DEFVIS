@@ -283,7 +283,7 @@ const Settings = ({ userName }: { userName: string }) => {
             </div>
           )}
 
-          <Button clickFunc={handleOpenProjects} text="Projekt öffnen" />
+          <Button clickFunc={handleOpenProjects} text="Projekt laden" />
           {openProj && (
             <div
               id="modal"
@@ -360,7 +360,22 @@ const Settings = ({ userName }: { userName: string }) => {
                       Punkt-Nr,E-Koordinate,N-Koordinate,Höhe
                     </p>
                     <form onSubmit={handleCreateSessionSubmit}>
-                      <input type="file" accept=".csv" required />
+                      <div className="relative border-dashed border-2 border-white p-16 rounded-md">
+                        <input
+                          type="file"
+                          className="absolute inset-0 w-full h-full opacity-0 cursor-pointer"
+                          accept=".csv"
+                          required
+                        />
+                        <div className="text-center">
+                          <span className="text-white">
+                            CSV-Datei hier ablegen
+                          </span>
+                          <br />
+                          <br />
+                          <input type="file" accept=".csv" required />
+                        </div>
+                      </div>
                       <p className="text-xs mt-4 flex items-center">
                         <AiOutlineInfoCircle
                           className="text-white mr-2"
