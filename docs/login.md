@@ -2,7 +2,11 @@
 
 # Login
 
-<img src="screenshots/login.png" alt="Login" style="max-width: 100%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);">
+
+<video controls autoplay loop style="max-width: 100%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);">
+<source src="./videos/login.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
 
 ## Beschreibung
 
