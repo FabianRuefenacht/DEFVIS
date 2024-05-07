@@ -1,6 +1,6 @@
 # Session erfassen
 
-![Session erfassen](screenshots/capture_session.png)
+<img src="screenshots/capture_session.png" alt="Session-erfassen" style="max-width: 100%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);">
 
 ## Probleme und Verbesserungsvorschläge
 

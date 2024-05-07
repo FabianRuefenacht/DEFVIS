@@ -1,6 +1,8 @@
+[Gehe zurück zur Hauptseite](index.md)
+
 # Geladenes Projekt
 
-![Geladenes Projekt](screenshots/current_project.png)
+<img src="screenshots/current_project.png" alt="Projekt-erstellen" style="max-width: 100%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);">
 
 ## Probleme und Verbesserungsvorschläge
 
@@ -11,4 +13,6 @@
 - Der Projektname könnte größer dargestellt werden, um die Sichtbarkeit zu verbessern.
 - Der Block auf der linken Seite könnte möglicherweise schmaler gemacht oder die Texte schöner formatiert werden, um die Ästhetik zu verbessern.
 
-[Gehe zurück zur Hauptseite](index.md)
+[Gehe zurück zur vorherigen Seite](create_session.md)
+
+[Gehe weiter zur nächsten Seite](logout.md)
