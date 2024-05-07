@@ -49,6 +49,8 @@ Die Implementierung dieser Funktionen zielt darauf ab, eine effiziente und effek
    npm run dev
    ```
 
+---
+
 ## Benutzung der Web-App: {#section3}
 
 Entdecke die vielfältigen Tools und Funktionen, die sie bietet. Klicke auf die Links unten, um zu den einzelnen Seiten zu gelangen und mehr über ihre Funktionen zu erfahren:
@@ -65,12 +67,36 @@ Entdecke die vielfältigen Tools und Funktionen, die sie bietet. Klicke auf die 
 
 Nutze diese Links, um Dich durch die App zu navigieren und ihre Funktionalität voll auszuschöpfen!
 
+---
+
 ## Features aufzeigen, was kann die app auf einen Blick {#section2}
+
+Unsere App bietet eine breite Palette von Funktionen, die den Nutzern vielfältige Möglichkeiten bieten, ohne sie zu überfordern. Eine herausragende Funktion ist der 3D-Viewer, der es den Benutzern ermöglicht, Fehlervektoren in einer dreidimensionalen Ansicht zu betrachten. Durch diese Darstellung in Bezug auf das Gelände können Benutzer nicht nur 2D-Informationen erhalten, sondern auch den Fehlervektor im Kontext einer Oberfläche visualisieren. Dies ermöglicht es, einen direkten Bezug herzustellen, beispielsweise um zu sehen, wie ein Punkt am Hang abrutscht.
+
+---
 
 ## Methoden zum Produkt {#section4}
 
-## eventuell Quellenangaben der genutzten Ressourcen {#section5}
+Die Entwicklung der App basierte auf einer Reihe von bewährten Methoden, darunter:
+
+- ...
+- ...
+- ...
+
+---
+
+## Verwendete Ressourcen {#section5}
+
+Unsere App-Datenbank wird mit Benutzerdaten gefüllt und zur korrekten Darstellung verwenden wir three.js. Die Hintergrundkarte beziehen wir von swisstopo.ch (Situationsplan farbig).
+
+---
 
 ## Ausblick der App {#section6}
 
-- Zeitreihenanalyse
+### Zeitreihenanalyse
+
+Die Integration einer Zeitreihenanalyse war aus Zeitgründen nicht möglich. Dies würde den Benutzern ermöglichen, Positionsänderungen im Laufe der Zeit genauer zu verfolgen, beispielsweise durch die Berücksichtigung von Temperaturänderungen oder anderen meteorologischen Einflüssen.
+
+### Farbcodierte Punkte
+
+Eine zukünftige Erweiterung könnte die Möglichkeit für Benutzer umfassen, Schwellwerte für jedes Projekt festzulegen. Punkte, die signifikante Bewegungen aufweisen, könnten anders eingefärbt oder markiert werden, um sofortige Aufmerksamkeit zu erregen.
