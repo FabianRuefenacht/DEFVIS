@@ -51,6 +51,12 @@ Die Implementierung dieser Funktionen zielt darauf ab, eine effiziente und effek
 
 ---
 
+## Features aufzeigen, was kann die app auf einen Blick {#section2}
+
+Unsere App bietet eine breite Palette von Funktionen, die den Nutzern vielfältige Möglichkeiten bieten, ohne sie zu überfordern. Eine herausragende Funktion ist der 3D-Viewer, der es den Benutzern ermöglicht, Fehlervektoren in einer dreidimensionalen Ansicht zu betrachten. Durch diese Darstellung in Bezug auf das Gelände können Benutzer nicht nur 2D-Informationen erhalten, sondern auch den Fehlervektor im Kontext einer Oberfläche visualisieren. Dies ermöglicht es, einen direkten Bezug herzustellen, beispielsweise um zu sehen, wie ein Punkt am Hang abrutscht.
+
+---
+
 ## Benutzung der Web-App: {#section3}
 
 Entdecke die vielfältigen Tools und Funktionen, die sie bietet. Klicke auf die Links unten, um zu den einzelnen Seiten zu gelangen und mehr über ihre Funktionen zu erfahren:
@@ -66,12 +72,6 @@ Entdecke die vielfältigen Tools und Funktionen, die sie bietet. Klicke auf die 
 - [Abmelden](logout.html): Melde Dich von deinem Benutzerkonto ab, wenn du die App verlassen möchtest.
 
 Nutze diese Links, um Dich durch die App zu navigieren und ihre Funktionalität voll auszuschöpfen!
-
----
-
-## Features aufzeigen, was kann die app auf einen Blick {#section2}
-
-Unsere App bietet eine breite Palette von Funktionen, die den Nutzern vielfältige Möglichkeiten bieten, ohne sie zu überfordern. Eine herausragende Funktion ist der 3D-Viewer, der es den Benutzern ermöglicht, Fehlervektoren in einer dreidimensionalen Ansicht zu betrachten. Durch diese Darstellung in Bezug auf das Gelände können Benutzer nicht nur 2D-Informationen erhalten, sondern auch den Fehlervektor im Kontext einer Oberfläche visualisieren. Dies ermöglicht es, einen direkten Bezug herzustellen, beispielsweise um zu sehen, wie ein Punkt am Hang abrutscht.
 
 ---
 
