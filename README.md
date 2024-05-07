@@ -28,8 +28,7 @@ git clone git@github.com:FabianRuefenacht/6230_FRNMLW.git
 
 ### Git Projekt mit Visual Studio Code lokal klonen
 
-Öffne ein neues Visual Studio Code Fenster und wähle unter Start _Clone Git Repository_. Alternativ öffne die Command Palette in VS Code `CTRL+Shift+P` (_View / Command Palette_) und wähle `Git: clone`.
-Füge die Git web URL `https://github.com/FabianRuefenacht/6230_FRNMLW` ein und bestätige die Eingabe mit Enter. Wähle einen Ordner in welchen das Repository _geklont_ werden soll.
+Öffne ein neues Visual Studio Code Fenster und wähle unter Start Clone Git Repository. Alternativ öffne die Command Palette in VS Code CTRL+Shift+P (View / Command Palette) und wähle Git: clone. Füge die Git web URL `https://github.com/FabianRuefenacht/6230_FRNMLW` ein und bestätige die Eingabe mit Enter. Wähle einen Ordner in welchen das Repository _geklont_ werden soll.
 
 ## Frontend installieren
 
@@ -38,7 +37,7 @@ Füge die Git web URL `https://github.com/FabianRuefenacht/6230_FRNMLW` ein und 
 ```shell
 cd client
 # aktiviere node.js (falls nvm genutzt wird)
-# nvm use 20.11.1
+# nvm use 21.7.1
 # install all the node.js dependencies
 npm install
 # node Projekt ausführen
