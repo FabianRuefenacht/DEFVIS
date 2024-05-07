@@ -8,9 +8,9 @@
 
 In der Hauptansicht kann der Benutzer Projekte verwalten und einsehen, d.h. die Daten auf einer Karte anzeigen lassen.
 
-## Buttons
+## Funktionen
 
-Die Seite enthält 7 Buttons:
+Die Seite enthält sieben Buttons:
 
 - **Home:** Leitet den Benutzer zurück zur Home-Ansicht.
 - **Logout:** Ermöglicht es dem Benutzer, sich abzumelden.
@@ -24,5 +24,5 @@ Die Seite enthält 7 Buttons:
 
 - Der Home-Button hat derzeit keine sinnvolle Funktion. Möglicherweise sollte überlegt werden, ob er entfernt oder mit einer Funktion versehen werden sollte.
 
-<div style="text-align: left; float: left;"><a href="register.html">< Gehe zurück zur vorherigen Seite</a></div>
+<div style="text-align: left; float: left;"><a href="login.html">< Gehe zurück zur vorherigen Seite</a></div>
 <div style="text-align: right; float: right;"><a href="create_project.html">Gehe weiter zur nächsten Seite ></a></div>

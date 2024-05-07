@@ -1,6 +1,6 @@
 [Gehe zurück zur Hauptseite](index.html)
 
-# Register
+# Registrieren
 
 <video controls autoplay loop style="max-width: 100%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);">
 <source src="./videos/register.mp4" type="video/mp4">
@@ -9,11 +9,11 @@ Your browser does not support the video tag.
 
 ## Beschreibung
 
-Auf der Register-Seite kann sich ein Benutzer registrieren. Wenn der Benutzername bereits existiert oder die Textformatierung nicht korrekt ist, wird der Benutzer darüber informiert.
+Auf der Registrierungs-Seite kann sich ein Benutzer registrieren. Wenn der Benutzername bereits existiert oder die Textformatierung nicht korrekt ist, wird der Benutzer darüber informiert.
 
-## Buttons und Eingaben
+## Funktionen
 
-Die Seite enthält 2 Buttons und 2 Texteingaben:
+Die Seite enthält zwei Buttons und zwei Texteingaben:
 
 - **Registrieren:** Ermöglicht es dem Benutzer, sich über das Register-Menü zu registrieren, um auf die Projektverwaltung und Hauptansicht zuzugreifen.
 - **Mit Account anmelden:** Leitet den Benutzer zur Login-Seite weiter.
@@ -24,5 +24,5 @@ Die Seite enthält 2 Buttons und 2 Texteingaben:
 - Der Text "User existiert bereits" könnte verbessert werden, z.B. als "<i>info</i> User existiert bereits", und die Farbe könnte auf rot geändert werden, um Warnungen hervorzuheben.
 - Möglicherweise könnte das Register-Fenster zentriert werden, um die Ästhetik zu verbessern.
 
-<div style="text-align: left; float: left;"><a href="login.html">< Gehe zurück zur vorherigen Seite</a></div>
-<div style="text-align: right; float: right;"><a href="main_view.html">Gehe weiter zur nächsten Seite ></a></div>
+<div style="text-align: left; float: left;"><a href="home.html">< Gehe zurück zur vorherigen Seite</a></div>
+<div style="text-align: right; float: right;"><a href="login.html">Gehe weiter zur nächsten Seite ></a></div>

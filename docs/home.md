@@ -21,4 +21,4 @@ Die Seite enthält drei Buttons und keine weiteren Interaktionen:
 - Die Bedeutung des Home-Buttons sollte überprüft werden - welchen Zweck erfüllt er?
 - Die Seite könnte visuell ansprechender gestaltet werden, möglicherweise durch Ändern des Hintergrunds.
 
-<div style="text-align: right; float: right;"><a href="login.html">Gehe weiter zur nächsten Seite ></a></div>
+<div style="text-align: right; float: right;"><a href="register.html">Gehe weiter zur nächsten Seite ></a></div>
