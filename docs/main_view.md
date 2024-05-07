@@ -1,6 +1,6 @@
 # Hauptansicht
 
-![Hauptansicht](screenshots/main_view.png)
+<img src="screenshots/main_view.png" alt="Hauptansicht" style="max-width: 100%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);">
 
 ## Beschreibung
 

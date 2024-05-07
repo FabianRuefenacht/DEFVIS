@@ -1,6 +1,6 @@
 # Register
 
-![Register-Ansicht](screenshots/register.png)
+<img src="screenshots/register.png" alt="Register" style="max-width: 100%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);">
 
 ## Beschreibung
 
