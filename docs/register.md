@@ -1,6 +1,6 @@
 # Register
 
-<div style="width: full;">
+<div style="width: 600px;">
   <video controls loop autoplay>
     <source src="./videos/register.mp4" type="video/mp4">
     Your browser does not support the video tag.
