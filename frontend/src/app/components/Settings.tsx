@@ -233,10 +233,12 @@ const Settings = ({ userName }: { userName: string }) => {
     console.log("Button clicked for pointId:", pointName);
     setView3DPoint(pointName);
 
-    const pointToCenter = baseSessionPoints[0].points.find((pt) => pt.name == pointName)
+    const pointToCenter = baseSessionPoints[0].points.find(
+      (pt) => pt.name == pointName
+    );
     if (pointToCenter) {
-      const coords = [pointToCenter.E, pointToCenter.N]
-      setMapCenterCoords(coords)
+      const coords = [pointToCenter.E, pointToCenter.N];
+      setMapCenterCoords(coords);
     }
     setViewModel("3D");
 
@@ -460,7 +462,6 @@ const Settings = ({ userName }: { userName: string }) => {
                 </div>
               </form>
               <p className="mt-32 text-neutral-600">
-                ##wenn Projekt gewählt wird, Daten von text laden.##
                 <TableView
                   baseSessionPoints={baseSessionPoints[0]}
                   nextSessionPoints={nextSessionPoints[0]}
