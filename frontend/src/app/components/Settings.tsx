@@ -245,7 +245,7 @@ const Settings = ({ userName }: { userName: string }) => {
             >
               <div className="bg-neutral-400 text-white p-8 rounded shadow-md w-96 relative">
                 <button
-                  onClick={changeOpenProj}
+                  onClick={changeNewProj}
                   className="px-2 absolute top-0 right-0 text-5xl"
                   style={{ zIndex: "1" }}
                 >
