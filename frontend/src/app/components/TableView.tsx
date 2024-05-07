@@ -80,7 +80,7 @@ function TableView({
                     <>
                     {point.E && point.N && rowClick && (
                       <tr key={point.name}>
-                        <button onClick={() => rowClick(point.E, point.N)}>{point.name}</button>
+                        <button onClick={() => rowClick(point.E, point.N)} className="w-full bg-blue-500 text-white rounded hover:bg-blue-600">{point.name}</button>
                       <td className="pr-5 text-right">
                         {(deltaOst * 1000).toFixed(1)}
                       </td>
