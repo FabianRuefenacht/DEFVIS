@@ -1,3 +1,5 @@
+<div style="background-color: #f0f0f0;">
+
 # Home
 
 ![Home-Ansicht](screenshots/home.png)
@@ -22,3 +24,5 @@ Die Seite enthält drei Buttons und keine weiteren Interaktionen:
 - Möglicherweise sollte der Button "Registrieren" in "Registrieren" umbenannt werden.
 
 [Gehe zurück zur Hauptseite](index.md)
+
+</div>
