@@ -166,7 +166,7 @@ function Detail({
 
       {viewModel === "3D" && basePts[0] && (
         <div className=" pl-5">
-          <ThreeScene width={800} height={600} basePts={basePts} />
+          <ThreeScene width={800} height={600} basePts={basePts} nextPts={nextPts}/>
 
           {/* <p>Punktnummer: {view3DPoint}</p>
           <p>Ost: {view3DPointInMapEasting}</p>

@@ -15,9 +15,10 @@ interface ThreeSceneProps {
   width: number;
   height: number;
   basePts: Point[];
+  nextPts: Point[];
 }
 
-const ThreeScene: React.FC<ThreeSceneProps> = ({ width, height, basePts }) => {
+const ThreeScene: React.FC<ThreeSceneProps> = ({ width, height, basePts, nextPts }) => {
   const threeContainerRef = useRef<HTMLDivElement>(null);
   const rendererRef = useRef<THREE.WebGLRenderer | null>(null);
 
@@ -32,6 +33,14 @@ const ThreeScene: React.FC<ThreeSceneProps> = ({ width, height, basePts }) => {
     renderer.setSize(width, height);
 
     const loader = new GLTFLoader();
+
+
+    function findCorrespondingNextPoint(
+      basePoint: Point,
+      nextPoints: Point[]
+    ): Point | undefined {
+      return nextPoints.find((point) => point.name === basePoint.name);
+    }
 
     loader.load(
       "models/GO.gltf",
@@ -53,7 +62,7 @@ const ThreeScene: React.FC<ThreeSceneProps> = ({ width, height, basePts }) => {
               const sphereGeometry = new THREE.SphereGeometry(3, 32, 32); // Erstelle eine Kugelgeometrie
               const sphereMaterial = new THREE.MeshBasicMaterial({ color: 0xff0000 });
               const sphere = new THREE.Mesh(sphereGeometry, sphereMaterial);
-              sphere.position.set(pt.E, center.y + pt.H / 2, Math.floor(center.y / 1000) * 1000 + 500 - pt.N ); // Setze die Position der Kugel basierend auf den Koordinaten des Punktes
+              sphere.position.set(pt.E, center.y + pt.H / 2, Math.floor(center.y / 1000) * 1000 + 500 - pt.N); // Setze die Position der Kugel basierend auf den Koordinaten des Punktes
               scene.add(sphere);
             })
           } else {
@@ -62,6 +71,56 @@ const ThreeScene: React.FC<ThreeSceneProps> = ({ width, height, basePts }) => {
         } else {
           // `basePts` ist nicht definiert oder kein Array
           console.error("basePts is not defined .");
+        }
+        
+        if (basePts && nextPts) {
+          if (Array.isArray(basePts) && Array.isArray(nextPts)) {
+            basePts.map((bpt) => {
+              const npt = findCorrespondingNextPoint(bpt, nextPts);
+              if (npt) {
+                const deltaE = (npt.E - bpt.E) * 1000
+
+                const pathE = new THREE.CatmullRomCurve3([
+                  new THREE.Vector3(bpt.E, center.y + bpt.H / 2, Math.floor(center.y / 1000) * 1000 + 500 - bpt.N),
+                  new THREE.Vector3(bpt.E + deltaE, center.y + bpt.H / 2, Math.floor(center.y / 1000) * 1000 + 500 - bpt.N)
+                ]);
+
+                const tubeGeomE = new THREE.TubeGeometry(pathE, 2, 1, 8, false)
+                const tubeMatE = new THREE.MeshBasicMaterial({ color: 0xff0000 });
+                const tubeMeshE = new THREE.Mesh(tubeGeomE, tubeMatE);
+
+                scene.add(tubeMeshE)
+
+                
+                const deltaN = (npt.N - bpt.N) * 1000
+
+                const pathN = new THREE.CatmullRomCurve3([
+                  new THREE.Vector3(bpt.E, center.y + bpt.H / 2, Math.floor(center.y / 1000) * 1000 + 500 - bpt.N),
+                  new THREE.Vector3(bpt.E, center.y + bpt.H / 2, Math.floor(center.y / 1000) * 1000 + 500 - bpt.N + deltaN)
+                ]);
+
+                const tubeGeomN = new THREE.TubeGeometry(pathN, 2, 1, 8, false)
+                const tubeMatN = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
+                const tubeMeshN = new THREE.Mesh(tubeGeomN, tubeMatN);
+
+                scene.add(tubeMeshN)
+
+
+                const deltaH = (npt.H - bpt.H) * 1000
+
+                const pathH = new THREE.CatmullRomCurve3([
+                  new THREE.Vector3(bpt.E, center.y + bpt.H / 2, Math.floor(center.y / 1000) * 1000 + 500 - bpt.N),
+                  new THREE.Vector3(bpt.E, center.y + bpt.H / 2 + deltaH, Math.floor(center.y / 1000) * 1000 + 500 - bpt.N)
+                ]);
+
+                const tubeGeomH = new THREE.TubeGeometry(pathH, 2, 1, 8, false)
+                const tubeMatH = new THREE.MeshBasicMaterial({ color: 0x0000ff });
+                const tubeMeshH = new THREE.Mesh(tubeGeomH, tubeMatH);
+
+                scene.add(tubeMeshH)
+              }
+            })
+          }
         }
       },
       undefined,
