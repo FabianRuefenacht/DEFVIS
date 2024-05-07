@@ -1,12 +1,8 @@
-# Willkommen auf unserer App! -> mehr catchimg
+```
+hier der Video-Teaser
+```
 
-## Features aufzeigen, was kann die app auf einen Blick
-
-## Methoden zum Produkt
-
-## eventuell Quellenangaben der genutzten Ressourcen
-
-Die Web-App "3D-Visualizer" bietet Dir folgende Tools:
+Die Web-App "3D-Vektor-Viewer" bietet Dir folgende Tools:
 
 - Deformationsmessungen zu verwalten
 - Dreidimensionale Verschiebungen zu visualisieren
@@ -23,7 +19,6 @@ Die Implementierung dieser Funktionen zielt darauf ab, eine effiziente und effek
    ```bash
    cd documents
    git clone git@github.com:FabianRuefenacht/6230_FRNMLW.git
-
    ```
 
 2. **Öffne Visual Studio Code und navigiere zum Quellcode:**
@@ -35,7 +30,6 @@ Die Implementierung dieser Funktionen zielt darauf ab, eine effiziente und effek
    ```bash
    cd documents/6230_FRNMLW/backend
    python main.py
-
    ```
 
 4. **npm installieren:**
@@ -44,7 +38,6 @@ Die Implementierung dieser Funktionen zielt darauf ab, eine effiziente und effek
    ```bash
    cd documents/6230_FRNMLW/frontend
    npm install
-
    ```
 
 5. **App ausführen:**
@@ -52,7 +45,6 @@ Die Implementierung dieser Funktionen zielt darauf ab, eine effiziente und effek
    ```bash
    cd documents/6230_FRNMLW/frontend
    npm run dev
-
    ```
 
 ## Benutzung der Web-App:
@@ -70,3 +62,9 @@ Entdecke die vielfältigen Tools und Funktionen, die sie bietet. Klicke auf die 
 - [Logout](logout.html): Melde Dich von deinem Benutzerkonto ab, wenn du die App verlassen möchtest.
 
 Nutze diese Links, um Dich durch die App zu navigieren und ihre Funktionalität voll auszuschöpfen!
+
+## Features aufzeigen, was kann die app auf einen Blick
+
+## Methoden zum Produkt
+
+## eventuell Quellenangaben der genutzten Ressourcen
