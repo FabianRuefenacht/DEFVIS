@@ -11,4 +11,4 @@ Your browser does not support the video tag.
 
 - Eventuell könnte ein zusätzlicher Link hinzugefügt werden: "Zurück zur App", um den Benutzern eine einfache Möglichkeit zu bieten, zur Hauptansicht der App zurückzukehren.
 
-<div style="text-align: left; float: left;"><a href="current_project.html">< Gehe zurück zur vorherigen Seite</a></div>
+<div style="text-align: left; float: left;"><a href="current_project.html">< geladenes Projekt</a></div>

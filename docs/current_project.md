@@ -10,5 +10,5 @@
 - Der Projektname könnte größer dargestellt werden, um die Sichtbarkeit zu verbessern.
 - Der Block auf der linken Seite könnte möglicherweise schmaler gemacht oder die Texte schöner formatiert werden, um die Ästhetik zu verbessern.
 
-<div style="text-align: left; float: left;"><a href="capture_session.html">< Gehe zurück zur vorherigen Seite</a></div>
-<div style="text-align: right; float: right;"><a href="logout.html">Gehe weiter zur nächsten Seite ></a></div>
+<div style="text-align: left; float: left;"><a href="capture_session.html">< Session erfassen</a></div>
+<div style="text-align: right; float: right;"><a href="logout.html">Abmelden ></a></div>

@@ -24,5 +24,5 @@ Die Seite enthält zwei Buttons und zwei Texteingaben:
 - Der Text "User existiert bereits" könnte verbessert werden, z.B. als "<i>info</i> User existiert bereits", und die Farbe könnte auf rot geändert werden, um Warnungen hervorzuheben.
 - Möglicherweise könnte das Register-Fenster zentriert werden, um die Ästhetik zu verbessern.
 
-<div style="text-align: left; float: left;"><a href="home.html">< Gehe zurück zur vorherigen Seite</a></div>
-<div style="text-align: right; float: right;"><a href="login.html">Gehe weiter zur nächsten Seite ></a></div>
+<div style="text-align: left; float: left;"><a href="home.html">< Home</a></div>
+<div style="text-align: right; float: right;"><a href="login.html">Anmelden ></a></div>

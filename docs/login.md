@@ -9,13 +9,13 @@ Your browser does not support the video tag.
 
 ## Beschreibung
 
-Auf der Login-Seite kann sich ein Benutzer über einen bereits registrierten Account anmelden. Wenn der Benutzername nicht gefunden wird oder das Passwort falsch ist, wird der Benutzer darüber informiert.
+Auf der Anmeldungs-Seite kann sich ein Benutzer über einen bereits registrierten Account anmelden. Wenn der Benutzername nicht gefunden wird oder das Passwort falsch ist, wird der Benutzer darüber informiert.
 
 ## Funktionen
 
 Die Seite enthält zwei Buttons und zwei Texteingaben:
 
-- **Login:** Ermöglicht es dem Benutzer, sich über das Login-Menü anzumelden, um auf die Projektverwaltung und Hauptansicht zuzugreifen.
+- **Anmelden:** Ermöglicht es dem Benutzer, sich über das Login-Menü anzumelden, um auf die Projektverwaltung und Hauptansicht zuzugreifen.
 - **Neu registrieren:** Leitet den Benutzer zur Registerungs-Seite weiter.
 
 ## Probleme und Verbesserungsvorschläge
@@ -27,5 +27,5 @@ Die Seite enthält zwei Buttons und zwei Texteingaben:
 - Möglicherweise könnte ein Home-Button hinzugefügt werden, um zurück zur Home-Ansicht zu gelangen.
 - Das Login-Feld könnte zentriert werden, um die Benutzerfreundlichkeit zu verbessern.
 
-<div style="text-align: left; float: left;"><a href="register.html">< Gehe zurück zur vorherigen Seite</a></div>
-<div style="text-align: right; float: right;"><a href="main_view.html">Gehe weiter zur nächsten Seite ></a></div>
+<div style="text-align: left; float: left;"><a href="register.html">< Registrieren</a></div>
+<div style="text-align: right; float: right;"><a href="main_view.html">Hauptansicht ></a></div>
