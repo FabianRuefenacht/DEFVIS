@@ -19,14 +19,14 @@ const Logout = () => {
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div className="bg-neutral-400 text-white p-8 rounded shadow-md w-96">
         <h1 className="text-4xl text-center font-semibold mb-8 text-white">
-          Logout
+          Abmelden
         </h1>
         <form onSubmit={handleSubmit}>
           <button
             type="submit"
             className="w-full bg-blue-500 my-2 text-white py-2 rounded hover:bg-blue-600"
           >
-            Logout
+            Abmelden
           </button>
         </form>
       </div>
