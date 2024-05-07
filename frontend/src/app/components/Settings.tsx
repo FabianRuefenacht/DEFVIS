@@ -386,6 +386,53 @@ const Settings = ({ userName }: { userName: string }) => {
                   </div>
                 </div>
               )}
+              <h3 className="mt-8 flex justify-between items-center text-neutral-600">
+                <span>Projekt:</span>
+                <span className="text-end">{project}</span>
+              </h3>
+              <h3 className="mt-4 flex justify-between items-center">
+                <span>Sessionen auswählen:</span>
+                <span className="text-end">{getSessionerror}</span>
+              </h3>
+              <form>
+                <div className="flex justify-between items-center text-neutral-600">
+                  <p className="w-1/3">Nullmessung:</p>
+                  <select
+                    onChange={handleBaseSessionChange}
+                    className="w-2/3 ml-2 text-end"
+                  >
+                    <option value="placeholder">select a session</option>
+                    {sessionData.map((session) => (
+                      <option
+                        key={session.sessionId}
+                        value={session.sessionName}
+                      >
+                        {session.sessionName}
+                      </option>
+                    ))}
+                  </select>
+                </div>
+                <div className="flex justify-between items-center text-neutral-600">
+                  <p className="w-1/3">Folgemessung:</p>
+                  <select
+                    onChange={handleNextSessionChange}
+                    className="w-2/3 ml-2 text-end"
+                  >
+                    <option value="placeholder">select a session</option>
+                    {sessionData.map((session) => (
+                      <option
+                        key={session.sessionId}
+                        value={session.sessionName}
+                      >
+                        {session.sessionName}
+                      </option>
+                    ))}
+                  </select>
+                </div>
+              </form>
+              <p className="mt-32 text-neutral-600">
+                ##wenn Projekt gewählt wird, Daten von text laden.##
+              </p>
             </>
           )}
 
