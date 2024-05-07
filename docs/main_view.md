@@ -23,8 +23,6 @@ Die Seite enthält 7 Buttons:
 ## Probleme und Verbesserungsvorschläge
 
 - Der Home-Button hat derzeit keine sinnvolle Funktion. Möglicherweise sollte überlegt werden, ob er entfernt oder mit einer Funktion versehen werden sollte.
-- Es könnte sinnvoll sein, die Buttons "Text", "2D" und "3D" erst sichtbar zu machen, wenn ein Projekt geladen wurde, um die Benutzererfahrung zu verbessern.
-- Um dem Benutzer mehr Kontext zu geben, könnte eine 2D-Karte der Schweiz eingebunden werden und ein Text wie "Laden oder erstellen Sie ein Projekt" angezeigt werden.
 
 <div style="text-align: left; float: left;"><a href="register.html">< Gehe zurück zur vorherigen Seite</a></div>
 <div style="text-align: right; float: right;"><a href="create_project.html">Gehe weiter zur nächsten Seite ></a></div>

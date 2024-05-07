@@ -457,17 +457,28 @@ const Settings = ({ userName }: { userName: string }) => {
         </div>
       </div>
       <div className="col-span-3 row-span-2 gap-4 flex flex-col">
-        <div>
-          <button onClick={() => setViewModel("Text")} className="pl-5">
-            Text
-          </button>
-          <button onClick={() => setViewModel("2D")} className="pl-5">
-            2D
-          </button>
-          <button onClick={() => setViewModel("3D")} className="pl-5">
-            3D
-          </button>
-        </div>
+        {baseSessionPoints[0] && nextSessionPoints[0] && (
+          <div>
+            <button onClick={() => setViewModel("Text")} className="pl-5">
+              Text
+            </button>
+            <button onClick={() => setViewModel("2D")} className="pl-5">
+              2D
+            </button>
+            <button onClick={() => setViewModel("3D")} className="pl-5">
+              3D
+            </button>
+          </div>
+        )}
+        {project === "nicht gewählt" && (
+          <p>Wählen oder erstellen Sie ein Projekt.</p>
+        )}
+        {!baseSessionPoints[0] && (
+          <p>Wählen Sie eine Nullmessung</p>
+        )}
+        {!nextSessionPoints[0] && (
+          <p>Wählen Sie eine Folgemessung</p>
+        )}
         {viewModel === "2D" && baseSessionPoints[0] && nextSessionPoints[0] && (
           <>
             <OlMap
