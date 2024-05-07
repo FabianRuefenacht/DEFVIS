@@ -1,6 +1,6 @@
 # Home
 
-![Home-Ansicht](screenshots/home.png)
+<img src="screenshots/home.png" alt="Home-Ansicht" style="max-width: 100%;">
 
 ## Beschreibung
 
