@@ -11,7 +11,7 @@ const Navbar = ({ user }: { user: string }) => {
       <ul className="flex justify-between m-7 items-center">
         <div>
           <Link href="/">
-            <li>Home</li>
+            <li>Placeholder</li>
           </Link>
         </div>
         <div>
@@ -19,15 +19,15 @@ const Navbar = ({ user }: { user: string }) => {
         </div>
         {hasAuthorisation ? (
           <Link href={"/logout"}>
-            <h1>logout</h1>
+            <h1>Abmelden</h1>
           </Link>
         ) : (
           <div className="flex gap-10">
             <Link href="/login">
-              <li>Login</li>
+              <li>Anmelden</li>
             </Link>
             <Link href="/register">
-              <li>Register</li>
+              <li>Registrieren</li>
             </Link>
           </div>
         )}

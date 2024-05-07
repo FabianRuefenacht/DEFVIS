@@ -34,7 +34,7 @@ export default function Home() {
         </main>
         <main className="flex row-span-11 justify-center items-center">
           <div className="h-full">
-            Bitte melden Sie sich an, um Ihre Projekte zu sehen!
+            Bitte melden Sie sich an, um auf die Projektverwaltung zuzugreifen.
           </div>
         </main>
       </div>

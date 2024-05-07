@@ -20,7 +20,5 @@ Die Seite enthält drei Buttons und keine weiteren Interaktionen:
 
 - Die Bedeutung des Home-Buttons sollte überprüft werden - welchen Zweck erfüllt er?
 - Die Seite könnte visuell ansprechender gestaltet werden, möglicherweise durch Ändern des Hintergrunds.
-- Der Text könnte verbessert werden, zum Beispiel durch die Formulierung "Registrieren Sie sich oder melden Sie sich an, um auf die Projektverwaltung zuzugreifen."
-- Möglicherweise sollte der Button "Registrieren" in "Registrieren" umbenannt werden.
 
 <div style="text-align: right; float: right;"><a href="login.html">Gehe weiter zur nächsten Seite ></a></div>
