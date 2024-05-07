@@ -1,6 +1,6 @@
 title: ^^App-Name^^
 logo: /assets/img/logo.png
-description: Du befindest Dich auf der GitHub Pages Seite von der ^^App-Name^^.
+description:
 show_downloads: false
 google_analytics:
 theme: jekyll-theme-minimal
