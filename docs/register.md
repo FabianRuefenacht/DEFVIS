@@ -1,3 +1,5 @@
+[Gehe zurück zur Hauptseite](index.html)
+
 # Register
 
 <video controls autoplay loop style="max-width: 100%;">
@@ -22,4 +24,5 @@ Die Seite enthält 2 Buttons und 2 Texteingaben:
 - Der Text "User existiert bereits" könnte verbessert werden, z.B. als "<i>info</i> User existiert bereits", und die Farbe könnte auf rot geändert werden, um Warnungen hervorzuheben.
 - Möglicherweise könnte das Register-Fenster zentriert werden, um die Ästhetik zu verbessern.
 
-[Gehe zurück zur Hauptseite](index.md)
+<div style="text-align: left; float: left;"><a href="login.html">< Gehe zurück zur vorherigen Seite</a></div>
+<div style="text-align: right; float: right;"><a href="main_view.html">Gehe weiter zur nächsten Seite ></a></div>

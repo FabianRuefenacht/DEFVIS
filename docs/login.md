@@ -1,4 +1,4 @@
-[Gehe zurück zur Hauptseite](index.md)
+[Gehe zurück zur Hauptseite](index.html)
 
 # Login
 
