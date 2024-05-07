@@ -1,3 +1,5 @@
+<body style="background-color: black; color: white;">
+
 # Home
 
 <img src="screenshots/home.png" alt="Home-Ansicht" style="max-width: 100%;">
