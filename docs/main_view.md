@@ -1,3 +1,5 @@
+[Gehe zurück zur Hauptseite](index.md)
+
 # Hauptansicht
 
 <img src="screenshots/main_view.png" alt="Hauptansicht" style="max-width: 100%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);">
@@ -24,4 +26,5 @@ Die Seite enthält 7 Buttons:
 - Es könnte sinnvoll sein, die Buttons "Text", "2D" und "3D" erst sichtbar zu machen, wenn ein Projekt geladen wurde, um die Benutzererfahrung zu verbessern.
 - Um dem Benutzer mehr Kontext zu geben, könnte eine 2D-Karte der Schweiz eingebunden werden und ein Text wie "Laden oder erstellen Sie ein Projekt" angezeigt werden.
 
-[Gehe zurück zur Hauptseite](index.md)
+<div style="text-align: left; float: left;"><a href="register.html">< Gehe zurück zur vorherigen Seite</a></div>
+<div style="text-align: right; float: right;"><a href="create_project.html">Gehe weiter zur nächsten Seite ></a></div>
