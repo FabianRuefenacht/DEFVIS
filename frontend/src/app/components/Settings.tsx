@@ -268,7 +268,7 @@ const Settings = ({ userName }: { userName: string }) => {
                   <input
                     type="email"
                     className="w-full border border-gray-300 my-2 text-black rounded px-3 py-2 focus:outline-none focus:border-blue-400 focus:text-black"
-                    placeholder="Kunde"
+                    placeholder="mustermann@musterfirma.ch"
                     required
                   />
                   <p>{newProjectError}</p>
