@@ -1,6 +1,6 @@
 [Gehe zurück zur Hauptseite](index.html)
 
-# Logout
+# Abmelden
 
 <video controls autoplay loop style="max-width: 100%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);">
 <source src="./videos/logout.mp4" type="video/mp4">
