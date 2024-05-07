@@ -5,7 +5,7 @@ Server Client Projekt für eine Geodateninfrastruktur Webportal im Rahmen des Mo
 <!-- - **Frontend:** React.js, OpenLayers und MUI
 - **Backend:** FastAPI, GeoServer -->
 
-GitHub Pages: <a href="https://fabianruefenacht.github.io/6230_FRNMLW/" target="_blank">Linktext</a>
+GitHub Pages: https://fabianruefenacht.github.io/6230_FRNMLW/
 
 <!-- Getestet mit Node version 20.11.1, 18.15.0, 16.19.0, openlayers 9.1.0, 7.3.0, 6.4.3 -->
 
