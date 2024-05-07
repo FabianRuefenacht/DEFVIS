@@ -9,11 +9,13 @@ function Detail({
   nextSessionPoints,
   view3DPoint,
   viewModel,
+  cameraposition
 }: {
   baseSessionPoints: any;
   nextSessionPoints: any;
   view3DPoint: string | null;
   viewModel: string;
+  cameraposition: number[];
 }) {
   const [basePts, setBasePts] = useState<Point[]>([]);
   const [nextPts, setNextPts] = useState<Point[]>([]);
@@ -115,58 +117,9 @@ function Detail({
 
   return (
     <main>
-      {viewModel === "Text" && basePts[0] && nextPts[0] && (
-        <div className="overflow-y-auto h-full p-4 pb-10">
-          <table>
-            <thead>
-              <tr className="p-0">
-                <th className="p-0 pr-5 text-left">Punkt</th>
-                <th className="p-0 pr-5 text-left">ΔE [mm]</th>
-                <th className="p-0 pr-5 text-left">ΔN [mm]</th>
-                <th className="p-0 text-left">ΔH [mm]</th>
-              </tr>
-            </thead>
-            <tbody>
-              {basePts.map(
-                (point: { name: string; E: number; N: number; H: number }) => {
-                  const correspondingNextPoint = findCorrespondingNextPoint(
-                    point,
-                    nextPts
-                  );
-                  const deltaOst = correspondingNextPoint
-                    ? correspondingNextPoint.E - point.E
-                    : point.E;
-                  const deltaNord = correspondingNextPoint
-                    ? correspondingNextPoint.N - point.N
-                    : point.N;
-                  const deltaH = correspondingNextPoint
-                    ? correspondingNextPoint.H - point.H
-                    : point.H;
-
-                  return (
-                    <tr key={point.name}>
-                      <td className="pr-5 text-left">{point.name}</td>
-                      <td className="pr-5 text-right">
-                        {(deltaOst * 1000).toFixed(1)}
-                      </td>
-                      <td className="pr-5 text-right">
-                        {(deltaNord * 1000).toFixed(1)}
-                      </td>
-                      <td className="text-right">
-                        {(deltaH * 1000).toFixed(1)}
-                      </td>
-                    </tr>
-                  );
-                }
-              )}
-            </tbody>
-          </table>
-        </div>
-      )}
-
       {viewModel === "3D" && basePts[0] && (
         <div className=" pl-5">
-          <ThreeScene width={800} height={600} basePts={basePts} nextPts={nextPts}/>
+          <ThreeScene width={800} height={600} basePts={basePts} nextPts={nextPts} cameraposition={cameraposition}/>
 
           {/* <p>Punktnummer: {view3DPoint}</p>
           <p>Ost: {view3DPointInMapEasting}</p>

@@ -22,6 +22,7 @@ import { FullScreen, Rotate, defaults as defaultControls } from "ol/control.js";
 import { LineString } from "ol/geom";
 
 import arrow from "../../../public/images/arrow.png"
+import { none } from "ol/centerconstraint";
 
 interface IfPoint {
   pointId: number;
@@ -39,7 +40,7 @@ interface Deviations {
   dH: number;
 }
 
-const OlMap = ({ bbox, pts, nextPts, handle3DClick }: { bbox: [number, number]; pts: IfPoint[]; nextPts: IfPoint[]; handle3DClick: (pointId: string | null) => void }) => {
+const OlMap = ({ bbox, zoom, pts, nextPts, handle3DClick}: { bbox: [number, number]; zoom: number; pts: IfPoint[]; nextPts: IfPoint[]; handle3DClick: (pointId: string | null) => void }) => {
   const mapRef = useRef<HTMLDivElement>(null);
   const overlayRef = useRef<HTMLDivElement>(null);
   const [overlayContent, setOverlayContent] = useState("");
@@ -79,7 +80,7 @@ const OlMap = ({ bbox, pts, nextPts, handle3DClick }: { bbox: [number, number]; 
       layers: [swisstopolayer],
       view: new View({
         center: bbox,
-        zoom: 15,
+        zoom: zoom,
         projection: new Projection({
           code: "EPSG:2056",
           units: "m",

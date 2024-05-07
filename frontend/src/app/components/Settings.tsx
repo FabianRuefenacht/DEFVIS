@@ -6,6 +6,8 @@ import axios from "axios";
 
 import OlMap from "./OlMap";
 import Detail from "./Detail";
+import TableView from "./TableView";
+
 import { AiOutlineInfoCircle } from "react-icons/ai";
 
 interface Point {
@@ -223,10 +225,19 @@ const Settings = ({ userName }: { userName: string }) => {
   // Map handle 3DClick
   const [view3DPoint, setView3DPoint] = useState<string | null>(null);
 
+  // Table point click
+  const [mapCenterCoords, setMapCenterCoords] = useState([0, 0]);
+
   // Function to handle button click
   const handle3DClick = (pointName: string | null) => {
     console.log("Button clicked for pointId:", pointName);
     setView3DPoint(pointName);
+
+    const pointToCenter = baseSessionPoints[0].points.find((pt) => pt.name == pointName)
+    if (pointToCenter) {
+      const coords = [pointToCenter.E, pointToCenter.N]
+      setMapCenterCoords(coords)
+    }
     setViewModel("3D");
 
     // Hier können Sie Ihre gewünschte Aktion ausführen
@@ -283,7 +294,6 @@ const Settings = ({ userName }: { userName: string }) => {
             </div>
           )}
 
-
           <Button clickFunc={handleOpenProjects} text="Projekt laden" />
           {openProj && (
             <div
@@ -300,27 +310,34 @@ const Settings = ({ userName }: { userName: string }) => {
                 >
                   &times;
                 </button>
-                <h1 className="text-base font-semibold mb-4">Eigene Projekte</h1>
+                <h1 className="text-base font-semibold mb-4">
+                  Eigene Projekte
+                </h1>
                 {userProjects.map(
                   (project) =>
                     project[1] == userId && (
                       <p className="pt-2 pl-5" key={project[0]}>
-                        <button onClick={() => loadProject(project[3])}>{project[3]}</button>
+                        <button onClick={() => loadProject(project[3])}>
+                          {project[3]}
+                        </button>
                       </p>
                     )
                 )}
                 <br />
-                <h1 className="text-base font-semibold mt-4 mb-4">Fremde Projekte</h1>
+                <h1 className="text-base font-semibold mt-4 mb-4">
+                  Fremde Projekte
+                </h1>
                 {userProjects.map(
                   (project) =>
                     project[2] == userId && (
                       <p className="pb-2 pl-5" key={project[0]}>
-                        <button onClick={() => loadProject(project[3])}>{project[3]}</button>
+                        <button onClick={() => loadProject(project[3])}>
+                          {project[3]}
+                        </button>
                       </p>
                     )
                 )}
               </div>
-
             </div>
           )}
           {project !== "nicht gewählt" && (
@@ -340,12 +357,18 @@ const Settings = ({ userName }: { userName: string }) => {
                     >
                       &times;
                     </button>
-                    <h1 className="text-base font-semibold mb-4">Session erfassen</h1>
-                    <p className="text-base mb-4">geladenes Projekt: {project}</p>
+                    <h1 className="text-base font-semibold mb-4">
+                      Session erfassen
+                    </h1>
+                    <p className="text-base mb-4">
+                      geladenes Projekt: {project}
+                    </p>
                     <p className="mb-2">
                       Session aus kommagetrennter CSV-Datei importieren:
                     </p>
-                    <p className="text-xs mb-4">Punkt-Nr,E-Koordinate,N-Koordinate,Höhe</p>
+                    <p className="text-xs mb-4">
+                      Punkt-Nr,E-Koordinate,N-Koordinate,Höhe
+                    </p>
                     <form onSubmit={handleCreateSessionSubmit}>
                       <div className="relative border-dashed border-2 border-white p-16 rounded-md">
                         <input
@@ -355,16 +378,22 @@ const Settings = ({ userName }: { userName: string }) => {
                           required
                         />
                         <div className="text-center">
-                          <span className="text-white">CSV-Datei hier ablegen</span>
+                          <span className="text-white">
+                            CSV-Datei hier ablegen
+                          </span>
                           <br />
                           <br />
                           <input type="file" accept=".csv" required />
                         </div>
                       </div>
                       <p className="text-xs mt-4 flex items-center">
-                        <AiOutlineInfoCircle className="text-white mr-2" size={20} />
+                        <AiOutlineInfoCircle
+                          className="text-white mr-2"
+                          size={20}
+                        />
                         <span>
-                          Die importierte Session wird gleich benannt wie die hochgeladene Datei.
+                          Die importierte Session wird gleich benannt wie die
+                          hochgeladene Datei.
                         </span>
                       </p>
                       <p className="mt-4 mb-2">Zeitpunkt der Aufnahme:</p>
@@ -432,18 +461,19 @@ const Settings = ({ userName }: { userName: string }) => {
               </form>
               <p className="mt-32 text-neutral-600">
                 ##wenn Projekt gewählt wird, Daten von text laden.##
+                <TableView
+                  baseSessionPoints={baseSessionPoints[0]}
+                  nextSessionPoints={nextSessionPoints[0]}
+                  rowClick={(e, n) => setMapCenterCoords([e, n])}
+                />
               </p>
             </>
           )}
-
         </div>
       </div>
       <div className="col-span-3 row-span-2 gap-4 flex flex-col">
         {baseSessionPoints[0] && nextSessionPoints[0] && (
           <div>
-            <button onClick={() => setViewModel("Text")} className="pl-5">
-              Text
-            </button>
             <button onClick={() => setViewModel("2D")} className="pl-5">
               2D
             </button>
@@ -455,32 +485,27 @@ const Settings = ({ userName }: { userName: string }) => {
         {project === "nicht gewählt" && (
           <p>Wählen oder erstellen Sie ein Projekt.</p>
         )}
-        {!baseSessionPoints[0] && (
-          <p>Wählen Sie eine Nullmessung</p>
-        )}
-        {!nextSessionPoints[0] && (
-          <p>Wählen Sie eine Folgemessung</p>
-        )}
+        {!baseSessionPoints[0] && <p>Wählen Sie eine Nullmessung</p>}
+        {!nextSessionPoints[0] && <p>Wählen Sie eine Folgemessung</p>}
         {viewModel === "2D" && baseSessionPoints[0] && nextSessionPoints[0] && (
           <>
             <OlMap
-              bbox={[
-                baseSessionPoints[0].points[0].E,
-                baseSessionPoints[0].points[0].N,
-              ]}
+              bbox={
+                mapCenterCoords[0] !== 0 && mapCenterCoords[1] !== 0
+                  ? [mapCenterCoords[0], mapCenterCoords[1]]
+                  : [
+                      baseSessionPoints[0].points[0].E,
+                      baseSessionPoints[0].points[0].N,
+                    ]
+              }
+              zoom={
+                mapCenterCoords[0] !== 0 && mapCenterCoords[1] !== 0 ? 18 : 15
+              }
               pts={baseSessionPoints[0].points}
               nextPts={nextSessionPoints[0].points}
               handle3DClick={handle3DClick}
             />
           </>
-        )}
-        {viewModel === "Text" && (
-          <Detail
-            baseSessionPoints={baseSessionPoints[0]}
-            nextSessionPoints={nextSessionPoints[0]}
-            view3DPoint={view3DPoint}
-            viewModel="Text"
-          />
         )}
         {viewModel === "3D" && (
           <Detail
@@ -488,6 +513,7 @@ const Settings = ({ userName }: { userName: string }) => {
             nextSessionPoints={nextSessionPoints[0]}
             view3DPoint={view3DPoint}
             viewModel="3D"
+            cameraposition={mapCenterCoords}
           />
         )}
       </div>
