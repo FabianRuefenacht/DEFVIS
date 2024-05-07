@@ -2,7 +2,7 @@
 hier der Video-Teaser
 ```
 
-Die Web-App "3D-Vektor-Viewer" bietet Dir folgende Tools:
+Die Web-App ^^App-Name^^ bietet Dir folgende Tools:
 
 - Deformationsmessungen zu verwalten
 - Dreidimensionale Verschiebungen zu visualisieren
@@ -68,3 +68,7 @@ Nutze diese Links, um Dich durch die App zu navigieren und ihre Funktionalität 
 ## Methoden zum Produkt {#section4}
 
 ## eventuell Quellenangaben der genutzten Ressourcen {#section5}
+
+## Ausblick der App {#section6}
+
+- Zeitreihenanalyse
