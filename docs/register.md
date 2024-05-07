@@ -1,10 +1,11 @@
 # Register
 
-![Register-Ansicht](screenshots/register.png)
-<video controls loop autoplay>
-  <source src="./videos/register.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+<div style="width: 50%;">
+  <video controls loop autoplay>
+    <source src="./videos/register.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
 
 ## Beschreibung
 
