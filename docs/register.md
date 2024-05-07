@@ -1,11 +1,9 @@
 # Register
 
-<div style="max-width: 50%;">
-  <video controls loop autoplay>
-    <source src="./videos/register.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-</div>
+<video controls loop autoplay  style="max-width: 50%;">
+<source src="./videos/register.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
 
 ## Beschreibung
 
