@@ -12,7 +12,7 @@ Die Darstellung dieser Daten im dreidimensionalen Kontext bietet Dir als Nutzer\
 
 Die Implementierung dieser Funktionen zielt darauf ab, eine effiziente und effektive Datenanalyse sowie eine ansprechende Visualisierung zu ermöglichen, wodurch die Anwendung eine Palette von Anwendungsgebieten abdecken kann.
 
-## Schritte zur Nutzung der App:
+## Schritte zur Nutzung der App: {#section1}
 
 1. **Repository klonen:**
 
@@ -47,7 +47,7 @@ Die Implementierung dieser Funktionen zielt darauf ab, eine effiziente und effek
    npm run dev
    ```
 
-## Benutzung der Web-App:
+## Benutzung der Web-App: {#section3}
 
 Entdecke die vielfältigen Tools und Funktionen, die sie bietet. Klicke auf die Links unten, um zu den einzelnen Seiten zu gelangen und mehr über ihre Funktionen zu erfahren:
 
@@ -63,8 +63,8 @@ Entdecke die vielfältigen Tools und Funktionen, die sie bietet. Klicke auf die 
 
 Nutze diese Links, um Dich durch die App zu navigieren und ihre Funktionalität voll auszuschöpfen!
 
-## Features aufzeigen, was kann die app auf einen Blick
+## Features aufzeigen, was kann die app auf einen Blick {#section2}
 
-## Methoden zum Produkt
+## Methoden zum Produkt {#section4}
 
-## eventuell Quellenangaben der genutzten Ressourcen
+## eventuell Quellenangaben der genutzten Ressourcen {#section5}
