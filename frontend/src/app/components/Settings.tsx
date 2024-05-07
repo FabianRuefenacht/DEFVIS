@@ -103,7 +103,7 @@ const Settings = ({ userName }: { userName: string }) => {
       if (response.data.exec == "error") {
         setUserProjects([]);
       } else {
-        setUserProjects(response.data.exec);
+        setUserProjects(response.data.exec.reverse());
         setuserId(response.data.userId);
       }
     } catch (error) {
@@ -241,18 +241,18 @@ const Settings = ({ userName }: { userName: string }) => {
             <div
               id="modal"
               onClick={handleOutsideClick}
-              className=" fixed inset-0 flex items-center justify-center  bg-zinc-600/40 z-50"
+              className="fixed inset-0 flex items-center justify-center bg-zinc-600/40 z-50"
             >
-              {/* <div className=" bg-zinc-600 m-auto w-1/2 p-5 rounded-none relative min-w-fit"> */}
-              <div className="bg-neutral-400 text-white p-8 rounded shadow-md w-96">
+              <div className="bg-neutral-400 text-white p-8 rounded shadow-md w-96 relative">
                 <button
-                  onClick={changeNewProj}
-                  className=" px-2 float-right text-base absolute top-0 right-0"
+                  onClick={changeOpenProj}
+                  className="px-2 absolute top-0 right-0 text-5xl"
+                  style={{ zIndex: "1" }}
                 >
                   &times;
                 </button>
                 <form onSubmit={handleNewProjectSubmit}>
-                  <h1 className=" text-base font-semibold mb-8">
+                  <h1 className="text-base font-semibold mb-8">
                     Neues Projekt erstellen
                   </h1>
                   <p>Projektname</p>
@@ -263,7 +263,7 @@ const Settings = ({ userName }: { userName: string }) => {
                     required
                   />
                   <p>Projektersteller</p>
-                  <p className=" my-2 mb-8">{userName}</p>
+                  <p className="my-2 mb-8">{userName}</p>
                   <p>Kunde</p>
                   <input
                     type="email"
@@ -283,6 +283,7 @@ const Settings = ({ userName }: { userName: string }) => {
             </div>
           )}
 
+
           <Button clickFunc={handleOpenProjects} text="Projekt laden" />
           {openProj && (
             <div
@@ -291,43 +292,35 @@ const Settings = ({ userName }: { userName: string }) => {
               className=" fixed inset-0 flex items-center justify-center  bg-zinc-600/40 z-50"
             >
               {/* <div className=" bg-zinc-600 m-auto w-1/2 p-5 rounded-none relative flex flex-col min-w-fit text-white"> */}
-              <div className="bg-neutral-400 text-white p-8 rounded shadow-md w-96">
+              <div className="bg-neutral-400 text-white p-8 rounded shadow-md w-96 relative">
                 <button
                   onClick={changeOpenProj}
-                  className=" px-2 float-right text-base absolute top-0 right-0"
+                  className="px-2 absolute top-0 right-0 text-5xl"
+                  style={{ zIndex: "1" }}
                 >
                   &times;
                 </button>
-                <h1 className=" text-base font-semibold mb-4">
-                  Eigene Projekte
-                </h1>
+                <h1 className="text-base font-semibold mb-4">Eigene Projekte</h1>
                 {userProjects.map(
                   (project) =>
                     project[1] == userId && (
-                      <button
-                        key={project[0]}
-                        onClick={() => loadProject(project[3])}
-                      >
-                        {project[3]}
-                      </button>
+                      <p className="pt-2 pl-5" key={project[0]}>
+                        <button onClick={() => loadProject(project[3])}>{project[3]}</button>
+                      </p>
                     )
                 )}
                 <br />
-                <h1 className="text-base font-semibold mt-4 mb-4">
-                  Fremde Projekte
-                </h1>
+                <h1 className="text-base font-semibold mt-4 mb-4">Fremde Projekte</h1>
                 {userProjects.map(
                   (project) =>
                     project[2] == userId && (
-                      <button
-                        key={project[0]}
-                        onClick={() => loadProject(project[3])}
-                      >
-                        {project[3]}
-                      </button>
+                      <p className="pb-2 pl-5" key={project[0]}>
+                        <button onClick={() => loadProject(project[3])}>{project[3]}</button>
+                      </p>
                     )
                 )}
               </div>
+
             </div>
           )}
           {project !== "nicht gewählt" && (
@@ -337,28 +330,22 @@ const Settings = ({ userName }: { userName: string }) => {
                 <div
                   id="modal"
                   onClick={handleOutsideClick}
-                  className=" fixed inset-0 flex items-center justify-center  bg-zinc-600/40 z-50"
+                  className="fixed inset-0 flex items-center justify-center bg-zinc-600/40 z-50"
                 >
-                  {/* <div className=" bg-zinc-600 m-auto w-1/2 p-5 rounded-none relative min-w-fit"> */}
-                  <div className="bg-neutral-400 text-white p-8 rounded shadow-md w-96">
+                  <div className="bg-neutral-400 text-white p-8 rounded shadow-md w-96 relative">
                     <button
                       onClick={changeNewSession}
-                      className=" px-2 float-right text-base absolute top-0 right-0"
+                      className="px-2 float-right text-base absolute top-0 right-0 text-5xl"
+                      style={{ zIndex: "1" }}
                     >
                       &times;
                     </button>
-                    <h1 className="text-base font-semibold mb-4">
-                      Session erfassen
-                    </h1>
-                    <p className="text-base mb-4">
-                      geladenes Projekt: {project}
-                    </p>
+                    <h1 className="text-base font-semibold mb-4">Session erfassen</h1>
+                    <p className="text-base mb-4">geladenes Projekt: {project}</p>
                     <p className="mb-2">
                       Session aus kommagetrennter CSV-Datei importieren:
                     </p>
-                    <p className="text-xs mb-4">
-                      Punkt-Nr,E-Koordinate,N-Koordinate,Höhe
-                    </p>
+                    <p className="text-xs mb-4">Punkt-Nr,E-Koordinate,N-Koordinate,Höhe</p>
                     <form onSubmit={handleCreateSessionSubmit}>
                       <div className="relative border-dashed border-2 border-white p-16 rounded-md">
                         <input
@@ -368,22 +355,16 @@ const Settings = ({ userName }: { userName: string }) => {
                           required
                         />
                         <div className="text-center">
-                          <span className="text-white">
-                            CSV-Datei hier ablegen
-                          </span>
+                          <span className="text-white">CSV-Datei hier ablegen</span>
                           <br />
                           <br />
                           <input type="file" accept=".csv" required />
                         </div>
                       </div>
                       <p className="text-xs mt-4 flex items-center">
-                        <AiOutlineInfoCircle
-                          className="text-white mr-2"
-                          size={20}
-                        />
+                        <AiOutlineInfoCircle className="text-white mr-2" size={20} />
                         <span>
-                          Die importierte Session wird gleich benannt wie die
-                          hochgeladene Datei.
+                          Die importierte Session wird gleich benannt wie die hochgeladene Datei.
                         </span>
                       </p>
                       <p className="mt-4 mb-2">Zeitpunkt der Aufnahme:</p>
@@ -405,55 +386,9 @@ const Settings = ({ userName }: { userName: string }) => {
                   </div>
                 </div>
               )}
-              <h3 className="mt-8 flex justify-between items-center text-neutral-600">
-                <span>Projekt:</span>
-                <span className="text-end">{project}</span>
-              </h3>
-              <h3 className="mt-4 flex justify-between items-center">
-                <span>Sessionen auswählen:</span>
-                <span className="text-end">{getSessionerror}</span>
-              </h3>
-              <form>
-                <div className="flex justify-between items-center text-neutral-600">
-                  <p className="w-1/3">Nullmessung:</p>
-                  <select
-                    onChange={handleBaseSessionChange}
-                    className="w-2/3 ml-2 text-end"
-                  >
-                    <option value="placeholder">select a session</option>
-                    {sessionData.map((session) => (
-                      <option
-                        key={session.sessionId}
-                        value={session.sessionName}
-                      >
-                        {session.sessionName}
-                      </option>
-                    ))}
-                  </select>
-                </div>
-                <div className="flex justify-between items-center text-neutral-600">
-                  <p className="w-1/3">Folgemessung:</p>
-                  <select
-                    onChange={handleNextSessionChange}
-                    className="w-2/3 ml-2 text-end"
-                  >
-                    <option value="placeholder">select a session</option>
-                    {sessionData.map((session) => (
-                      <option
-                        key={session.sessionId}
-                        value={session.sessionName}
-                      >
-                        {session.sessionName}
-                      </option>
-                    ))}
-                  </select>
-                </div>
-              </form>
-              <p className="mt-32 text-neutral-600">
-                ##wenn Projekt gewählt wird, Daten von text laden.##
-              </p>
             </>
           )}
+
         </div>
       </div>
       <div className="col-span-3 row-span-2 gap-4 flex flex-col">

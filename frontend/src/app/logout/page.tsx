@@ -29,6 +29,14 @@ const Logout = () => {
             Abmelden
           </button>
         </form>
+        
+        <div className="text-center text-white mt-4">- ODER -</div>
+        <Link
+          className="block text-center text-blue-500 hover:underline mt-2"
+          href="/"
+        >
+          Zurück zur App
+        </Link>
       </div>
     </main>
   );
