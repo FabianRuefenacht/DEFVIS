@@ -1,3 +1,5 @@
+[Gehe zurück zur Hauptseite](index.md)
+
 # Login
 
 <img src="screenshots/login.png" alt="Login" style="max-width: 100%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);">
@@ -22,4 +24,5 @@ Die Seite enthält 2 Buttons und 2 Texteingaben:
 - Möglicherweise könnte ein Home-Button hinzugefügt werden, um zurück zur Home-Ansicht zu gelangen.
 - Das Login-Feld könnte zentriert werden, um die Benutzerfreundlichkeit zu verbessern.
 
-[Gehe zurück zur Hauptseite](index.md)
+<div style="text-align: left; float: left;"><a href="home.html">< Gehe zurück zur vorherigen Seite</a></div>
+<div style="text-align: right; float: right;"><a href="register.html">Gehe weiter zur nächsten Seite ></a></div>

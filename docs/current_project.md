@@ -15,5 +15,5 @@
 
 < [Gehe zurück zur vorherigen Seite](create_session.md) | [Gehe weiter zur nächsten Seite](logout.md) >
 
-<div style="text-align: left; float: left;"><a href="create_project.html">< Gehe zurück zur vorherigen Seite</a></div>
+<div style="text-align: left; float: left;"><a href="capture_session.html">< Gehe zurück zur vorherigen Seite</a></div>
 <div style="text-align: right; float: right;"><a href="logout.md">Gehe weiter zur nächsten Seite ></a></div>

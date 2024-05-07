@@ -1,3 +1,5 @@
+[Gehe zurück zur Hauptseite](index.md)
+
 # Home
 
 <img src="screenshots/home.png" alt="Home-Ansicht" style="max-width: 100%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);">
@@ -21,4 +23,4 @@ Die Seite enthält drei Buttons und keine weiteren Interaktionen:
 - Der Text könnte verbessert werden, zum Beispiel durch die Formulierung "Registrieren Sie sich oder melden Sie sich an, um auf die Projektverwaltung zuzugreifen."
 - Möglicherweise sollte der Button "Registrieren" in "Registrieren" umbenannt werden.
 
-[Gehe zurück zur Hauptseite](index.md)
+<div style="text-align: right; float: right;"><a href="login.html">Gehe weiter zur nächsten Seite ></a></div>
