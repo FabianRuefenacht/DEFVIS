@@ -1,8 +1,6 @@
-<body style="background-color: black; color: white;">
-
 # Home
 
-<img src="screenshots/home.png" alt="Home-Ansicht" style="max-width: 100%;">
+<img src="screenshots/home.png" alt="Home-Ansicht" style="max-width: 100%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);">
 
 ## Beschreibung
 
@@ -24,5 +22,3 @@ Die Seite enthält drei Buttons und keine weiteren Interaktionen:
 - Möglicherweise sollte der Button "Registrieren" in "Registrieren" umbenannt werden.
 
 [Gehe zurück zur Hauptseite](index.md)
-
-</body>

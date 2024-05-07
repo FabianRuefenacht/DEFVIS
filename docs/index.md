@@ -53,7 +53,7 @@ Die Implementierung dieser Funktionen zielt darauf ab, eine effiziente und effek
 
 Entdecke die vielfältigen Tools und Funktionen, die sie bietet. Klicke auf die Links unten, um zu den einzelnen Seiten zu gelangen und mehr über ihre Funktionen zu erfahren:
 
-- [Home](home.html): Startseite der App, wo Du Dich orientieren und weitere Schritte planen kannst.
+- [Home](home.md): Startseite der App, wo Du Dich orientieren und weitere Schritte planen kannst.
 - [Login](login.md): Melde Dich mit deinem Benutzerkonto an, um Zugriff auf Deine Projekte zu erhalten.
 - [Register](register.md): Erstelle ein neues Benutzerkonto, um alle Funktionen der App nutzen zu können.
 - [Hauptansicht](main_view.md): Die zentrale Ansicht Deiner App, wo du Projekte verwalten und Daten visualisieren kannst.
