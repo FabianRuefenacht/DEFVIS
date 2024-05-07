@@ -48,17 +48,17 @@ npm start
 
 ## Backend installieren
 
-Öffne ein Terminal und wechsle in den _server_ Ordner.
+Öffne ein Terminal und wechsle in den _backend_ Ordner.
 
 1. Virtuelle Umgebung für Python mit allen Requirements in der `requirements.txt` Datei aufsetzen.
 
 ```shell
 # Requirements
-cd server
+cd backend
 # Füge conda-forge den als Channel in conda hinzu, da sonst nicht alle Pakete installiert werden können.
 conda config --add channels conda-forge
 # Erstelle ein neues Conda Environment und füge die Python Packges requirements.txt hinzu, requirements.txt befindet sich im Ordner server/app
-conda create --name gdiproject python=3.10.9 --file app/requirements.txt
+conda create --name 3dvectors python=3.9 --file app/requirements.txt
 ```
 
 2. Backend ausführen, virtuelle Umgebung starten und server _uvicorn_ starten. Öffne http://localhost:8000/docs im Browser und verifiziere, ob das Backend läuft.
@@ -67,7 +67,7 @@ conda create --name gdiproject python=3.10.9 --file app/requirements.txt
 cd server
 # aktiviere die conda umgebung gdiproject
 conda activate gdiproject
-# start server auf localhost aus dem Ordner "server"
+# start server auf localhost aus dem Ordner "backend"
 uvicorn app.main:app --reload
 # Öffne die angegebene URL im Browser und verifiziere, ob das Backend läuft.
 ```
