@@ -12,7 +12,7 @@ Die Darstellung dieser Daten im dreidimensionalen Kontext bietet Dir als Nutzer\
 
 Die Implementierung dieser Funktionen zielt darauf ab, eine effiziente und effektive Datenanalyse sowie eine ansprechende Visualisierung zu ermöglichen, wodurch die Anwendung eine Palette von Anwendungsgebieten abdecken kann.
 
-## Schritte zur Nutzung der App:
+## Schritte zur Nutzung der App: {#section1}
 
 1. **Repository klonen:**
 
