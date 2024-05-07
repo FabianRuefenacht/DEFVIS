@@ -1,4 +1,10 @@
-# Willkommen auf unserer App!
+# Willkommen auf unserer App! -> mehr catchimg
+
+## Features aufzeigen, was kann die app auf einen Blick
+
+## Methoden zum Produkt
+
+## eventuell Quellenangaben der genutzten Ressourcen
 
 Die Web-App "3D-Visualizer" bietet Dir folgende Tools:
 
