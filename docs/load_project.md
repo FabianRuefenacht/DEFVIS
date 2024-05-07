@@ -1,6 +1,6 @@
 # Projekt laden
 
-![Projekt laden](screenshots/load_project.png)
+<img src="screenshots/load_project.png" alt="Projekt-laden" style="max-width: 100%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);">
 
 ## Probleme und Verbesserungsvorschläge
 

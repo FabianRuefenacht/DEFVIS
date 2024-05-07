@@ -1,6 +1,6 @@
 # Projekt erstellen
 
-![Projekt erstellen](screenshots/create_project.png)
+<img src="screenshots/create_project.png" alt="Projekt-erstellen" style="max-width: 100%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);">
 
 ## Probleme und Verbesserungsvorschläge
 
