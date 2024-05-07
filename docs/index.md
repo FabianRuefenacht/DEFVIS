@@ -56,14 +56,14 @@ Die Implementierung dieser Funktionen zielt darauf ab, eine effiziente und effek
 Entdecke die vielfältigen Tools und Funktionen, die sie bietet. Klicke auf die Links unten, um zu den einzelnen Seiten zu gelangen und mehr über ihre Funktionen zu erfahren:
 
 - [Home](home.html): Startseite der App, wo Du Dich orientieren und weitere Schritte planen kannst.
-- [Register](register.html): Erstelle ein neues Benutzerkonto, um alle Funktionen der App nutzen zu können.
-- [Login](login.html): Melde Dich mit deinem Benutzerkonto an, um Zugriff auf Deine Projekte zu erhalten.
+- [Registrieren](register.html): Erstelle ein neues Benutzerkonto, um alle Funktionen der App nutzen zu können.
+- [Anmelden](login.html): Melde Dich mit deinem Benutzerkonto an, um Zugriff auf Deine Projekte zu erhalten.
 - [Hauptansicht](main_view.html): Die zentrale Ansicht Deiner App, wo du Projekte verwalten und Daten visualisieren kannst.
 - [Projekt erstellen](create_project.html): Beginne ein neues Projekt und füge Daten hinzu, um sie zu analysieren.
 - [Projekt laden](load_project.html): Lade ein vorhandenes Projekt, um fortzufahren oder es zu bearbeiten.
 - [Session erfassen](capture_session.html): Erfasse neue Daten für Dein aktuelles Projekt.
 - [Geladenes Projekt](current_project.html): Sehe die Daten in Deinem ausgewählten Projekt ein.
-- [Logout](logout.html): Melde Dich von deinem Benutzerkonto ab, wenn du die App verlassen möchtest.
+- [Abmelden](logout.html): Melde Dich von deinem Benutzerkonto ab, wenn du die App verlassen möchtest.
 
 Nutze diese Links, um Dich durch die App zu navigieren und ihre Funktionalität voll auszuschöpfen!
 
@@ -100,3 +100,7 @@ Die Integration einer Zeitreihenanalyse war aus Zeitgründen nicht möglich. Die
 ### Farbcodierte Punkte
 
 Eine zukünftige Erweiterung könnte die Möglichkeit für Benutzer umfassen, Schwellwerte für jedes Projekt festzulegen. Punkte, die signifikante Bewegungen aufweisen, könnten anders eingefärbt oder markiert werden, um sofortige Aufmerksamkeit zu erregen.
+
+### 2D-Balken neben 3D-Vektoren
+
+Die grösse eines Vektors ist schwierig zu vergleichen. Alleine durch die perspektive reicht oft nicht aus. Deshalb könnte man einen 2D-Balkendiagramm neben den Vektor setzen. So sieht man ein verhältnis zu weiter entfernten oder näheren Punkten.
