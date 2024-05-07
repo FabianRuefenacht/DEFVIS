@@ -24,7 +24,7 @@
     "ol-cesium": "^2.17.0",
     "react": "^18",
     "react-dom": "^18",
-    "react-icons": "^5.1.0",
+    "react-icons": "^5.2.1",
     "three": "^0.163.0"
   },
   "devDependencies": {

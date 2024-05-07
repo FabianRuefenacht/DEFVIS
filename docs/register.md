@@ -1,6 +1,10 @@
 # Register
 
 ![Register-Ansicht](screenshots/register.png)
+<video controls loop>
+  <source src="./videos/register.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 ## Beschreibung
 
