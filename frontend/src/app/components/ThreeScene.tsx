@@ -2,7 +2,6 @@ import React, { useEffect, useRef } from "react";
 import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
-import { OBJLoader } from "three/examples/jsm/loaders/OBJLoader";
 
 interface Point {
   name: string;
@@ -16,9 +15,10 @@ interface ThreeSceneProps {
   height: number;
   basePts: Point[];
   nextPts: Point[];
+  cameraposition: number[]
 }
 
-const ThreeScene: React.FC<ThreeSceneProps> = ({ width, height, basePts, nextPts }) => {
+const ThreeScene: React.FC<ThreeSceneProps> = ({ width, height, basePts, nextPts, cameraposition }) => {
   const threeContainerRef = useRef<HTMLDivElement>(null);
   const rendererRef = useRef<THREE.WebGLRenderer | null>(null);
 
@@ -52,8 +52,12 @@ const ThreeScene: React.FC<ThreeSceneProps> = ({ width, height, basePts, nextPts
         const center = boundingBox.getCenter(new THREE.Vector3());
 
         // Setze die Kamera-Position und das OrbitControls-Ziel auf das Zentrum des Modells
-        camera.position.copy(new THREE.Vector3(center.x, center.y + boundingBox.max.z / 2, center.z));
-        controls.target.copy(new THREE.Vector3(center.x, center.y, center.z));
+        const centerE = cameraposition[0] !== 0 ? cameraposition[0] : center.x;
+        const centerN = cameraposition[1] !== 0 ? Math.floor(center.y / 1000) * 1000 + 500 - cameraposition[1] : center.y + boundingBox.max.z / 2;
+        
+        camera.position.copy(new THREE.Vector3(centerE, center.y + boundingBox.max.z / 2, centerN));
+        camera.lookAt(new THREE.Vector3(centerE, 0, centerN))
+        controls.target.copy(new THREE.Vector3(centerE, center.y + boundingBox.max.z / 2 - 100, centerN));
 
         if (basePts) {
           // `basePts` ist definiert und ein Array
@@ -166,7 +170,7 @@ const ThreeScene: React.FC<ThreeSceneProps> = ({ width, height, basePts, nextPts
         rendererDomElement.parentNode.removeChild(rendererDomElement);
       }
     };
-  }, [width, height]);
+  }, [width, height, cameraposition]);
 
   return (
     <div
