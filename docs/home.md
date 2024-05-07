@@ -8,7 +8,7 @@
 
 Die Home-Ansicht ist die erste Seite, die geladen wird, wenn man die Web-App startet. Der Benutzer kann sich neu registrieren oder anmelden, um auf die Projektverwaltung zuzugreifen.
 
-## Buttons
+## Funktionen
 
 Die Seite enthält drei Buttons und keine weiteren Interaktionen:
 
