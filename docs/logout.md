@@ -5,3 +5,5 @@
 ## Probleme und Verbesserungsvorschläge
 
 - Eventuell könnte ein zusätzlicher Link hinzugefügt werden: "Zurück zur App", um den Benutzern eine einfache Möglichkeit zu bieten, zur Hauptansicht der App zurückzukehren.
+
+[Gehe zurück zur Hauptseite](index.md)

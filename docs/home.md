@@ -20,3 +20,5 @@ Die Seite enthält drei Buttons und keine weiteren Interaktionen:
 - Die Seite könnte visuell ansprechender gestaltet werden, möglicherweise durch Ändern des Hintergrunds.
 - Der Text könnte verbessert werden, zum Beispiel durch die Formulierung "Registrieren Sie sich oder melden Sie sich an, um auf die Projektverwaltung zuzugreifen."
 - Möglicherweise sollte der Button "Registrieren" in "Registrieren" umbenannt werden.
+
+[Gehe zurück zur Hauptseite](index.md)

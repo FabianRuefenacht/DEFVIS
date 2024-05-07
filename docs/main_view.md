@@ -23,3 +23,5 @@ Die Seite enthält 7 Buttons:
 - Der Home-Button hat derzeit keine sinnvolle Funktion. Möglicherweise sollte überlegt werden, ob er entfernt oder mit einer Funktion versehen werden sollte.
 - Es könnte sinnvoll sein, die Buttons "Text", "2D" und "3D" erst sichtbar zu machen, wenn ein Projekt geladen wurde, um die Benutzererfahrung zu verbessern.
 - Um dem Benutzer mehr Kontext zu geben, könnte eine 2D-Karte der Schweiz eingebunden werden und ein Text wie "Laden oder erstellen Sie ein Projekt" angezeigt werden.
+
+[Gehe zurück zur Hauptseite](index.md)

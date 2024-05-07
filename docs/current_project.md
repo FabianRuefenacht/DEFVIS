@@ -10,3 +10,5 @@
 - Die Textansicht könnte links im Fenster platziert werden, um die Benutzererfahrung zu verbessern.
 - Der Projektname könnte größer dargestellt werden, um die Sichtbarkeit zu verbessern.
 - Der Block auf der linken Seite könnte möglicherweise schmaler gemacht oder die Texte schöner formatiert werden, um die Ästhetik zu verbessern.
+
+[Gehe zurück zur Hauptseite](index.md)

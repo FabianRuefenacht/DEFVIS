@@ -18,3 +18,5 @@ Die Seite enthält 2 Buttons und 2 Texteingaben:
 - Es sollte überlegt werden, ob der Benutzer nach dem Registrieren direkt zur Hauptansicht weitergeleitet werden soll.
 - Der Text "User existiert bereits" könnte verbessert werden, z.B. als "<i>info</i> User existiert bereits", und die Farbe könnte auf rot geändert werden, um Warnungen hervorzuheben.
 - Möglicherweise könnte das Register-Fenster zentriert werden, um die Ästhetik zu verbessern.
+
+[Gehe zurück zur Hauptseite](index.md)

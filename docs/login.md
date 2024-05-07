@@ -21,3 +21,5 @@ Die Seite enthält 2 Buttons und 2 Texteingaben:
     Die Schrift und die Umrandung der Textfelder (für Benutzername und Passwort) könnten rot gemacht werden, um Warnungen zu kennzeichnen.
 - Möglicherweise könnte ein Home-Button hinzugefügt werden, um zurück zur Home-Ansicht zu gelangen.
 - Das Login-Feld könnte zentriert werden, um die Benutzerfreundlichkeit zu verbessern.
+
+[Gehe zurück zur Hauptseite](index.md)
