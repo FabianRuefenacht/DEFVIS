@@ -7,7 +7,7 @@ from db import DatabaseManager
 
 
 # Database-Setup
-DBM = DatabaseManager(db_name="GeoInformatik.db")
+DBM = DatabaseManager(db_name="../GeoInformatik.db")
 DBM.create_all_Tables()
 
 # create an instance of FastAPI
