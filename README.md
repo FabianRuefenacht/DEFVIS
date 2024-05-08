@@ -36,13 +36,15 @@ conda create --name vecvis
 ```
 ```shell
 conda activate vecvis
-
 ```
 ```shell
 node install.js
 ```
 
 ## Schnellstart
+```shell
+conda activate vecvis
+```
 ```shell
 node run.js
 ```
