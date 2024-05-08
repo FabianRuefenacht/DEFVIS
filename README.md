@@ -30,6 +30,19 @@ git clone git@github.com:FabianRuefenacht/6230_FRNMLW.git
 
 Öffne ein neues Visual Studio Code Fenster und wähle unter Start Clone Git Repository. Alternativ öffne die Command Palette in VS Code CTRL+Shift+P (View / Command Palette) und wähle Git: clone. Füge die Git web URL `https://github.com/FabianRuefenacht/6230_FRNMLW` ein und bestätige die Eingabe mit Enter. Wähle einen Ordner in welchen das Repository _geklont_ werden soll.
 
+## Schnellinstallation
+```shell
+conda create --name vecvis
+conda activate vecvis
+
+node install.js
+```
+
+## Schnellstart
+```shell
+node run.js
+```
+
 ## Frontend installieren
 
 Öffne ein Terminal (Command Prompt in VS Code) und wechsle in den _client_ Ordner in diesem Projekt
