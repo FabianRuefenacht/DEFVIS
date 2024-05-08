@@ -35,8 +35,7 @@ function executeCommand(command, cwd, description) {
 }
 
 // Backend-Befehle nacheinander ausführen
-executeCommand(`conda activate ${projname}`, backend, 'Aktiviere Conda-Umgebung')
-  .then(() => executeCommand(`pip install -r ${path.join(__dirname, backend, requirements)}`, backend, 'Installiere Python-Module'))
+executeCommand(`pip install -r ${path.join(__dirname, backend, requirements)}`, backend, 'Installiere Python-Module')
   .then(() => {
     // Frontend-Befehle ausführen
     return executeCommand(`npm install`, frontend, 'Installiere npm-Pakete für Frontend');
