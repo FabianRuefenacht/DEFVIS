@@ -48,7 +48,9 @@ conda activate vecvis
 ```shell
 node run.js
 ```
-
+```#Starte im browser
+http://localhost:3000
+```
 ## Frontend installieren
 
 Öffne ein Terminal (Command Prompt in VS Code) und wechsle in den _client_ Ordner in diesem Projekt
