@@ -32,7 +32,7 @@ git clone git@github.com:FabianRuefenacht/6230_FRNMLW.git
 
 ## Schnellinstallation
 ```shell
-conda create --name vecvis
+conda create -n vecvis python=3.8
 ```
 ```shell
 conda activate vecvis
