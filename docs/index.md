@@ -14,23 +14,26 @@ Die Implementierung dieser Funktionen zielt darauf ab, eine effiziente und effek
 
 ---
 
-## Schritte zur Nutzung der App {#section1}
+## Wie wird die App installiert {#section1}
 
-[Schnellinstallation](https://github.com/FabianRuefenacht/6230_FRNMLW/?tab=readme-ov-file#schnellinstallation){:target="\_blank"}
+hier gehts zur [Schnellinstallation](https://github.com/FabianRuefenacht/6230_FRNMLW/?tab=readme-ov-file#schnellinstallation){:target="\_blank"}
 
 ---
 
-## Features aufzeigen, was kann die app auf einen Blick {#section2}
+## Features der App {#section2}
 
 Unsere App bietet eine breite Palette von Funktionen, die den Nutzern vielfältige Möglichkeiten bieten, ohne sie zu überfordern. Eine herausragende Funktion ist der 3D-Viewer, der es den Benutzern ermöglicht, Fehlervektoren in einer dreidimensionalen Ansicht zu betrachten. Durch diese Darstellung in Bezug auf das Gelände können Benutzer nicht nur 2D-Informationen erhalten, sondern auch den Fehlervektor im Kontext einer Oberfläche visualisieren. Dies ermöglicht es, einen direkten Bezug herzustellen, beispielsweise um zu sehen, wie ein Punkt am Hang abrutscht.
 
 ---
 
-## Benutzung der Web-App: {#section3}
+## Benutzung der Web-App {#section3}
 
 Entdecke die vielfältigen Tools und Funktionen, die sie bietet. Klicke auf die Links unten, um zu den einzelnen Seiten zu gelangen und mehr über ihre Funktionen zu erfahren:
 
-- [Home](home.html): Startseite der App, wo Du Dich orientieren und weitere Schritte planen kannst.
+- [Home](home.html):
+
+Startseite der App, wo Du Dich orientieren und weitere Schritte planen kannst.
+
 - [Registrieren](register.html): Erstelle ein neues Benutzerkonto, um alle Funktionen der App nutzen zu können.
 - [Anmelden](login.html): Melde Dich mit deinem Benutzerkonto an, um Zugriff auf Deine Projekte zu erhalten.
 - [Hauptansicht](main_view.html): Die zentrale Ansicht Deiner App, wo du Projekte verwalten und Daten visualisieren kannst.
@@ -39,8 +42,6 @@ Entdecke die vielfältigen Tools und Funktionen, die sie bietet. Klicke auf die 
 - [Session erfassen](capture_session.html): Erfasse neue Daten für Dein aktuelles Projekt.
 - [Geladenes Projekt](current_project.html): Sehe die Daten in Deinem ausgewählten Projekt ein.
 - [Abmelden](logout.html): Melde Dich von deinem Benutzerkonto ab, wenn du die App verlassen möchtest.
-
-Nutze diese Links, um Dich durch die App zu navigieren und ihre Funktionalität voll auszuschöpfen!
 
 ---
 
