@@ -30,9 +30,9 @@ Unsere App bietet eine breite Palette von Funktionen, die den Nutzern vielfälti
 
 Entdecke die vielfältigen Tools und Funktionen, die sie bietet. Klicke auf die Links unten, um zu den einzelnen Seiten zu gelangen und mehr über ihre Funktionen zu erfahren:
 
-- [Home](home.html):
+**[Home](home.html):**
 
-Startseite der App, wo Du Dich orientieren und weitere Schritte planen kannst.
+ist die Startseite der App, wo Du Dich orientieren und weitere Schritte planen kannst.
 
 - [Registrieren](register.html): Erstelle ein neues Benutzerkonto, um alle Funktionen der App nutzen zu können.
 - [Anmelden](login.html): Melde Dich mit deinem Benutzerkonto an, um Zugriff auf Deine Projekte zu erhalten.
