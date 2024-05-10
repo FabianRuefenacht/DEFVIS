@@ -32,16 +32,39 @@ Entdecke die vielfältigen Tools und Funktionen, die sie bietet. Klicke auf die 
 
 **[Home](home.html):**
 
-ist die Startseite der App, wo Du Dich orientieren und weitere Schritte planen kannst.
+- ist die Startseite der App, wo Du Dich orientieren und weitere Schritte planen kannst
 
-- [Registrieren](register.html): Erstelle ein neues Benutzerkonto, um alle Funktionen der App nutzen zu können.
-- [Anmelden](login.html): Melde Dich mit deinem Benutzerkonto an, um Zugriff auf Deine Projekte zu erhalten.
-- [Hauptansicht](main_view.html): Die zentrale Ansicht Deiner App, wo du Projekte verwalten und Daten visualisieren kannst.
-- [Projekt erstellen](create_project.html): Beginne ein neues Projekt und füge Daten hinzu, um sie zu analysieren.
-- [Projekt laden](load_project.html): Lade ein vorhandenes Projekt, um fortzufahren oder es zu bearbeiten.
-- [Session erfassen](capture_session.html): Erfasse neue Daten für Dein aktuelles Projekt.
-- [Geladenes Projekt](current_project.html): Sehe die Daten in Deinem ausgewählten Projekt ein.
-- [Abmelden](logout.html): Melde Dich von deinem Benutzerkonto ab, wenn du die App verlassen möchtest.
+**[Registrieren](register.html):**
+
+- hier kannst Du ein neues Benutzerkonto erstellen, um alle Funktionen der App nutzen zu können
+
+**[Anmelden](login.html):**
+
+- melde Dich mit deinem Benutzerkonto an, um Zugriff auf Deine Projekte zu erhalten
+
+**[Hauptansicht](main_view.html):**
+
+- ist die zentrale Ansicht Deiner App, wo Du Projekte verwalten und Daten visualisieren kannst
+
+**[Projekt erstellen](create_project.html):**
+
+- beginne ein neues Projekt und füge Daten hinzu, um sie zu analysieren.
+
+**[Projekt laden](load_project.html):**
+
+- lade ein vorhandenes Projekt, um fortzufahren oder es zu bearbeiten
+
+**[Session erfassen](capture_session.html):**
+
+- erfasse neue Sessionen für Dein aktuelles Projekt
+
+**[Geladenes Projekt](current_project.html):**
+
+- sehe die Daten in Deinem ausgewählten Projekt ein
+
+**[Abmelden](logout.html):**
+
+- melde Dich von deinem Benutzerkonto ab, wenn du die App verlassen möchtest
 
 ---
 
