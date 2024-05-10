@@ -14,40 +14,9 @@ Die Implementierung dieser Funktionen zielt darauf ab, eine effiziente und effek
 
 ---
 
-## Schritte zur Nutzung der App: {#section1}
+## Schritte zur Nutzung der App {#section1}
 
-1. **Repository klonen:**
-
-   ```bash
-   cd documents
-   git clone git@github.com:FabianRuefenacht/6230_FRNMLW.git
-   ```
-
-2. **Öffne Visual Studio Code und navigiere zum Quellcode:**
-
-   cd documents/6230_FRNMLW/frontend
-
-3. **Datenbank initialisieren:**
-
-   ```bash
-   cd documents/6230_FRNMLW/backend
-   python main.py
-   ```
-
-4. **npm installieren:**
-   Öffne ein weiteres Terminal und navigiere zu
-
-   ```bash
-   cd documents/6230_FRNMLW/frontend
-   npm install
-   ```
-
-5. **App ausführen:**
-
-   ```bash
-   cd documents/6230_FRNMLW/frontend
-   npm run dev
-   ```
+[Schnellinstallation](https://github.com/FabianRuefenacht/6230_FRNMLW/?tab=readme-ov-file#schnellinstallation){:target="\_blank"}
 
 ---
 
