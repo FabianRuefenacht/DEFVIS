@@ -10,7 +10,13 @@ Die Web-App ^^App-Name^^ bietet Dir folgende Tools:
 
 Die Darstellung dieser Daten im dreidimensionalen Kontext bietet Dir als Nutzer\*in eine intuitive und umfassende Sicht auf die Daten, was zu fundierteren und informierteren Entscheidungen führt.
 
-Die Implementierung dieser Funktionen zielt darauf ab, eine effiziente und effektive Datenanalyse sowie eine ansprechende Visualisierung zu ermöglichen, wodurch die Anwendung eine Palette von Anwendungsgebieten abdecken kann.
+## Die Implementierung dieser Funktionen zielt darauf ab, eine effiziente und effektive Datenanalyse sowie eine ansprechende Visualisierung zu ermöglichen, wodurch die Anwendung eine Palette von Anwendungsgebieten abdecken kann.
+
+## Suche
+
+<script async src="https://cse.google.com/cse.js?cx=80a9efd4977de4c50">
+</script>
+<div class="gcse-search"></div>
 
 ---
 
