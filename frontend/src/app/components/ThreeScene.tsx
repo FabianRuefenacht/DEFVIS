@@ -28,7 +28,7 @@ const ThreeScene: React.FC<ThreeSceneProps> = ({ width, height, basePts, nextPts
     // Szene, Kamera und Renderer erstellen
     const scene = new THREE.Scene();
     scene.background = new THREE.Color("#FFFFFF");
-    const camera = new THREE.PerspectiveCamera(75, width / height, 0.1, 1000);
+    const camera = new THREE.PerspectiveCamera(75, width / height, 0.1, 10000);
     const renderer = new THREE.WebGLRenderer();
     renderer.setSize(width, height);
 
@@ -43,7 +43,7 @@ const ThreeScene: React.FC<ThreeSceneProps> = ({ width, height, basePts, nextPts
     }
 
     loader.load(
-      "models/GO.gltf",
+      "models/SIP.gltf",
       function (gltf: any) {
         scene.add(gltf.scene);
 
@@ -52,21 +52,26 @@ const ThreeScene: React.FC<ThreeSceneProps> = ({ width, height, basePts, nextPts
         const center = boundingBox.getCenter(new THREE.Vector3());
 
         // Setze die Kamera-Position und das OrbitControls-Ziel auf das Zentrum des Modells
-        const centerE = cameraposition[0] !== 0 ? cameraposition[0] : center.x;
-        const centerN = cameraposition[1] !== 0 ? Math.floor(center.y / 1000) * 1000 + 500 - cameraposition[1] : center.y + boundingBox.max.z / 2;
         
-        camera.position.copy(new THREE.Vector3(centerE, center.y + boundingBox.max.z / 2, centerN));
-        camera.lookAt(new THREE.Vector3(centerE, 0, centerN))
-        controls.target.copy(new THREE.Vector3(centerE, center.y + boundingBox.max.z / 2 - 100, centerN));
-
         if (basePts) {
           // `basePts` ist definiert und ein Array
           if (Array.isArray(basePts)) {
+            const largestH = basePts.reduce((prev, current) => (prev.H > current.H) ? prev : current);
+
+            const centerE = cameraposition[0] !== 0 ? cameraposition[0] : center.x;
+            const centerN = cameraposition[1] !== 0 ? Math.floor(center.y / 1000) * 1000 - 500 - cameraposition[1] : center.y + boundingBox.max.z / 2;
+            const centerH = cameraposition[2] !== 0 ? center.y + cameraposition[2] - largestH.H / 2 : center.y + largestH.H / 2;
+            
+            camera.position.copy(new THREE.Vector3(centerE, centerH + 50, centerN));
+            camera.lookAt(new THREE.Vector3(centerE, 0, centerN))
+            controls.target.copy(new THREE.Vector3(centerE, centerH, centerN));
+            console.log(boundingBox.max.z)
+
             basePts.map((pt) => {
               const sphereGeometry = new THREE.SphereGeometry(3, 32, 32); // Erstelle eine Kugelgeometrie
               const sphereMaterial = new THREE.MeshBasicMaterial({ color: 0xff0000 });
               const sphere = new THREE.Mesh(sphereGeometry, sphereMaterial);
-              sphere.position.set(pt.E, center.y + pt.H / 2, Math.floor(center.y / 1000) * 1000 + 500 - pt.N); // Setze die Position der Kugel basierend auf den Koordinaten des Punktes
+              sphere.position.set(pt.E, center.y + pt.H - largestH.H / 2, Math.floor(center.y / 1000) * 1000 - 500 - pt.N); // Setze die Position der Kugel basierend auf den Koordinaten des Punktes
               scene.add(sphere);
             })
           } else {
@@ -79,14 +84,15 @@ const ThreeScene: React.FC<ThreeSceneProps> = ({ width, height, basePts, nextPts
         
         if (basePts && nextPts) {
           if (Array.isArray(basePts) && Array.isArray(nextPts)) {
+            const largestH = basePts.reduce((prev, current) => (prev.H > current.H) ? prev : current);
             basePts.map((bpt) => {
               const npt = findCorrespondingNextPoint(bpt, nextPts);
               if (npt) {
                 const deltaE = (npt.E - bpt.E) * 1000
 
                 const pathE = new THREE.CatmullRomCurve3([
-                  new THREE.Vector3(bpt.E, center.y + bpt.H / 2, Math.floor(center.y / 1000) * 1000 + 500 - bpt.N),
-                  new THREE.Vector3(bpt.E + deltaE, center.y + bpt.H / 2, Math.floor(center.y / 1000) * 1000 + 500 - bpt.N)
+                  new THREE.Vector3(bpt.E, center.y + bpt.H - largestH.H / 2, Math.floor(center.y / 1000) * 1000 - 500 - bpt.N),
+                  new THREE.Vector3(bpt.E + deltaE, center.y + bpt.H - largestH.H / 2, Math.floor(center.y / 1000) * 1000 - 500 - bpt.N)
                 ]);
 
                 const tubeGeomE = new THREE.TubeGeometry(pathE, 2, 1, 8, false)
@@ -99,8 +105,8 @@ const ThreeScene: React.FC<ThreeSceneProps> = ({ width, height, basePts, nextPts
                 const deltaN = (npt.N - bpt.N) * 1000
 
                 const pathN = new THREE.CatmullRomCurve3([
-                  new THREE.Vector3(bpt.E, center.y + bpt.H / 2, Math.floor(center.y / 1000) * 1000 + 500 - bpt.N),
-                  new THREE.Vector3(bpt.E, center.y + bpt.H / 2, Math.floor(center.y / 1000) * 1000 + 500 - bpt.N + deltaN)
+                  new THREE.Vector3(bpt.E, center.y + bpt.H - largestH.H / 2, Math.floor(center.y / 1000) * 1000 - 500 - bpt.N),
+                  new THREE.Vector3(bpt.E, center.y + bpt.H - largestH.H / 2, Math.floor(center.y / 1000) * 1000 - 500 - bpt.N + deltaN)
                 ]);
 
                 const tubeGeomN = new THREE.TubeGeometry(pathN, 2, 1, 8, false)
@@ -113,8 +119,8 @@ const ThreeScene: React.FC<ThreeSceneProps> = ({ width, height, basePts, nextPts
                 const deltaH = (npt.H - bpt.H) * 1000
 
                 const pathH = new THREE.CatmullRomCurve3([
-                  new THREE.Vector3(bpt.E, center.y + bpt.H / 2, Math.floor(center.y / 1000) * 1000 + 500 - bpt.N),
-                  new THREE.Vector3(bpt.E, center.y + bpt.H / 2 + deltaH, Math.floor(center.y / 1000) * 1000 + 500 - bpt.N)
+                  new THREE.Vector3(bpt.E, center.y + bpt.H - largestH.H / 2, Math.floor(center.y / 1000) * 1000 - 500 - bpt.N),
+                  new THREE.Vector3(bpt.E, center.y + bpt.H - largestH.H / 2 + deltaH, Math.floor(center.y / 1000) * 1000 - 500 - bpt.N)
                 ]);
 
                 const tubeGeomH = new THREE.TubeGeometry(pathH, 2, 1, 8, false)

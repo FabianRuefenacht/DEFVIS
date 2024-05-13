@@ -6,8 +6,6 @@
 *.obj
 /backend/folder
 *.tif
-*.gltf
 *.glb
-/frontend/public/models
 /backend/__pycache__
 /frontend/public/cesium

@@ -32,6 +32,7 @@ const Settings = ({ userName }: { userName: string }) => {
       setNewProj(false);
       setOpenProj(false);
       setNewSession(false);
+      setFileName("")
     }
   };
 
@@ -152,9 +153,20 @@ const Settings = ({ userName }: { userName: string }) => {
   // capture new session functinalities
   const [newSession, setNewSession] = useState(false);
   const [newSessionError, setNewSessionError] = useState("");
+  const [fileName, setFileName] = useState("")
+  
+  const updateFileName = (event: any) => {
+    const file = event.target.files[0];
+    if (file) {
+      setFileName(file.name);
+    } else {
+      setFileName("");
+    }
+  }
 
   function changeNewSession() {
     setNewSession(!newSession);
+    setFileName("")
   }
 
   const handleCreateSessionSubmit = async (e: any) => {
@@ -226,7 +238,7 @@ const Settings = ({ userName }: { userName: string }) => {
   const [view3DPoint, setView3DPoint] = useState<string | null>(null);
 
   // Table point click
-  const [mapCenterCoords, setMapCenterCoords] = useState([0, 0]);
+  const [mapCenterCoords, setMapCenterCoords] = useState([0, 0, 0]);
 
   // Function to handle button click
   const handle3DClick = (pointName: string | null) => {
@@ -237,13 +249,14 @@ const Settings = ({ userName }: { userName: string }) => {
       (pt) => pt.name == pointName
     );
     if (pointToCenter) {
-      const coords = [pointToCenter.E, pointToCenter.N];
+      const coords = [pointToCenter.E, pointToCenter.N, pointToCenter.H];
       setMapCenterCoords(coords);
     }
     setViewModel("3D");
 
     // Hier können Sie Ihre gewünschte Aktion ausführen
   };
+
 
   return (
     <main className="h-full w-full grid grid-rows-2 grid-cols-4 gap-4">
@@ -378,14 +391,13 @@ const Settings = ({ userName }: { userName: string }) => {
                           className="absolute inset-0 w-full h-full opacity-0 cursor-pointer"
                           accept=".csv"
                           required
+                          onChange={updateFileName}
                         />
                         <div className="text-center">
                           <span className="text-white">
-                            CSV-Datei hier ablegen
+                            {fileName}
+                            <p>Klicken oder ziehen um Datei auszuwählen.</p>
                           </span>
-                          <br />
-                          <br />
-                          <input type="file" accept=".csv" required />
                         </div>
                       </div>
                       <p className="text-xs mt-4 flex items-center">
@@ -465,7 +477,7 @@ const Settings = ({ userName }: { userName: string }) => {
                 <TableView
                   baseSessionPoints={baseSessionPoints[0]}
                   nextSessionPoints={nextSessionPoints[0]}
-                  rowClick={(e, n) => setMapCenterCoords([e, n])}
+                  rowClick={(e, n, h) => setMapCenterCoords([e, n, h])}
                 />
               </p>
             </>
