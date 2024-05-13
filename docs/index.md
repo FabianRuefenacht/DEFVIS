@@ -2,7 +2,7 @@
 hier der Video-Teaser
 ```
 
-Die Web-App ^^App-Name^^ bietet Dir folgende Tools:
+Die Web-App 3D-Deform bietet Dir folgende Tools:
 
 - Deformationsmessungen zu verwalten
 - Dreidimensionale Verschiebungen zu visualisieren
