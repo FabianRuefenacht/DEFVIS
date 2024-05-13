@@ -2,7 +2,7 @@
 hier der Video-Teaser
 ```
 
-Die Web-App 3D-Deform bietet Dir folgende Tools:
+Die Web-App **3D-Deform** bietet Dir folgende Tools:
 
 - Deformationsmessungen zu verwalten
 - Dreidimensionale Verschiebungen zu visualisieren
@@ -10,7 +10,7 @@ Die Web-App 3D-Deform bietet Dir folgende Tools:
 
 Die Darstellung dieser Daten im dreidimensionalen Kontext bietet Dir als Nutzer\*in eine intuitive und umfassende Sicht auf die Daten, was zu fundierteren und informierteren Entscheidungen führt.
 
-Die Implementierung dieser Funktionen zielt darauf ab, eine effiziente und effektive Datenanalyse sowie eine ansprechende Visualisierung zu ermöglichen, wodurch die Anwendung eine Palette von Anwendungsgebieten abdecken kann.
+Die Implementierung dieser Funktionen zielt darauf ab, eine effiziente und effektive Datenanalyse sowie eine ansprechende Visualisierung zu ermöglichen, wodurch die Web-App viele Anwendungsgebieten abdecken kann.
 
 ## Suche (funktioniert noch nicht)
 
@@ -104,3 +104,5 @@ Eine zukünftige Erweiterung könnte die Möglichkeit für Benutzer umfassen, Sc
 ### 2D-Balken neben 3D-Vektoren
 
 Die grösse eines Vektors ist schwierig zu vergleichen. Alleine durch die perspektive reicht oft nicht aus. Deshalb könnte man einen 2D-Balkendiagramm neben den Vektor setzen. So sieht man ein verhältnis zu weiter entfernten oder näheren Punkten.
+
+### API Dokumentation
