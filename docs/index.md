@@ -15,7 +15,7 @@ Die Implementierung dieser Funktionen zielt darauf ab, eine effiziente und effek
 ## Suche (funktioniert noch nicht)
 
 <div id="search-container">
-    <input type="text" id="search-input" placeholder="Suche..." style="width: 300px;">
+    <input type="text" id="search-input" placeholder="Suche..." style="width: 100%;">
     <ul id="search-results"></ul>
 </div>
 
