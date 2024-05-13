@@ -7,6 +7,8 @@
 Your browser does not support the video tag.
 </video>
 
+<p></p>
+
 ## Funktionen
 
 Über den Button "Abmelden" kannst Du den angemeldeten Benutzer abmelden, indem Du auf <code>Abmelden</code> klickst.
