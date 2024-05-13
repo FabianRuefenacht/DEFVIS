@@ -12,15 +12,12 @@ Die Darstellung dieser Daten im dreidimensionalen Kontext bietet Dir als Nutzer\
 
 Die Implementierung dieser Funktionen zielt darauf ab, eine effiziente und effektive Datenanalyse sowie eine ansprechende Visualisierung zu ermöglichen, wodurch die Anwendung eine Palette von Anwendungsgebieten abdecken kann.
 
-## Suche
+## Suche (funktioniert noch nicht)
 
 <div id="search-container">
-    <input type="text" id="search-input" placeholder="Suche...">
+    <input type="text" id="search-input" placeholder="Suche..." style="width: 300px;">
     <ul id="search-results"></ul>
 </div>
-
-<script src="https://cdn.jsdelivr.net/npm/lunr/lunr.min.js"></script>
-<script src="search.js"></script>
 
 ---
 
