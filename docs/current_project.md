@@ -4,6 +4,25 @@
 
 <img src="screenshots/current_project.png" alt="geladenes-Projekt" style="max-width: 100%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);">
 
+## Inhalt
+
+Hier siehst Du die Ansicht....
+
+## 3D-Ansicht
+
+<code>Video</code>
+hier etwas über die 3D-Ansicht sagen.. und mit zoom auf Punkt
+
+## Punktinformation
+
+<code>Video</code>
+zoom auf Punkt und Informationen, Koordinaten und Fehlervektor....
+
+## Ansicht
+
+<code>Video</code>
+Fenstergrösse vergrössern
+
 ## Probleme und Verbesserungsvorschläge
 
 - Die Textansicht könnte links im Fenster platziert werden, um die Benutzererfahrung zu verbessern.
