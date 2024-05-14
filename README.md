@@ -1,6 +1,6 @@
 # 6230_FRNMLW
 
-Server Client Projekt für eine Geodateninfrastruktur Webportal im Rahmen des Moduls 4230 und 6230
+Server Client Projekt für eine Geodateninfrastruktur DEFVIS im Rahmen des Moduls 4230 und 6230
 
 - **Frontend:** Next.js, OpenLayers, Three.js und tailwindcss
 - **Backend:** FastAPI, SQLite
@@ -34,11 +34,11 @@ git clone git@github.com:FabianRuefenacht/6230_FRNMLW.git
 Um die Installation und den Start der Web-App zu vereinfachen wurden zwei JavaScirpt-Dateien erstellt, welche die meiste Arbeit abnehmen. Falls die Schnellinstallation fehlschlagen sollte, verwenden Sie bitte die ausführlichere Anleitung (weiter unten).
 
 ```shell
-conda create -n vecvis python=3.11 pip
+conda create -n defvis python=3.11 pip
 ```
 
 ```shell
-conda activate vecvis
+conda activate defvis
 ```
 
 ```shell
@@ -48,7 +48,7 @@ node install.js
 ### Schnellstart
 
 ```shell
-conda activate vecvis
+conda activate defvis
 ```
 
 ```shell
