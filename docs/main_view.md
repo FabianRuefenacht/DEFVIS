@@ -20,9 +20,6 @@ Die Seite enthält sieben Buttons:
 - **2D:** Zeigt eine 2D-Ansicht des ausgewählten Projekts.
 - **3D:** Zeigt eine 3D-Ansicht des ausgewählten Projekts.
 
-## Probleme und Verbesserungsvorschläge
-
-- Der Home-Button hat derzeit keine sinnvolle Funktion. Möglicherweise sollte überlegt werden, ob er entfernt oder mit einer Funktion versehen werden sollte.
 
 <div style="text-align: left; float: left;"><a href="login.html">< Anmelden</a></div>
 <div style="text-align: right; float: right;"><a href="create_project.html">Projekt erstellen ></a></div>
