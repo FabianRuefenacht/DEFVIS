@@ -123,7 +123,7 @@ _Login-Fenster_
 
 Das Login-Fenster ermöglicht Nutzenden, sich anzumelden oder neu zu registrieren (siehe Abbildung 1 Login-Fenster Button „New“). Fehlerhafte Anmeldeinformationen oder eine fehlende Registrierung werden durch entsprechende Meldungen signalisiert.
 
-<h3 id="abb1">Abbildung 1</h3>
+<h4 id="abb1">Abbildung 1</h4>
 
 | Login-Fenster                                                                                                                                  |
 | ---------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -134,7 +134,7 @@ _Main-Fenster_
 
 Das Hauptfenster (Main-Fenster) präsentiert die Hauptansicht der Anwendung mit einer anpassbaren Hintergrundkarte. Links davon befindet sich das Registermenü, darunter sind Funktionen angeordnet, die es Benutzern ermöglichen, verschiedene Informationen aufzurufen. Standardmässig werden Informationen zu den Punkten des Projekts angezeigt.
 
-<h3 id="abb2">Abbildung 2</h3>
+<h4 id="abb2">Abbildung 2</h4>
 
 | Main-Fenster                                                                                                                                      |
 | ------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -145,7 +145,7 @@ _Zeitreihenanalyse_
 
 Durch Klicken auf den „ZRA“-Button wird eine Analyse der Zeitreihen für die Punkte im Projekt angezeigt.
 
-<h3 id="abb3">Abbildung 3</h3>
+<h4 id="abb3">Abbildung 3</h4>
 
 | Zeitreihenanalyse                                                                                                                                |
 | ------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -156,7 +156,7 @@ _3D-Fenster_
 
 Der „3D“-Button öffnet das 3D-Fenster, in dem die Punkte und Vektoren dreidimensional visualisiert werden.
 
-<h3 id="abb4">Abbildung 4</h3>
+<h4 id="abb4">Abbildung 4</h4>
 
 | 3D-Fenster                                                                                                                                     |
 | ---------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -169,7 +169,7 @@ _Neues Projekt_
 
 Das Pop-Up „Neues Projekt“ ermöglicht es Benutzenden, ein neues Projekt zu erstellen, indem sie Projektname, die oder den Hauptverantwortliche/n und Kundeninformationen eingeben und dann auf „Projekt erstellen“ klicken.
 
-<h3 id="abb5">Abbildung 5</h3>
+<h4 id="abb5">Abbildung 5</h4>
 
 | neues Projekt                                                                                                                                |
 | -------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -180,7 +180,7 @@ _Projekteröffnung_
 
 In diesem Pop-Up werden alle vorhandenen Projekte aufgelistet. Nutzende können ein Projekt auswählen und durch Klicken auf „Projekt öffnen“ laden.
 
-<h3 id="abb6">Abbildung 6</h3>
+<h4 id="abb6">Abbildung 6</h4>
 
 | Projekteröffnung                                                                                                                               |
 | ---------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -191,7 +191,7 @@ _Datei hochladen_
 
 Das Pop-up „Datei hochladen“ dient zum Hochladen von Dateien.
 
-<h3 id="abb7">Abbildung 7</h3>
+<h4 id="abb7">Abbildung 7</h4>
 
 | Datei hochladen                                                                                                                                 |
 | ----------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -202,7 +202,7 @@ Das Pop-up „Datei hochladen“ dient zum Hochladen von Dateien.
 
 Das Flussdiagramm veranschaulicht den sequenziellen Ablauf der wichtigsten Funktionen und Interaktionen in der Anwendung. Es bietet einen klaren Überblick über die verschiedenen Schritte, die Benutzer und Benutzerinnen durchlaufen, und zeigt, wie die einzelnen Komponenten miteinander verbunden sind.
 
-<h3 id="abb8">Abbildung 8</h3>
+<h4 id="abb8">Abbildung 8</h4>
 
 | Flussdiagramm                                                                                                                                  |
 | ---------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -298,7 +298,7 @@ In diesem Abschnitt werden die einzelnen Aufgaben, der geschätzte Zeitaufwand u
 
 <h2 id="planung">11.1 Planung der Tasks</h2>
 
-<h3 id="tab1">Tabelle 1 Zeitaufwand</h3>
+<h4 id="tab1">Tabelle 1 Zeitaufwand</h4>
 
 | Task                                | Beschreibung                                                        | Geschätzter Zeitaufwand (Stunden) |
 | ----------------------------------- | ------------------------------------------------------------------- | --------------------------------- |
@@ -318,7 +318,7 @@ Quelle: private Ablage
 
 <h2 id="zeitplanung">11.2 Zeitplanung</h2>
 
-<h3 id="abb9">Abbildung 9</h3>
+<h4 id="abb9">Abbildung 9</h4>
 
 | Auszug aus dem Zeitplan                                                                                                               |
 | ------------------------------------------------------------------------------------------------------------------------------------- |
