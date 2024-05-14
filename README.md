@@ -31,6 +31,7 @@ git clone git@github.com:FabianRuefenacht/6230_FRNMLW.git
 Öffne ein neues Visual Studio Code Fenster und wähle unter Start Clone Git Repository. Alternativ öffne die Command Palette in VS Code CTRL+Shift+P (View / Command Palette) und wähle Git: clone. Füge die Git web URL `https://github.com/FabianRuefenacht/6230_FRNMLW` ein und bestätige die Eingabe mit Enter. Wähle einen Ordner in welchen das Repository _geklont_ werden soll.
 
 ## Schnellinstallation
+Um die Installation und den Start der Web-App zu vereinfachen wurden zwei JavaScirpt-Dateien erstellt, welche die meiste Arbeit abnehmen. Falls die Schnellinstallation fehlschlagen sollte, verwenden Sie bitte die ausführlichere Anleitung (weiter unten).
 
 ```shell
 conda create -n vecvis python=3.11 pip
@@ -53,8 +54,8 @@ conda activate vecvis
 ```shell
 node run.js
 ```
-
-```#Starte im browser
+## Starte im Browser
+```
 http://localhost:3000
 ```
 
