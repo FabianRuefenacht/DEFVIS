@@ -300,7 +300,7 @@ Tabelle 1 Zeitaufwand
 
 Quelle: private Ablage
 
-## [11.2 Zeitplanung] {#zeitplanung}
+[11.2 Zeitplanung] {#zeitplanung}
 
 | Abbildung 9 Auszug aus dem Zeitplan                                                                                                   |
 | ------------------------------------------------------------------------------------------------------------------------------------- |
