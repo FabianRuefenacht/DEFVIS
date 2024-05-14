@@ -12,13 +12,6 @@ Die Darstellung dieser Daten im dreidimensionalen Kontext bietet Dir als Nutzer\
 
 Die Implementierung dieser Funktionen zielt darauf ab, eine effiziente und effektive Datenanalyse sowie eine ansprechende Visualisierung zu ermöglichen, wodurch die Web-App viele Anwendungsgebieten abdecken kann.
 
-## Suche (funktioniert noch nicht)
-
-<div id="search-container">
-    <input type="text" id="search-input" placeholder="Suche..." style="width: 100%;">
-    <ul id="search-results"></ul>
-</div>
-
 ---
 
 ## Wie wird die App installiert {#section1}
@@ -29,13 +22,15 @@ hier gehts zur [Schnellinstallation](https://github.com/FabianRuefenacht/6230_FR
 
 ## Features von DEFVIS {#section2}
 
+Erkunde die grossartigen Funktionen von DEFVIS. Weitere Informationen und detaillierte Anleitungen zu den Funktionen findest Du alles im <a href="https://fabianruefenacht.github.io/6230_FRNMLW/index.html#section3">Benutzerhandbuch</a>.
+
 ### 3D-Ansicht
 
 ```
 hier ein Video über die Funktion 3D-Viewer
 ```
 
-Unsere App bietet eine breite Palette von Funktionen, die den Nutzern vielfältige Möglichkeiten bieten, ohne sie zu überfordern. Eine herausragende Funktion ist der 3D-Viewer, der es den Benutzern ermöglicht, Fehlervektoren in einer dreidimensionalen Ansicht zu betrachten. Durch diese Darstellung in Bezug auf das Gelände können Benutzer nicht nur 2D-Informationen erhalten, sondern auch den Fehlervektor im Kontext einer Oberfläche visualisieren. Dies ermöglicht es, einen direkten Bezug herzustellen, beispielsweise um zu sehen, wie ein Punkt am Hang abrutscht.
+Unsere App bietet eine breite Palette von Funktionen, die Dir vielfältige Möglichkeiten bieten, ohne Dich zu überfordern. Eine herausragende Funktion ist der 3D-Viewer, der es Dir ermöglicht, Fehlervektoren in einer dreidimensionalen Ansicht zu betrachten. Durch diese Darstellung in Bezug auf das Gelände kannst Du nicht nur 2D-Informationen erhalten, sondern auch den Fehlervektor im Kontext einer Oberfläche visualisieren. Dies ermöglicht es Dir, einen direkten Bezug herzustellen, beispielsweise um zu sehen, wie ein Punkt am Hang abrutscht.
 
 ### 2D-Ansicht
 
@@ -43,7 +38,7 @@ Unsere App bietet eine breite Palette von Funktionen, die den Nutzern vielfälti
 hier ein Video über die Funktion 2D-Ansicht und wenn man auf den Punkt klickt, die Informationen dazu erscheinen
 ```
 
-In der 2D-Ansicht kannst Du die Punkte, welche Du in Dein Projekt importiert hast visualisiern. Der Fehlervektor wird angezeigt, sodass Du weisst wie stark sich ein Punkt in welche Richtung bewegt.
+In der 2D-Ansicht kannst Du die Punkte, die Du in Dein Projekt importiert hast, visualisieren. Der Fehlervektor wird angezeigt, sodass Du weisst, wie stark sich ein Punkt in welche Richtung bewegt.
 
 ### Punktinformationen
 
@@ -51,8 +46,7 @@ In der 2D-Ansicht kannst Du die Punkte, welche Du in Dein Projekt importiert has
 hier ein Video über die Punktinformation und wenn man auf den Punkt klickt, man auf der Ansicht darauf zoomt
 ```
 
-Um die Daten nicht nur visuell zu haben sondern auch in einer Tabelle, werden aus den Daten der importierten Sessionen die Fehlervektoren in Ost-, Nord-Richtung und Höhet berechnet und in die Tabelle geschrieben.
-Durch Anklicken eines Punktes, wird automatisch auf dem Punkt aus der Ansicht gezoomt.
+Um die Daten nicht nur visuell zu haben, sondern auch in einer Tabelle, werden aus den Daten der importierten Sessionen die Fehlervektoren in Ost-, Nord-Richtung und Höhe berechnet und in die Tabelle geschrieben. Durch Anklicken eines Punktes zoomst Du automatisch auf den Punkt in der Ansicht.
 
 ---
 
