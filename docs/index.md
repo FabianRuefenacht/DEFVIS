@@ -114,7 +114,7 @@ Unsere App-Datenbank wird mit Benutzerdaten gefüllt und zur korrekten Darstellu
 
 ---
 
-## Ausblick der App {#section6}
+## Ausblick von DEFVIS {#section6}
 
 ### Zeitreihenanalyse
 
