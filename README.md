@@ -103,6 +103,8 @@ cd path/to/backend
 conda create --name defvis python=3.9 --file app/requirements.txt
 ```
 
+
+
 2. Backend ausführen, virtuelle Umgebung starten und server _uvicorn_ starten. Öffne http://localhost:8000/docs im Browser und verifiziere, ob das Backend läuft.
    
 2.1  In den Ordner backend navigieren
