@@ -2,7 +2,7 @@
 
 # Architektur
 
-Die Web-App VECVIS basiert auf einer Server-Client-Architektur. Die Schnittstelle zwischen dem Client (frontend) und dem Server (backend) basiert auf FastAPI [fastapi.com](https://fastapi.tiangolo.com/). Als Speichermedium für die Daten dient eine SQLite-Datenbank [www.sqlite.org/](https://www.sqlite.org/).
+Die Web-App VECVIS basiert auf einer Server-Client-Architektur. Die Schnittstelle zwischen dem Client (frontend) und dem Server (backend) basiert auf FastAPI <a href="https://fastapi.tiangolo.com/" target="_blank">fastapi.com</a>. Als Speichermedium für die Daten dient eine SQLite-Datenbank [<a href="https://www.sqlite.org/" target="_blank">www.sqlite.org</a>.
 
 Die nachfolgende Grafik zeigt die Geodateninfrastruktur schematisch auf und verweist auf die wichtigsten Komponenten der Applikation.
 
@@ -10,7 +10,7 @@ Die nachfolgende Grafik zeigt die Geodateninfrastruktur schematisch auf und verw
 
 ## Frontend
 
-Die Umsetzung im Frontend wurde mit next.js ([nextjs.org](https://nextjs.org/docs)) gemacht. Als Programmiersprache im Frontend wurde TypeScript ([www.typescriptlang.org](https://www.typescriptlang.org/)) gewählt. TypeScript (TS) stellt im Gegensatz zu JavaScript (JS) sicher, dass die Datentypen definiert sind, was die Anwendung weniger Fehleranfällig macht. Für die Darstellung im frontend wurde auf tailwind ([tailwindcss.com](https://tailwindcss.com/)) gesetzt. Tailwind ist ein CSS-Framework, welches die wichtigsten Styling-Attribute von CSS abdeckt und einwandfrei mit Next.js und TS kombinierbar ist. Die Kommunikation zum Backend wird durch _axios_ [axios-http.com](https://axios-http.com/docs/intro) gelöst. Die nachfolgende Auflistung zeigt die **js\*- & **.tsx*-Dateien im Ordner *frontend/src/app\*, welche für den Client verwendet werden und ihre Funktionalitäten auf:
+Die Umsetzung im Frontend wurde mit _next.js_ (<a href="https://nextjs.org/docs" target="_blank">nextjs.org</a>) gemacht. Als Programmiersprache im Frontend wurde _TypeScript_ (<a href="https://www.typescriptlang.org/" target="_blank">www.typescriptlang.org</a>) gewählt. TypeScript (TS) stellt im Gegensatz zu JavaScript (JS) sicher, dass die Datentypen definiert sind, was die Anwendung weniger Fehleranfällig macht. Für die Darstellung im frontend wurde auf _tailwind_ (<a href="https://tailwindcss.com/" target="_blank">tailwindcss.com</a>) gesetzt. Tailwind ist ein CSS-Framework, welches die wichtigsten Styling-Attribute von CSS abdeckt und einwandfrei mit Next.js und TS kombinierbar ist. Die Kommunikation zum Backend wird durch _axios_ (<a href="https://axios-http.com/docs/intro" target="_blank">axios-http.com</a>) gelöst. Die nachfolgende Auflistung zeigt die **js\*- & **.tsx*-Dateien im Ordner *frontend/src/app\*, welche für den Client verwendet werden und ihre Funktionalitäten auf:
 
 - **layout.tsx:** Hauptdatei, für Layout zuständig
 - **page.tsx:** Hauptbildschirm, regelt ob Benutzer / Benutzerin Zugriff auf die Applikation hat
@@ -29,7 +29,7 @@ Die Umsetzung im Frontend wurde mit next.js ([nextjs.org](https://nextjs.org/doc
 
 ## Backend
 
-Das Backend ist in der Programmiersprache Python ([python.org](https://www.python.org/)) geschrieben. In der Datei _db.py_ ist eine Klasse enthalten, welche die Interaktion mit der Datenbank ermöglich. Dafür wird die Python-Bibliothek _sqlite3_ verwendet. Total sind 15 Funktionen vorhanden. Diese sind in folgende Kategorien zu unterteilen:
+Das Backend ist in der Programmiersprache _Python_ (<a href="https://www.python.org/" target="_blank">python.org</a>) geschrieben. In der Datei _db.py_ ist eine Klasse enthalten, welche die Interaktion mit der Datenbank ermöglich. Dafür wird die Python-Bibliothek _sqlite3_ verwendet. Total sind 15 Funktionen vorhanden. Diese sind in folgende Kategorien zu unterteilen:
 
 - **DB erstellen:** Erstellen der Datenbank und einrichten der Tabellen
 - **User:** Interaktion mit der Tabelle user (User erstellen und lesen)
@@ -56,4 +56,8 @@ Die Datenbank hat vier Tabellen:
 - **points**
   In diesen vier Tabellen werden alle nötigen Informationen gespeichert. Die Integrität der Daten wird durch python im backend sichergestellt und durch entsprechende Fehlermeldungen im frontend den Nutzenden mitgeteilt. In der anschliessenden Grafik ist das Datenbankschema ersichtlich. Die **fett** geschriebenen Attribute sind gemeinsam eindeutig.
 
-  ![ERD](./screenshots/db_schema.png)
+<img src="screenshots/db_schema.png" alt="ERD" style="max-width: 100%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);">
+
+---
+
+[zurück nach ganz oben](architecture.html)

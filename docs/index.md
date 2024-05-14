@@ -86,29 +86,33 @@ Die Entwicklung der App basierte auf einer Reihe von bewährten Methoden, darunt
 ## Verwendete Ressourcen {#section5}
 
 Unsere App-Datenbank wird mit Benutzerdaten gefüllt und zur korrekten Darstellung verwenden wir three.js. Die Hintergrundkarte beziehen wir von swisstopo.ch (Situationsplan farbig).
+
 ### Messdaten
+
 Die Messdaten werden von den Nutzern in Sessionen zur Verfügung gestellt und in einer zentralen SQLite-Datenbank verwaltet (siehe [www.sqlite.org/](https://www.sqlite.org/)).
 
 ### Tabelle
+
 In einer Tabelle werden die Punktverschiebungen (in mm) zwischen den gewählten Sessionen dargestellt. Die Verschiebungen werden aus der Differenz **neu - alt** berechnet. Durch Klick auf eine Punktnummer wird die 2D oder 3D Ansicht geladen.
 
 ### 2D-Karte
-Die Messdaten und Verschiebungen* werden durch openlayers (siehe [openlayers.org/](https://openlayers.org/)) dargestellt. Um die Verschiebungen auf der Karte besser sichtbar zu machen, werden sie mit dem Faktor **1000** multipliziert.
+
+Die Messdaten und Verschiebungen\* werden durch openlayers (siehe [openlayers.org/](https://openlayers.org/)) dargestellt. Um die Verschiebungen auf der Karte besser sichtbar zu machen, werden sie mit dem Faktor **1000** multipliziert.
 
 Als Hintergrundkarte wird die **Landeskarte farbe 1:10'000** von ©swisstopo verwendet (siehe [www.swisstopo.admin.ch/de/landeskarte-swiss-map-raster-10](https://www.swisstopo.ch)). Die Einbindung der Karte erfolgt als Web-Map-Service mit folgenden Parametern.
 
-| Attribut               | Wert                                                                                       |
-|------------------------|--------------------------------------------------------------------------------------------|
-| source.url             | [https://wms.geo.admin.ch/](https://wms.geo.admin.ch/)                                     |
-| source.crossOrigin     | "anonymous"                                                                                |
-| source.attributions    | [geo.admin.ch](http://www.geo.admin.ch/internet/geoportal/en/home.html)                    |
-| source.projection      | "EPSG:2056"                                                                                |
-| source.params.LAYERS   | "ch.swisstopo.landeskarte-farbe-10"                                                        |
-| source.params.FORMAT   | "image/jpeg"                                                                               |
-| source.serverType      | "mapserver"                                                                                |
-
+| Attribut             | Wert                                                                    |
+| -------------------- | ----------------------------------------------------------------------- |
+| source.url           | [https://wms.geo.admin.ch/](https://wms.geo.admin.ch/)                  |
+| source.crossOrigin   | "anonymous"                                                             |
+| source.attributions  | [geo.admin.ch](http://www.geo.admin.ch/internet/geoportal/en/home.html) |
+| source.projection    | "EPSG:2056"                                                             |
+| source.params.LAYERS | "ch.swisstopo.landeskarte-farbe-10"                                     |
+| source.params.FORMAT | "image/jpeg"                                                            |
+| source.serverType    | "mapserver"                                                             |
 
 ## 3D-Modell
+
 Die dreidimensionale Darstellung der Punkte und der Vektoren erfolgt durch three.js (siehe [threejs.org](https://threejs.org/docs/index.html#manual/en/introduction/Creating-a-scene)). Die Überwachungspunkte werden als Sphere (Kugel) dargestellt. Die Verschiebungen in Ost, Nord und Höhe werden durch TubeGeometries (Röhren) dargestellt.
 
 Das Hintergrundmodell wird derzeit noch nicht automatisch erstellt. Das Modell, welches in der Web-App verwendet wird, wurde durch das QGIS-Plugin Qgis2threejs [github.com/minorua](https://github.com/minorua/Qgis2threejs) vorprozessiert. Um die Orientierung auf dem Geländemodell zu ermöglichen, wurde die Landeskarte aus der 2D-Darstellung auf das Modell projiziert.
@@ -132,57 +136,5 @@ Die grösse eines Vektors ist schwierig zu vergleichen. Alleine durch die perspe
 ---
 
 ## API Dokumentation
+
 Fast API kommt mit vorinstallierter Swagger UI. Wenn der Fast API Backen Server läuft, kann auf die Dokumentation der API über Swagger UI auf http://localhost:8000/docs verfügbar.
-
----
-
-## Architektur
-Die Web-App VECVIS basiert auf einer Server-Client-Architektur. Die Schnittstelle zwischen dem Client (frontend) und dem Server (backend) basiert auf FastAPI [fastapi.com](https://fastapi.tiangolo.com/). Als Speichermedium für die Daten dient eine SQLite-Datenbank [www.sqlite.org/](https://www.sqlite.org/).
-
-Die nachfolgende Grafik zeigt die Geodateninfrastruktur schematisch auf und verweist auf die wichtigsten Komponenten der Applikation.
-
-**Grafik**
-
-### Frontend
-Die Umsetzung im Frontend wurde mit next.js ([nextjs.org](https://nextjs.org/docs)) gemacht. Als Programmiersprache im Frontend wurde TypeScript ([www.typescriptlang.org](https://www.typescriptlang.org/)) gewählt. TypeScript (TS) stellt im Gegensatz zu JavaScript (JS) sicher, dass die Datentypen definiert sind, was die Anwendung weniger Fehleranfällig macht. Für die Darstellung im frontend wurde auf tailwind ([tailwindcss.com](https://tailwindcss.com/)) gesetzt. Tailwind ist ein CSS-Framework, welches die wichtigsten Styling-Attribute von CSS abdeckt und einwandfrei mit Next.js und TS kombinierbar ist. Die Kommunikation zum Backend wird durch *axios* [axios-http.com](https://axios-http.com/docs/intro) gelöst. Die nachfolgende Auflistung zeigt die **js*- & **.tsx*-Dateien im Ordner *frontend/src/app*, welche für den Client verwendet werden und ihre Funktionalitäten auf:
-- **layout.tsx:** Hauptdatei, für Layout zuständig
-- **page.tsx:** Hauptbildschirm, regelt ob Benutzer / Benutzerin Zugriff auf die Applikation hat
-- **components/Button.tsx:** Einheitliche Darstellung der Buttons
-- **components/Detail.tsx:** Verwaltung der States und Einbindung der 3D-Darstellung
-- **components/Navbar.tsx:** Serverkomponente welche die Routen für Login, Registrierung und Logout bereitstellt
-- **components/OlMap.tsx:** Darstellung der Punkte und Verschiebungen in der Karte
-- **components/Settings.tsx:** Verwalten von allen Punkt- Sessions- und Projektdaten, Einbindung der verschiedenen Ansichten
-- **components/TableView.tsx:** Darstellung der Punktverschiebungen in einer Tabelle
-- **components/ThreeScene.tsx:** Darstellung der Punkte auf dem 3D-Modell
-- **components/cookies/cookiecreator.tsx:** Schreiben von Cookies (für Login benötigt)
-- **components/cookies/cookiereader.tsx:** Lesen von Cookies (für Login benötigt)
-- **components/login/page.tsx:** Einlogen von Benutzenden
-- **components/logout/page.tsx:** Abmelden von Benutzenden
-- **components/register/page.tsx:** Registrierung von neuen Benutzern / Benutzerinnen
-
-### Backend
-Das Backend ist in der Programmiersprache Python ([python.org](https://www.python.org/)) geschrieben. In der Datei *db.py* ist eine Klasse enthalten, welche die Interaktion mit der Datenbank ermöglich. Dafür wird die Python-Bibliothek *sqlite3* verwendet. Total sind 15 Funktionen vorhanden. Diese sind in folgende Kategorien zu unterteilen:
-- **DB erstellen:** Erstellen der Datenbank und einrichten der Tabellen
-- **User:** Interaktion mit der Tabelle user (User erstellen und lesen)
-- **Project:** Interaktion mit der Tabelle projects (Projekte erstellen und lesen)
-- **Sessions:** Interaktion mit der Tabelle sessions (Sessionen erstellen und lesen)
-- **Points:** Interaktion mit der Tabelle points (Punkte erstellen und lesen)
-
-Die Funktionen der Datei *db.py* werden in der Datei *main.py* aufgerufen. Hier werden die Bibliotheken *fastapi*, *pydantic* und *uvicorn* benötigt. Durch FastAPI werden 7 Routen mit den folgenden Zwecken eröffnet:
-- **/user:** Benutzer erstellen
-- **/login:** Login prüfen
-- **/newProject:** Projekt erstellen
-- **/openProject:** Projekte der nutzenden Person laden
-- **/newSession:** Neue Session im Projekt anlegen
-- **/getSessions:** Vorhandene Sessionen im Projekt anzeigen & Punkte beziehen
-
-### Datenbank
-Die Datenbank hat vier Tabellen:
-- **user**
-- **projects**
-- **sessions**
-- **points**
-In diesen vier Tabellen werden alle nötigen Informationen gespeichert. Die Integrität der Daten wird durch python im backend sichergestellt und durch entsprechende Fehlermeldungen im frontend den Nutzenden mitgeteilt. In der anschliessenden Grafik ist das Datenbankschema ersichtlich.
-
-**Grafik**
-
