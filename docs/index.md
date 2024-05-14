@@ -109,7 +109,7 @@ Als Hintergrundkarte wird die **Landeskarte farbe 1:10'000** von ©swisstopo ver
 ## 3D-Modell
 Die dreidimensionale Darstellung der Punkte und der Vektoren erfolgt durch three.js (siehe [threejs.org](https://threejs.org/docs/index.html#manual/en/introduction/Creating-a-scene)). Die Überwachungspunkte werden als Sphere (Kugel) dargestellt. Die Verschiebungen in Ost, Nord und Höhe werden durch TubeGeometries (Röhren) dargestellt.
 
-Das Hintergrundmodell wird derzeit noch nicht automatisch erstellt. Das Modell, welches in der Web-App verwendet wird, wurde durch das QGIS-Plugin Qgis2threejs [https://github.com/minorua](https://github.com/minorua/Qgis2threejs) vorprozessiert. Um die Orientierung auf dem Geländemodell zu ermöglichen, wurde die Landeskarte aus der 2D-Darstellung auf das Modell projiziert.
+Das Hintergrundmodell wird derzeit noch nicht automatisch erstellt. Das Modell, welches in der Web-App verwendet wird, wurde durch das QGIS-Plugin Qgis2threejs [github.com/minorua](https://github.com/minorua/Qgis2threejs) vorprozessiert. Um die Orientierung auf dem Geländemodell zu ermöglichen, wurde die Landeskarte aus der 2D-Darstellung auf das Modell projiziert.
 
 
 
@@ -134,6 +134,7 @@ Die grösse eines Vektors ist schwierig zu vergleichen. Alleine durch die perspe
 ---
 
 ## API Dokumentation
+Fast API kommt mit vorinstallierter Swagger UI. Wenn der Fast API Backen Server läuft, kann auf die Dokumentation der API über Swagger UI auf http://localhost:8000/docs verfügbar.
 
 ---
 
