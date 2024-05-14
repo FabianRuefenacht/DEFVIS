@@ -6,13 +6,12 @@
 
 ## Beschreibung
 
-Die Home-Ansicht ist die erste Seite, die geladen wird, wenn man die Web-App startet. Der Benutzer kann sich neu registrieren oder anmelden, um auf die Projektverwaltung zuzugreifen.
+Die Home-Ansicht ist die erste Seite, die geladen wird, wenn man DEFVIS startet. Der Benutzer kann sich neu registrieren oder anmelden, um auf die Projektverwaltung zuzugreifen.
 
 ## Funktionen
 
 Die Seite enthält zwei Buttons und keine weiteren Interaktionen:
 
-- **Home-Button:** Leitet den Benutzer zurück zur Home-Ansicht.
 - **Anmelden:** Ermöglicht es dem Benutzer, sich über das Anmelde-Menü anzumelden, um auf die Projektverwaltung und Hauptansicht zuzugreifen.
 - **Registrieren:** Ermöglicht es dem Benutzer, sich über das Registrierungs-Menü zu registrieren.
 

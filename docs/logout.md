@@ -11,7 +11,7 @@ Your browser does not support the video tag.
 
 ## Funktionen
 
-Über den Button "Abmelden" kannst Du den angemeldeten Benutzer abmelden, indem Du auf <code>Abmelden</code> klickst.
+Klicke auf den Button `Abmelden`, um Dich vom angemeldeten Benutzerkonto abzumelden.
 
 ## Probleme und Verbesserungsvorschläge
 

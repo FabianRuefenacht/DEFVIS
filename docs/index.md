@@ -6,7 +6,7 @@ Die Web-App **DEFVIS** bietet Dir folgende Tools:
 
 - Deformationsmessungen zu verwalten
 - Dreidimensionale Verschiebungen zu visualisieren
-- Wirkungsvolle Überwachung und Analyse von geophysikalischen Veränderungen in Echtzeit
+- Wirkungsvolle Überwachung und Analyse von geophysikalischen Veränderungen
 
 Die Darstellung dieser Daten im dreidimensionalen Kontext bietet Dir als Nutzer\*in eine intuitive und umfassende Sicht auf die Daten, was zu fundierteren und informierteren Entscheidungen führt.
 
@@ -27,13 +27,36 @@ hier gehts zur [Schnellinstallation](https://github.com/FabianRuefenacht/6230_FR
 
 ---
 
-## Features der App {#section2}
+## Features von DEFVIS {#section2}
+
+### 3D-Ansicht
+
+```
+hier ein Video über die Funktion 3D-Viewer
+```
 
 Unsere App bietet eine breite Palette von Funktionen, die den Nutzern vielfältige Möglichkeiten bieten, ohne sie zu überfordern. Eine herausragende Funktion ist der 3D-Viewer, der es den Benutzern ermöglicht, Fehlervektoren in einer dreidimensionalen Ansicht zu betrachten. Durch diese Darstellung in Bezug auf das Gelände können Benutzer nicht nur 2D-Informationen erhalten, sondern auch den Fehlervektor im Kontext einer Oberfläche visualisieren. Dies ermöglicht es, einen direkten Bezug herzustellen, beispielsweise um zu sehen, wie ein Punkt am Hang abrutscht.
 
+### 2D-Ansicht
+
+```
+hier ein Video über die Funktion 2D-Ansicht und wenn man auf den Punkt klickt, die Informationen dazu erscheinen
+```
+
+In der 2D-Ansicht kannst Du die Punkte, welche Du in Dein Projekt importiert hast visualisiern. Der Fehlervektor wird angezeigt, sodass Du weisst wie stark sich ein Punkt in welche Richtung bewegt.
+
+### Punktinformationen
+
+```
+hier ein Video über die Punktinformation und wenn man auf den Punkt klickt, man auf der Ansicht darauf zoomt
+```
+
+Um die Daten nicht nur visuell zu haben sondern auch in einer Tabelle, werden aus den Daten der importierten Sessionen die Fehlervektoren in Ost-, Nord-Richtung und Höhet berechnet und in die Tabelle geschrieben.
+Durch Anklicken eines Punktes, wird automatisch auf dem Punkt aus der Ansicht gezoomt.
+
 ---
 
-## Benutzung der Web-App {#section3}
+## Benutzerhandbuch {#section3}
 
 Entdecke die vielfältigen Tools und Funktionen, die DEFVIS bietet. Klicke auf die Links unten, um zu den einzelnen Seiten zu gelangen und mehr über ihre Funktionen zu erfahren:
 
@@ -91,7 +114,7 @@ Unsere App-Datenbank wird mit Benutzerdaten gefüllt und zur korrekten Darstellu
 
 ---
 
-## Ausblick der App {#section6}
+## Ausblick von DEFVIS {#section6}
 
 ### Zeitreihenanalyse
 
@@ -108,3 +131,7 @@ Die grösse eines Vektors ist schwierig zu vergleichen. Alleine durch die perspe
 ---
 
 ## API Dokumentation
+
+---
+
+## Architektur
