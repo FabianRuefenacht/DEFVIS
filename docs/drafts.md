@@ -123,7 +123,7 @@ _Login-Fenster_
 
 Das Login-Fenster ermöglicht Nutzenden, sich anzumelden oder neu zu registrieren (siehe Abbildung 1 Login-Fenster Button „New“). Fehlerhafte Anmeldeinformationen oder eine fehlende Registrierung werden durch entsprechende Meldungen signalisiert.
 
-| <h3 id="abb_1">Abbildung 1 Login-Fenster</h3>                                                                                                  |
+| <h3 id="abb1">Abbildung 1 Login-Fenster</h3>                                                                                                   |
 | ---------------------------------------------------------------------------------------------------------------------------------------------- |
 | <img src="screenshots/konzept/login_konzept.png" alt="Login-Fenster-Konzept" style="max-width: 100%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);"> |
 | Quelle: Screenshot vom 02. März 2024 aus QT-Designer                                                                                           |
@@ -132,7 +132,7 @@ _Main-Fenster_
 
 Das Hauptfenster (Main-Fenster) präsentiert die Hauptansicht der Anwendung mit einer anpassbaren Hintergrundkarte. Links davon befindet sich das Registermenü, darunter sind Funktionen angeordnet, die es Benutzern ermöglichen, verschiedene Informationen aufzurufen. Standardmässig werden Informationen zu den Punkten des Projekts angezeigt.
 
-| Abbildung 2 Main-Fenster                                                                                                                          |
+| <h3 id="abb2">Abbildung 2 Main-Fenster</h3>                                                                                                       |
 | ------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <img src="screenshots/konzept/main_view_konzept.png" alt="Hauptansicht_Konzept" style="max-width: 100%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);"> |
 | Quelle: Screenshot vom 02. März 2024 aus QT-Designer                                                                                              |
@@ -141,7 +141,7 @@ _Zeitreihenanalyse_
 
 Durch Klicken auf den „ZRA“-Button wird eine Analyse der Zeitreihen für die Punkte im Projekt angezeigt.
 
-| Abbildung 3 Zeitreihenanalyse                                                                                                                    |
+| <h3 id="abb3">Abbildung 3 Zeitreihenanalyse</h3>                                                                                                 |
 | ------------------------------------------------------------------------------------------------------------------------------------------------ |
 | <img src="screenshots/konzept/zra_konzept.png" alt="Zeitreihenanalyse_Konzept" style="max-width: 100%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);"> |
 | Quelle: Screenshot vom 02. März 2024 aus QT-Designer                                                                                             |
@@ -150,7 +150,7 @@ _3D-Fenster_
 
 Der „3D“-Button öffnet das 3D-Fenster, in dem die Punkte und Vektoren dreidimensional visualisiert werden.
 
-| Abbildung 4 3D-Fenster                                                                                                                         |
+| <h3 id="abb4">Abbildung 4 3D-Fenster</h3>                                                                                                      |
 | ---------------------------------------------------------------------------------------------------------------------------------------------- |
 | <img src="screenshots/konzept/3d_viewer_konzept.png" alt="3D-Viewer_Konzept" style="max-width: 100%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);"> |
 | Quelle: Screenshot vom 02. März 2024 aus QT-Designer                                                                                           |
@@ -161,7 +161,7 @@ _Neues Projekt_
 
 Das Pop-Up „Neues Projekt“ ermöglicht es Benutzenden, ein neues Projekt zu erstellen, indem sie Projektname, die oder den Hauptverantwortliche/n und Kundeninformationen eingeben und dann auf „Projekt erstellen“ klicken.
 
-| Abbildung 5 neues Projekt                                                                                                                    |
+| <h3 id="abb5">Abbildung 5 neues Projekt</h3>                                                                                                 |
 | -------------------------------------------------------------------------------------------------------------------------------------------- |
 | <img src="screenshots/konzept/new_project_konzept.png" alt="Neues_Projekt" style="max-width: 100%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);"> |
 | Quelle: Screenshot vom 02. März 2024 aus QT-Designer                                                                                         |
@@ -170,7 +170,7 @@ _Projekteröffnung_
 
 In diesem Pop-Up werden alle vorhandenen Projekte aufgelistet. Nutzende können ein Projekt auswählen und durch Klicken auf „Projekt öffnen“ laden.
 
-| Abbildung 6 Projekteröffnung                                                                                                                   |
+| <h3 id="abb6">Abbildung 6 Projekteröffnung</h3>                                                                                                |
 | ---------------------------------------------------------------------------------------------------------------------------------------------- |
 | <img src="screenshots/konzept/open_project_konzept.png" alt="Projekt_öffnen" style="max-width: 100%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);"> |
 | Quelle: Screenshot vom 02. März 2024 aus QT-Designer                                                                                           |
@@ -179,7 +179,7 @@ _Datei hochladen_
 
 Das Pop-up „Datei hochladen“ dient zum Hochladen von Dateien.
 
-| Abbildung 7 Datei hochladen                                                                                                                     |
+| <h3 id="abb7">Abbildung 7 Datei hochladen</h3>                                                                                                  |
 | ----------------------------------------------------------------------------------------------------------------------------------------------- |
 | <img src="screenshots/konzept/load_session_konzept.png" alt="Datei_hochladen" style="max-width: 100%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);"> |
 | Quelle: Screenshot vom 02. März 2024 aus QT-Designer                                                                                            |
@@ -188,7 +188,7 @@ Das Pop-up „Datei hochladen“ dient zum Hochladen von Dateien.
 
 Das Flussdiagramm veranschaulicht den sequenziellen Ablauf der wichtigsten Funktionen und Interaktionen in der Anwendung. Es bietet einen klaren Überblick über die verschiedenen Schritte, die Benutzer und Benutzerinnen durchlaufen, und zeigt, wie die einzelnen Komponenten miteinander verbunden sind.
 
-| Abbildung 8 Flussdiagramm                                                                                                                      |
+| <h3 id="abb8">Abbildung 8 Flussdiagramm</h3>                                                                                                   |
 | ---------------------------------------------------------------------------------------------------------------------------------------------- |
 | <img src="screenshots/konzept/flussdiagramm_konzept.png" alt="Flussdiagramm" style="max-width: 100%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);"> |
 | Quelle: Screenshot vom 02. März 2024 aus OneNote                                                                                               |
@@ -282,7 +282,7 @@ In diesem Abschnitt werden die einzelnen Aufgaben, der geschätzte Zeitaufwand u
 
 <h2 id="planung">11.1 Planung der Tasks</h2>
 
-Tabelle 1 Zeitaufwand
+<h3 id="tab1">Tabelle 1 Zeitaufwand</h3>
 
 | Task                                | Beschreibung                                                        | Geschätzter Zeitaufwand (Stunden) |
 | ----------------------------------- | ------------------------------------------------------------------- | --------------------------------- |
@@ -320,20 +320,22 @@ swisstopo (2024) swissSURFACE3D. Verfügbar über: <a href="https://www.swisstop
 <h2 id="abbildungen">13.1 Abbildungen</h2>
 
 <ul>
-<li><a href="abb1">Abbildung 1 Login-Fenster</a></li>
-<li><a href="abb2">Abbildung 2 Main-Fenster</a></li>
-<li><a href="abb3">Abbildung 3 Zeitreihenanalyse</a></li>
-<li><a href="abb4">Abbildung 4 3D-Fenster</a></li>
-<li><a href="abb5">Abbildung 5 neues Projekt</a></li>
-<li><a href="abb6">Abbildung 6 Projekteröffnung</a></li>
-<li><a href="abb7">Abbildung 7 Datei hochladen</a></li>
-<li><a href="abb8">Abbildung 8 Flussdiagramm</a></li>
-<li><a href="abb9">Abbildung 9 Auszug aus dem Zeitplan</a></li>
+<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html#abb1">Abbildung 1 Login-Fenster</a></li>
+<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html#abb2">Abbildung 2 Main-Fenster</a></li>
+<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html#abb3">Abbildung 3 Zeitreihenanalyse</a></li>
+<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html#abb4">Abbildung 4 3D-Fenster</a></li>
+<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html#abb5">Abbildung 5 neues Projekt</a></li>
+<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html#abb6">Abbildung 6 Projekteröffnung</a></li>
+<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html#abb7">Abbildung 7 Datei hochladen</a></li>
+<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html#abb8">Abbildung 8 Flussdiagramm</a></li>
+<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html#abb9">Abbildung 9 Auszug aus dem Zeitplan</a></li>
 </ul>
 
 <h2 id="tabellen">13.2 Tabellen</h2>
 
-[Tabelle 1 Zeitaufwand](#tab1)
+<ul>
+<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html#tab1">Tabelle 1 Zeitaufwand</a></li>
+</ul>
 
 ---
 
