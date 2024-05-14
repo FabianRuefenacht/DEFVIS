@@ -27,7 +27,7 @@ Muttenz, 12.03.2024
 <li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html/#flussdiagramm">7 Flussdiagramm der Funktionalitäten</a></li>
 <li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html/#userpersona">8 User Persona</a></li>
 <li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html/#userpersona_1">8.1 User Persona 1: Max Muster</a></li>
-<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html/#userpersona_1">8.2 User Persona 2: Melanie Muster</a></li>
+<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html/#userpersona_2">8.2 User Persona 2: Melanie Muster</a></li>
 <li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html/#geodatensaetze">9 Geodatensätze</a></li>
 <li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html/#metadaten_dok">10 Metadaten und Dokumentation Geodatensätze</a></li>
 <li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html/#metadaten">10.1 Metadaten</a></li>
@@ -39,6 +39,7 @@ Muttenz, 12.03.2024
 <li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html/#abbildung_tab">13 Abbildungen und Tabellen</a></li>
 <li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html/#abbildung">13.1 Abbildungen</a></li>
 <li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html/#tabellen">13.2 Tabellen</a></li>
+<p></p>
 
 # 1 Einleitung {#einleitung}
 
@@ -122,10 +123,10 @@ _Login-Fenster_
 
 Das Login-Fenster ermöglicht Nutzenden, sich anzumelden oder neu zu registrieren (siehe Abbildung 1 Login-Fenster Button „New“). Fehlerhafte Anmeldeinformationen oder eine fehlende Registrierung werden durch entsprechende Meldungen signalisiert.
 
-| Abbildung 1 Login-Fenster                            |
-| ---------------------------------------------------- |
-|                                                      |
-| Quelle: Screenshot vom 02. März 2024 aus QT-Designer |
+| Abbildung 1 Login-Fenster                                                                                            |
+| -------------------------------------------------------------------------------------------------------------------- |
+| <img src="screenshots/home.png" alt="Home-Ansicht" style="max-width: 100%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);"> |
+| Quelle: Screenshot vom 02. März 2024 aus QT-Designer                                                                 |
 
 _Main-Fenster_
 
@@ -154,7 +155,7 @@ Der „3D“-Button öffnet das 3D-Fenster, in dem die Punkte und Vektoren dreid
 |                                                      |
 | Quelle: Screenshot vom 02. März 2024 aus QT-Designer |
 
-## Pop-Ups
+## 6.1 Pop-Ups {#popups}
 
 _Neues Projekt_
 
@@ -183,7 +184,7 @@ Das Pop-up „Datei hochladen“ dient zum Hochladen von Dateien.
 |                                                      |
 | Quelle: Screenshot vom 02. März 2024 aus QT-Designer |
 
-# Flussdiagramm der Funktionalitäten
+# 7 Flussdiagramm der Funktionalitäten {#flussdiagramm}
 
 Das Flussdiagramm veranschaulicht den sequenziellen Ablauf der wichtigsten Funktionen und Interaktionen in der Anwendung. Es bietet einen klaren Überblick über die verschiedenen Schritte, die Benutzer und Benutzerinnen durchlaufen, und zeigt, wie die einzelnen Komponenten miteinander verbunden sind.
 
@@ -192,11 +193,11 @@ Das Flussdiagramm veranschaulicht den sequenziellen Ablauf der wichtigsten Funkt
 |                                                  |
 | Quelle: Screenshot vom 02. März 2024 aus OneNote |
 
-# User Persona
+# 8 User Persona {#userpersona}
 
 Dieses Kapitel stellt zwei typische Benutzerprofile (User Persona) vor, beschreibt ihre Nutzung der Webanwendung und beschreibt mögliche inkorrekte Interaktionen.
 
-## User Persona 1: Max Muster
+## 8.1 User Persona 1: Max Muster {#userpersona_1}
 
 **Beschreibung:**
 
@@ -219,7 +220,7 @@ Dieses Kapitel stellt zwei typische Benutzerprofile (User Persona) vor, beschrei
 - Er könnte denselben Sessionsnamen mehrfach im Projekt verwenden was zu Ambiguitäten führt. Dies wird durch das Datenbankschema abgefangen und durch eine entsprechende Fehlermeldung im Frontend angezeigt.
 - Bei der Projekterstellung könnte Max mehrere Projekte mit gleicher Namensgebung erstellen oder einen unbekannten Nutzer als Betrachter hinzufügen. Beide Fehler werden durch das Datenbankschema abgefangen und im Frontend durch eine Fehlermeldung kommuniziert.
 
-## User Persona 2: Melanie Muster
+## 8.2 User Persona 2: Melanie Muster {#userpersona_2}
 
 **Beschreibung:**
 
@@ -240,7 +241,7 @@ Dieses Kapitel stellt zwei typische Benutzerprofile (User Persona) vor, beschrei
 - Melanie könnte Schwierigkeiten haben, komplexe Analysefunktionen effektiv zu nutzen, insbesondere wenn es um die Interpretation von Trendkomponenten geht. Ein Link zu einer Website, welche die Analyse von Zeitreihen beschreibt, könnte ihr bei der Beurteilung helfen.
 - Es ist möglich, dass Melanie aufgrund von unklaren Anweisungen oder einer überladenen Benutzeroberfläche Schwierigkeiten hat, die benötigten Daten zu identifizieren und zu extrahieren. So soll das UI möglichst einfach sein und den Benutzer / die Benutzerin durch intelligentes Ein- und Ausblenden von Funktionalitäten durch den Prozess der Analyse führen.
 
-# Geodatensätze
+# 9 Geodatensätze {#geodatensaetze}
 
 Die, in der Webanwendung verwendeten Geodaten, umfassen verschiedene Quellen:
 
@@ -257,9 +258,9 @@ Die, in der Webanwendung verwendeten Geodaten, umfassen verschiedene Quellen:
 
 Durch die Kombination dieser verschiedenen Geodatensätze bietet die Webanwendung eine umfassende und detaillierte Darstellung der geografischen Umgebung und der durchgeführten Messungen.
 
-# Metadaten und Dokumentation
+# 10 Metadaten und Dokumentation {#metadaten_dok}
 
-## Metadaten
+## 10.1 Metadaten {#metadaten}
 
 Die Punktdaten/Sessionen, welche vom Projektersteller/der Projekterstellerin bereitgestellt werden, haben die Attribute Punktnummer, Ost-Wert, Nord-Wert, Höhe und Zeitstempel. Der Zeitstempel wird für die Zeitreihenanalyse benötigt.
 
@@ -269,17 +270,17 @@ Die Hintergrundkarte von OpenStreetMap kann über XYZ-Tiles bezogen werden.
 
 SwissSURFACE3D ist ein Höhenmodell der Swisstopo. Es können Kacheln mit der Ausdehnung 1 km<sup>2</sup> bezogen werden. Der Inhalt der Kacheln ist eine klassierte Punktwolke. (swisstopo 2024).
 
-## Dokumentation
+## 10.2 Dokumentation {#dokumentation}
 
 Eine umfassende Dokumentation des WebGIS’, wird mit Hilfe von GitBooks erstellt.
 
 GitBook ist eine Plattform zum Erstellen, Bearbeiten und Veröffentlichen von Büchern und technischer Dokumentation. Mit Markdown geschriebene Inhalte können in verschiedenen Formaten exportiert werden.
 
-# Aufgaben und Zeitaufwand
+# 11 Aufgaben und Zeitaufwand {#aufgaben}
 
 In diesem Abschnitt werden die einzelnen Aufgaben, der geschätzte Zeitaufwand und der Zeitplan für die Umsetzung des Projekts dargestellt.
 
-## Planung der Tasks
+## 11.1 Planung der Tasks {#planung}
 
 Tabelle 1 Zeitaufwand
 
@@ -299,7 +300,7 @@ Tabelle 1 Zeitaufwand
 
 Quelle: private Ablage
 
-## Zeitplanung
+## 11.2 Zeitplanung {#zeitplanung}
 
 | Abbildung 9 Auszug aus dem Zeitplan                                 |
 | ------------------------------------------------------------------- |
@@ -308,15 +309,15 @@ Quelle: private Ablage
 
 Siehe kompletter Zeitplan im Anhang: Zeitplan.pdf, Stand vom 12. März 2024
 
-# Literatur
+# 12 Literatur {#literatur}
 
 swisstopo (2021) Web Map Tiling Services WMTS: Verfügbare Dienste und Daten. Verfügbar über: <https://www.geo.admin.ch/de/wmts-verfuegbare-dienste-und-daten/> (Letzter Zugriff: 11.03.2024).
 
 swisstopo (2024) swissSURFACE3D. Verfügbar über: <https://www.swisstopo.admin.ch/de/hoehenmodell-swisssurface3d> (Letzter Zugriff: 11.03.2024).
 
-# Abbildungen und Tabellen (#\_Toc161149772)
+# 13 Abbildungen und Tabellen (#abbildungen_tab)
 
-## Abbildungen (#\_Toc161149773)
+## Abbildungen (#abbildungen)
 
 [Abbildung 1 Login-Fenster 5](#_Toc161149727)
 
@@ -336,6 +337,6 @@ swisstopo (2024) swissSURFACE3D. Verfügbar über: <https://www.swisstopo.admin.
 
 [Abbildung 9 Auszug aus dem Zeitplan 14](#_Toc161149735)
 
-## Tabellen (#\_Toc161149774)
+## Tabellen (#tabellen)
 
 [Tabelle 1 Zeitaufwand 12](#_Toc161149736)
