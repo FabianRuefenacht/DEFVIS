@@ -31,7 +31,7 @@ git clone git@github.com:FabianRuefenacht/6230_FRNMLW.git
 
 ## QuickSetup
 ### Schnellinstallation
-Um die Installation und den Start der Web-App zu vereinfachen wurden zwei JavaScirpt-Dateien erstellt, welche die meiste Arbeit abnehmen. Falls die Schnellinstallation fehlschlagen sollte, verwenden Sie bitte die ausführlichere Anleitung (weiter unten).
+Um die Installation und den Start der Web-App zu vereinfachen wurden zwei JavaScirpt-Dateien erstellt, welche die meiste Arbeit abnehmen. Falls die Schnellinstallation fehlschlagen sollte, verwenden Sie bitte die [ausführlichere Anleitung](https://github.com/FabianRuefenacht/6230_FRNMLW/blob/main/README.md#ausf%C3%BChrliche-installationsanleitung).
 
 ```shell
 conda create -n defvis python=3.11 pip
@@ -62,7 +62,7 @@ http://localhost:3000
 ## Ausführliche Installationsanleitung
 ### Frontend installieren
 
-Öffne ein Terminal (Command Prompt in VS Code) und wechsle in den _client_ Ordner in diesem Projekt
+Öffne ein Terminal (Command Prompt in VS Code) und wechsle in den *frontend*-Ordner in diesem Projekt
 
 1.  Verzeichnis öffnen
 
@@ -88,13 +88,13 @@ http://localhost:3000/
 
 ### Backend installieren
 
-Öffne ein Terminal und wechsle in den _backend_ Ordner.
+Öffne ein Terminal und wechsle in den *backend*-Ordner.
 
 Virtuelle Umgebung für Python mit allen Requirements in der `requirements.txt` Datei aufsetzen.
    
 1.  Verzeichnis öffnen
    
-   Öffnen Sie die Commandprompt (Anaconda Prompt) und navigieren Sie in den Ordner backend
+   Öffne die Commandprompt (Anaconda Prompt) und navigieren in den Ordner *backend*
 ```shell
 cd path/to/backend
 ```
@@ -105,9 +105,9 @@ conda create --name defvis python=3.9 --file app/requirements.txt
 
 <br />
 
-Backend ausführen, virtuelle Umgebung starten und server _uvicorn_ starten. Öffne http://localhost:8000/docs im Browser und verifiziere, ob das Backend läuft.
+Backend ausführen, virtuelle Umgebung starten und server starten.
    
-1.  In den Ordner backend navigieren
+1.  In den Ordner *backend* navigieren
 ```shell
 cd backend
 ```
@@ -126,4 +126,4 @@ http://localhost:8000/docs
 
 ## API Dokumentation
 
-Fast API kommt mit vorinstallierter Swagger UI. Wenn der Fast API Backen Server läuft, kann auf die Dokumentation der API über Swagger UI auf http://localhost:8000/docs verfügbar.
+Fast API kommt mit vorinstallierter Swagger UI. Wenn der FastAPI Backend-Server läuft, kann auf die Dokumentation der API über Swagger UI auf http://localhost:8000/docs abgerufen werden.
