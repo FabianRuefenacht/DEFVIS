@@ -53,6 +53,7 @@ Um die Daten nicht nur visuell zu haben, sondern auch in einer Tabelle, werden a
 ## Angewandte Methoden {#section4}
 
 Deformationsmessungen sind Teil des Fachbereichs Ingenieurvermessung und Geodäsie. Ziel einer Deformationsmessung ist es, die Verschiebung von Überwachungspunkten in Bezug zu den, als stabil angenommenen, Festpunkten zu bestimmen. Dabei können diverse Vermessungsmethoden wie zum Beispiel: Nivellement, Triangulation, Distanzmessung, Lotung, Inklinometer oder GNSS, je nach den projektspezifischen Ansprüchen, in Betracht gezogen werden. Aus den beobachteten Messgrössen werden mit der Methode der kleinsten Quadrate in einer geodätischen Ausgleichung Koordinaten berechnet. Die Koordinaten werden dann statistisch analysiert, um auf Grund der empirischen Genauigkeit signifikante Deformationsvektoren aus zwei zeitlich verschiedenen Messungen zu bestimmen.
+
 Die Interpretation und Kontrolle der Deformationsvektoren gestaltet sich aufgrund von Zahlen anspruchsvoll. Eine dreidimensionale Visualisierung der Deformationsvektoren auf einem Geländemodell vereinfacht die Kontrolle für die geodätische Fachperson und die Interpretation für die geologische Fachperson.
 
 ---
@@ -92,21 +93,21 @@ Die Messdaten und Verschiebungen\* werden durch _openlayers_ (siehe <a href="htt
 
 Als Hintergrundkarte wird die **Landeskarte farbe 1:10'000** von ©swisstopo verwendet (siehe <a href="https://www.swisstopo.admin.ch/de/landeskarte-swiss-map-raster-10" target="_blank">www.swisstopo.admin.ch/de/landeskarte-swiss-map-raster-10</a>). Die Einbindung der Karte erfolgt als Web-Map-Service mit folgenden Parametern.
 
-| Attribut             | Wert                                                                    |
-| -------------------- | ----------------------------------------------------------------------- |
-| source.url           | [https://wms.geo.admin.ch/](https://wms.geo.admin.ch/)                  |
-| source.crossOrigin   | "anonymous"                                                             |
-| source.attributions  | [geo.admin.ch](http://www.geo.admin.ch/internet/geoportal/en/home.html) |
-| source.projection    | "EPSG:2056"                                                             |
-| source.params.LAYERS | "ch.swisstopo.landeskarte-farbe-10"                                     |
-| source.params.FORMAT | "image/jpeg"                                                            |
-| source.serverType    | "mapserver"                                                             |
+| Attribut             | Wert                                                                                               |
+| -------------------- | -------------------------------------------------------------------------------------------------- |
+| source.url           | https://wms.geo.admin.ch/                                                                          |
+| source.crossOrigin   | "anonymous"                                                                                        |
+| source.attributions  | <a href="http://www.geo.admin.ch/internet/geoportal/en/home.html" target="_blank">geo.admin.ch</a> |
+| source.projection    | "EPSG:2056"                                                                                        |
+| source.params.LAYERS | "ch.swisstopo.landeskarte-farbe-10"                                                                |
+| source.params.FORMAT | "image/jpeg"                                                                                       |
+| source.serverType    | "mapserver"                                                                                        |
 
 ## 3D-Modell
 
 Die dreidimensionale Darstellung der Punkte und der Vektoren erfolgt durch _three.js_ (siehe <a href="https://threejs.org/docs/index.html#manual/en/introduction/Creating-a-scene" target="_blank">threejs.org/docs</a>). Die Überwachungspunkte werden als Sphere (Kugel) dargestellt. Die Verschiebungen in Ost, Nord und Höhe werden durch TubeGeometries (Röhren) dargestellt.
 
-Das Hintergrundmodell wird derzeit noch nicht automatisch erstellt. Das Modell, welches in der Web-App verwendet wird, wurde durch das QGIS-Plugin Qgis2threejs [<a href="https://github.com/minorua/Qgis2threejs" target="_blank">github.com/minorua</a> vorprozessiert. Um die Orientierung auf dem Geländemodell zu ermöglichen, wurde die Landeskarte aus der 2D-Darstellung auf das Modell projiziert.
+Das Hintergrundmodell wird derzeit noch nicht automatisch erstellt. Das Modell, welches in der Web-App verwendet wird, wurde durch das QGIS-Plugin _Qgis2threejs_ [<a href="https://github.com/minorua/Qgis2threejs" target="_blank">github.com/minorua</a> vorprozessiert. Um die Orientierung auf dem Geländemodell zu ermöglichen, wurde die Landeskarte aus der 2D-Darstellung auf das Modell projiziert.
 
 ---
 
@@ -114,21 +115,20 @@ Das Hintergrundmodell wird derzeit noch nicht automatisch erstellt. Das Modell, 
 
 ### Zeitreihenanalyse
 
-Die Integration einer Zeitreihenanalyse war aus Zeitgründen nicht möglich. Dies würde den Benutzern ermöglichen, Positionsänderungen im Laufe der Zeit genauer zu verfolgen, beispielsweise durch die Berücksichtigung von Temperaturänderungen oder anderen meteorologischen Einflüssen.
+Die Einbindung einer Zeitreihenanalyse würde den Benutzern ermöglichen, Positionsänderungen im Laufe der Zeit genauer zu verfolgen. Dies könnte durch die Berücksichtigung von Temperaturänderungen oder anderen meteorologischen Einflüssen geschehen.
+Bereits jetzt wird beim Session erfassen (siehe auch <a href="https://fabianruefenacht.github.io/6230_FRNMLW/capture_session.html">Session laden</a>) ein Zeitstempel erfasst, sodass man diese Information einer Session zuweisen und somit in einer Zeitreihenanalyse darstellen könnte.
 
 ### Farbcodierte Punkte
 
-Eine zukünftige Erweiterung könnte die Möglichkeit für Benutzer umfassen, Schwellwerte für jedes Projekt festzulegen. Punkte, die signifikante Bewegungen aufweisen, könnten anders eingefärbt oder markiert werden, um sofortige Aufmerksamkeit zu erregen.
+Eine weitere mögliche Erweiterung für Benutzer wäre, Schwellwerte für jedes Projekt festzulegen. Punkte, die signifikante Bewegungen aufweisen, könnten anders eingefärbt oder markiert werden, um sofortige Aufmerksamkeit zu erregen.
 
 ### 2D-Balken neben 3D-Vektoren
 
-Die grösse eines Vektors ist schwierig zu vergleichen. Alleine durch die perspektive reicht oft nicht aus. Deshalb könnte man einen 2D-Balkendiagramm neben den Vektor setzen. So sieht man ein verhältnis zu weiter entfernten oder näheren Punkten.
+Die Grösse eines Vektors im dreidimensionalen Raum ist schwierig zu vergleichen, insbesondere aufgrund von Perspektive und Entfernung. Um dieses Problem anzugehen, könnte ein 2D-Balkendiagramm neben den Vektoren platziert werden. Dadurch erhalten Benutzer ein Verhältnis zu weiter entfernten oder näheren Punkten und können die Größenverhältnisse besser einschätzen.
 
----
+### vollständige 3D-Karte
 
-## API Dokumentation
-
-Fast API kommt mit vorinstallierter Swagger UI. Wenn der Fast API Backen Server läuft, kann auf die Dokumentation der API über Swagger UI auf <a href="http://localhost:8000/docs" target="_blank">http://localhost:8000/docs</a> verfügbar.
+Die Umsetzung einer ganzen Karte der Schweiz in 3D stellt uns vor Herausforderungen. In einem späteren Zeitpunkt würde es Sinn machen, die Karte über einen FME-Prozess vorzubereiten und dann zu komprimieren, um die Auflösung der Karte sowie die Kompression der Kartendaten zu optimieren.
 
 ---
 
