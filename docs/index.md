@@ -35,7 +35,7 @@ Unsere App bietet eine breite Palette von Funktionen, die den Nutzern vielfälti
 
 ## Benutzung der Web-App {#section3}
 
-Entdecke die vielfältigen Tools und Funktionen, die sie bietet. Klicke auf die Links unten, um zu den einzelnen Seiten zu gelangen und mehr über ihre Funktionen zu erfahren:
+Entdecke die vielfältigen Tools und Funktionen, die 3D-Deform bietet. Klicke auf die Links unten, um zu den einzelnen Seiten zu gelangen und mehr über ihre Funktionen zu erfahren:
 
 **[Home](home.html):**
 

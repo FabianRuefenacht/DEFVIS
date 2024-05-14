@@ -10,10 +10,10 @@ Die Home-Ansicht ist die erste Seite, die geladen wird, wenn man die Web-App sta
 
 ## Funktionen
 
-Die Seite enthält drei Buttons und keine weiteren Interaktionen:
+Die Seite enthält zwei Buttons und keine weiteren Interaktionen:
 
 - **Home-Button:** Leitet den Benutzer zurück zur Home-Ansicht.
-- **Login:** Ermöglicht es dem Benutzer, sich über das Login-Menü anzumelden, um auf die Projektverwaltung und Hauptansicht zuzugreifen.
+- **Anmelden:** Ermöglicht es dem Benutzer, sich über das Anmelde-Menü anzumelden, um auf die Projektverwaltung und Hauptansicht zuzugreifen.
 - **Registrieren:** Ermöglicht es dem Benutzer, sich über das Registrierungs-Menü zu registrieren.
 
 ## Probleme und Verbesserungsvorschläge
@@ -22,3 +22,5 @@ Die Seite enthält drei Buttons und keine weiteren Interaktionen:
 - Die Seite könnte visuell ansprechender gestaltet werden, möglicherweise durch Ändern des Hintergrunds.
 
 <div style="text-align: right; float: right;"><a href="register.html">Registrieren ></a></div>
+
+<p></p>

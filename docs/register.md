@@ -7,6 +7,8 @@
 Your browser does not support the video tag.
 </video>
 
+<p></p>
+
 ## Beschreibung
 
 Auf der Registrierungs-Seite kann sich ein Benutzer registrieren. Wenn der Benutzername bereits existiert oder die Textformatierung nicht korrekt ist, wird der Benutzer darüber informiert.
@@ -26,3 +28,5 @@ Die Seite enthält zwei Buttons und zwei Texteingaben:
 
 <div style="text-align: left; float: left;"><a href="home.html">< Home</a></div>
 <div style="text-align: right; float: right;"><a href="login.html">Anmelden ></a></div>
+
+<p></p>
