@@ -63,6 +63,7 @@ http://localhost:3000
 ### Frontend installieren
 
 Öffne ein Terminal (Command Prompt in VS Code) und wechsle in den _client_ Ordner in diesem Projekt
+
 1  Verzeichnis öffnen
 
    Öffnen Sie die Commandprompt und navigieren Sie in den Ordner frontend
@@ -103,6 +104,7 @@ conda create --name defvis python=3.9 --file app/requirements.txt
 ```
 
 2. Backend ausführen, virtuelle Umgebung starten und server _uvicorn_ starten. Öffne http://localhost:8000/docs im Browser und verifiziere, ob das Backend läuft.
+   
 2.1  In den Ordner backend navigieren
 ```shell
 cd backend
