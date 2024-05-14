@@ -14,8 +14,8 @@ Muttenz, 12.03.2024
 
 **Inhaltsverzeichnis**
 
-<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html/#einleitung">1 Einleitung</a></li>
-<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html/#projektinhalt">2 Projektinhalt</a></li>
+<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html#einleitung">1 Einleitung</a></li>
+<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html#projektinhalt">2 Projektinhalt</a></li>
 <li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html/#zielsetzung">3 Zielsetzung</a></li>
 <li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html/#fragestellung">4 Fragestellung</a></li>
 <li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html/#anwendungsarchitektur">5 Anwendungsarchitektur</a></li>
