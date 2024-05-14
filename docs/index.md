@@ -137,7 +137,27 @@ Fast API kommt mit vorinstallierter Swagger UI. Wenn der Fast API Backen Server 
 ---
 
 ## Architektur
-Die Web-App VECVIS basiert auf einer Server-Client-Architektur. Die Schnittstelle zwischen dem Client (frontend) und dem Server (backend) basiert auf FastAPI [fastapi.com](https://fastapi.tiangolo.com/). Als Speichermedium für die Daten dient eine SQLite-Datenbank [www.sqlite.org/](https://www.sqlite.org/). Das Backend ist in der Programmiersprache Python ([python.org](https://www.python.org/)) geschrieben.
+Die Web-App VECVIS basiert auf einer Server-Client-Architektur. Die Schnittstelle zwischen dem Client (frontend) und dem Server (backend) basiert auf FastAPI [fastapi.com](https://fastapi.tiangolo.com/). Als Speichermedium für die Daten dient eine SQLite-Datenbank [www.sqlite.org/](https://www.sqlite.org/). 
 
+### Backend
+Das Backend ist in der Programmiersprache Python ([python.org](https://www.python.org/)) geschrieben. In der Datei **db.py* ist eine Klasse enthalten, welche die Interaktion mit der Datenbank ermöglich. Dafür wird die Python_Bibliothek **sqlite3* verwendet. Total sind 15 Funktionen vorhanden. Diese sind in folgende Kategorien zu unterteilen:
+- **DB erstellen:** Erstellen der Datenbank und einrichten der Tabellen
+- **User:** Interaktion mit der Tabelle user (User erstellen und lesen)
+- **Project:** Interaktion mit der Tabelle projects (Projekte erstellen und lesen)
+- **Sessions:** Interaktion mit der Tabelle sessions (Sessionen erstellen und lesen)
+- **Points:** Interaktion mit der Tabelle points (Punkte erstellen und lesen)
+
+Die Funktionen der Datei **db.py* werden in der Datei **main.py* aufgerufen. Durch FastAPI werden 7 Routen mit den folgenden Zwecken eröffnet:
+- **/user:** Benutzer erstellen
+- **/login:** Login prüfen
+- **/newProject:** Projekt erstellen
+- **/openProject:** Projekte der nutzenden Person laden
+- **/newSession:** Neue Session im Projekt anlegen
+- **/getSessions:** Vorhandene Sessionen im Projekt anzeigen & Punkte beziehen
+
+### Frontend
 Die Umsetzung im Frontend wurde mit next.js ([nextjs.org](https://nextjs.org/docs)) gemacht. Als Programmiersprache im Frontend wurde TypeScript ([www.typescriptlang.org](https://www.typescriptlang.org/)) gewählt. TypeScript (TS) stellt im Gegensatz zu JavaScript (JS) sicher, dass die Datentypen definiert sind, was die Anwendung weniger Fehleranfällig macht. Für die Darstellung im frontend wurde auf tailwind ([tailwindcss.com](https://tailwindcss.com/)) gesetzt. Tailwind ist ein CSS-Framework, welches die wichtigsten Styling-Attribute von CSS abdeckt und einwandfrei mit Next.js und TS kombinierbar ist.
+
+Die nachfolgende Grafik zeigt die Geodateninfrastruktur schematisch auf und verweist auf die wichtigsten Komponenten der Applikation.
+**Grafik**
 ---
