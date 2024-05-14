@@ -64,6 +64,7 @@ http://localhost:3000
 
 Öffne ein Terminal (Command Prompt in VS Code) und wechsle in den _client_ Ordner in diesem Projekt
 1  Verzeichnis öffnen
+
    Öffnen Sie die Commandprompt und navigieren Sie in den Ordner frontend
 ```shell
 cd frontend
@@ -77,6 +78,7 @@ npm install
 npm start
 ```
 4  Vergewissern Sie sich, dass die Web-App läuft
+
 Geben Sie folgende URL im Webbrowser ein:
 ```shell
 http://localhost:3000/
@@ -89,6 +91,7 @@ http://localhost:3000/
 
 1. Virtuelle Umgebung für Python mit allen Requirements in der `requirements.txt` Datei aufsetzen.
 1.1  Verzeichnis öffnen
+   
    Öffnen Sie die Commandprompt (Anaconda Prompt) und navigieren Sie in den Ordner backend
 ```shell
 cd path/to/backend
