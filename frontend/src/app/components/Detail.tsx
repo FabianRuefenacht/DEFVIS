@@ -108,26 +108,11 @@ function Detail({
     view3DPointNextHeight,
   ]);
 
-  function findCorrespondingNextPoint(
-    basePoint: Point,
-    nextPoints: Point[]
-  ): Point | undefined {
-    return nextPoints.find((point) => point.name === basePoint.name);
-  }
-
   return (
     <main>
       {viewModel === "3D" && basePts[0] && (
         <div className=" pl-5">
           <ThreeScene width={800} height={600} basePts={basePts} nextPts={nextPts} cameraposition={cameraposition}/>
-
-          {/* <p>Punktnummer: {view3DPoint}</p>
-          <p>Ost: {view3DPointInMapEasting}</p>
-          <p>Δ Ost: {view3DPointNextEasting && view3DPointInMapEasting ? `${((view3DPointNextEasting - view3DPointInMapEasting) * 1000).toFixed(1)} mm` : ""}</p>
-          <p>Nord: {view3DPointInMapNorthing}</p>
-          <p>Δ Nord: {view3DPointNextNorthing && view3DPointInMapNorthing ? `${((view3DPointNextNorthing - view3DPointInMapNorthing) * 1000).toFixed(1)} mm` : ""}</p>
-          <p>Höhe: {view3DPointInMapHeight}</p>
-          <p>Δ Höhe: {view3DPointNextHeight && view3DPointInMapHeight ? `${((view3DPointNextHeight - view3DPointInMapHeight) * 1000).toFixed(1)} mm` : ""}</p> */}
         </div>
       )}
     </main>
