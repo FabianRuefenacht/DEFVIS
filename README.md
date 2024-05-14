@@ -66,7 +66,7 @@ http://localhost:3000
 
 1.  Verzeichnis öffnen
 
-   Öffnen Sie die Commandprompt und navigieren Sie in den Ordner frontend
+   Öffne die Commandprompt und navigiere in den Ordner frontend
 ```shell
 cd frontend
 ```
@@ -78,9 +78,9 @@ npm install
 ```shell
 npm start
 ```
-4.  Vergewissern Sie sich, dass die Web-App läuft
+4.  Vergewissere dich, dass die Web-App läuft
 
-Geben Sie folgende URL im Webbrowser ein:
+Gebe folgende URL im Webbrowser ein:
 ```shell
 http://localhost:3000/
 ```
@@ -90,36 +90,36 @@ http://localhost:3000/
 
 Öffne ein Terminal und wechsle in den _backend_ Ordner.
 
-1. Virtuelle Umgebung für Python mit allen Requirements in der `requirements.txt` Datei aufsetzen.
+Virtuelle Umgebung für Python mit allen Requirements in der `requirements.txt` Datei aufsetzen.
    
-1.1  Verzeichnis öffnen
+1.  Verzeichnis öffnen
    
    Öffnen Sie die Commandprompt (Anaconda Prompt) und navigieren Sie in den Ordner backend
 ```shell
 cd path/to/backend
 ```
-1.2  Installation der Python-Bibliotheken
+2.  Installation der Python-Bibliotheken
 ```shell
 conda create --name defvis python=3.9 --file app/requirements.txt
 ```
 
+<br />
 
-
-2. Backend ausführen, virtuelle Umgebung starten und server _uvicorn_ starten. Öffne http://localhost:8000/docs im Browser und verifiziere, ob das Backend läuft.
+Backend ausführen, virtuelle Umgebung starten und server _uvicorn_ starten. Öffne http://localhost:8000/docs im Browser und verifiziere, ob das Backend läuft.
    
-2.1  In den Ordner backend navigieren
+1.  In den Ordner backend navigieren
 ```shell
 cd backend
 ```
-2.2  Conda-environment aktivieren
+2.  Conda-environment aktivieren
 ```shell
 conda activate defvis
 ```
-2.3  Bachend ausführen
+3.  Bachend ausführen
 ```shell
 python main.py
 ```
-2.4  Verifizieren ob das backend läuft. Öffnen Sie im Browser die URL:
+4.  Verifizieren ob das backend läuft. Öffnen Sie im Browser die URL:
 ```shell
 http://localhost:8000/docs
 ```
