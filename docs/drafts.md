@@ -41,7 +41,7 @@ Muttenz, 12.03.2024
 <li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html/#tabellen">13.2 Tabellen</a></li>
 <p></p>
 
-# 1 Einleitung {#einleitung}
+<h1 id="einleitung">1 Einleitung</h1>
 
 Dieses Konzept beschäftigt sich mit der Entwicklung einer Geodateninfrastruktur durch Geomatikstudierende an der Fachhochschule Nordwestschweiz. Ziel ist die Visualisierung von dreidimensionalen Verschiebungsvektoren in einem WebGIS. Im Backend soll die nutzerabhängige Speicherung verschiedener Messsessionen und die Berechnung der Verschiebungen möglich sein. Das Projekt wird durch Coaching und Peer-Learning unterstützt.
 
