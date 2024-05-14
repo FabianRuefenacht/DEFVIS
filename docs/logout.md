@@ -13,8 +13,5 @@ Your browser does not support the video tag.
 
 Klicke auf den Button `Abmelden`, um Dich vom angemeldeten Benutzerkonto abzumelden.
 
-## Probleme und Verbesserungsvorschläge
-
-- Eventuell könnte ein zusätzlicher Link hinzugefügt werden: "Zurück zur App", um den Benutzern eine einfache Möglichkeit zu bieten, zur Hauptansicht der App zurückzukehren.
 
 <div style="text-align: left; float: left;"><a href="current_project.html">< geladenes Projekt</a></div>
