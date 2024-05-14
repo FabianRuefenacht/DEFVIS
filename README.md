@@ -90,6 +90,7 @@ http://localhost:3000/
 Öffne ein Terminal und wechsle in den _backend_ Ordner.
 
 1. Virtuelle Umgebung für Python mit allen Requirements in der `requirements.txt` Datei aufsetzen.
+   
 1.1  Verzeichnis öffnen
    
    Öffnen Sie die Commandprompt (Anaconda Prompt) und navigieren Sie in den Ordner backend
