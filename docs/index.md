@@ -27,7 +27,7 @@ hier gehts zur [Schnellinstallation](https://github.com/FabianRuefenacht/6230_FR
 
 ---
 
-## Features der App {#section2}
+## Features von DEFVIS {#section2}
 
 ### 3D-Ansicht
 
@@ -56,7 +56,7 @@ Durch Anklicken eines Punktes, wird automatisch auf dem Punkt aus der Ansicht ge
 
 ---
 
-## Benutzung der Web-App {#section3}
+## Benutzerhandbuch {#section3}
 
 Entdecke die vielfältigen Tools und Funktionen, die DEFVIS bietet. Klicke auf die Links unten, um zu den einzelnen Seiten zu gelangen und mehr über ihre Funktionen zu erfahren:
 
