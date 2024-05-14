@@ -96,20 +96,21 @@ In einer Tabelle werden die Punktverschiebungen (in mm) zwischen den gewählten 
 Die Messdaten und Verschiebungen* werden durch openlayers (siehe [openlayers.org/](https://openlayers.org/)) dargestellt. Um die Verschiebungen auf der Karte besser sichtbar zu machen, werden sie mit dem Faktor **1000** multipliziert.
 
 Als Hintergrundkarte wird die **Landeskarte farbe 1:10'000** von ©swisstopo verwendet (siehe [www.swisstopo.admin.ch/de/landeskarte-swiss-map-raster-10](https://www.swisstopo.ch)). Die Einbindung der Karte erfolgt als Web-Map-Service mit folgenden Parametern.
-| --- | --- |
-| Attribut| Wert|
-| source.url| [https://wms.geo.admin.ch/](https://wms.geo.admin.ch/)|
-| source.crossOrigin| "anonymous"|
-| source.attributions    | [geo.admin.ch](http://www.geo.admin.ch/internet/geoportal/en/home.html)|
-| source.projection| "EPSG:2056"|
-| source.params.LAYERS   | "ch.swisstopo.landeskarte-farbe-10"|
-| source.params.FORMAT   | "image/jpeg"|
-| source.serverType      | "mapserver"|
+| Attribut               | Wert                                                                                       |
+|------------------------|--------------------------------------------------------------------------------------------|
+| source.url             | [https://wms.geo.admin.ch/](https://wms.geo.admin.ch/)                                     |
+| source.crossOrigin     | "anonymous"                                                                                |
+| source.attributions    | [geo.admin.ch](http://www.geo.admin.ch/internet/geoportal/en/home.html)                    |
+| source.projection      | "EPSG:2056"                                                                                |
+| source.params.LAYERS   | "ch.swisstopo.landeskarte-farbe-10"                                                        |
+| source.params.FORMAT   | "image/jpeg"                                                                               |
+| source.serverType      | "mapserver"                                                                                |
+
 
 ## 3D-Modell
 Die dreidimensionale Darstellung der Punkte und der Vektoren erfolgt durch three.js (siehe [threejs.org](https://threejs.org/docs/index.html#manual/en/introduction/Creating-a-scene)). Die Überwachungspunkte werden als Sphere (Kugel) dargestellt. Die Verschiebungen in Ost, Nord und Höhe werden durch TubeGeometries (Röhren) dargestellt.
 
-Das Hintergrundmodell wird derzeit noch nicht automatisch erstellt. Das Modell, welches in der Web-App verwendet wird, wurde durch das QGIS-Plugin Qgis2threejs [https://github.com/minorua](https://github.com/minorua/Qgis2threejs) vorprozessiert. Um die Orientierung auf dem Geländemodell zu ermöglichen, wurde die Landeskarte aus der 2D-Darstellung auf das Modell projiziert.
+Das Hintergrundmodell wird derzeit noch nicht automatisch erstellt. Das Modell, welches in der Web-App verwendet wird, wurde durch das QGIS-Plugin Qgis2threejs [github.com/minorua](https://github.com/minorua/Qgis2threejs) vorprozessiert. Um die Orientierung auf dem Geländemodell zu ermöglichen, wurde die Landeskarte aus der 2D-Darstellung auf das Modell projiziert.
 
 
 
@@ -134,6 +135,7 @@ Die grösse eines Vektors ist schwierig zu vergleichen. Alleine durch die perspe
 ---
 
 ## API Dokumentation
+Fast API kommt mit vorinstallierter Swagger UI. Wenn der Fast API Backen Server läuft, kann auf die Dokumentation der API über Swagger UI auf http://localhost:8000/docs verfügbar.
 
 ---
 
