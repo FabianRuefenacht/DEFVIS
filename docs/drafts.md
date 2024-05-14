@@ -123,7 +123,7 @@ _Login-Fenster_
 
 Das Login-Fenster ermöglicht Nutzenden, sich anzumelden oder neu zu registrieren (siehe Abbildung 1 Login-Fenster Button „New“). Fehlerhafte Anmeldeinformationen oder eine fehlende Registrierung werden durch entsprechende Meldungen signalisiert.
 
-| <p id="abb_1">Abbildung 1 Login-Fenster</p>                                                                                                    |
+| <h3 id="abb_1">Abbildung 1 Login-Fenster</h3>                                                                                                  |
 | ---------------------------------------------------------------------------------------------------------------------------------------------- |
 | <img src="screenshots/konzept/login_konzept.png" alt="Login-Fenster-Konzept" style="max-width: 100%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);"> |
 | Quelle: Screenshot vom 02. März 2024 aus QT-Designer                                                                                           |
@@ -319,28 +319,22 @@ swisstopo (2024) swissSURFACE3D. Verfügbar über: <a href="https://www.swisstop
 
 <h2 id="abbildungen">13.1 Abbildungen</h2>
 
-[Abbildung 1 Login-Fenster 5](#abb_1)
-
-[Abbildung 2 Main-Fenster 6](#abb2)
-
-[Abbildung 3 Zeitreihenanalyse 6](#abb3)
-
-[Abbildung 4 3D-Fenster 7](#abb4)
-
-[Abbildung 5 neues Projekt 7](#abb5)
-
-[Abbildung 6 Projekteröffnung 8](#abb6)
-
-[Abbildung 7 Datei hochladen 8](#abb7)
-
-[Abbildung 8 Flussdiagramm 9](#abb8)
-
-[Abbildung 9 Auszug aus dem Zeitplan 14](#abb9)
+<ul>
+<li><a href="abb1">Abbildung 1 Login-Fenster</a></li>
+<li><a href="abb2">Abbildung 2 Main-Fenster</a></li>
+<li><a href="abb3">Abbildung 3 Zeitreihenanalyse</a></li>
+<li><a href="abb4">Abbildung 4 3D-Fenster</a></li>
+<li><a href="abb5">Abbildung 5 neues Projekt</a></li>
+<li><a href="abb6">Abbildung 6 Projekteröffnung</a></li>
+<li><a href="abb7">Abbildung 7 Datei hochladen</a></li>
+<li><a href="abb8">Abbildung 8 Flussdiagramm</a></li>
+<li><a href="abb9">Abbildung 9 Auszug aus dem Zeitplan</a></li>
+</ul>
 
 <h2 id="tabellen">13.2 Tabellen</h2>
 
-[Tabelle 1 Zeitaufwand 12](#tab1)
+[Tabelle 1 Zeitaufwand](#tab1)
 
 ---
 
-[zurück nach oben](drafts.html)
+[zurück nach ganz oben](drafts.html)
