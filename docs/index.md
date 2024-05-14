@@ -96,6 +96,7 @@ In einer Tabelle werden die Punktverschiebungen (in mm) zwischen den gewählten 
 Die Messdaten und Verschiebungen* werden durch openlayers (siehe [openlayers.org/](https://openlayers.org/)) dargestellt. Um die Verschiebungen auf der Karte besser sichtbar zu machen, werden sie mit dem Faktor **1000** multipliziert.
 
 Als Hintergrundkarte wird die **Landeskarte farbe 1:10'000** von ©swisstopo verwendet (siehe [www.swisstopo.admin.ch/de/landeskarte-swiss-map-raster-10](https://www.swisstopo.ch)). Die Einbindung der Karte erfolgt als Web-Map-Service mit folgenden Parametern.
+
 | Attribut               | Wert                                                                                       |
 |------------------------|--------------------------------------------------------------------------------------------|
 | source.url             | [https://wms.geo.admin.ch/](https://wms.geo.admin.ch/)                                     |
@@ -111,10 +112,6 @@ Als Hintergrundkarte wird die **Landeskarte farbe 1:10'000** von ©swisstopo ver
 Die dreidimensionale Darstellung der Punkte und der Vektoren erfolgt durch three.js (siehe [threejs.org](https://threejs.org/docs/index.html#manual/en/introduction/Creating-a-scene)). Die Überwachungspunkte werden als Sphere (Kugel) dargestellt. Die Verschiebungen in Ost, Nord und Höhe werden durch TubeGeometries (Röhren) dargestellt.
 
 Das Hintergrundmodell wird derzeit noch nicht automatisch erstellt. Das Modell, welches in der Web-App verwendet wird, wurde durch das QGIS-Plugin Qgis2threejs [github.com/minorua](https://github.com/minorua/Qgis2threejs) vorprozessiert. Um die Orientierung auf dem Geländemodell zu ermöglichen, wurde die Landeskarte aus der 2D-Darstellung auf das Modell projiziert.
-
-
-
-
 
 ---
 
@@ -140,3 +137,7 @@ Fast API kommt mit vorinstallierter Swagger UI. Wenn der Fast API Backen Server 
 ---
 
 ## Architektur
+Die Web-App VECVIS basiert auf einer Server-Client-Architektur. Die Schnittstelle zwischen dem Client (frontend) und dem Server (backend) basiert auf FastAPI [fastapi.com](https://fastapi.tiangolo.com/). Als Speichermedium für die Daten dient eine SQLite-Datenbank [www.sqlite.org/](https://www.sqlite.org/). Das Backend ist in der Programmiersprache Python ([python.org](https://www.python.org/)) geschrieben.
+
+Die Umsetzung im Frontend wurde mit next.js ([nextjs.org](https://nextjs.org/docs)) gemacht. Als Programmiersprache im Frontend wurde TypeScript ([www.typescriptlang.org](https://www.typescriptlang.org/)) gewählt. TypeScript (TS) stellt im Gegensatz zu JavaScript (JS) sicher, dass die Datentypen definiert sind, was die Anwendung weniger Fehleranfällig macht. Für die Darstellung im frontend wurde auf tailwind ([tailwindcss.com](https://tailwindcss.com/)) gesetzt. Tailwind ist ein CSS-Framework, welches die wichtigsten Styling-Attribute von CSS abdeckt und einwandfrei mit Next.js und TS kombinierbar ist.
+---
