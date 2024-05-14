@@ -9,10 +9,10 @@ GitHub Pages: <a href="https://fabianruefenacht.github.io/6230_FRNMLW/" target="
 
 ## Requirements
 
-- [Git](https://git-scm.com/)
-- IDE wie [Visual Studio Code](https://code.visualstudio.com/)
-- [Anaconda Distribution](https://www.anaconda.com/products/distribution)
-- Node.js und npm ([https://docs.npmjs.com/downloading-and-installing-node-js-and-npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm))
+- <a href="https://git-scm.com/" target="_blank">Git</a>
+- IDE wie <a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a>
+- <a href="https://www.anaconda.com/products/distribution" target="_blank">Anaconda Distribution</a>
+- Node.js und npm (<a href="https://docs.npmjs.com/downloading-and-installing-node-js-and-npm" target="_blank">Node.js und npm herunterladen und installieren</a>)
 
 ## Repository lokal klonen
 
