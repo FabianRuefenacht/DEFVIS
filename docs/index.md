@@ -60,6 +60,17 @@ Durch Anklicken eines Punktes, wird automatisch auf dem Punkt aus der Ansicht ge
 
 Entdecke die vielfältigen Tools und Funktionen, die DEFVIS bietet. Klicke auf die Links unten, um zu den einzelnen Seiten zu gelangen und mehr über ihre Funktionen zu erfahren:
 
+| ---------------------------------------------- | --------------------------------------------------------------------------------------------- |
+| **[Home](home.html):** | ist die Startseite der App, wo Du Dich orientieren und weitere Schritte planen kannst |
+| **[Registrieren](register.html):** | hier kannst Du ein neues Benutzerkonto erstellen, um alle Funktionen der App nutzen zu können |
+| **[Anmelden](login.html):** | melde Dich mit deinem Benutzerkonto an, um Zugriff auf Deine Projekte zu erhalten |
+| **[Hauptansicht](main_view.html):** | ist die zentrale Ansicht Deiner App, wo Du Projekte verwalten und Daten visualisieren kannst |
+| **[Projekt erstellen](create_project.html):** | beginne ein neues Projekt und füge Daten hinzu, um sie zu analysieren |
+| **[Projekt laden](load_project.html):** | lade ein vorhandenes Projekt, um fortzufahren oder es zu bearbeiten |
+| **[Session erfassen](capture_session.html):** | erfasse neue Sessionen für Dein aktuelles Projekt |
+| **[Geladenes Projekt](current_project.html):**| sehe die Daten in Deinem ausgewählten Projekt ein |
+| **[Abmelden](logout.html):** | melde Dich von deinem Benutzerkonto ab, wenn du die App verlassen möchtest |
+
 **[Home](home.html):**
 
 - ist die Startseite der App, wo Du Dich orientieren und weitere Schritte planen kannst
