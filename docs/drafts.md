@@ -53,7 +53,7 @@ Benutzer und Benutzerinnen haben die Möglichkeit, verschiedene Arten von Daten 
 
 Ein wesentlicher Aspekt des Projekts ist die Unterstützung von Überwachungsaufgaben, beispielsweise für Bauwerke wie Staumauern. Durch die Integration von mehreren Messungen können Anwendende die Entwicklung und Veränderung der Überwachungsdaten über die Zeit hinweg verfolgen. Dies wird durch die Darstellung der Daten mit Hilfe von Zeitreihenanalysen (ZRA) oder Vektoren in der WebGIS-Umgebung erleichtert.
 
-Folgende URL führt zum Projekt: <a href="https://github.com/FabianRuefenacht/6230_FRNMLW">https://github.com/FabianRuefenacht/6230_FRNMLW</a>
+Folgende URL führt zum Projekt: <a href="https://github.com/FabianRuefenacht/6230_FRNMLW" target="_blank">https://github.com/FabianRuefenacht/6230_FRNMLW</a>
 
 <h1 id="zielsetzung">3 Zielsetzung</h1>
 
@@ -123,7 +123,7 @@ _Login-Fenster_
 
 Das Login-Fenster ermöglicht Nutzenden, sich anzumelden oder neu zu registrieren (siehe Abbildung 1 Login-Fenster Button „New“). Fehlerhafte Anmeldeinformationen oder eine fehlende Registrierung werden durch entsprechende Meldungen signalisiert.
 
-| Abbildung 1 Login-Fenster                                                                                                                      |
+| <p id="abb_1">Abbildung 1 Login-Fenster</p>                                                                                                    |
 | ---------------------------------------------------------------------------------------------------------------------------------------------- |
 | <img src="screenshots/konzept/login_konzept.png" alt="Login-Fenster-Konzept" style="max-width: 100%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);"> |
 | Quelle: Screenshot vom 02. März 2024 aus QT-Designer                                                                                           |
@@ -311,34 +311,36 @@ Siehe kompletter Zeitplan im Anhang: Zeitplan.pdf, Stand vom 12. März 2024
 
 <h1 id="literatur">12 Literatur</h1>
 
-swisstopo (2021) Web Map Tiling Services WMTS: Verfügbare Dienste und Daten. Verfügbar über: <https://www.geo.admin.ch/de/wmts-verfuegbare-dienste-und-daten/> (Letzter Zugriff: 11.03.2024).
+swisstopo (2021) Web Map Tiling Services WMTS: Verfügbare Dienste und Daten. Verfügbar über: <a href="https://www.geo.admin.ch/de/wmts-verfuegbare-dienste-und-daten" target="_blank">https://www.geo.admin.ch/de/wmts-verfuegbare-dienste-und-daten</a> (Letzter Zugriff: 11.03.2024).
 
-swisstopo (2024) swissSURFACE3D. Verfügbar über: <https://www.swisstopo.admin.ch/de/hoehenmodell-swisssurface3d> (Letzter Zugriff: 11.03.2024).
+swisstopo (2024) swissSURFACE3D. Verfügbar über: <a href="https://www.swisstopo.admin.ch/de/hoehenmodell-swisssurface3d" target="_blank">https://www.swisstopo.admin.ch/de/hoehenmodell-swisssurface3d</a> (Letzter Zugriff: 11.03.2024).
 
 <h1 id="abbildungen_tab">13 Abbildungen und Tabellen</h1>
 
 <h2 id="abbildungen">13.1 Abbildungen</h2>
 
-[Abbildung 1 Login-Fenster 5](#_Toc161149727)
+[Abbildung 1 Login-Fenster 5](#abb_1)
 
-[Abbildung 2 Main-Fenster 6](#_Toc161149728)
+[Abbildung 2 Main-Fenster 6](#abb2)
 
-[Abbildung 3 Zeitreihenanalyse 6](#_Toc161149729)
+[Abbildung 3 Zeitreihenanalyse 6](#abb3)
 
-[Abbildung 4 3D-Fenster 7](#_Toc161149730)
+[Abbildung 4 3D-Fenster 7](#abb4)
 
-[Abbildung 5 neues Projekt 7](#_Toc161149731)
+[Abbildung 5 neues Projekt 7](#abb5)
 
-[Abbildung 6 Projekteröffnung 8](#_Toc161149732)
+[Abbildung 6 Projekteröffnung 8](#abb6)
 
-[Abbildung 7 Datei hochladen 8](#_Toc161149733)
+[Abbildung 7 Datei hochladen 8](#abb7)
 
-[Abbildung 8 Flussdiagramm 9](#_Toc161149734)
+[Abbildung 8 Flussdiagramm 9](#abb8)
 
-[Abbildung 9 Auszug aus dem Zeitplan 14](#_Toc161149735)
+[Abbildung 9 Auszug aus dem Zeitplan 14](#abb9)
 
 <h2 id="tabellen">13.2 Tabellen</h2>
 
-[Tabelle 1 Zeitaufwand 12](#_Toc161149736)
+[Tabelle 1 Zeitaufwand 12](#tab1)
+
+---
 
 [zurück nach oben](drafts.html)
