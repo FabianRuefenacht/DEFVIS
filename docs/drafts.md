@@ -14,37 +14,37 @@ Muttenz, 12.03.2024
 
 **Inhaltsverzeichnis**
 
-<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/#_einleitung">1 Einleitung</a></li>
-<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/#_projektinhalt">2 Projektinhalt</a></li>
-<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/#_zielsetzung">3 Zielsetzung</a></li>
-<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/#_fragestellung">4 Fragestellung</a></li>
-<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/#_anwendungsarchitektur">5 Anwendungsarchitektur</a></li>
-<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/#_frontend">5.1 Frontend</a></li>
-<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/#_backend">5.2 Backend</a></li>
-<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/#_umsetzung">5.3 Umsetzung</a></li>
-<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/#_mockup">6 Mockup- und GUI-Aufbau</a></li>
-<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/#_popups">6.1 Pop-Ups</a></li>
-<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/#_flussdiagramm">7 Flussdiagramm der Funktionalitäten</a></li>
-<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/#_userpersona">8 User Persona</a></li>
-<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/#_userpersona_1">8.1 User Persona 1: Max Muster</a></li>
-<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/#_userpersona_1">8.2 User Persona 2: Melanie Muster</a></li>
-<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/#_geodatensaetze">9 Geodatensätze</a></li>
-<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/#_metadaten_dok">10 Metadaten und Dokumentation Geodatensätze</a></li>
-<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/#_metadaten">10.1 Metadaten</a></li>
-<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/#_dokumentation">10.2 Dokumentation</a></li>
-<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/#_aufgaben_zeit">11 Aufgaben und Zeitaufwand</a></li>
-<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/#_planung">11.1 Planung der Tasks</a></li>
-<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/#_zeitplanung">11.2 Zeitplanung</a></li>
-<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/#_literatur">12 Literatur</a></li>
-<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/#_abbildung_tab">13 Abbildungen und Tabellen</a></li>
-<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/#_abbildung">13.1 Abbildungen</a></li>
-<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/#_tabellen">13.2 Tabellen</a></li>
+<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html/#einleitung">1 Einleitung</a></li>
+<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html/#projektinhalt">2 Projektinhalt</a></li>
+<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html/#zielsetzung">3 Zielsetzung</a></li>
+<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html/#fragestellung">4 Fragestellung</a></li>
+<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html/#anwendungsarchitektur">5 Anwendungsarchitektur</a></li>
+<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html/#frontend">5.1 Frontend</a></li>
+<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html/#backend">5.2 Backend</a></li>
+<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html/#umsetzung">5.3 Umsetzung</a></li>
+<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html/#mockup">6 Mockup- und GUI-Aufbau</a></li>
+<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html/#popups">6.1 Pop-Ups</a></li>
+<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html/#flussdiagramm">7 Flussdiagramm der Funktionalitäten</a></li>
+<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html/#userpersona">8 User Persona</a></li>
+<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html/#userpersona_1">8.1 User Persona 1: Max Muster</a></li>
+<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html/#userpersona_1">8.2 User Persona 2: Melanie Muster</a></li>
+<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html/#geodatensaetze">9 Geodatensätze</a></li>
+<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html/#metadaten_dok">10 Metadaten und Dokumentation Geodatensätze</a></li>
+<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html/#metadaten">10.1 Metadaten</a></li>
+<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html/#dokumentation">10.2 Dokumentation</a></li>
+<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html/#aufgaben_zeit">11 Aufgaben und Zeitaufwand</a></li>
+<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html/#planung">11.1 Planung der Tasks</a></li>
+<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html/#zeitplanung">11.2 Zeitplanung</a></li>
+<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html/#literatur">12 Literatur</a></li>
+<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html/#abbildung_tab">13 Abbildungen und Tabellen</a></li>
+<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html/#abbildung">13.1 Abbildungen</a></li>
+<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html/#tabellen">13.2 Tabellen</a></li>
 
-# 1 Einleitung {#\_einleitung}
+# 1 Einleitung {#einleitung}
 
 Dieses Konzept beschäftigt sich mit der Entwicklung einer Geodateninfrastruktur durch Geomatikstudierende an der Fachhochschule Nordwestschweiz. Ziel ist die Visualisierung von dreidimensionalen Verschiebungsvektoren in einem WebGIS. Im Backend soll die nutzerabhängige Speicherung verschiedener Messsessionen und die Berechnung der Verschiebungen möglich sein. Das Projekt wird durch Coaching und Peer-Learning unterstützt.
 
-# 2 Projektinhalt (#\_projektinhalt)
+# 2 Projektinhalt {#projektinhalt}
 
 Dieses Projekt konzentriert sich auf die Entwicklung einer benutzerfreundlichen WebGIS-Umgebung, die es den Nutzenden ermöglicht, Geodaten effizient zu verwalten, zu visualisieren und zu analysieren. Die Hauptfunktionen umfassen die Erstellung und Verwaltung von Projekten sowie die Integration von Punkten und Messungen in diese Projekte.
 
@@ -54,13 +54,13 @@ Ein wesentlicher Aspekt des Projekts ist die Unterstützung von Überwachungsauf
 
 Folgende URL führt zum Projekt: <a href="https://github.com/FabianRuefenacht/6230_FRNMLW">ttps://github.com/FabianRuefenacht/6230_FRNMLW</a>
 
-# 3 Zielsetzung (#\_zielsetzung)
+# 3 Zielsetzung {#zielsetzung}
 
 Das Hauptziel der Geodateninfrastruktur besteht darin, Deformationsmessungen zu verwalten und dreidimensionale Verschiebungen zu visualisieren, um eine wirkungsvolle Überwachung und Analyse von geophysikalischen Veränderungen in Echtzeit zu ermöglichen. Die Darstellung dieser Daten im dreidimensionalen Kontext bietet den Nutzern und Nutzerinnen eine intuitive und umfassende Sicht auf die Daten, was zu fundierteren und informierteren Entscheidungen führt.
 
 Die Implementierung dieser Funktionen zielt darauf ab, eine effiziente und effektive Datenanalyse sowie eine ansprechende Visualisierung zu ermöglichen, wodurch die Anwendung eine breite Palette von Anwendungsgebieten abdecken kann, von Infrastrukturüberwachung bis hin zu Umweltmanagement.
 
-# 4 Fragestellung (#\_fragestellung)
+# 4 Fragestellung {#fragestellung}
 
 Die zentrale Frage dieses Projekts lautet: Wie können Punktverschiebungen effektiv dreidimensional visualisiert werden, um die Analyse und Interpretation von Bewegungs- und Verformungsmustern zu erleichtern und zu verbessern? Dabei ist es von entscheidender Bedeutung, geeignete Techniken und Methoden zu identifizieren, die eine detaillierte, präzise und benutzerfreundliche Darstellung ermöglichen.
 
@@ -68,13 +68,13 @@ Diese Fragestellung zielt darauf ab, die Herausforderungen bei der Visualisierun
 
 Indem diese Fragestellung näher untersucht wird, sollen nicht nur die technischen Aspekte der Visualisierung von Punktverschiebungen berücksichtigt werden, sondern auch die Bedürfnisse und Anforderungen der Benutzer im Hinblick auf die Benutzerfreundlichkeit der dargestellten Informationen.
 
-# 5 Anwendungsarchitektur (#\_anwendungsarchitektur)
+# 5 Anwendungsarchitektur {#anwendungsarchitektur}
 
 Die Anwendungsarchitektur beschreibt die Struktur und Organisation der Softwareanwendung, einschliesslich der Patterns, Techniken und Komponenten, die bei der Entwicklung verwendet werden.
 
 Diese klar strukturierte Architektur ermöglicht eine nahtlose Integration von Frontend und Backend, um eine leistungsstarke und benutzerfreundliche WebGIS-Anwendung zu schaffen.
 
-## Frontend
+## 5.1 Frontend {#frontend}
 
 Das Frontend des WebGIS bietet eine Vielzahl von Funktionalitäten, die es den Benutzern und Benutzerinnen ermöglichen, Geodaten intuitiv zu verwalten, zu visualisieren und zu analysieren:
 
@@ -87,7 +87,7 @@ Das Frontend des WebGIS bietet eine Vielzahl von Funktionalitäten, die es den B
 - **Dreidimensionale Darstellung der Verschiebungen:** Eine immersive 3D-Visualisierung ermöglicht es, die Verschiebungen räumlich zu erkunden.
 - **Visualisierung von Saison- und Trendkomponenten:** Trend- und Saisonkomponenten können geschätzt werden, um die Verschiebungen zu beurteilen.
 
-## Backend
+## 5.2 Backend {#backend}
 
 Das Backend des WebGIS bietet die notwendige Infrastruktur und Logik, um die Funktionalitäten des Frontends zu unterstützen:
 
@@ -100,7 +100,7 @@ Das Backend des WebGIS bietet die notwendige Infrastruktur und Logik, um die Fun
 - **Berechnung der Verschiebungen zwischen zwei Zeitständen:** Die benötigten Berechnungen für die Analyse von Verschiebungen werden im Backend durchgeführt.
 - **Ausgleichung der Saison- und Trendkomponenten:** Saisonale und trendbezogene Komponenten werden analysiert und ausgeglichen, um genaue Ergebnisse zu erzielen.
 
-## Umsetzung
+## 5.3 Umsetzung {#umsetzung}
 
 Das Frontend wird mit dem JavaScript-Framework Next.js gemacht. Next.js bietet die Unterstützung des serverseitigen Renderings. Somit lassen sich Cookies leicht erstellen und abfragen, was die Zugriffsberechtigung zu einzelnen Projekten erleichtert. Im Frontend wird die Programmiersprache TypeScript verwendet. Gegenüber JavaScript ermöglicht TypeScript die Definition von Datentypen, was die Stabilität des WebGIS erhöht. Die Darstellung des User Interface wird mit Tailwind CSS gemacht. Die Zugriffsberechtigung wird mit Cookies geregelt. Die Cookies werden mit bcrypt.js erstellt. Vom Backend werden die Anforderungen an das Cookie gesendet. Im Frontend wird geprüft, ob das Cookie den Anforderungen entspricht.
 
@@ -114,7 +114,7 @@ Für die Verwaltung von Nutzerprofilen, Projekten, Sessionen und Punkten wird au
 
 Die Berechnungen im Backend werden von Grund auf selbst programmiert und durch die Verwendung von Numpy auf die höchstmögliche Effizienz gehoben.
 
-# Mockup- und GUI-Aufbau
+# 6 Mockup- und GUI-Aufbau {#mockup}
 
 Der Mockup- und GUI-Aufbau skizziert die Benutzeroberfläche der Anwendung, einschliesslich der verschiedenen Fenster und PopUps. Das Styling der Komponenten wird im Endprodukt überarbeitet.
 
