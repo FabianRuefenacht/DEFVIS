@@ -20,7 +20,6 @@ function TableView({
       const element = document.getElementById("tableContent");
       if (element) {
         const rect = element.getBoundingClientRect();
-        console.log(rect, "bla")
         const posTop = rect.top;
         const availableHeight = window.innerHeight;
         const space = availableHeight - posTop;
