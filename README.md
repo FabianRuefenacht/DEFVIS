@@ -64,21 +64,21 @@ http://localhost:3000
 
 Öffne ein Terminal (Command Prompt in VS Code) und wechsle in den _client_ Ordner in diesem Projekt
 
-1  Verzeichnis öffnen
+1.  Verzeichnis öffnen
 
    Öffnen Sie die Commandprompt und navigieren Sie in den Ordner frontend
 ```shell
 cd frontend
 ```
-2  Installation der Bibliotheken
+2.  Installation der Bibliotheken
 ```shell
 npm install
 ```
-3  Start des Frontends
+3.  Start des Frontends
 ```shell
 npm start
 ```
-4  Vergewissern Sie sich, dass die Web-App läuft
+4.  Vergewissern Sie sich, dass die Web-App läuft
 
 Geben Sie folgende URL im Webbrowser ein:
 ```shell
