@@ -7,15 +7,17 @@
 Your browser does not support the video tag.
 </video>
 
+<p></p>
+
 ## Beschreibung
 
-Auf der Anmeldungs-Seite kann sich ein Benutzer über einen bereits registrierten Account anmelden. Wenn der Benutzername nicht gefunden wird oder das Passwort falsch ist, wird der Benutzer darüber informiert.
+Auf der Anmelde-Seite kann sich ein Benutzer über einen bereits registrierten Account anmelden. Wenn der Benutzername nicht gefunden wird oder das Passwort falsch ist, wird der Benutzer darüber informiert.
 
 ## Funktionen
 
 Die Seite enthält zwei Buttons und zwei Texteingaben:
 
-- **Anmelden:** Ermöglicht es dem Benutzer, sich über das Login-Menü anzumelden, um auf die Projektverwaltung und Hauptansicht zuzugreifen.
+- **Anmelden:** Ermöglicht es dem Benutzer, sich über das Anmelde-Menü anzumelden, um auf die Projektverwaltung und Hauptansicht zuzugreifen.
 - **Neu registrieren:** Leitet den Benutzer zur Registerungs-Seite weiter.
 
 ## Probleme und Verbesserungsvorschläge
