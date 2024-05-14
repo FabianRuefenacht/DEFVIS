@@ -2,19 +2,17 @@
 
 Server Client Projekt für eine Geodateninfrastruktur Webportal im Rahmen des Moduls 4230 und 6230
 
-<!-- - **Frontend:** React.js, OpenLayers und MUI
-- **Backend:** FastAPI, GeoServer -->
+- **Frontend:** Next.js, OpenLayers, Three.js und tailwindcss
+- **Backend:** FastAPI, SQLite
 
 GitHub Pages: https://fabianruefenacht.github.io/6230_FRNMLW/
 
-<!-- Getestet mit Node version 20.11.1, 18.15.0, 16.19.0, openlayers 9.1.0, 7.3.0, 6.4.3 -->
-
 ## Requirements
 
-<!-- - [Git](https://git-scm.com/)
+- [Git](https://git-scm.com/)
 - IDE wie [Visual Studio Code](https://code.visualstudio.com/)
-- [Anaconda Distribution](https://www.anaconda.com/products/distribution) oder [Miniconda](https://docs.conda.io/en/latest/miniconda.html)
-- Node.js und npm ([https://docs.npmjs.com/downloading-and-installing-node-js-and-npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)) -->
+- [Anaconda Distribution](https://www.anaconda.com/products/distribution)
+- Node.js und npm ([https://docs.npmjs.com/downloading-and-installing-node-js-and-npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm))
 
 ## Repository lokal klonen
 
@@ -22,7 +20,8 @@ Mit Git in einem Terminal das GitHub Repository 6230_FRNMLW in ein lokales Verze
 
 ```shell
 cd /path/to/workspace
-# Clone Repository
+```
+```shell
 git clone git@github.com:FabianRuefenacht/6230_FRNMLW.git
 ```
 
@@ -30,7 +29,8 @@ git clone git@github.com:FabianRuefenacht/6230_FRNMLW.git
 
 Öffne ein neues Visual Studio Code Fenster und wähle unter Start Clone Git Repository. Alternativ öffne die Command Palette in VS Code CTRL+Shift+P (View / Command Palette) und wähle Git: clone. Füge die Git web URL `https://github.com/FabianRuefenacht/6230_FRNMLW` ein und bestätige die Eingabe mit Enter. Wähle einen Ordner in welchen das Repository _geklont_ werden soll.
 
-## Schnellinstallation
+## QuickSetup
+### Schnellinstallation
 Um die Installation und den Start der Web-App zu vereinfachen wurden zwei JavaScirpt-Dateien erstellt, welche die meiste Arbeit abnehmen. Falls die Schnellinstallation fehlschlagen sollte, verwenden Sie bitte die ausführlichere Anleitung (weiter unten).
 
 ```shell
@@ -45,7 +45,7 @@ conda activate vecvis
 node install.js
 ```
 
-## Schnellstart
+### Schnellstart
 
 ```shell
 conda activate vecvis
@@ -54,50 +54,66 @@ conda activate vecvis
 ```shell
 node run.js
 ```
-## Starte im Browser
+### Starte im Browser
 ```
 http://localhost:3000
 ```
 
-## Frontend installieren
+## Ausführliche Installationsanleitung
+### Frontend installieren
 
 Öffne ein Terminal (Command Prompt in VS Code) und wechsle in den _client_ Ordner in diesem Projekt
-
+1  Verzeichnis öffnen
+   Öffnen Sie die Commandprompt und navigieren Sie in den Ordner frontend
 ```shell
-cd client
-# aktiviere node.js (falls nvm genutzt wird)
-# nvm use 21.7.1
-# install all the node.js dependencies
+cd frontend
+```
+2  Installation der Bibliotheken
+```shell
 npm install
-# node Projekt ausführen
-# npm start ist in package.json definiert
+```
+3  Start des Frontends
+```shell
 npm start
 ```
+4  Vergewissern Sie sich, dass die Web-App läuft
+Geben Sie folgende URL im Webbrowser ein:
+```shell
+http://localhost:3000/
+```
 
-## Backend installieren
+
+### Backend installieren
 
 Öffne ein Terminal und wechsle in den _backend_ Ordner.
 
 1. Virtuelle Umgebung für Python mit allen Requirements in der `requirements.txt` Datei aufsetzen.
-
+1.1  Verzeichnis öffnen
+   Öffnen Sie die Commandprompt (Anaconda Prompt) und navigieren Sie in den Ordner backend
 ```shell
-# Requirements
-cd backend
-# Füge conda-forge den als Channel in conda hinzu, da sonst nicht alle Pakete installiert werden können.
-conda config --add channels conda-forge
-# Erstelle ein neues Conda Environment und füge die Python Packges requirements.txt hinzu, requirements.txt befindet sich im Ordner server/app
-conda create --name 3dvectors python=3.9 --file app/requirements.txt
+cd path/to/backend
+```
+1.2  Installation der Python-Bibliotheken
+```shell
+conda create --name defvis python=3.9 --file app/requirements.txt
 ```
 
 2. Backend ausführen, virtuelle Umgebung starten und server _uvicorn_ starten. Öffne http://localhost:8000/docs im Browser und verifiziere, ob das Backend läuft.
-
+2.1  In den Ordner backend navigieren
 ```shell
-cd server
-# aktiviere die conda umgebung gdiproject
-conda activate gdiproject
-# start server auf localhost aus dem Ordner "backend"
-uvicorn app.main:app --reload
-# Öffne die angegebene URL im Browser und verifiziere, ob das Backend läuft.
+cd backend
+```
+2.2  Conda-environment aktivieren
+```shell
+conda activate defvis
+```
+2.3  Bachend ausführen
+```shell
+python main.py
+```
+2.4  Verifizieren ob das backend läuft. Öffnen Sie im Browser die URL:
+```shell
+http://localhost:8000/docs
 ```
 
 ## API Dokumentation
