@@ -17,7 +17,6 @@ Die Seite enthält zwei Buttons und keine weiteren Interaktionen:
 
 ## Probleme und Verbesserungsvorschläge
 
-- Die Bedeutung des Home-Buttons sollte überprüft werden - welchen Zweck erfüllt er?
 - Die Seite könnte visuell ansprechender gestaltet werden, möglicherweise durch Ändern des Hintergrunds.
 
 <div style="text-align: right; float: right;"><a href="register.html">Registrieren ></a></div>
