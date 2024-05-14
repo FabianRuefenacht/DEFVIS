@@ -1,4 +1,4 @@
-# erster Entwurf von DEFVIS
+# Konzept von DEFVIS
 
 ## 3D-Visualisierung von definierten Vektoren in einem WebGIS
 
@@ -62,13 +62,11 @@ Muttenz, 12.03.2024
 
 [13.2 Tabellen 15](#_Toc161149774)
 
-[14 Anhang 15](#_Toc161149775)
-
-# Einleitung
+# Einleitung (#\_Toc161149750)
 
 Dieses Konzept beschäftigt sich mit der Entwicklung einer Geodateninfrastruktur durch Geomatikstudierende an der Fachhochschule Nordwestschweiz. Ziel ist die Visualisierung von dreidimensionalen Verschiebungsvektoren in einem WebGIS. Im Backend soll die nutzerabhängige Speicherung verschiedener Messsessionen und die Berechnung der Verschiebungen möglich sein. Das Projekt wird durch Coaching und Peer-Learning unterstützt.
 
-# Projektinhalt
+# Projektinhalt (#\_Toc161149751)
 
 Dieses Projekt konzentriert sich auf die Entwicklung einer benutzerfreundlichen WebGIS-Umgebung, die es den Nutzenden ermöglicht, Geodaten effizient zu verwalten, zu visualisieren und zu analysieren. Die Hauptfunktionen umfassen die Erstellung und Verwaltung von Projekten sowie die Integration von Punkten und Messungen in diese Projekte.
 
@@ -78,13 +76,13 @@ Ein wesentlicher Aspekt des Projekts ist die Unterstützung von Überwachungsauf
 
 Folgende URL führt zum Projekt: <https://github.com/FabianRuefenacht/6230_FRNMLW>
 
-# Zielsetzung
+# Zielsetzung (#\_Toc161149752)
 
 Das Hauptziel der Geodateninfrastruktur besteht darin, Deformationsmessungen zu verwalten und dreidimensionale Verschiebungen zu visualisieren, um eine wirkungsvolle Überwachung und Analyse von geophysikalischen Veränderungen in Echtzeit zu ermöglichen. Die Darstellung dieser Daten im dreidimensionalen Kontext bietet den Nutzern und Nutzerinnen eine intuitive und umfassende Sicht auf die Daten, was zu fundierteren und informierteren Entscheidungen führt.
 
 Die Implementierung dieser Funktionen zielt darauf ab, eine effiziente und effektive Datenanalyse sowie eine ansprechende Visualisierung zu ermöglichen, wodurch die Anwendung eine breite Palette von Anwendungsgebieten abdecken kann, von Infrastrukturüberwachung bis hin zu Umweltmanagement.
 
-# Fragestellung
+# Fragestellung (#\_Toc161149753)
 
 Die zentrale Frage dieses Projekts lautet: Wie können Punktverschiebungen effektiv dreidimensional visualisiert werden, um die Analyse und Interpretation von Bewegungs- und Verformungsmustern zu erleichtern und zu verbessern? Dabei ist es von entscheidender Bedeutung, geeignete Techniken und Methoden zu identifizieren, die eine detaillierte, präzise und benutzerfreundliche Darstellung ermöglichen.
 
@@ -92,7 +90,7 @@ Diese Fragestellung zielt darauf ab, die Herausforderungen bei der Visualisierun
 
 Indem diese Fragestellung näher untersucht wird, sollen nicht nur die technischen Aspekte der Visualisierung von Punktverschiebungen berücksichtigt werden, sondern auch die Bedürfnisse und Anforderungen der Benutzer im Hinblick auf die Benutzerfreundlichkeit der dargestellten Informationen.
 
-# Anwendungsarchitektur
+# Anwendungsarchitektur (#\_Toc161149754)
 
 Die Anwendungsarchitektur beschreibt die Struktur und Organisation der Softwareanwendung, einschliesslich der Patterns, Techniken und Komponenten, die bei der Entwicklung verwendet werden.
 
@@ -338,11 +336,9 @@ swisstopo (2021) Web Map Tiling Services WMTS: Verfügbare Dienste und Daten. Ve
 
 swisstopo (2024) swissSURFACE3D. Verfügbar über: <https://www.swisstopo.admin.ch/de/hoehenmodell-swisssurface3d> (Letzter Zugriff: 11.03.2024).
 
-# Abbildungen und Tabellen
+# Abbildungen und Tabellen (#\_Toc161149772)
 
-## Abbildungen
-
-Abbildung 0 Titelbild Titelseite
+## Abbildungen (#\_Toc161149773)
 
 [Abbildung 1 Login-Fenster 5](#_Toc161149727)
 
@@ -362,10 +358,6 @@ Abbildung 0 Titelbild Titelseite
 
 [Abbildung 9 Auszug aus dem Zeitplan 14](#_Toc161149735)
 
-## Tabellen
+## Tabellen (#\_Toc161149774)
 
 [Tabelle 1 Zeitaufwand 12](#_Toc161149736)
-
-# Anhang
-
-Anhang 1 Zeitplan.pdf
