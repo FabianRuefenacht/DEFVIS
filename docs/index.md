@@ -12,7 +12,7 @@ Die Darstellung dieser Daten im dreidimensionalen Kontext bietet Dir als Nutzer\
 
 Die Implementierung dieser Funktionen zielt darauf ab, eine effiziente und effektive Datenanalyse sowie eine ansprechende Visualisierung zu ermöglichen, wodurch die Web-App viele Anwendungsgebieten abdecken kann.
 
-<i class="fa fa-info-circle" aria-hidden="true"></i>
+ℹ️ Um die Web-App optimal zu nutzen, empfiehlt sich ein Laptop oder Desktopmonitor mit einer Mindestgröße von 15 Zoll.
 
 ---
 
