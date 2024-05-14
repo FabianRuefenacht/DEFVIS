@@ -50,6 +50,13 @@ Um die Daten nicht nur visuell zu haben, sondern auch in einer Tabelle, werden a
 
 ---
 
+## Angewandte Methoden {#section4}
+
+Deformationsmessungen sind Teil des Fachbereichs Ingenieurvermessung und Geodäsie. Ziel einer Deformationsmessung ist es, die Verschiebung von Überwachungspunkten in Bezug zu den, als stabil angenommenen, Festpunkten zu bestimmen. Dabei können diverse Vermessungsmethoden wie zum Beispiel: Nivellement, Triangulation, Distanzmessung, Lotung, Inklinometer oder GNSS, je nach den projektspezifischen Ansprüchen, in Betracht gezogen werden. Aus den beobachteten Messgrössen werden mit der Methode der kleinsten Quadrate in einer geodätischen Ausgleichung Koordinaten berechnet. Die Koordinaten werden dann statistisch analysiert, um auf Grund der empirischen Genauigkeit signifikante Deformationsvektoren aus zwei zeitlich verschiedenen Messungen zu bestimmen.
+Die Interpretation und Kontrolle der Deformationsvektoren gestaltet sich aufgrund von Zahlen anspruchsvoll. Eine dreidimensionale Visualisierung der Deformationsvektoren auf einem Geländemodell vereinfacht die Kontrolle für die geodätische Fachperson und die Interpretation für die geologische Fachperson.
+
+---
+
 ## Benutzerhandbuch {#section3}
 
 Entdecke die vielfältigen Tools und Funktionen, die DEFVIS bietet. Klicke auf die Links unten, um zu den einzelnen Seiten zu gelangen und mehr über ihre Funktionen zu erfahren:
@@ -67,16 +74,6 @@ Entdecke die vielfältigen Tools und Funktionen, die DEFVIS bietet. Klicke auf d
 
 ---
 
-## Methoden zum Produkt {#section4}
-
-Die Entwicklung der App basierte auf einer Reihe von bewährten Methoden, darunter:
-
-- ...
-- ...
-- ...
-
----
-
 ## Verwendete Ressourcen {#section5}
 
 Unsere App-Datenbank wird mit Benutzerdaten gefüllt und zur korrekten Darstellung verwenden wir three.js. Die Hintergrundkarte beziehen wir von swisstopo.ch (Situationsplan farbig).
@@ -91,9 +88,9 @@ In einer Tabelle werden die Punktverschiebungen (in mm) zwischen den gewählten 
 
 ### 2D-Karte
 
-Die Messdaten und Verschiebungen\* werden durch openlayers (siehe [openlayers.org/](https://openlayers.org/)) dargestellt. Um die Verschiebungen auf der Karte besser sichtbar zu machen, werden sie mit dem Faktor **1000** multipliziert.
+Die Messdaten und Verschiebungen\* werden durch _openlayers_ (siehe <a href="https://openlayers.org/" target="_blank">openlayers.org</a>) dargestellt. Um die Verschiebungen auf der Karte besser sichtbar zu machen, werden sie mit dem Faktor **1000** multipliziert.
 
-Als Hintergrundkarte wird die **Landeskarte farbe 1:10'000** von ©swisstopo verwendet (siehe [www.swisstopo.admin.ch/de/landeskarte-swiss-map-raster-10](https://www.swisstopo.ch)). Die Einbindung der Karte erfolgt als Web-Map-Service mit folgenden Parametern.
+Als Hintergrundkarte wird die **Landeskarte farbe 1:10'000** von ©swisstopo verwendet (siehe <a href="https://www.swisstopo.admin.ch/de/landeskarte-swiss-map-raster-10" target="_blank">www.swisstopo.admin.ch/de/landeskarte-swiss-map-raster-10</a>). Die Einbindung der Karte erfolgt als Web-Map-Service mit folgenden Parametern.
 
 | Attribut             | Wert                                                                    |
 | -------------------- | ----------------------------------------------------------------------- |
@@ -107,9 +104,9 @@ Als Hintergrundkarte wird die **Landeskarte farbe 1:10'000** von ©swisstopo ver
 
 ## 3D-Modell
 
-Die dreidimensionale Darstellung der Punkte und der Vektoren erfolgt durch three.js (siehe [threejs.org](https://threejs.org/docs/index.html#manual/en/introduction/Creating-a-scene)). Die Überwachungspunkte werden als Sphere (Kugel) dargestellt. Die Verschiebungen in Ost, Nord und Höhe werden durch TubeGeometries (Röhren) dargestellt.
+Die dreidimensionale Darstellung der Punkte und der Vektoren erfolgt durch _three.js_ (siehe <a href="https://threejs.org/docs/index.html#manual/en/introduction/Creating-a-scene" target="_blank">threejs.org/docs</a>). Die Überwachungspunkte werden als Sphere (Kugel) dargestellt. Die Verschiebungen in Ost, Nord und Höhe werden durch TubeGeometries (Röhren) dargestellt.
 
-Das Hintergrundmodell wird derzeit noch nicht automatisch erstellt. Das Modell, welches in der Web-App verwendet wird, wurde durch das QGIS-Plugin Qgis2threejs [github.com/minorua](https://github.com/minorua/Qgis2threejs) vorprozessiert. Um die Orientierung auf dem Geländemodell zu ermöglichen, wurde die Landeskarte aus der 2D-Darstellung auf das Modell projiziert.
+Das Hintergrundmodell wird derzeit noch nicht automatisch erstellt. Das Modell, welches in der Web-App verwendet wird, wurde durch das QGIS-Plugin Qgis2threejs [<a href="https://github.com/minorua/Qgis2threejs" target="_blank">github.com/minorua</a> vorprozessiert. Um die Orientierung auf dem Geländemodell zu ermöglichen, wurde die Landeskarte aus der 2D-Darstellung auf das Modell projiziert.
 
 ---
 
@@ -131,4 +128,8 @@ Die grösse eines Vektors ist schwierig zu vergleichen. Alleine durch die perspe
 
 ## API Dokumentation
 
-Fast API kommt mit vorinstallierter Swagger UI. Wenn der Fast API Backen Server läuft, kann auf die Dokumentation der API über Swagger UI auf http://localhost:8000/docs verfügbar.
+Fast API kommt mit vorinstallierter Swagger UI. Wenn der Fast API Backen Server läuft, kann auf die Dokumentation der API über Swagger UI auf <a href="http://localhost:8000/docs" target="_blank">http://localhost:8000/docs</a> verfügbar.
+
+---
+
+[zurück nach ganz oben](index.html)
