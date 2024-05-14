@@ -95,7 +95,8 @@ In einer Tabelle werden die Punktverschiebungen (in mm) zwischen den gewählten 
 ### 2D-Karte
 Die Messdaten und Verschiebungen* werden durch openlayers (siehe [openlayers.org/](https://openlayers.org/)) dargestellt. Um die Verschiebungen auf der Karte besser sichtbar zu machen, werden sie mit dem Faktor **1000** multipliziert.
 
-Als Hintergrundkarte wird die **Landeskarte farbe 1:10'000** von ©swisstopo verwendet (siehe [www.swisstopo.admin.ch/de/landeskarte-swiss-map-raster-10](https://www.swisstopo.ch)). Die Einbindung der Karte erfolgt als Web-Map-Service mit folgenden Parametern. <br/>
+Als Hintergrundkarte wird die **Landeskarte farbe 1:10'000** von ©swisstopo verwendet (siehe [www.swisstopo.admin.ch/de/landeskarte-swiss-map-raster-10](https://www.swisstopo.ch)). Die Einbindung der Karte erfolgt als Web-Map-Service mit folgenden Parametern.
+
 | Attribut               | Wert                                                                                       |
 |------------------------|--------------------------------------------------------------------------------------------|
 | source.url             | [https://wms.geo.admin.ch/](https://wms.geo.admin.ch/)                                     |
