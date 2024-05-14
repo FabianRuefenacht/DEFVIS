@@ -53,7 +53,7 @@ Benutzer und Benutzerinnen haben die Möglichkeit, verschiedene Arten von Daten 
 
 Ein wesentlicher Aspekt des Projekts ist die Unterstützung von Überwachungsaufgaben, beispielsweise für Bauwerke wie Staumauern. Durch die Integration von mehreren Messungen können Anwendende die Entwicklung und Veränderung der Überwachungsdaten über die Zeit hinweg verfolgen. Dies wird durch die Darstellung der Daten mit Hilfe von Zeitreihenanalysen (ZRA) oder Vektoren in der WebGIS-Umgebung erleichtert.
 
-Folgende URL führt zum Projekt: <a href="https://github.com/FabianRuefenacht/6230_FRNMLW">ttps://github.com/FabianRuefenacht/6230_FRNMLW</a>
+Folgende URL führt zum Projekt: <a href="https://github.com/FabianRuefenacht/6230_FRNMLW">https://github.com/FabianRuefenacht/6230_FRNMLW</a>
 
 # 3 Zielsetzung {#zielsetzung}
 
@@ -123,37 +123,37 @@ _Login-Fenster_
 
 Das Login-Fenster ermöglicht Nutzenden, sich anzumelden oder neu zu registrieren (siehe Abbildung 1 Login-Fenster Button „New“). Fehlerhafte Anmeldeinformationen oder eine fehlende Registrierung werden durch entsprechende Meldungen signalisiert.
 
-| Abbildung 1 Login-Fenster                                                                                            |
-| -------------------------------------------------------------------------------------------------------------------- |
-| <img src="screenshots/home.png" alt="Home-Ansicht" style="max-width: 100%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);"> |
-| Quelle: Screenshot vom 02. März 2024 aus QT-Designer                                                                 |
+| Abbildung 1 Login-Fenster                                                                                                                      |
+| ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| <img src="screenshots/konzept/login_konzept.png" alt="Login-Fenster-Konzept" style="max-width: 100%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);"> |
+| Quelle: Screenshot vom 02. März 2024 aus QT-Designer                                                                                           |
 
 _Main-Fenster_
 
 Das Hauptfenster (Main-Fenster) präsentiert die Hauptansicht der Anwendung mit einer anpassbaren Hintergrundkarte. Links davon befindet sich das Registermenü, darunter sind Funktionen angeordnet, die es Benutzern ermöglichen, verschiedene Informationen aufzurufen. Standardmässig werden Informationen zu den Punkten des Projekts angezeigt.
 
-| Abbildung 2 Main-Fenster                             |
-| ---------------------------------------------------- |
-|                                                      |
-| Quelle: Screenshot vom 02. März 2024 aus QT-Designer |
+| Abbildung 2 Main-Fenster                                                                                                                          |
+| ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <img src="screenshots/konzept/main_view_konzept.png" alt="Hauptansicht_Konzept" style="max-width: 100%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);"> |
+| Quelle: Screenshot vom 02. März 2024 aus QT-Designer                                                                                              |
 
 _Zeitreihenanalyse_
 
 Durch Klicken auf den „ZRA“-Button wird eine Analyse der Zeitreihen für die Punkte im Projekt angezeigt.
 
-| Abbildung 3 Zeitreihenanalyse                        |
-| ---------------------------------------------------- |
-|                                                      |
-| Quelle: Screenshot vom 02. März 2024 aus QT-Designer |
+| Abbildung 3 Zeitreihenanalyse                                                                                                                    |
+| ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| <img src="screenshots/konzept/zra_konzept.png" alt="Zeitreihenanalyse_Konzept" style="max-width: 100%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);"> |
+| Quelle: Screenshot vom 02. März 2024 aus QT-Designer                                                                                             |
 
 _3D-Fenster_
 
 Der „3D“-Button öffnet das 3D-Fenster, in dem die Punkte und Vektoren dreidimensional visualisiert werden.
 
-| Abbildung 4 3D-Fenster                               |
-| ---------------------------------------------------- |
-|                                                      |
-| Quelle: Screenshot vom 02. März 2024 aus QT-Designer |
+| Abbildung 4 3D-Fenster                                                                                                                         |
+| ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| <img src="screenshots/konzept/3d_viewer_konzept.png" alt="3D-Viewer_Konzept" style="max-width: 100%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);"> |
+| Quelle: Screenshot vom 02. März 2024 aus QT-Designer                                                                                           |
 
 ## 6.1 Pop-Ups {#popups}
 
@@ -161,37 +161,37 @@ _Neues Projekt_
 
 Das Pop-Up „Neues Projekt“ ermöglicht es Benutzenden, ein neues Projekt zu erstellen, indem sie Projektname, die oder den Hauptverantwortliche/n und Kundeninformationen eingeben und dann auf „Projekt erstellen“ klicken.
 
-| Abbildung 5 neues Projekt                            |
-| ---------------------------------------------------- |
-|                                                      |
-| Quelle: Screenshot vom 02. März 2024 aus QT-Designer |
+| Abbildung 5 neues Projekt                                                                                                                    |
+| -------------------------------------------------------------------------------------------------------------------------------------------- |
+| <img src="screenshots/konzept/new_project_konzept.png" alt="Neues_Projekt" style="max-width: 100%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);"> |
+| Quelle: Screenshot vom 02. März 2024 aus QT-Designer                                                                                         |
 
 _Projekteröffnung_
 
 In diesem Pop-Up werden alle vorhandenen Projekte aufgelistet. Nutzende können ein Projekt auswählen und durch Klicken auf „Projekt öffnen“ laden.
 
-| Abbildung 6 Projekteröffnung                         |
-| ---------------------------------------------------- |
-|                                                      |
-| Quelle: Screenshot vom 02. März 2024 aus QT-Designer |
+| Abbildung 6 Projekteröffnung                                                                                                                   |
+| ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| <img src="screenshots/konzept/open_project_konzept.png" alt="Projekt_öffnen" style="max-width: 100%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);"> |
+| Quelle: Screenshot vom 02. März 2024 aus QT-Designer                                                                                           |
 
 _Datei hochladen_
 
 Das Pop-up „Datei hochladen“ dient zum Hochladen von Dateien.
 
-| Abbildung 7 Datei hochladen                          |
-| ---------------------------------------------------- |
-|                                                      |
-| Quelle: Screenshot vom 02. März 2024 aus QT-Designer |
+| Abbildung 7 Datei hochladen                                                                                                                     |
+| ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| <img src="screenshots/konzept/load_session_konzept.png" alt="Datei_hochladen" style="max-width: 100%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);"> |
+| Quelle: Screenshot vom 02. März 2024 aus QT-Designer                                                                                            |
 
 # 7 Flussdiagramm der Funktionalitäten {#flussdiagramm}
 
 Das Flussdiagramm veranschaulicht den sequenziellen Ablauf der wichtigsten Funktionen und Interaktionen in der Anwendung. Es bietet einen klaren Überblick über die verschiedenen Schritte, die Benutzer und Benutzerinnen durchlaufen, und zeigt, wie die einzelnen Komponenten miteinander verbunden sind.
 
-| Abbildung 8 Flussdiagramm                        |
-| ------------------------------------------------ |
-|                                                  |
-| Quelle: Screenshot vom 02. März 2024 aus OneNote |
+| Abbildung 8 Flussdiagramm                                                                                                                      |
+| ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| <img src="screenshots/konzept/flussdiagramm_konzept.png" alt="Flussdiagramm" style="max-width: 100%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);"> |
+| Quelle: Screenshot vom 02. März 2024 aus OneNote                                                                                               |
 
 # 8 User Persona {#userpersona}
 
@@ -302,10 +302,10 @@ Quelle: private Ablage
 
 ## 11.2 Zeitplanung {#zeitplanung}
 
-| Abbildung 9 Auszug aus dem Zeitplan                                 |
-| ------------------------------------------------------------------- |
-|                                                                     |
-| Quelle: Screenshot vom 05. März 2024 aus Exceltabelle Zeitplan.xlsx |
+| Abbildung 9 Auszug aus dem Zeitplan                                                                                                   |
+| ------------------------------------------------------------------------------------------------------------------------------------- |
+| <img src="screenshots/konzept/zeitplan_konzept.png" alt="Zeitplan " style="max-width: 100%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);"> |
+| Quelle: Screenshot vom 05. März 2024 aus Exceltabelle Zeitplan.xlsx                                                                   |
 
 Siehe kompletter Zeitplan im Anhang: Zeitplan.pdf, Stand vom 12. März 2024
 
