@@ -6,7 +6,7 @@ Die Web-App VECVIS basiert auf einer Server-Client-Architektur. Die Schnittstell
 
 Die nachfolgende Grafik zeigt die Geodateninfrastruktur schematisch auf und verweist auf die wichtigsten Komponenten der Applikation.
 
-**Grafik**
+<img src="screenshots/architektur.png" alt="Architektur" onclick="toggleFullscreen(this)" style="max-width: 100%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);">
 
 ## Frontend
 
