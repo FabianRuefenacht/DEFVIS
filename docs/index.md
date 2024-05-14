@@ -105,4 +105,6 @@ Eine zukünftige Erweiterung könnte die Möglichkeit für Benutzer umfassen, Sc
 
 Die grösse eines Vektors ist schwierig zu vergleichen. Alleine durch die perspektive reicht oft nicht aus. Deshalb könnte man einen 2D-Balkendiagramm neben den Vektor setzen. So sieht man ein verhältnis zu weiter entfernten oder näheren Punkten.
 
-### API Dokumentation
+---
+
+## API Dokumentation
