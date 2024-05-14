@@ -2,7 +2,7 @@
 hier der Video-Teaser
 ```
 
-Die Web-App **3D-Deform** bietet Dir folgende Tools:
+Die Web-App **DEFVIS** bietet Dir folgende Tools:
 
 - Deformationsmessungen zu verwalten
 - Dreidimensionale Verschiebungen zu visualisieren
@@ -35,7 +35,7 @@ Unsere App bietet eine breite Palette von Funktionen, die den Nutzern vielfälti
 
 ## Benutzung der Web-App {#section3}
 
-Entdecke die vielfältigen Tools und Funktionen, die 3D-Deform bietet. Klicke auf die Links unten, um zu den einzelnen Seiten zu gelangen und mehr über ihre Funktionen zu erfahren:
+Entdecke die vielfältigen Tools und Funktionen, die DEFVIS bietet. Klicke auf die Links unten, um zu den einzelnen Seiten zu gelangen und mehr über ihre Funktionen zu erfahren:
 
 **[Home](home.html):**
 
@@ -105,4 +105,6 @@ Eine zukünftige Erweiterung könnte die Möglichkeit für Benutzer umfassen, Sc
 
 Die grösse eines Vektors ist schwierig zu vergleichen. Alleine durch die perspektive reicht oft nicht aus. Deshalb könnte man einen 2D-Balkendiagramm neben den Vektor setzen. So sieht man ein verhältnis zu weiter entfernten oder näheren Punkten.
 
-### API Dokumentation
+---
+
+## API Dokumentation

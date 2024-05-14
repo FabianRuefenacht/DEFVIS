@@ -18,7 +18,7 @@ GitHub Pages: https://fabianruefenacht.github.io/6230_FRNMLW/
 
 ## Repository lokal klonen
 
-Mit Git in einem Terminal das GitHub Repository ^^App-Name^^ in ein lokales Verzeichnis klonen.
+Mit Git in einem Terminal das GitHub Repository 6230_FRNMLW in ein lokales Verzeichnis klonen.
 
 ```shell
 cd /path/to/workspace
@@ -31,26 +31,33 @@ git clone git@github.com:FabianRuefenacht/6230_FRNMLW.git
 Öffne ein neues Visual Studio Code Fenster und wähle unter Start Clone Git Repository. Alternativ öffne die Command Palette in VS Code CTRL+Shift+P (View / Command Palette) und wähle Git: clone. Füge die Git web URL `https://github.com/FabianRuefenacht/6230_FRNMLW` ein und bestätige die Eingabe mit Enter. Wähle einen Ordner in welchen das Repository _geklont_ werden soll.
 
 ## Schnellinstallation
+
 ```shell
 conda create -n vecvis python=3.11 pip
 ```
+
 ```shell
 conda activate vecvis
 ```
+
 ```shell
 node install.js
 ```
 
 ## Schnellstart
+
 ```shell
 conda activate vecvis
 ```
+
 ```shell
 node run.js
 ```
+
 ```#Starte im browser
 http://localhost:3000
 ```
+
 ## Frontend installieren
 
 Öffne ein Terminal (Command Prompt in VS Code) und wechsle in den _client_ Ordner in diesem Projekt
