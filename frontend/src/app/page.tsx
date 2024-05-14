@@ -1,8 +1,5 @@
 import { cookies } from "next/headers";
-import Image from "next/image";
 import Settings from "./components/Settings";
-import Map from "./components/OlMap";
-import Detail from "./components/Detail";
 import Navbar from "./components/Navbar";
 
 export default function Home() {
