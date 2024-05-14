@@ -14,38 +14,38 @@ Muttenz, 12.03.2024
 
 **Inhaltsverzeichnis**
 
-<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html/#einleitung">1 Einleitung</a></li>
-<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html/#projektinhalt">2 Projektinhalt</a></li>
-<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html/#zielsetzung">3 Zielsetzung</a></li>
-<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html/#fragestellung">4 Fragestellung</a></li>
-<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html/#anwendungsarchitektur">5 Anwendungsarchitektur</a></li>
-<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html/#frontend">5.1 Frontend</a></li>
-<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html/#backend">5.2 Backend</a></li>
-<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html/#umsetzung">5.3 Umsetzung</a></li>
-<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html/#mockup">6 Mockup- und GUI-Aufbau</a></li>
-<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html/#popups">6.1 Pop-Ups</a></li>
-<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html/#flussdiagramm">7 Flussdiagramm der Funktionalitäten</a></li>
-<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html/#userpersona">8 User Persona</a></li>
-<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html/#userpersona_1">8.1 User Persona 1: Max Muster</a></li>
-<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html/#userpersona_2">8.2 User Persona 2: Melanie Muster</a></li>
-<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html/#geodatensaetze">9 Geodatensätze</a></li>
-<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html/#metadaten_dok">10 Metadaten und Dokumentation Geodatensätze</a></li>
-<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html/#metadaten">10.1 Metadaten</a></li>
-<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html/#dokumentation">10.2 Dokumentation</a></li>
-<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html/#aufgaben_zeit">11 Aufgaben und Zeitaufwand</a></li>
-<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html/#planung">11.1 Planung der Tasks</a></li>
-<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html/#zeitplanung">11.2 Zeitplanung</a></li>
-<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html/#literatur">12 Literatur</a></li>
-<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html/#abbildung_tab">13 Abbildungen und Tabellen</a></li>
-<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html/#abbildung">13.1 Abbildungen</a></li>
-<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html/#tabellen">13.2 Tabellen</a></li>
+<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html#einleitung">1 Einleitung</a></li>
+<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html#projektinhalt">2 Projektinhalt</a></li>
+<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html#zielsetzung">3 Zielsetzung</a></li>
+<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html#fragestellung">4 Fragestellung</a></li>
+<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html#anwendungsarchitektur">5 Anwendungsarchitektur</a></li>
+<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html#frontend">5.1 Frontend</a></li>
+<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html#backend">5.2 Backend</a></li>
+<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html#umsetzung">5.3 Umsetzung</a></li>
+<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html#mockup">6 Mockup- und GUI-Aufbau</a></li>
+<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html#popups">6.1 Pop-Ups</a></li>
+<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html#flussdiagramm">7 Flussdiagramm der Funktionalitäten</a></li>
+<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html#userpersona">8 User Persona</a></li>
+<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html#userpersona_1">8.1 User Persona 1: Max Muster</a></li>
+<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html#userpersona_2">8.2 User Persona 2: Melanie Muster</a></li>
+<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html#geodatensaetze">9 Geodatensätze</a></li>
+<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html#metadaten_dok">10 Metadaten und Dokumentation Geodatensätze</a></li>
+<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html#metadaten">10.1 Metadaten</a></li>
+<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html#dokumentation">10.2 Dokumentation</a></li>
+<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html#aufgaben_zeit">11 Aufgaben und Zeitaufwand</a></li>
+<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html#planung">11.1 Planung der Tasks</a></li>
+<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html#zeitplanung">11.2 Zeitplanung</a></li>
+<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html#literatur">12 Literatur</a></li>
+<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html#abbildung_tab">13 Abbildungen und Tabellen</a></li>
+<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html#abbildung">13.1 Abbildungen</a></li>
+<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html#tabellen">13.2 Tabellen</a></li>
 <p></p>
 
-# 1 Einleitung {#einleitung}
+<h1 id="einleitung">1 Einleitung</h1>
 
 Dieses Konzept beschäftigt sich mit der Entwicklung einer Geodateninfrastruktur durch Geomatikstudierende an der Fachhochschule Nordwestschweiz. Ziel ist die Visualisierung von dreidimensionalen Verschiebungsvektoren in einem WebGIS. Im Backend soll die nutzerabhängige Speicherung verschiedener Messsessionen und die Berechnung der Verschiebungen möglich sein. Das Projekt wird durch Coaching und Peer-Learning unterstützt.
 
-# 2 Projektinhalt {#projektinhalt}
+<h1 id="projektinhalt">2 Projektinhalt</h1>
 
 Dieses Projekt konzentriert sich auf die Entwicklung einer benutzerfreundlichen WebGIS-Umgebung, die es den Nutzenden ermöglicht, Geodaten effizient zu verwalten, zu visualisieren und zu analysieren. Die Hauptfunktionen umfassen die Erstellung und Verwaltung von Projekten sowie die Integration von Punkten und Messungen in diese Projekte.
 
@@ -55,13 +55,13 @@ Ein wesentlicher Aspekt des Projekts ist die Unterstützung von Überwachungsauf
 
 Folgende URL führt zum Projekt: <a href="https://github.com/FabianRuefenacht/6230_FRNMLW">https://github.com/FabianRuefenacht/6230_FRNMLW</a>
 
-# 3 Zielsetzung {#zielsetzung}
+<h1 id="zielsetzung">3 Zielsetzung</h1>
 
 Das Hauptziel der Geodateninfrastruktur besteht darin, Deformationsmessungen zu verwalten und dreidimensionale Verschiebungen zu visualisieren, um eine wirkungsvolle Überwachung und Analyse von geophysikalischen Veränderungen in Echtzeit zu ermöglichen. Die Darstellung dieser Daten im dreidimensionalen Kontext bietet den Nutzern und Nutzerinnen eine intuitive und umfassende Sicht auf die Daten, was zu fundierteren und informierteren Entscheidungen führt.
 
 Die Implementierung dieser Funktionen zielt darauf ab, eine effiziente und effektive Datenanalyse sowie eine ansprechende Visualisierung zu ermöglichen, wodurch die Anwendung eine breite Palette von Anwendungsgebieten abdecken kann, von Infrastrukturüberwachung bis hin zu Umweltmanagement.
 
-# 4 Fragestellung {#fragestellung}
+<h1 id="fragestellung">4 Fragestellung</h1>
 
 Die zentrale Frage dieses Projekts lautet: Wie können Punktverschiebungen effektiv dreidimensional visualisiert werden, um die Analyse und Interpretation von Bewegungs- und Verformungsmustern zu erleichtern und zu verbessern? Dabei ist es von entscheidender Bedeutung, geeignete Techniken und Methoden zu identifizieren, die eine detaillierte, präzise und benutzerfreundliche Darstellung ermöglichen.
 
@@ -69,13 +69,13 @@ Diese Fragestellung zielt darauf ab, die Herausforderungen bei der Visualisierun
 
 Indem diese Fragestellung näher untersucht wird, sollen nicht nur die technischen Aspekte der Visualisierung von Punktverschiebungen berücksichtigt werden, sondern auch die Bedürfnisse und Anforderungen der Benutzer im Hinblick auf die Benutzerfreundlichkeit der dargestellten Informationen.
 
-# 5 Anwendungsarchitektur {#anwendungsarchitektur}
+<h1 id="anwendungsarchitektur">5 Anwendungsarchitektur</h1>
 
 Die Anwendungsarchitektur beschreibt die Struktur und Organisation der Softwareanwendung, einschliesslich der Patterns, Techniken und Komponenten, die bei der Entwicklung verwendet werden.
 
 Diese klar strukturierte Architektur ermöglicht eine nahtlose Integration von Frontend und Backend, um eine leistungsstarke und benutzerfreundliche WebGIS-Anwendung zu schaffen.
 
-## 5.1 Frontend {#frontend}
+<h2 id="frontend">5.1 Frontend</h2>
 
 Das Frontend des WebGIS bietet eine Vielzahl von Funktionalitäten, die es den Benutzern und Benutzerinnen ermöglichen, Geodaten intuitiv zu verwalten, zu visualisieren und zu analysieren:
 
@@ -88,7 +88,7 @@ Das Frontend des WebGIS bietet eine Vielzahl von Funktionalitäten, die es den B
 - **Dreidimensionale Darstellung der Verschiebungen:** Eine immersive 3D-Visualisierung ermöglicht es, die Verschiebungen räumlich zu erkunden.
 - **Visualisierung von Saison- und Trendkomponenten:** Trend- und Saisonkomponenten können geschätzt werden, um die Verschiebungen zu beurteilen.
 
-## 5.2 Backend {#backend}
+<h2 id="backend">5.2 Backend</h2>
 
 Das Backend des WebGIS bietet die notwendige Infrastruktur und Logik, um die Funktionalitäten des Frontends zu unterstützen:
 
@@ -101,7 +101,7 @@ Das Backend des WebGIS bietet die notwendige Infrastruktur und Logik, um die Fun
 - **Berechnung der Verschiebungen zwischen zwei Zeitständen:** Die benötigten Berechnungen für die Analyse von Verschiebungen werden im Backend durchgeführt.
 - **Ausgleichung der Saison- und Trendkomponenten:** Saisonale und trendbezogene Komponenten werden analysiert und ausgeglichen, um genaue Ergebnisse zu erzielen.
 
-## 5.3 Umsetzung {#umsetzung}
+<h2 id="umsetzung">5.3 Umsetzung</h2>
 
 Das Frontend wird mit dem JavaScript-Framework Next.js gemacht. Next.js bietet die Unterstützung des serverseitigen Renderings. Somit lassen sich Cookies leicht erstellen und abfragen, was die Zugriffsberechtigung zu einzelnen Projekten erleichtert. Im Frontend wird die Programmiersprache TypeScript verwendet. Gegenüber JavaScript ermöglicht TypeScript die Definition von Datentypen, was die Stabilität des WebGIS erhöht. Die Darstellung des User Interface wird mit Tailwind CSS gemacht. Die Zugriffsberechtigung wird mit Cookies geregelt. Die Cookies werden mit bcrypt.js erstellt. Vom Backend werden die Anforderungen an das Cookie gesendet. Im Frontend wird geprüft, ob das Cookie den Anforderungen entspricht.
 
@@ -115,7 +115,7 @@ Für die Verwaltung von Nutzerprofilen, Projekten, Sessionen und Punkten wird au
 
 Die Berechnungen im Backend werden von Grund auf selbst programmiert und durch die Verwendung von Numpy auf die höchstmögliche Effizienz gehoben.
 
-# 6 Mockup- und GUI-Aufbau {#mockup}
+<h1 id="mockup">6 Mockup- und GUI-Aufbau</h1>
 
 Der Mockup- und GUI-Aufbau skizziert die Benutzeroberfläche der Anwendung, einschliesslich der verschiedenen Fenster und PopUps. Das Styling der Komponenten wird im Endprodukt überarbeitet.
 
@@ -155,7 +155,7 @@ Der „3D“-Button öffnet das 3D-Fenster, in dem die Punkte und Vektoren dreid
 | <img src="screenshots/konzept/3d_viewer_konzept.png" alt="3D-Viewer_Konzept" style="max-width: 100%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);"> |
 | Quelle: Screenshot vom 02. März 2024 aus QT-Designer                                                                                           |
 
-## 6.1 Pop-Ups {#popups}
+<h2 id="popups">6.1 Pop-Ups</h2>
 
 _Neues Projekt_
 
@@ -184,7 +184,7 @@ Das Pop-up „Datei hochladen“ dient zum Hochladen von Dateien.
 | <img src="screenshots/konzept/load_session_konzept.png" alt="Datei_hochladen" style="max-width: 100%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);"> |
 | Quelle: Screenshot vom 02. März 2024 aus QT-Designer                                                                                            |
 
-# 7 Flussdiagramm der Funktionalitäten {#flussdiagramm}
+<h1 id="flussdiagramm">7 Flussdiagramm der Funktionalitäten</h1>
 
 Das Flussdiagramm veranschaulicht den sequenziellen Ablauf der wichtigsten Funktionen und Interaktionen in der Anwendung. Es bietet einen klaren Überblick über die verschiedenen Schritte, die Benutzer und Benutzerinnen durchlaufen, und zeigt, wie die einzelnen Komponenten miteinander verbunden sind.
 
@@ -193,11 +193,11 @@ Das Flussdiagramm veranschaulicht den sequenziellen Ablauf der wichtigsten Funkt
 | <img src="screenshots/konzept/flussdiagramm_konzept.png" alt="Flussdiagramm" style="max-width: 100%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);"> |
 | Quelle: Screenshot vom 02. März 2024 aus OneNote                                                                                               |
 
-# 8 User Persona {#userpersona}
+<h1 id="userpersona">8 User Persona</h1>
 
 Dieses Kapitel stellt zwei typische Benutzerprofile (User Persona) vor, beschreibt ihre Nutzung der Webanwendung und beschreibt mögliche inkorrekte Interaktionen.
 
-## 8.1 User Persona 1: Max Muster {#userpersona_1}
+<h2 id="userpersona_1">8.1 User Persona 1: Max Muster</h2>
 
 **Beschreibung:**
 
@@ -220,7 +220,7 @@ Dieses Kapitel stellt zwei typische Benutzerprofile (User Persona) vor, beschrei
 - Er könnte denselben Sessionsnamen mehrfach im Projekt verwenden was zu Ambiguitäten führt. Dies wird durch das Datenbankschema abgefangen und durch eine entsprechende Fehlermeldung im Frontend angezeigt.
 - Bei der Projekterstellung könnte Max mehrere Projekte mit gleicher Namensgebung erstellen oder einen unbekannten Nutzer als Betrachter hinzufügen. Beide Fehler werden durch das Datenbankschema abgefangen und im Frontend durch eine Fehlermeldung kommuniziert.
 
-## 8.2 User Persona 2: Melanie Muster {#userpersona_2}
+<h2 id="userpersona_2">8.2 User Persona 2: Melanie Muster</h2>
 
 **Beschreibung:**
 
@@ -241,7 +241,7 @@ Dieses Kapitel stellt zwei typische Benutzerprofile (User Persona) vor, beschrei
 - Melanie könnte Schwierigkeiten haben, komplexe Analysefunktionen effektiv zu nutzen, insbesondere wenn es um die Interpretation von Trendkomponenten geht. Ein Link zu einer Website, welche die Analyse von Zeitreihen beschreibt, könnte ihr bei der Beurteilung helfen.
 - Es ist möglich, dass Melanie aufgrund von unklaren Anweisungen oder einer überladenen Benutzeroberfläche Schwierigkeiten hat, die benötigten Daten zu identifizieren und zu extrahieren. So soll das UI möglichst einfach sein und den Benutzer / die Benutzerin durch intelligentes Ein- und Ausblenden von Funktionalitäten durch den Prozess der Analyse führen.
 
-# 9 Geodatensätze {#geodatensaetze}
+<h1 id="geodatensaetze">9 Geodatensätze</h1>
 
 Die, in der Webanwendung verwendeten Geodaten, umfassen verschiedene Quellen:
 
@@ -258,9 +258,9 @@ Die, in der Webanwendung verwendeten Geodaten, umfassen verschiedene Quellen:
 
 Durch die Kombination dieser verschiedenen Geodatensätze bietet die Webanwendung eine umfassende und detaillierte Darstellung der geografischen Umgebung und der durchgeführten Messungen.
 
-# 10 Metadaten und Dokumentation {#metadaten_dok}
+<h1 id="metadaten_dok">10 Metadaten und Dokumentation</h1>
 
-## 10.1 Metadaten {#metadaten}
+<h2 id="metadaten">10.1 Metadaten</h2>
 
 Die Punktdaten/Sessionen, welche vom Projektersteller/der Projekterstellerin bereitgestellt werden, haben die Attribute Punktnummer, Ost-Wert, Nord-Wert, Höhe und Zeitstempel. Der Zeitstempel wird für die Zeitreihenanalyse benötigt.
 
@@ -270,17 +270,17 @@ Die Hintergrundkarte von OpenStreetMap kann über XYZ-Tiles bezogen werden.
 
 SwissSURFACE3D ist ein Höhenmodell der Swisstopo. Es können Kacheln mit der Ausdehnung 1 km<sup>2</sup> bezogen werden. Der Inhalt der Kacheln ist eine klassierte Punktwolke. (swisstopo 2024).
 
-## 10.2 Dokumentation {#dokumentation}
+<h2 id="dokumentation">10.2 Dokumentation</h2>
 
 Eine umfassende Dokumentation des WebGIS’, wird mit Hilfe von GitBooks erstellt.
 
 GitBook ist eine Plattform zum Erstellen, Bearbeiten und Veröffentlichen von Büchern und technischer Dokumentation. Mit Markdown geschriebene Inhalte können in verschiedenen Formaten exportiert werden.
 
-# 11 Aufgaben und Zeitaufwand {#aufgaben}
+<h1 id="aufgaben">11 Aufgaben und Zeitaufwand</h1>
 
 In diesem Abschnitt werden die einzelnen Aufgaben, der geschätzte Zeitaufwand und der Zeitplan für die Umsetzung des Projekts dargestellt.
 
-## 11.1 Planung der Tasks {#planung}
+<h2 id="planung">11.1 Planung der Tasks</h2>
 
 Tabelle 1 Zeitaufwand
 
@@ -300,7 +300,7 @@ Tabelle 1 Zeitaufwand
 
 Quelle: private Ablage
 
-[11.2 Zeitplanung] {#zeitplanung}
+<h2 id="zeitplanung">11.2 Zeitplanung</h2>
 
 | Abbildung 9 Auszug aus dem Zeitplan                                                                                                   |
 | ------------------------------------------------------------------------------------------------------------------------------------- |
@@ -309,15 +309,15 @@ Quelle: private Ablage
 
 Siehe kompletter Zeitplan im Anhang: Zeitplan.pdf, Stand vom 12. März 2024
 
-# 12 Literatur {#literatur}
+<h1 id="literatur">12 Literatur</h1>
 
 swisstopo (2021) Web Map Tiling Services WMTS: Verfügbare Dienste und Daten. Verfügbar über: <https://www.geo.admin.ch/de/wmts-verfuegbare-dienste-und-daten/> (Letzter Zugriff: 11.03.2024).
 
 swisstopo (2024) swissSURFACE3D. Verfügbar über: <https://www.swisstopo.admin.ch/de/hoehenmodell-swisssurface3d> (Letzter Zugriff: 11.03.2024).
 
-# 13 Abbildungen und Tabellen (#abbildungen_tab)
+<h1 id="abbildungen_tab">13 Abbildungen und Tabellen</h1>
 
-## Abbildungen (#abbildungen)
+<h2 id="abbildungen">13.1 Abbildungen</h2>
 
 [Abbildung 1 Login-Fenster 5](#_Toc161149727)
 
@@ -337,6 +337,8 @@ swisstopo (2024) swissSURFACE3D. Verfügbar über: <https://www.swisstopo.admin.
 
 [Abbildung 9 Auszug aus dem Zeitplan 14](#_Toc161149735)
 
-## Tabellen (#tabellen)
+<h2 id="tabellen">13.2 Tabellen</h2>
 
 [Tabelle 1 Zeitaufwand 12](#_Toc161149736)
+
+[zurück nach oben](drafts.html)
