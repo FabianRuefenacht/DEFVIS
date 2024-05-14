@@ -90,10 +90,23 @@ Unsere App-Datenbank wird mit Benutzerdaten gefüllt und zur korrekten Darstellu
 Die Messdaten werden von den Nutzern in Sessionen zur Verfügung gestellt und in einer zentralen SQLite-Datenbank verwaltet (siehe [https://www.sqlite.org/](https://www.sqlite.org/)).
 
 ### Tabelle
-In einer Tabelle werden die Punktverschiebungen (in mm) zwischen den gewählten Sessionen dargestellt. Die Verschiebungen werden aus der Differenz * neu - alt * berechnet.
+In einer Tabelle werden die Punktverschiebungen (in mm) zwischen den gewählten Sessionen dargestellt. Die Verschiebungen werden aus der Differenz **alt - neu** berechnet. Durch Klick auf eine Punktnummer wird die 2D oder 3D Ansicht geladen.
 
 ### 2D-Karte
-Die Messdaten und Verschiebungen* werden durch openlayers (siehe [https://openlayers.org/](https://openlayers.org/)) dargestellt.
+Die Messdaten und Verschiebungen* werden durch openlayers (siehe [https://openlayers.org/](https://openlayers.org/)) dargestellt. Um die Verschiebungen auf der Karte besser sichtbar zu machen, werden sie mit dem Faktor **1000** multipliziert.
+
+Als Hintergrundkarte wird die **Landeskarte farbe 1:10'000** von ©swisstopo verwendet (siehe [https://www.swisstopo.admin.ch/de/landeskarte-swiss-map-raster-10](https://www.swisstopo.ch)). Die Einbindung der Karte erfolgt als Web-Map-Service mit folgenden Parametern.
+| Attribut               | Wert                                                                                                                                                   |
+|------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+| extent                 | Wert der Variable `extent`                                                                                                                             |
+| source.url             | [https://wms.geo.admin.ch/](https://wms.geo.admin.ch/)                                                                                                 |
+| source.crossOrigin     | "anonymous"                                                                                                                                            |
+| source.attributions    | [geo.admin.ch](http://www.geo.admin.ch/internet/geoportal/en/home.html)                                                                                 |
+| source.projection      | "EPSG:2056"                                                                                                                                            |
+| source.params.LAYERS   | "ch.swisstopo.landeskarte-farbe-10"                                                                                                                   |
+| source.params.FORMAT   | "image/jpeg"                                                                                                                                           |
+| source.serverType      | "mapserver"                                                                                                                                            |
+
 
 
 
