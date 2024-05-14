@@ -1,3 +1,5 @@
+[Gehe zurück zur Hauptseite](index.html)
+
 # Konzept von DEFVIS
 
 ## 3D-Visualisierung von definierten Vektoren in einem WebGIS
@@ -12,61 +14,37 @@ Muttenz, 12.03.2024
 
 **Inhaltsverzeichnis**
 
-[1 Einleitung 2](#_Toc161149750)
+<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/#_einleitung">1 Einleitung</a></li>
+<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/#_projektinhalt">2 Projektinhalt</a></li>
+<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/#_zielsetzung">3 Zielsetzung</a></li>
+<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/#_fragestellung">4 Fragestellung</a></li>
+<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/#_anwendungsarchitektur">5 Anwendungsarchitektur</a></li>
+<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/#_frontend">5.1 Frontend</a></li>
+<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/#_backend">5.2 Backend</a></li>
+<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/#_umsetzung">5.3 Umsetzung</a></li>
+<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/#_mockup">6 Mockup- und GUI-Aufbau</a></li>
+<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/#_popups">6.1 Pop-Ups</a></li>
+<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/#_flussdiagramm">7 Flussdiagramm der Funktionalitäten</a></li>
+<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/#_userpersona">8 User Persona</a></li>
+<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/#_userpersona_1">8.1 User Persona 1: Max Muster</a></li>
+<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/#_userpersona_1">8.2 User Persona 2: Melanie Muster</a></li>
+<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/#_geodatensaetze">9 Geodatensätze</a></li>
+<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/#_metadaten_dok">10 Metadaten und Dokumentation Geodatensätze</a></li>
+<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/#_metadaten">10.1 Metadaten</a></li>
+<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/#_dokumentation">10.2 Dokumentation</a></li>
+<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/#_aufgaben_zeit">11 Aufgaben und Zeitaufwand</a></li>
+<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/#_planung">11.1 Planung der Tasks</a></li>
+<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/#_zeitplanung">11.2 Zeitplanung</a></li>
+<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/#_literatur">12 Literatur</a></li>
+<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/#_abbildung_tab">13 Abbildungen und Tabellen</a></li>
+<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/#_abbildung">13.1 Abbildungen</a></li>
+<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/#_tabellen">13.2 Tabellen</a></li>
 
-[2 Projektinhalt 2](#_Toc161149751)
-
-[3 Zielsetzung 2](#_Toc161149752)
-
-[4 Fragestellung 2](#_Toc161149753)
-
-[5 Anwendungsarchitektur 3](#_Toc161149754)
-
-[5.1 Frontend 3](#_Toc161149755)
-
-[5.2 Backend 3](#_Toc161149756)
-
-[5.3 Umsetzung 4](#_Toc161149757)
-
-[6 Mockup- und GUI-Aufbau 5](#_Toc161149758)
-
-[6.1 Pop-Ups 7](#_Toc161149759)
-
-[7 Flussdiagramm der Funktionalitäten 9](#_Toc161149760)
-
-[8 User Persona 9](#_Toc161149761)
-
-[8.1 User Persona 1: Max Muster 10](#_Toc161149762)
-
-[8.2 User Persona 2: Melanie Muster 10](#_Toc161149763)
-
-[9 Geodatensätze 11](#_Toc161149764)
-
-[10 Metadaten und Dokumentation 12](#_Toc161149765)
-
-[10.1 Metadaten 12](#_Toc161149766)
-
-[10.2 Dokumentation 12](#_Toc161149767)
-
-[11 Aufgaben und Zeitaufwand 12](#_Toc161149768)
-
-[11.1 Planung der Tasks 12](#_Toc161149769)
-
-[11.2 Zeitplanung 14](#_Toc161149770)
-
-[12 Literatur 15](#_Toc161149771)
-
-[13 Abbildungen und Tabellen 15](#_Toc161149772)
-
-[13.1 Abbildungen 15](#_Toc161149773)
-
-[13.2 Tabellen 15](#_Toc161149774)
-
-# Einleitung (#\_Toc161149750)
+# 1 Einleitung {#\_einleitung}
 
 Dieses Konzept beschäftigt sich mit der Entwicklung einer Geodateninfrastruktur durch Geomatikstudierende an der Fachhochschule Nordwestschweiz. Ziel ist die Visualisierung von dreidimensionalen Verschiebungsvektoren in einem WebGIS. Im Backend soll die nutzerabhängige Speicherung verschiedener Messsessionen und die Berechnung der Verschiebungen möglich sein. Das Projekt wird durch Coaching und Peer-Learning unterstützt.
 
-# Projektinhalt (#\_Toc161149751)
+# 2 Projektinhalt (#\_projektinhalt)
 
 Dieses Projekt konzentriert sich auf die Entwicklung einer benutzerfreundlichen WebGIS-Umgebung, die es den Nutzenden ermöglicht, Geodaten effizient zu verwalten, zu visualisieren und zu analysieren. Die Hauptfunktionen umfassen die Erstellung und Verwaltung von Projekten sowie die Integration von Punkten und Messungen in diese Projekte.
 
@@ -74,15 +52,15 @@ Benutzer und Benutzerinnen haben die Möglichkeit, verschiedene Arten von Daten 
 
 Ein wesentlicher Aspekt des Projekts ist die Unterstützung von Überwachungsaufgaben, beispielsweise für Bauwerke wie Staumauern. Durch die Integration von mehreren Messungen können Anwendende die Entwicklung und Veränderung der Überwachungsdaten über die Zeit hinweg verfolgen. Dies wird durch die Darstellung der Daten mit Hilfe von Zeitreihenanalysen (ZRA) oder Vektoren in der WebGIS-Umgebung erleichtert.
 
-Folgende URL führt zum Projekt: <https://github.com/FabianRuefenacht/6230_FRNMLW>
+Folgende URL führt zum Projekt: <a href="https://github.com/FabianRuefenacht/6230_FRNMLW">ttps://github.com/FabianRuefenacht/6230_FRNMLW</a>
 
-# Zielsetzung (#\_Toc161149752)
+# 3 Zielsetzung (#\_zielsetzung)
 
 Das Hauptziel der Geodateninfrastruktur besteht darin, Deformationsmessungen zu verwalten und dreidimensionale Verschiebungen zu visualisieren, um eine wirkungsvolle Überwachung und Analyse von geophysikalischen Veränderungen in Echtzeit zu ermöglichen. Die Darstellung dieser Daten im dreidimensionalen Kontext bietet den Nutzern und Nutzerinnen eine intuitive und umfassende Sicht auf die Daten, was zu fundierteren und informierteren Entscheidungen führt.
 
 Die Implementierung dieser Funktionen zielt darauf ab, eine effiziente und effektive Datenanalyse sowie eine ansprechende Visualisierung zu ermöglichen, wodurch die Anwendung eine breite Palette von Anwendungsgebieten abdecken kann, von Infrastrukturüberwachung bis hin zu Umweltmanagement.
 
-# Fragestellung (#\_Toc161149753)
+# 4 Fragestellung (#\_fragestellung)
 
 Die zentrale Frage dieses Projekts lautet: Wie können Punktverschiebungen effektiv dreidimensional visualisiert werden, um die Analyse und Interpretation von Bewegungs- und Verformungsmustern zu erleichtern und zu verbessern? Dabei ist es von entscheidender Bedeutung, geeignete Techniken und Methoden zu identifizieren, die eine detaillierte, präzise und benutzerfreundliche Darstellung ermöglichen.
 
@@ -90,7 +68,7 @@ Diese Fragestellung zielt darauf ab, die Herausforderungen bei der Visualisierun
 
 Indem diese Fragestellung näher untersucht wird, sollen nicht nur die technischen Aspekte der Visualisierung von Punktverschiebungen berücksichtigt werden, sondern auch die Bedürfnisse und Anforderungen der Benutzer im Hinblick auf die Benutzerfreundlichkeit der dargestellten Informationen.
 
-# Anwendungsarchitektur (#\_Toc161149754)
+# 5 Anwendungsarchitektur (#\_anwendungsarchitektur)
 
 Die Anwendungsarchitektur beschreibt die Struktur und Organisation der Softwareanwendung, einschliesslich der Patterns, Techniken und Komponenten, die bei der Entwicklung verwendet werden.
 
