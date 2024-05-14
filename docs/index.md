@@ -111,6 +111,17 @@ Die Entwicklung der App basierte auf einer Reihe von bewährten Methoden, darunt
 ## Verwendete Ressourcen {#section5}
 
 Unsere App-Datenbank wird mit Benutzerdaten gefüllt und zur korrekten Darstellung verwenden wir three.js. Die Hintergrundkarte beziehen wir von swisstopo.ch (Situationsplan farbig).
+### Messdaten
+Die Messdaten werden von den Nutzern in Sessionen zur Verfügung gestellt und in einer zentralen SQLite-Datenbank verwaltet (siehe [https://www.sqlite.org/](https://www.sqlite.org/)).
+
+### Tabelle
+In einer Tabelle werden die Punktverschiebungen (in mm) zwischen den gewählten Sessionen dargestellt. Die Verschiebungen werden aus der Differenz * neu - alt * berechnet.
+
+### 2D-Karte
+Die Messdaten und Verschiebungen* werden durch openlayers (siehe [https://openlayers.org/](https://openlayers.org/)) dargestellt.
+
+
+
 
 ---
 
