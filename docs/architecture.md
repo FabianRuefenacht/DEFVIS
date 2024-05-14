@@ -54,6 +54,8 @@ Die Datenbank hat vier Tabellen:
 - **projects**
 - **sessions**
 - **points**
-  In diesen vier Tabellen werden alle nötigen Informationen gespeichert. Die Integrität der Daten wird durch python im backend sichergestellt und durch entsprechende Fehlermeldungen im frontend den Nutzenden mitgeteilt. In der anschliessenden Grafik ist das Datenbankschema ersichtlich.
+  In diesen vier Tabellen werden alle nötigen Informationen gespeichert. Die Integrität der Daten wird durch python im backend sichergestellt und durch entsprechende Fehlermeldungen im frontend den Nutzenden mitgeteilt. In der anschliessenden Grafik ist das Datenbankschema ersichtlich. Die **fett** geschriebenen Attribute sind gemeinsam eindeutig.
+
+  ![ERD](./screenshots/db_schema.png)
 
 **Grafik**
