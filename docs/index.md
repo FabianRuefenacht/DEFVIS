@@ -131,3 +131,7 @@ Die grösse eines Vektors ist schwierig zu vergleichen. Alleine durch die perspe
 ---
 
 ## API Dokumentation
+
+---
+
+## Architektur
