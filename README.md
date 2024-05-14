@@ -5,7 +5,7 @@ Server Client Projekt für eine Geodateninfrastruktur DEFVIS im Rahmen des Modul
 - **Frontend:** Next.js, OpenLayers, Three.js und tailwindcss
 - **Backend:** FastAPI, SQLite
 
-GitHub Pages: https://fabianruefenacht.github.io/6230_FRNMLW/
+GitHub Pages: <a href="https://fabianruefenacht.github.io/6230_FRNMLW/" target="_blank">https://fabianruefenacht.github.io/6230_FRNMLW/</a>
 
 ## Requirements
 
@@ -34,7 +34,7 @@ git clone git@github.com:FabianRuefenacht/6230_FRNMLW.git
 
 ### Schnellinstallation
 
-Um die Installation und den Start der Web-App zu vereinfachen wurden zwei JavaScirpt-Dateien erstellt, welche die meiste Arbeit abnehmen. Falls die Schnellinstallation fehlschlagen sollte, verwenden Sie bitte die [ausführlichere Anleitung](https://github.com/FabianRuefenacht/6230_FRNMLW/blob/main/README.md#ausf%C3%BChrliche-installationsanleitung).
+Um die Installation und den Start der Web-App zu vereinfachen wurden zwei JavaScirpt-Dateien erstellt, welche die meiste Arbeit abnehmen. Falls die Schnellinstallation fehlschlagen sollte, verwenden Sie bitte die <a href="https://github.com/FabianRuefenacht/6230_FRNMLW/blob/main/README.md#ausf%C3%BChrliche-installationsanleitung" target="_blank">ausführliche Anleitung</a>.
 
 ```shell
 conda create -n defvis python=3.11 pip
