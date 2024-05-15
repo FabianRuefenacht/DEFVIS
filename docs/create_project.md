@@ -14,6 +14,5 @@ Die Ansicht enthält ein Button und zwei Texteingaben:
 - **Projektname:** Projektname definieren (z.B. 20240404_Musterbruecke)
 - **Kunde:** Kundennamen eingeben
 
-
-<div style="text-align: left; float: left;"><a href="main_view.html">< Hauptansicht</a></div>
+<div style="text-align: left; float: left;"><a href="main_view.html">< Menü</a></div>
 <div style="text-align: right; float: right;"><a href="load_project.html">Projekt laden ></a></div>

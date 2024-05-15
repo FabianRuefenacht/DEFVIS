@@ -1,6 +1,6 @@
 [Gehe zurück zur Hauptseite](index.html)
 
-# Hauptansicht
+# Menü
 
 <img src="screenshots/main_view.png" alt="Hauptansicht" style="max-width: 100%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);">
 
@@ -19,7 +19,6 @@ Die Seite enthält sieben Buttons:
 - **Text:** Zeigt die Koordinaten im ausgewählten Projekt an.
 - **2D:** Zeigt eine 2D-Ansicht des ausgewählten Projekts.
 - **3D:** Zeigt eine 3D-Ansicht des ausgewählten Projekts.
-
 
 <div style="text-align: left; float: left;"><a href="login.html">< Anmelden</a></div>
 <div style="text-align: right; float: right;"><a href="create_project.html">Projekt erstellen ></a></div>

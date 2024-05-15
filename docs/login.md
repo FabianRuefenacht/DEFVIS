@@ -30,4 +30,4 @@ Die Seite enthält zwei Buttons und zwei Texteingaben:
 - Das Login-Feld könnte zentriert werden, um die Benutzerfreundlichkeit zu verbessern.
 
 <div style="text-align: left; float: left;"><a href="register.html">< Registrieren</a></div>
-<div style="text-align: right; float: right;"><a href="main_view.html">Hauptansicht ></a></div>
+<div style="text-align: right; float: right;"><a href="main_view.html">Menü ></a></div>
