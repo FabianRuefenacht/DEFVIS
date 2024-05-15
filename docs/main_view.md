@@ -8,9 +8,9 @@
 
 Als registrierte\*r Benutzer\*in wirst Du beim Anmelden direkt auf die Hauptseite der App weitergeleitet. Dort findest Du das Menü auf der linken Seite. Um Deine Projekte zu verwalten und sie auf einer Karte anzuzeigen, folge diesen nächsten Schritten.
 
-- 1. Wähle oder erstelle ein Projekt
-- 2. Wähle die Nullmessung aus
-- 3. Wähle die Folgemessung aus
+1. Wähle oder erstelle ein Projekt
+2. Wähle die Nullmessung aus
+3. Wähle die Folgemessung aus
 
 ## Funktionen
 
