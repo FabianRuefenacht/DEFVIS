@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo_icon.ico">
+
+{% seo %}
+    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+    {% include head-custom.html %}
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+
+        {% if site.logo %}
+          <img src="{{site.logo | relative_url}}" alt="Logo" />
+        {% endif %}
+
+        <div style="height: 20px;"></div>
+
+        {% if site.github.is_project_page %}
+        <p class="view"><a href="{{ site.github.repository_url }}">View the Project on GitHub <small>{{ site.github.repository_nwo }}</small></a></p>
+        {% endif %}
+
+        {% if site.github.is_user_page %}
+        <p class="view"><a href="{{ site.github.owner_url }}">View My GitHub Profile</a></p>
+        {% endif %}
+
+        {% if site.show_downloads %}
+        <ul class="downloads">
+          <li><a href="{{ site.github.zip_url }}">Download <strong>ZIP File</strong></a></li>
+          <li><a href="{{ site.github.tar_url }}">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="{{ site.github.repository_url }}">View On <strong>GitHub</strong></a></li>
+        </ul>
+        {% endif %}
+
+        <h2>Übersicht über die App</h2>
+
+        <nav>
+          <ul>
+            <li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/#section1">Installation</a>
+            </li>
+            <li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/#section2">Features</a></li>
+            <li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/#section4">Methoden</a></li>
+            <li class="dropdown">
+              <a href="https://fabianruefenacht.github.io/6230_FRNMLW/#section3" class="dropbtn">Benutzerhandbuch</a>
+              <div class="dropdown-content">
+                <a href="https://fabianruefenacht.github.io/6230_FRNMLW/home.html">Home</a></div>
+              <div class="dropdown-content">
+                <a href="https://fabianruefenacht.github.io/6230_FRNMLW/register.html">Registrieren</a></div>
+              <div class="dropdown-content">
+                <a href="https://fabianruefenacht.github.io/6230_FRNMLW/login.html">Anmelden</a></div>
+              <div class="dropdown-content">
+                <a href="https://fabianruefenacht.github.io/6230_FRNMLW/main_view.html">Menü</a></div>
+              <div class="dropdown-content">
+                <a href="https://fabianruefenacht.github.io/6230_FRNMLW/create_project.html">Projekt erstellen</a></div>
+              <div class="dropdown-content">
+                <a href="https://fabianruefenacht.github.io/6230_FRNMLW/load_project.html">Projekt laden</a></div>
+              <div class="dropdown-content">
+                <a href="https://fabianruefenacht.github.io/6230_FRNMLW/capture_session.html">Session erfassen</a></div>
+              <div class="dropdown-content">
+                <a href="https://fabianruefenacht.github.io/6230_FRNMLW/current_project.html">Ansichten</a></div>
+              <div class="dropdown-content">
+                <a href="https://fabianruefenacht.github.io/6230_FRNMLW/logout.html">Abmelden</a></div>
+            </li>
+            <li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/architecture.html">Architektur</a></li>
+            <li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/#section5">Ressourcen</a></li>
+            <li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html">Konzept</a></li>
+            <li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/#section6">Ausblick</a></li>
+          </ul>
+        </nav>
+        
+      </header>
+      <section>
+
+      {{ content }}
+
+      </section>
+      <footer>
+        {% if site.github.is_project_page %}
+        <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
+        {% endif %}
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+  </body>
+</html>
