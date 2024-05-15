@@ -1,6 +1,6 @@
-<video controls autoplay loop style="max-width: 100%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); background-color:#fff">
-    <source src="./videos/teaser.mp4" type="video/mp4">
-    Your browser does not support the video tag.
+<video controls autoplay loop style="max-width: 100%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);">
+<source src="./videos/teaser.mp4" type="video/mp4">
+Your browser does not support the video tag.
 </video>
 
 <p></p>
@@ -130,7 +130,7 @@ Das Hintergrundmodell wird derzeit noch nicht automatisch erstellt. Das Modell, 
 ### Zeitreihenanalyse
 
 Die Einbindung einer Zeitreihenanalyse würde den Benutzern ermöglichen, Positionsänderungen im Laufe der Zeit genauer zu verfolgen. Dies könnte durch die Berücksichtigung von Temperaturänderungen oder anderen meteorologischen Einflüssen geschehen.
-Bereits jetzt wird beim Session erfassen (siehe auch <a href="https://fabianruefenacht.github.io/6230_FRNMLW/capture_session.html">Session laden</a>) ein Zeitstempel erfasst, sodass man diese Information einer Session zuweisen und somit in einer Zeitreihenanalyse darstellen könnte.
+Bereits jetzt wird beim Session erfassen (siehe auch <a href="https://fabianruefenacht.github.io/6230_FRNMLW/capture_session.html">Session erfassen</a>) ein Zeitstempel erfasst, sodass man diese Information einer Session zuweisen und somit in einer Zeitreihenanalyse darstellen könnte.
 
 ### Farbcodierte Punkte
 
