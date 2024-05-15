@@ -72,7 +72,7 @@ Entdecke die vielfältigen Tools und Funktionen, die DEFVIS bietet. Klicke auf d
 | **[Projekt erstellen](create_project.html):** | beginne ein neues Projekt und füge Daten hinzu, um sie zu analysieren |
 | **[Projekt laden](load_project.html):** | lade ein vorhandenes Projekt, um fortzufahren oder es zu bearbeiten |
 | **[Session erfassen](capture_session.html):** | erfasse neue Sessionen für Dein aktuelles Projekt |
-| **[Geladenes Projekt](current_project.html):**| sehe die Daten in Deinem ausgewählten Projekt ein |
+| **[Ansichten](current_project.html):**| sehe die Daten in Deinem ausgewählten Projekt ein |
 | **[Abmelden](logout.html):** | melde Dich von deinem Benutzerkonto ab, wenn du die App verlassen möchtest |
 
 ---

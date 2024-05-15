@@ -11,6 +11,5 @@ Your browser does not support the video tag.
 
 In dieser Ansicht können Punkte (Sessionen) in das Projekt geladen werden.
 
-
 <div style="text-align: left; float: left;"><a href="load_project.html">< Projekt laden</a></div>
-<div style="text-align: right; float: right;"><a href="current_project.html">geladenes Projekt ></a></div>
+<div style="text-align: right; float: right;"><a href="current_project.html">Ansichten ></a></div>
