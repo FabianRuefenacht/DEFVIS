@@ -5,7 +5,7 @@ Server Client Projekt für eine Geodateninfrastruktur DEFVIS im Rahmen des Modul
 - **Frontend:** Next.js, OpenLayers, Three.js und tailwindcss
 - **Backend:** FastAPI, SQLite
 
-GitHub Pages: [fabianruefenacht.github.io/6230_FRNMLW](https://fabianruefenacht.github.io/6230_FRNMLW){:target="\_blank"}
+GitHub Pages: <a href="https://fabianruefenacht.github.io/6230_FRNMLW/" target="_blank">https://fabianruefenacht.github.io/6230_FRNMLW/</a>
 
 ## Requirements
 
