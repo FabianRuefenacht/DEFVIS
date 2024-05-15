@@ -32,7 +32,7 @@ Your browser does not support the video tag.
 
 Du kannst die 2D-Ansicht starten, indem Du auf den Button **2D** klickst. Dadurch wird eine 2D-Ansicht mit den erfassten Punkten geladen. Die Punkte zeigen den Fehlervektor (grün) zur Nullmessung an, sodass Du weisst, in welche Richtung sich ein Punkt bewegt. Wenn Du die linke Maustaste gedrückt hältst, kannst Du die Ansicht verschieben. Über das Mausrad oder die Buttons **+** und **-** kannst Du die Zoomstufen ändern. Über den Button rechts oben vom Ansichtsfenster kannst Du die Ansicht auf volle Grösse maximieren und auch wieder minimieren. Durch Anklicken eines Punktes erhältst Du weitere Informationen und die Möglichkeit, das 3D-Modell zu laden.
 
-### Punktinformationen
+**Punktinformationen**
 
 <video controls autoplay muted loop style="max-width: 100%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);">
 <source src="./videos/punktinfo.mp4" type="video/mp4">
