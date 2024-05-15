@@ -11,20 +11,29 @@ Your browser does not support the video tag.
 
 ## Beschreibung
 
-Auf der Registrierungs-Seite kann sich ein Benutzer registrieren. Wenn der Benutzername bereits existiert oder die Textformatierung nicht korrekt ist, wird der Benutzer darüber informiert.
+Auf der Registrierungsseite hast Du die Möglichkeit, Dich als Benutzer\*in zu registrieren. Sollte der von Dir gewählte Benutzername bereits vergeben sein oder die Textformatierung nicht korrekt sein, erhältst Du umgehend entsprechende Hinweise.
 
 ## Funktionen
 
 Die Seite enthält zwei Buttons und zwei Texteingaben:
 
-- **Registrieren:** Ermöglicht es dem Benutzer, sich über das Register-Menü zu registrieren, um auf die Projektverwaltung und Hauptansicht zuzugreifen.
-- **Mit Account anmelden:** Leitet den Benutzer zur Login-Seite weiter.
+**Texteingaben**
 
-## Probleme und Verbesserungsvorschläge
+- **E-Mail:** Hier wird die E-Mail-Adresse, welche für die Registrierung verwendet wird erfasst.
+- **Passwort:** Um die Benutzenden zu schützen muss man ein Passwort erstellen.
 
-- Es sollte überlegt werden, ob der Benutzer nach dem Registrieren direkt zur Hauptansicht weitergeleitet werden soll.
-- Der Text "User existiert bereits" könnte verbessert werden, z.B. als "<i>info</i> User existiert bereits", und die Farbe könnte auf rot geändert werden, um Warnungen hervorzuheben.
-- Möglicherweise könnte das Register-Fenster zentriert werden, um die Ästhetik zu verbessern.
+**Buttons**
+
+- **Registrieren:** Ermöglicht es dem Benutzenden, sich über das Register-Menü zu registrieren, um auf die Projektverwaltung und Hauptansicht zuzugreifen.
+- **Mit Account anmelden:** Leitet den Benutzenden zur Login-Seite weiter.
+
+---
+
+**Probleme und Verbesserungsvorschläge**
+
+- _Es sollte überlegt werden, ob der Benutzende nach dem Registrieren direkt zur Hauptansicht weitergeleitet werden soll._
+- _Der Text "User existiert bereits" könnte verbessert werden, z.B. als "<code>infoicon</code> User existiert bereits", und die Farbe könnte auf rot geändert werden, um Warnungen hervorzuheben._
+- _Möglicherweise könnte das Register-Fenster zentriert werden, um die Ästhetik zu verbessern._
 
 <div style="text-align: left; float: left;"><a href="home.html">< Home</a></div>
 <div style="text-align: right; float: right;"><a href="login.html">Anmelden ></a></div>

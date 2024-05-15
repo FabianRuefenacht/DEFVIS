@@ -6,19 +6,25 @@
 
 ## Beschreibung
 
-In der Hauptansicht kann der Benutzer Projekte verwalten und einsehen, d.h. die Daten auf einer Karte anzeigen lassen.
+Als registrierte\*r Benutzer\*in wirst Du beim Anmelden direkt auf die Hauptseite der App weitergeleitet. Dort findest Du das Menü auf der linken Seite. Um Deine Projekte zu verwalten und sie auf einer Karte anzuzeigen, folge diesen nächsten Schritten.
+
+- 1. Wähle oder erstelle ein Projekt
+- 2. Wähle die Nullmessung aus
+- 3. Wähle die Folgemessung aus
 
 ## Funktionen
 
-Die Seite enthält sieben Buttons:
+Die Seite enthält drei Buttons:
 
-- **Home:** Leitet den Benutzer zurück zur Home-Ansicht.
-- **Abmelden:** Ermöglicht es dem Benutzer, sich abzumelden.
-- **Neues Projekt:** Ermöglicht es dem Benutzer, ein neues Projekt zu erstellen.
-- **Projekt laden:** Ermöglicht es dem Benutzer, ein bereits erfasstes Projekt zu laden.
-- **Text:** Zeigt die Koordinaten im ausgewählten Projekt an.
-- **2D:** Zeigt eine 2D-Ansicht des ausgewählten Projekts.
-- **3D:** Zeigt eine 3D-Ansicht des ausgewählten Projekts.
+- **Neues Projekt:** Ermöglicht es dem Benutzenden, ein neues Projekt zu erstellen.
+- **Projekt laden:** Ermöglicht es dem Benutzenden, ein bereits erfasstes Projekt zu laden, um dieses zu bearbeiten oder einzusehen.
+- **Abmelden:** Ermöglicht es dem Benutzenden, sich abzumelden.
+
+---
+
+**Probleme und Verbesserungsvorschläge**
+
+- _ändern der Schritt für Schritt anleitung von "Sie" zu "Du"._
 
 <div style="text-align: left; float: left;"><a href="login.html">< Anmelden</a></div>
 <div style="text-align: right; float: right;"><a href="create_project.html">Projekt erstellen ></a></div>
