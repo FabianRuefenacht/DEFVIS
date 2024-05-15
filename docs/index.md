@@ -68,7 +68,7 @@ Entdecke die vielfältigen Tools und Funktionen, die DEFVIS bietet. Klicke auf d
 | **[Home](home.html):** | ist die Startseite der App, wo Du Dich orientieren und weitere Schritte planen kannst |
 | **[Registrieren](register.html):** | hier kannst Du ein neues Benutzerkonto erstellen, um alle Funktionen der App nutzen zu können |
 | **[Anmelden](login.html):** | melde Dich mit deinem Benutzerkonto an, um Zugriff auf Deine Projekte zu erhalten |
-| **[Hauptansicht](main_view.html):** | ist die zentrale Ansicht Deiner App, wo Du Projekte verwalten und Daten visualisieren kannst |
+| **[Menü](main_view.html):** | ist die zentrale Ansicht Deiner App, wo Du Projekte verwalten und Daten visualisieren kannst |
 | **[Projekt erstellen](create_project.html):** | beginne ein neues Projekt und füge Daten hinzu, um sie zu analysieren |
 | **[Projekt laden](load_project.html):** | lade ein vorhandenes Projekt, um fortzufahren oder es zu bearbeiten |
 | **[Session erfassen](capture_session.html):** | erfasse neue Sessionen für Dein aktuelles Projekt |

@@ -3,7 +3,7 @@
 # Abmelden
 
 <video controls autoplay muted loop style="max-width: 100%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);">
-<source src="./videos/03_logout.mp4" type="video/mp4">
+<source src="./videos/abmelden.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video>
 
