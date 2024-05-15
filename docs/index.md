@@ -1,9 +1,7 @@
-<div style="max-width: 100%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); background-color: white;">
-    <video controls autoplay loop style="width: 100%; height: auto; object-fit: cover;">
-        <source src="./videos/teaser.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-</div>
+<video controls autoplay loop style="max-width: 100%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); background-color:#fff">
+    <source src="./videos/teaser.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
 
 <p></p>
 
