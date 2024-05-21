@@ -44,7 +44,7 @@ conda create -n defvis python=3.11 pip
 ```shell
 conda activate defvis
 ```
-Installieren der Abhängigkeiten.
+Installieren der Abhängigkeiten:
 ```shell
 node install.js
 ```
@@ -54,7 +54,7 @@ node install.js
 ```shell
 conda activate defvis
 ```
-Front- und Backend starten.
+Front- und Backend starten:
 ```shell
 node run.js
 ```
