@@ -29,7 +29,7 @@ hier gehts zur [Schnellinstallation](https://github.com/FabianRuefenacht/6230_FR
 
 ## Features von DEFVIS {#section2}
 
-Erkunde die grossartigen Funktionen von DEFVIS. Weitere Informationen und detaillierte Anleitungen zu den Funktionen findest Du alles im <a href="https://fabianruefenacht.github.io/6230_FRNMLW/index.html#section3">Benutzerhandbuch</a>.
+Erkunde die Funktionen von DEFVIS. Weitere Informationen und detaillierte Anleitungen zu den Funktionen findest Du alles im <a href="https://fabianruefenacht.github.io/6230_FRNMLW/index.html#section3">Benutzerhandbuch</a>.
 
 ### 3D-Ansicht
 
@@ -40,7 +40,7 @@ Your browser does not support the video tag.
 
 <p></p>
 
-Unsere App bietet eine breite Palette von Funktionen, die Dir vielfältige Möglichkeiten bieten, ohne Dich zu überfordern. Eine herausragende Funktion ist der 3D-Viewer, der es Dir ermöglicht, Fehlervektoren in einer dreidimensionalen Ansicht zu betrachten. Durch diese Darstellung in Bezug auf das Gelände kannst Du nicht nur 2D-Informationen erhalten, sondern auch den Fehlervektor im Kontext einer Oberfläche visualisieren. Dies ermöglicht es Dir, einen direkten Bezug herzustellen, beispielsweise um zu sehen, wie ein Punkt am Hang abrutscht.
+Unsere App bietet eine breite Palette von Funktionen, die Dir vielfältige Möglichkeiten bieten. Eine herausragende Funktion ist der 3D-Viewer, der es Dir ermöglicht, Fehlervektoren in einer dreidimensionalen Ansicht zu betrachten. Durch diese Darstellung in Bezug auf das Gelände kannst Du nicht nur 2D-Informationen erhalten, sondern auch den Fehlervektor im Kontext einer Oberfläche visualisieren. Dies ermöglicht es Dir, einen direkten Bezug herzustellen, beispielsweise um zu sehen, wie ein Punkt am Hang abrutscht.
 
 ### 2D-Ansicht
 
