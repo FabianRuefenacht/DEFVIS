@@ -61,7 +61,7 @@ Kommentare zu den einzelnen Pages/Abschnitten:
 - spezifisch
   - die 3D-Elemente der Visualisierung werden je nach Perspektive unterschiedliche gelesen/interpretiert - 2D-Balken daneben zu stellen wäre nur bedingt eine Lösung
   - Navigation ist immer ineffizienter als Blickvergleich
-  - die rote Kugel in der Mitte macht den Startpunkt der Vektoren unleserlich bzw. es ist unklar, wo genau der Verschiebungsvektor startet
+  - **done (Kugel kleiner gemacht)** die rote Kugel in der Mitte macht den Startpunkt der Vektoren unleserlich bzw. es ist unklar, wo genau der Verschiebungsvektor startet
 - _wichtig_: Visualisierungen sollten nie nur Dekoration sein, wenn eine Visualisierung die genaue visuelle Erfassung der Werte (was hier das Ziel ist) erschwert oder gar verunmöglicht, dann sollte eine andere Form der Visualisierung gefunden oder die Visualisierung weggelassen werden
 - **done** Die Punktbeschriftungen im Viewer sind zu klein
 - **done** Was ist der Zweck der schwarzen Umrandung der roten Punkte?

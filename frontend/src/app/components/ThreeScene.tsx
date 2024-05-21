@@ -68,7 +68,7 @@ const ThreeScene: React.FC<ThreeSceneProps> = ({ width, height, basePts, nextPts
             console.log(boundingBox.max.z)
 
             basePts.map((pt) => {
-              const sphereGeometry = new THREE.SphereGeometry(3, 32, 32); // Erstelle eine Kugelgeometrie
+              const sphereGeometry = new THREE.SphereGeometry(1.5, 32, 32); // Erstelle eine Kugelgeometrie
               const sphereMaterial = new THREE.MeshBasicMaterial({ color: 0xff0000 });
               const sphere = new THREE.Mesh(sphereGeometry, sphereMaterial);
               sphere.position.set(pt.E, center.y + pt.H - largestH.H / 2, Math.floor(center.y / 1000) * 1000 - 500 - pt.N); // Setze die Position der Kugel basierend auf den Koordinaten des Punktes
