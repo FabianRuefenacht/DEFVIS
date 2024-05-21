@@ -57,14 +57,14 @@ Kommentare zu den einzelnen Pages/Abschnitten:
 
 **Visualisierung und weitere Kommentare**
 
-- Die 3D-Visualisierung ermöglicht weder eine _effiziente_ noch _effektive_ visuelle Datenanalyse - solche Aussagen werden allenfalls für das Marketing gebraucht, sind aber schnell entlarvt, wenn nicht tatsächliche entweder eine Untersuchung der Effizienz und Effektivität oder das Abstützen auf Literatur vorhanden ist
+- **den Satz einfach entfernen** Die 3D-Visualisierung ermöglicht weder eine _effiziente_ noch _effektive_ visuelle Datenanalyse - solche Aussagen werden allenfalls für das Marketing gebraucht, sind aber schnell entlarvt, wenn nicht tatsächliche entweder eine Untersuchung der Effizienz und Effektivität oder das Abstützen auf Literatur vorhanden ist
 - spezifisch
-  - die 3D-Elemente der Visualisierung werden je nach Perspektive unterschiedliche gelesen/interpretiert - 2D-Balken daneben zu stellen wäre nur bedingt eine Lösung
-  - Navigation ist immer ineffizienter als Blickvergleich
+  - **und was ist das Fazit?** die 3D-Elemente der Visualisierung werden je nach Perspektive unterschiedliche gelesen/interpretiert - 2D-Balken daneben zu stellen wäre nur bedingt eine Lösung
+  - **und was soll das heissen???** Navigation ist immer ineffizienter als Blickvergleich
   - **done (Kugel kleiner gemacht)** die rote Kugel in der Mitte macht den Startpunkt der Vektoren unleserlich bzw. es ist unklar, wo genau der Verschiebungsvektor startet
-- _wichtig_: Visualisierungen sollten nie nur Dekoration sein, wenn eine Visualisierung die genaue visuelle Erfassung der Werte (was hier das Ziel ist) erschwert oder gar verunmöglicht, dann sollte eine andere Form der Visualisierung gefunden oder die Visualisierung weggelassen werden
+- **was ist genau das Problem?!?**_wichtig_: Visualisierungen sollten nie nur Dekoration sein, wenn eine Visualisierung die genaue visuelle Erfassung der Werte (was hier das Ziel ist) erschwert oder gar verunmöglicht, dann sollte eine andere Form der Visualisierung gefunden oder die Visualisierung weggelassen werden
 - **done** Die Punktbeschriftungen im Viewer sind zu klein
 - **done** Was ist der Zweck der schwarzen Umrandung der roten Punkte?
-- Was bedeutet die blaue Farbe in der Liste links?
-- Legenden fehlen
+- **ist das nicht selbstverständlich?!?**Was bedeutet die blaue Farbe in der Liste links?
+- **done** Legenden fehlen
 - schlichtes, klares Layout - konsequentere Anwendung der Gestaltprinzipien wäre hilfreich für intuitivere Interpretation des Layouts
