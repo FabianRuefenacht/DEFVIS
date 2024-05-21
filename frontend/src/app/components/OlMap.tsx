@@ -18,7 +18,7 @@ import {
 
 import Projection from "ol/proj/Projection.js";
 import TileWMS from "ol/source/TileWMS.js";
-import { FullScreen, Rotate, defaults as defaultControls } from "ol/control.js";
+import { Attribution, FullScreen, Rotate, defaults as defaultControls } from "ol/control.js";
 import { LineString } from "ol/geom";
 
 import arrow from "../../../public/images/arrow.png"
@@ -40,7 +40,7 @@ interface Deviations {
   dH: number;
 }
 
-const OlMap = ({ bbox, zoom, pts, nextPts, handle3DClick}: { bbox: [number, number]; zoom: number; pts: IfPoint[]; nextPts: IfPoint[]; handle3DClick: (pointId: string | null) => void }) => {
+const OlMap = ({ bbox, zoom, pts, nextPts, handle3DClick }: { bbox: [number, number]; zoom: number; pts: IfPoint[]; nextPts: IfPoint[]; handle3DClick: (pointId: string | null) => void }) => {
   const mapRef = useRef<HTMLDivElement>(null);
   const overlayRef = useRef<HTMLDivElement>(null);
   const [overlayContent, setOverlayContent] = useState("");
@@ -57,8 +57,8 @@ const OlMap = ({ bbox, zoom, pts, nextPts, handle3DClick}: { bbox: [number, numb
         url: "https://wms.geo.admin.ch/",
         crossOrigin: "anonymous",
         attributions:
-          '© <a href="http://www.geo.admin.ch/internet/geoportal/' +
-          'en/home.html">geo.admin.ch</a>',
+          '<h3 class="legend-header">Legende:</h3><div class="legend">Hintergrund: © <a href="http://www.geo.admin.ch/internet/geoportal/' +
+          'en/home.html">geo.admin.ch</a><br/></div>',
         projection: "EPSG:2056",
         params: {
           LAYERS: "ch.swisstopo.landeskarte-farbe-10",
@@ -70,10 +70,18 @@ const OlMap = ({ bbox, zoom, pts, nextPts, handle3DClick}: { bbox: [number, numb
 
     swisstopolayer.setOpacity(0.4)
 
+
+    // create image for attribution
+    const icon = document.createElement('img');
+    icon.src = './images/layer.png';
+    icon.style.width = '20px'; // Optional: Anpassen der Größe des Icons
+    icon.style.height = '20px'; // Optional: Anpassen der Größe des Icons
+
     const map = new Map({
       controls: defaultControls().extend([
         new FullScreen(),
         new Rotate({ duration: 1000 }),
+        new Attribution({ label: icon })
       ]),
       interactions: defaultInteractions().extend([new DragRotateAndZoom()]),
       target: mapRef.current,
@@ -123,6 +131,8 @@ const OlMap = ({ bbox, zoom, pts, nextPts, handle3DClick}: { bbox: [number, numb
     // Create vector source and layer
     const vectorSource = new VectorSource({
       features: features,
+      attributions: "<div class='legend'>Messpunkt Nullmessung: <img class='legend-img' src='./images/legend_pt.png' alt='Label' /><br/>" +
+        "Verschiebungsvektor (Faktor 1000):<img class='legend-img' src='./images/legend_line.png' alt='legend line' /></div>"
     });
 
     const vectorLayer = new VectorLayer({
@@ -150,7 +160,7 @@ const OlMap = ({ bbox, zoom, pts, nextPts, handle3DClick}: { bbox: [number, numb
         };
       };
     });
-    
+
 
     // displacementFeatures.forEach((displacementFeature, index) => {
     //   displacementFeature?.setStyle(
@@ -174,7 +184,7 @@ const OlMap = ({ bbox, zoom, pts, nextPts, handle3DClick}: { bbox: [number, numb
         })
       );
     });
-    
+
 
     const filteredDisplacementFeatures = displacementFeatures.filter(feature => feature !== undefined) as Feature<LineString>[];
 

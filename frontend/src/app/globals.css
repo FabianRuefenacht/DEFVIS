@@ -27,3 +27,21 @@ body {
     text-wrap: balance;
   }
 }
+
+.legend {
+  text-align: left;
+}
+
+.legend-img {
+  width: 200px;
+  min-height: 150px;
+}
+
+.legend-header {
+  font-size: larger;
+  text-align: left;
+}
+
+.ol-attribution {
+  color: red !important;
+}
