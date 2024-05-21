@@ -39,7 +39,7 @@ hier gehts zur [Schnellinstallation](https://github.com/FabianRuefenacht/DEFVIS/
 
 ---
 
-## Features von DEFVIS {#section2}
+## Entdecke die Features von DEFVIS {#section2}
 
 Erkunde die Funktionen von DEFVIS. Weitere Informationen und detaillierte Anleitungen zu den Funktionen findest Du alles im <a href="https://fabianruefenacht.github.io/DEFVIS/index.html#section3">Benutzerhandbuch</a>.
 
