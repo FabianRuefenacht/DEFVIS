@@ -8,9 +8,9 @@
 **README**: Einleitung zur Installation und Projekt ergänzen mit einem Beschrieb, was das Repository bietet mit einem klaren Verweis auf die GitHub Pages. Dann ergänzen mit den Systemanforderungen mit den genutzten Technologien in Frontend und Backend.
 
 - Vergleicht, ob die Angaben zur Architektur auf der GitHub Pages mit den Frontend Backend Angaben auf GitHub übereinstimmt.
-- Ab welcher Python, Node Version etc. wird das Projekt unterstützt oder welche werden benötigt?
-- About (oben rechts) ergänzen mit Kurzbeschrieb und GitHub Pages Link
-- Titel _6230_FRNMLW_ in Projektnamen ändern
+- **done, Versionen in Readme ergänzt** Ab welcher Python, Node Version etc. wird das Projekt unterstützt oder welche werden benötigt?
+- **done** About (oben rechts) ergänzen mit Kurzbeschrieb und GitHub Pages Link
+- **done** Titel _6230_FRNMLW_ in Projektnamen ändern
 
 Code Organisation:
 
