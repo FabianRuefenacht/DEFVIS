@@ -1,7 +1,7 @@
 # Testdaten
 Die in diesem Ordner vorhandenen Dateien können für den Test der Web-App verwendet werden.
 
-Die Dateien _SiP_Sess*.csv_ enthalten Punktdaten für die jeweiligen Sessionen. Dabei handelt es sich nicht um _echte_ Messdaten. Bei den Punkten handelt es sich um eine Auswahl an frei erfundenen Punkten im Berech des Geisshorns bei Saas im Prättigau. Die Messungen wurden zwischen den Sessionen mit der Datei _randomize_Sessions.ipynb_ mit einem Noise von maximal 2 cm ausgestattet.
+Die Dateien _SiP_Sess*.csv_ enthalten Punktdaten für die jeweiligen Sessionen. Dabei handelt es sich nicht um _echte_ Messdaten. Bei den Punkten handelt es sich um eine Auswahl an frei erfundenen Punkten im Bereich des Geisshorns bei Saas im Prättigau. Die Messungen wurden zwischen den Sessionen mit der Datei _randomize_Sessions.ipynb_ mit einem Noise von maximal 2 cm ausgestattet.
 
 ## Eigene Testdaten produzieren
 Es muss **eine** _*.csv_-Datei [Nr, E, N, H] erstellt werden. Mit der Datei _randomize_Sessions.ipynb_ kann diese Datei eingelesen werden (variable _file_path_ anpassen). Es werden weitere Dateien mit einem Noise (Variable _noise_ anpassen) erstellt. Die Anzahl an Dateien kann verändert werden (Variable _sessions_ anpassen.).
