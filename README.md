@@ -13,7 +13,7 @@ GitHub Pages: <a href="https://fabianruefenacht.github.io/6230_FRNMLW/" target="
 - IDE wie <a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a>
 - <a href="https://www.anaconda.com/products/distribution" target="_blank">Anaconda Distribution</a>
 - Node.js und npm (<a href="https://docs.npmjs.com/downloading-and-installing-node-js-and-npm" target="_blank">Node.js und npm herunterladen und installieren</a>)
-- Python (Version 3.9.19) (<a href="[https://docs.npmjs.com/downloading-and-installing-node-js-and-npm](https://www.python.org/downloads/)" target="_blank">herunterladen</a>)
+- Python (Version 3.9.19) (<a href="https://docs.npmjs.com/downloading-and-installing-node-js-and-npm" target="_blank">herunterladen</a>)
 
 ## Repository lokal klonen
 
