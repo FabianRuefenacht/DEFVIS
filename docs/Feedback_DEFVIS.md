@@ -14,10 +14,10 @@
 
 Code Organisation:
 
-- Unter Schnellinstallation fehlt die Beschreibung des Scritps _install.js_
+- **done, beschrieben was es macht** Unter Schnellinstallation fehlt die Beschreibung des Scritps _install.js_
 - Code ist gut strukturiert jedoch kaum kommentiert.
 
-Daten: Ist der Ordner _test_data_ final? ev in _data_ unbenennen. Hier fehlt ein README zu den Daten und Angaben zu den aufgeführten Datensätzen und zur Datennutzung.
+**done, erklärt wofür die Daten sind und wie sie verwendet werden können** Daten: Ist der Ordner _test_data_ final? ev in _data_ unbenennen. Hier fehlt ein README zu den Daten und Angaben zu den aufgeführten Datensätzen und zur Datennutzung.
 
 **GitHub Pages:**
 
