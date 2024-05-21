@@ -7,15 +7,29 @@ Your browser does not support the video tag.
 
 <p></p>
 
+## Überblick der Web-App DEFVIS
+
 Die Web-App **DEFVIS** bietet Dir folgende Tools:
 
-- Deformationsmessungen zu verwalten
-- Dreidimensionale Verschiebungen zu visualisieren
-- Wirkungsvolle Überwachung und Analyse von geophysikalischen Veränderungen
+- **Deformationsmessungen verwalten**: Verwalte und analysiere Deformationsdaten effizient durch intuitive Eingabemasken und Projektübersichten.
+- **Dreidimensionale Verschiebungen visualisieren**: Visualisiere die Bewegungen von Punkten in 3D, um komplexe geophysikalische Veränderungen besser zu verstehen.
+- **Wirkungsvolle Überwachung und Analyse**: Überwache geophysikalische Veränderungen kontinuierlich und analysiere die Daten, um fundierte Entscheidungen zu treffen.
 
-Die Darstellung dieser Daten im dreidimensionalen Kontext bietet Dir als Nutzer\*in eine intuitive und umfassende Sicht auf die Daten, was zu fundierteren und informierteren Entscheidungen führt.
+### Grafische Übersicht der implementierten und geplanten Features
 
-ℹ️ Um die Web-App optimal zu nutzen, empfiehlt sich ein Laptop oder Desktopmonitor mit einer Mindestgrösse von 15 Zoll.
+| Feature                      | Status        | Beschreibung                                                                                                                                            |
+| ---------------------------- | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Deformationsmessungen        | Implementiert | Verwalten von Messdaten, Hinzufügen neuer Sessions, und Organisieren von Projekten.                                                                     |
+| 3D-Visualisierung            | Implementiert | Darstellung von Verschiebungen in einer dreidimensionalen Ansicht, inklusive Fehlervektoren und detaillierten Punktinformationen.                       |
+| Zeitreihenanalyse            | Geplant       | Zukünftige Erweiterung zur Verfolgung von Positionsänderungen über die Zeit, inklusive Berücksichtigung von Temperatur- und Wetterdaten.                |
+| Farbcodierte Punkte          | Geplant       | Möglichkeit, Schwellwerte festzulegen und signifikante Bewegungen durch Farbcodierung hervorzuheben.                                                    |
+| 2D-Balkendiagramme           | Geplant       | Ergänzung der 3D-Vektoren mit 2D-Balkendiagrammen, um Grössenverhältnisse und Bewegungen klarer zu visualisieren.                                       |
+| Vollständige 3D-Karte        | Geplant       | Erstellung einer vollständigen 3D-Karte der Schweiz, vorbereitet durch einen FME-Prozess zur Optimierung der Auflösung und Kompression der Kartendaten. |
+| Erweiterung des Sprachpakets | Geplant       | Einführung weiterer Sprachoptionen wie Englisch, Französisch und Italienisch, um eine breitere Nutzerbasis zu erreichen.                                |
+
+Detailliertere Infos, was DEFVIS in Zukunft noch bieten wird, findest Du unter <a href="https://fabianruefenacht.github.io/DEFVIS/index.html#section6">Ausblick</a>.
+
+ℹ️ Um die Web-App optimal zu nutzen, empfiehlt sich ein Laptop oder Desktopmonitor mit einer Mindestgröße von 15 Zoll.
 
 ---
 
@@ -117,11 +131,35 @@ Als Hintergrundkarte wird die **Landeskarte farbe 1:10'000** von ©swisstopo ver
 
 Die dreidimensionale Darstellung der Punkte und der Vektoren erfolgt durch _three.js_ (siehe <a href="https://threejs.org/docs/index.html#manual/en/introduction/Creating-a-scene" target="_blank">threejs.org/docs</a>). Die Überwachungspunkte werden als Sphere (Kugel) dargestellt. Die Verschiebungen in Ost, Nord und Höhe werden durch TubeGeometries (Röhren) dargestellt.
 
-Das Hintergrundmodell wird derzeit noch nicht automatisch erstellt. Das Modell, welches in der Web-App verwendet wird, wurde durch das QGIS-Plugin _Qgis2threejs_ [<a href="https://github.com/minorua/Qgis2threejs" target="_blank">github.com/minorua</a> vorprozessiert. Um die Orientierung auf dem Geländemodell zu ermöglichen, wurde die Landeskarte aus der 2D-Darstellung auf das Modell projiziert.
+Das Hintergrundmodell wird derzeit noch nicht automatisch erstellt. Das Modell, welches in der Web-App verwendet wird, wurde durch das QGIS-Plugin _Qgis2threejs_ <a href="https://github.com/minorua/Qgis2threejs" target="_blank">github.com/minorua</a> vorprozessiert. Um die Orientierung auf dem Geländemodell zu ermöglichen, wurde die Landeskarte aus der 2D-Darstellung auf das Modell projiziert.
+
+---
+
+## Projektanalyse {#reflektion}
+
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+
+### Reflektion
+
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+
+### Diskussion
+
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+
+### Fazit
+
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
 
 ---
 
 ## Ausblick von DEFVIS {#section6}
+
+In diesem Kapitel werden zukünftige Erweiterungen und Verbesserungen, die DEFVIS optimierter und benutzerfreundlicher machen könnten erläutert. Diese möglichen Entwicklungen zielen darauf ab, die Funktionalität der App zu erweitern. Von der Einführung fortgeschrittener Analysetools über visuelle Verbesserungen bis hin zur sprachlichen Vielfalt gibt es zahlreiche Ideen, die DEFVIS in der Zukunft bereichern könnten.
 
 ### Zeitreihenanalyse
 
@@ -129,8 +167,11 @@ Das Hintergrundmodell wird derzeit noch nicht automatisch erstellt. Das Modell, 
 
 Die Einbindung einer Zeitreihenanalyse würde den Benutzern ermöglichen, Positionsänderungen im Laufe der Zeit genauer zu verfolgen. Dies könnte durch die Berücksichtigung von Temperaturänderungen oder anderen meteorologischen Einflüssen geschehen.
 Bereits jetzt wird beim <a href="https://fabianruefenacht.github.io/DEFVIS/projektverwaltung.html#erfassen">Session erfassen</a> ein Zeitstempel erfasst, sodass man diese Information einer Session zuweisen und somit in einer Zeitreihenanalyse darstellen könnte.
+Wenn ein Punkt ausgewählt ist, kann durch das Klicken des Zeitreihenanalyse-Buttons die Zeitreihenanalyse geladen werden mit den dazugehörigen Punktinformationen.
 
 ### Farbcodierte Punkte
+
+<img src="screenshots/ausblick/schwellwert.png" alt="Schwellwert" style="max-width: 100%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);">
 
 Eine weitere mögliche Erweiterung für Benutzer wäre, Schwellwerte für jedes Projekt festzulegen. Punkte, die signifikante Bewegungen aufweisen, könnten anders eingefärbt oder markiert werden, um sofortige Aufmerksamkeit zu erregen.
 

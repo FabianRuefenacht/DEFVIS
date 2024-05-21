@@ -26,6 +26,9 @@ Your browser does not support the video tag.
 
 Du kannst die 3D-Ansicht starten, indem Du auf den Button **3D** klickst oder einen Punkt auswählst und auf **3D-Modell laden** klickst. Dadurch wird ein 3D-Modell mit den erfassten Punkten gerendert. Die Punkte zeigen die Fehlerdifferenz zur Nullmessung in den Richtungen E (rot), N (grün) und Höhe (blau) an. Wenn Du die linke Maustaste gedrückt hältst, kannst Du Dich umsehen. Über das Mausrad kannst Du die Zoomstufen ändern. Mit der rechten Maustaste gedrückt bewegst Du Dich durch die Gegend.
 
+Da die 3D-Karten im Verzeichnis /data noch nicht automatisch prozessiert werden, kannst Du selber von einem Ausschnitt ein Modell generieren. Dazu empfiehlt sich die Anleitung unter <a href="https://giscrack.com/how-to-make-a-3d-model-in-qgis-using-the-qgis2threejs-extension" target="_blank">giscrack.com</a>.
+Mehr Informationen über das Plugin Qgis2threejs findest Du unter <a href="https://plugins.qgis.org/plugins/Qgis2threejs/#plugin-about" target="_blank">plugins.qgis.org</a>
+
 ## 2D-Ansicht {#zweid}
 
 <video controls autoplay muted loop style="max-width: 100%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);">
