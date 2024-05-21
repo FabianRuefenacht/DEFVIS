@@ -80,12 +80,9 @@ Entdecke die vielfältigen Tools und Funktionen, die DEFVIS bietet. Klicke auf d
 
 | ---------------------------------------------- | --------------------------------------------------------------------------------------------- |
 | **[Home](home.html):** | ist die Startseite der App, wo Du Dich orientieren und weitere Schritte planen kannst |
-| **[Registrieren](register.html):** | hier kannst Du ein neues Benutzerkonto erstellen, um alle Funktionen der App nutzen zu können |
-| **[Anmelden](login.html):** | melde Dich mit deinem Benutzerkonto an, um Zugriff auf Deine Projekte zu erhalten |
+| **[Benutzerverwaltung](user.html):** | hier wird erklärt wie Du Benutzerkonto erstellst, dich an- und auch wieder abmeldest |
 | **[Menü](main_view.html):** | ist die zentrale Ansicht Deiner App, wo Du Projekte verwalten und Daten visualisieren kannst |
-| **[Projekt erstellen](create_project.html):** | beginne ein neues Projekt und füge Daten hinzu, um sie zu analysieren |
-| **[Projekt laden](load_project.html):** | lade ein vorhandenes Projekt, um fortzufahren oder es zu bearbeiten |
-| **[Session erfassen](capture_session.html):** | erfasse neue Sessionen für Dein aktuelles Projekt |
+| **[Projektverwaltung](projektverwaltung.html):** | hier erfährst du alles über die Projektverwaltung und wie du Sessionen erfasst |
 | **[Ansichten](current_project.html):**| sehe die Daten in Deinem ausgewählten Projekt ein |
 | **[Abmelden](logout.html):** | melde Dich von deinem Benutzerkonto ab, wenn du die App verlassen möchtest |
 
@@ -132,7 +129,7 @@ Das Hintergrundmodell wird derzeit noch nicht automatisch erstellt. Das Modell, 
 ### Zeitreihenanalyse
 
 Die Einbindung einer Zeitreihenanalyse würde den Benutzern ermöglichen, Positionsänderungen im Laufe der Zeit genauer zu verfolgen. Dies könnte durch die Berücksichtigung von Temperaturänderungen oder anderen meteorologischen Einflüssen geschehen.
-Bereits jetzt wird beim Session <a href="https://fabianruefenacht.github.io/DEFVIS/capture_session.html">Session erfassen</a> ein Zeitstempel erfasst, sodass man diese Information einer Session zuweisen und somit in einer Zeitreihenanalyse darstellen könnte.
+Bereits jetzt wird beim <a href="https://fabianruefenacht.github.io/DEFVIS/projektverwaltung.html#erfassen">Session erfassen</a> ein Zeitstempel erfasst, sodass man diese Information einer Session zuweisen und somit in einer Zeitreihenanalyse darstellen könnte.
 
 ### Farbcodierte Punkte
 

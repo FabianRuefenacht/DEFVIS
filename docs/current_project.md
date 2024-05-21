@@ -54,5 +54,5 @@ Um die Daten nicht nur visuell zu haben, sondern auch in einer Tabelle, werden a
 - _Farbschema der Punktinformationen stimmt nicht mit dem Layout überein._
 - _In der 3D-Ansicht könnten die Punkte mit Ihren Namen versehen werden und._
 
-<div style="text-align: left; float: left;"><a href="capture_session.html">< Session erfassen</a></div>
+<div style="text-align: left; float: left;"><a href="projektverwaltung.html">< Projektverwaltung</a></div>
 <div style="text-align: right; float: right;"><a href="logout.html">Abmelden ></a></div>

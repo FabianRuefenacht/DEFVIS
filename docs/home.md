@@ -21,6 +21,6 @@ Die Seite enthält zwei Buttons und keine weiteren Interaktionen:
 
 - _Die Seite könnte visuell ansprechender gestaltet werden, möglicherweise durch Ändern des Hintergrunds._
 
-<div style="text-align: right; float: right;"><a href="user.html">Registrieren ></a></div>
+<div style="text-align: right; float: right;"><a href="user.html">Benutzerverwaltung ></a></div>
 
 <p></p>
