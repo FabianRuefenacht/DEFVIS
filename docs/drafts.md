@@ -14,31 +14,31 @@ Muttenz, 12.03.2024
 
 **Inhaltsverzeichnis**
 
-<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html#einleitung">1 Einleitung</a></li>
-<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html#projektinhalt">2 Projektinhalt</a></li>
-<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html#zielsetzung">3 Zielsetzung</a></li>
-<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html#fragestellung">4 Fragestellung</a></li>
-<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html#anwendungsarchitektur">5 Anwendungsarchitektur</a></li>
-<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html#frontend">5.1 Frontend</a></li>
-<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html#backend">5.2 Backend</a></li>
-<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html#umsetzung">5.3 Umsetzung</a></li>
-<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html#mockup">6 Mockup- und GUI-Aufbau</a></li>
-<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html#popups">6.1 Pop-Ups</a></li>
-<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html#flussdiagramm">7 Flussdiagramm der Funktionalitäten</a></li>
-<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html#userpersona">8 User Persona</a></li>
-<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html#userpersona_1">8.1 User Persona 1: Max Muster</a></li>
-<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html#userpersona_2">8.2 User Persona 2: Melanie Muster</a></li>
-<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html#geodatensaetze">9 Geodatensätze</a></li>
-<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html#metadaten_dok">10 Metadaten und Dokumentation Geodatensätze</a></li>
-<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html#metadaten">10.1 Metadaten</a></li>
-<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html#dokumentation">10.2 Dokumentation</a></li>
-<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html#aufgaben_zeit">11 Aufgaben und Zeitaufwand</a></li>
-<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html#planung">11.1 Planung der Tasks</a></li>
-<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html#zeitplanung">11.2 Zeitplanung</a></li>
-<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html#literatur">12 Literatur</a></li>
-<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html#abbildung_tab">13 Abbildungen und Tabellen</a></li>
-<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html#abbildung">13.1 Abbildungen</a></li>
-<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html#tabellen">13.2 Tabellen</a></li>
+<li><a href="https://fabianruefenacht.github.io/DEFVIS/drafts.html#einleitung">1 Einleitung</a></li>
+<li><a href="https://fabianruefenacht.github.io/DEFVIS/drafts.html#projektinhalt">2 Projektinhalt</a></li>
+<li><a href="https://fabianruefenacht.github.io/DEFVIS/drafts.html#zielsetzung">3 Zielsetzung</a></li>
+<li><a href="https://fabianruefenacht.github.io/DEFVIS/drafts.html#fragestellung">4 Fragestellung</a></li>
+<li><a href="https://fabianruefenacht.github.io/DEFVIS/drafts.html#anwendungsarchitektur">5 Anwendungsarchitektur</a></li>
+<li><a href="https://fabianruefenacht.github.io/DEFVIS/drafts.html#frontend">5.1 Frontend</a></li>
+<li><a href="https://fabianruefenacht.github.io/DEFVIS/drafts.html#backend">5.2 Backend</a></li>
+<li><a href="https://fabianruefenacht.github.io/DEFVIS/drafts.html#umsetzung">5.3 Umsetzung</a></li>
+<li><a href="https://fabianruefenacht.github.io/DEFVIS/drafts.html#mockup">6 Mockup- und GUI-Aufbau</a></li>
+<li><a href="https://fabianruefenacht.github.io/DEFVIS/drafts.html#popups">6.1 Pop-Ups</a></li>
+<li><a href="https://fabianruefenacht.github.io/DEFVIS/drafts.html#flussdiagramm">7 Flussdiagramm der Funktionalitäten</a></li>
+<li><a href="https://fabianruefenacht.github.io/DEFVIS/drafts.html#userpersona">8 User Persona</a></li>
+<li><a href="https://fabianruefenacht.github.io/DEFVIS/drafts.html#userpersona_1">8.1 User Persona 1: Max Muster</a></li>
+<li><a href="https://fabianruefenacht.github.io/DEFVIS/drafts.html#userpersona_2">8.2 User Persona 2: Melanie Muster</a></li>
+<li><a href="https://fabianruefenacht.github.io/DEFVIS/drafts.html#geodatensaetze">9 Geodatensätze</a></li>
+<li><a href="https://fabianruefenacht.github.io/DEFVIS/drafts.html#metadaten_dok">10 Metadaten und Dokumentation Geodatensätze</a></li>
+<li><a href="https://fabianruefenacht.github.io/DEFVIS/drafts.html#metadaten">10.1 Metadaten</a></li>
+<li><a href="https://fabianruefenacht.github.io/DEFVIS/drafts.html#dokumentation">10.2 Dokumentation</a></li>
+<li><a href="https://fabianruefenacht.github.io/DEFVIS/drafts.html#aufgaben_zeit">11 Aufgaben und Zeitaufwand</a></li>
+<li><a href="https://fabianruefenacht.github.io/DEFVIS/drafts.html#planung">11.1 Planung der Tasks</a></li>
+<li><a href="https://fabianruefenacht.github.io/DEFVIS/drafts.html#zeitplanung">11.2 Zeitplanung</a></li>
+<li><a href="https://fabianruefenacht.github.io/DEFVIS/drafts.html#literatur">12 Literatur</a></li>
+<li><a href="https://fabianruefenacht.github.io/DEFVIS/drafts.html#abbildung_tab">13 Abbildungen und Tabellen</a></li>
+<li><a href="https://fabianruefenacht.github.io/DEFVIS/drafts.html#abbildung">13.1 Abbildungen</a></li>
+<li><a href="https://fabianruefenacht.github.io/DEFVIS/drafts.html#tabellen">13.2 Tabellen</a></li>
 <p></p>
 
 <h1 id="einleitung">1 Einleitung</h1>
@@ -338,21 +338,21 @@ swisstopo (2024) swissSURFACE3D. Verfügbar über: <a href="https://www.swisstop
 <h2 id="abbildungen">13.1 Abbildungen</h2>
 
 <ul>
-<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html#abb1">Abbildung 1 Login-Fenster</a></li>
-<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html#abb2">Abbildung 2 Main-Fenster</a></li>
-<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html#abb3">Abbildung 3 Zeitreihenanalyse</a></li>
-<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html#abb4">Abbildung 4 3D-Fenster</a></li>
-<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html#abb5">Abbildung 5 neues Projekt</a></li>
-<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html#abb6">Abbildung 6 Projekteröffnung</a></li>
-<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html#abb7">Abbildung 7 Datei hochladen</a></li>
-<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html#abb8">Abbildung 8 Flussdiagramm</a></li>
-<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html#abb9">Abbildung 9 Auszug aus dem Zeitplan</a></li>
+<li><a href="https://fabianruefenacht.github.io/DEFVIS/drafts.html#abb1">Abbildung 1 Login-Fenster</a></li>
+<li><a href="https://fabianruefenacht.github.io/DEFVIS/drafts.html#abb2">Abbildung 2 Main-Fenster</a></li>
+<li><a href="https://fabianruefenacht.github.io/DEFVIS/drafts.html#abb3">Abbildung 3 Zeitreihenanalyse</a></li>
+<li><a href="https://fabianruefenacht.github.io/DEFVIS/drafts.html#abb4">Abbildung 4 3D-Fenster</a></li>
+<li><a href="https://fabianruefenacht.github.io/DEFVIS/drafts.html#abb5">Abbildung 5 neues Projekt</a></li>
+<li><a href="https://fabianruefenacht.github.io/DEFVIS/drafts.html#abb6">Abbildung 6 Projekteröffnung</a></li>
+<li><a href="https://fabianruefenacht.github.io/DEFVIS/drafts.html#abb7">Abbildung 7 Datei hochladen</a></li>
+<li><a href="https://fabianruefenacht.github.io/DEFVIS/drafts.html#abb8">Abbildung 8 Flussdiagramm</a></li>
+<li><a href="https://fabianruefenacht.github.io/DEFVIS/drafts.html#abb9">Abbildung 9 Auszug aus dem Zeitplan</a></li>
 </ul>
 
 <h2 id="tabellen">13.2 Tabellen</h2>
 
 <ul>
-<li><a href="https://fabianruefenacht.github.io/6230_FRNMLW/drafts.html#tab1">Tabelle 1 Zeitaufwand</a></li>
+<li><a href="https://fabianruefenacht.github.io/DEFVIS/drafts.html#tab1">Tabelle 1 Zeitaufwand</a></li>
 </ul>
 
 ---
