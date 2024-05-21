@@ -2,7 +2,15 @@
 
 # Benutzerverwaltung
 
-## Registrieren
+<ul>
+<li><a href="https://fabianruefenacht.github.io/DEFVIS/user.html#register">Registrieren</a></li>
+<li><a href="https://fabianruefenacht.github.io/DEFVIS/user.html#login">Anmelden</a></li>
+<li><a href="https://fabianruefenacht.github.io/DEFVIS/user.html#logout">Abmelden</a></li>
+</ul>
+
+---
+
+## Registrieren {#register}
 
 <video controls autoplay loop muted style="max-width: 100%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);">
 <source src="./videos/registrieren.mp4" type="video/mp4">
@@ -37,7 +45,9 @@ Die Seite enthält zwei Buttons und zwei Texteingaben:
 - _Der Text "User existiert bereits" könnte verbessert werden, z.B. als "<code>infoicon</code> User existiert bereits", und die Farbe könnte auf rot geändert werden, um Warnungen hervorzuheben._
 - _Möglicherweise könnte das Register-Fenster zentriert werden, um die Ästhetik zu verbessern._
 
-## Anmelden
+---
+
+## Anmelden {#login}
 
 <video controls autoplay loop muted style="max-width: 100%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);">
 <source src="./videos/anmelden.mp4" type="video/mp4">
@@ -75,7 +85,9 @@ Die Seite enthält zwei Buttons und zwei Texteingaben:
 - _Möglicherweise könnte ein Home-Button hinzugefügt werden, um zurück zur Home-Ansicht zu gelangen._
 - _Das Login-Feld könnte zentriert werden, um die Benutzerfreundlichkeit zu verbessern._
 
-## Abmelden
+---
+
+## Abmelden {#logout}
 
 <video controls autoplay muted loop style="max-width: 100%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);">
 <source src="./videos/abmelden.mp4" type="video/mp4">
