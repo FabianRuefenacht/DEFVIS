@@ -144,7 +144,11 @@ Die Grösse eines Vektors im dreidimensionalen Raum ist schwierig zu vergleichen
 
 ### vollständige 3D-Karte
 
-Die Umsetzung einer ganzen Karte der Schweiz in 3D stellt uns vor Herausforderungen. In einem späteren Zeitpunkt würde es Sinn machen, die Karte über einen FME-Prozess vorzubereiten und dann zu komprimieren, um die Auflösung der Karte sowie die Kompression der Kartendaten zu optimieren.
+Die Erstellung einer vollständigen 3D-Karte der Schweiz stellt uns vor Herausforderungen. Es wäre sinnvoll, die Karte zukünftig durch einen FME-Prozess vorzubereiten und anschliessend zu komprimieren, um sowohl die Auflösung der Karte als auch die Kompression der Kartendaten zu optimieren. Sobald ein geeigneter Prozessablauf für diesen Schritt gefunden ist, kann die Karte weltweit erweitert werden.
+
+### Erweiterung des Sprachpakets
+
+Die App DEFVIS ist derzeit nur auf Deutsch verfügbar. Zukünftig wäre es sinnvoll, die Web-App in mehreren Sprachen anzubieten, darunter Englisch, Französisch und Italienisch, um eine breitere Nutzerbasis anzusprechen und die Benutzerfreundlichkeit zu verbessern. Dies würde es internationalen Nutzern ermöglichen, die App in ihrer bevorzugten Sprache zu nutzen, was die Zugänglichkeit und Akzeptanz erheblich steigern könnte.
 
 ---
 
