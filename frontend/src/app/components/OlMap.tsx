@@ -107,7 +107,6 @@ const OlMap = ({ bbox, zoom, pts, nextPts, handle3DClick}: { bbox: [number, numb
           image: new Circle({
             radius: 5, // Radius of the circle representing the point
             fill: new Fill({ color: "red" }), // Fill color of the circle
-            stroke: new Stroke({ color: "black", width: 1 }), // Stroke color and width of the circle
           }),
           text: new Text({
             text: pts[index].name.toString(), // Set the text to the point name
