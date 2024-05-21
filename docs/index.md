@@ -93,11 +93,11 @@ Entdecke die vielfältigen Tools und Funktionen, die DEFVIS bietet. Klicke auf d
 
 ## Verwendete Ressourcen {#section5}
 
-Unsere App-Datenbank wird mit Benutzerdaten gefüllt und zur korrekten Darstellung verwenden wir three.js. Die Hintergrundkarte beziehen wir von swisstopo.ch (Situationsplan farbig).
+Unsere App-Datenbank wird mit Benutzerdaten gefüllt und zur korrekten Darstellung verwenden wir <a href="https://threejs.org/" target="_blank">three.js</a>. Die Hintergrundkarte beziehen wir von swisstopo.ch (Situationsplan farbig).
 
 ### Messdaten
 
-Die Messdaten werden von den Nutzern in Sessionen zur Verfügung gestellt und in einer zentralen SQLite-Datenbank verwaltet (siehe [www.sqlite.org/](https://www.sqlite.org/)).
+Die Messdaten werden von den Nutzern in Sessionen zur Verfügung gestellt und in einer zentralen SQLite-Datenbank verwaltet (siehe [www.sqlite.org](https://www.sqlite.org/)).
 
 ### Tabelle
 
@@ -132,7 +132,7 @@ Das Hintergrundmodell wird derzeit noch nicht automatisch erstellt. Das Modell, 
 ### Zeitreihenanalyse
 
 Die Einbindung einer Zeitreihenanalyse würde den Benutzern ermöglichen, Positionsänderungen im Laufe der Zeit genauer zu verfolgen. Dies könnte durch die Berücksichtigung von Temperaturänderungen oder anderen meteorologischen Einflüssen geschehen.
-Bereits jetzt wird beim Session erfassen (siehe auch <a href="https://fabianruefenacht.github.io/6230_FRNMLW/capture_session.html">Session erfassen</a>) ein Zeitstempel erfasst, sodass man diese Information einer Session zuweisen und somit in einer Zeitreihenanalyse darstellen könnte.
+Bereits jetzt wird beim Session <a href="https://fabianruefenacht.github.io/6230_FRNMLW/capture_session.html">Session erfassen</a> ein Zeitstempel erfasst, sodass man diese Information einer Session zuweisen und somit in einer Zeitreihenanalyse darstellen könnte.
 
 ### Farbcodierte Punkte
 
