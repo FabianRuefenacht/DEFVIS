@@ -113,7 +113,7 @@ const OlMap = ({ bbox, zoom, pts, nextPts, handle3DClick}: { bbox: [number, numb
             offsetX: 15, // Offset the text horizontally from the point
             offsetY: -15, // Offset the text vertically from the point
             fill: new Fill({ color: "black" }), // Fill color of the text
-            font: "bold 12px Arial", // Font style of the text
+            font: "bold 18px Arial", // Font style of the text
             backgroundFill: new Fill({ color: "white" }), // Background fill color of the text
           }),
         })
