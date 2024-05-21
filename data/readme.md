@@ -1,5 +1,5 @@
 # Testdaten
-Die in diesem Ordner vorhandenen Dateien können für den Test der Web-App im Bereich _Session erfassen_ verwendet werden.
+Die in diesem Ordner vorhandenen Dateien können für den Test der Web-App im Bereich [_Session erfassen_](https://fabianruefenacht.github.io/DEFVIZ/capture_session.html) verwendet werden.
 
 Die Dateien _SiP_Sess*.csv_ enthalten Punktdaten für die jeweiligen Sessionen. Dabei handelt es sich nicht um _echte_ Messdaten. Bei den Punkten handelt es sich um eine Auswahl an frei erfundenen Punkten im Bereich des Geisshorns bei Saas im Prättigau. Die Messungen wurden zwischen den Sessionen mit der Datei _randomize_Sessions.ipynb_ mit einem Noise von maximal 2 cm ausgestattet.
 
