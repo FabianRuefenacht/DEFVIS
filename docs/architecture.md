@@ -2,7 +2,7 @@
 
 # Architektur
 
-Die Web-App VECVIS basiert auf einer Server-Client-Architektur. Die Schnittstelle zwischen dem Client (frontend) und dem Server (backend) basiert auf FastAPI <a href="https://fastapi.tiangolo.com/" target="_blank">fastapi.com</a>. Als Speichermedium für die Daten dient eine SQLite-Datenbank [<a href="https://www.sqlite.org/" target="_blank">www.sqlite.org</a>.
+Die Web-App DEFVIS basiert auf einer Server-Client-Architektur. Die Schnittstelle zwischen dem Client (frontend) und dem Server (backend) basiert auf FastAPI <a href="https://fastapi.tiangolo.com/" target="_blank">fastapi.com</a>. Als Speichermedium für die Daten dient eine SQLite-Datenbank [<a href="https://www.sqlite.org/" target="_blank">www.sqlite.org</a>.
 
 Die nachfolgende Grafik zeigt die Geodateninfrastruktur schematisch auf und verweist auf die wichtigsten Komponenten der Applikation.
 

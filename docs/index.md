@@ -29,7 +29,7 @@ hier gehts zur [Schnellinstallation](https://github.com/FabianRuefenacht/6230_FR
 
 ## Features von DEFVIS {#section2}
 
-Erkunde die grossartigen Funktionen von DEFVIS. Weitere Informationen und detaillierte Anleitungen zu den Funktionen findest Du alles im <a href="https://fabianruefenacht.github.io/6230_FRNMLW/index.html#section3">Benutzerhandbuch</a>.
+Erkunde die Funktionen von DEFVIS. Weitere Informationen und detaillierte Anleitungen zu den Funktionen findest Du alles im <a href="https://fabianruefenacht.github.io/6230_FRNMLW/index.html#section3">Benutzerhandbuch</a>.
 
 ### 3D-Ansicht
 
@@ -40,7 +40,7 @@ Your browser does not support the video tag.
 
 <p></p>
 
-Unsere App bietet eine breite Palette von Funktionen, die Dir vielfältige Möglichkeiten bieten, ohne Dich zu überfordern. Eine herausragende Funktion ist der 3D-Viewer, der es Dir ermöglicht, Fehlervektoren in einer dreidimensionalen Ansicht zu betrachten. Durch diese Darstellung in Bezug auf das Gelände kannst Du nicht nur 2D-Informationen erhalten, sondern auch den Fehlervektor im Kontext einer Oberfläche visualisieren. Dies ermöglicht es Dir, einen direkten Bezug herzustellen, beispielsweise um zu sehen, wie ein Punkt am Hang abrutscht.
+Unsere App bietet eine breite Palette von Funktionen, die Dir vielfältige Möglichkeiten bieten. Eine herausragende Funktion ist der 3D-Viewer, der es Dir ermöglicht, Fehlervektoren in einer dreidimensionalen Ansicht zu betrachten. Durch diese Darstellung in Bezug auf das Gelände kannst Du nicht nur 2D-Informationen erhalten, sondern auch den Fehlervektor im Kontext einer Oberfläche visualisieren. Dies ermöglicht es Dir, einen direkten Bezug herzustellen, beispielsweise um zu sehen, wie ein Punkt am Hang abrutscht.
 
 ### 2D-Ansicht
 
@@ -93,11 +93,11 @@ Entdecke die vielfältigen Tools und Funktionen, die DEFVIS bietet. Klicke auf d
 
 ## Verwendete Ressourcen {#section5}
 
-Unsere App-Datenbank wird mit Benutzerdaten gefüllt und zur korrekten Darstellung verwenden wir three.js. Die Hintergrundkarte beziehen wir von swisstopo.ch (Situationsplan farbig).
+Unsere App-Datenbank wird mit Benutzerdaten gefüllt und zur korrekten Darstellung verwenden wir <a href="https://threejs.org/" target="_blank">three.js</a>. Die Hintergrundkarte beziehen wir von swisstopo.ch (Situationsplan farbig).
 
 ### Messdaten
 
-Die Messdaten werden von den Nutzern in Sessionen zur Verfügung gestellt und in einer zentralen SQLite-Datenbank verwaltet (siehe [www.sqlite.org/](https://www.sqlite.org/)).
+Die Messdaten werden von den Nutzern in Sessionen zur Verfügung gestellt und in einer zentralen SQLite-Datenbank verwaltet (siehe [www.sqlite.org](https://www.sqlite.org/)).
 
 ### Tabelle
 
@@ -132,7 +132,7 @@ Das Hintergrundmodell wird derzeit noch nicht automatisch erstellt. Das Modell, 
 ### Zeitreihenanalyse
 
 Die Einbindung einer Zeitreihenanalyse würde den Benutzern ermöglichen, Positionsänderungen im Laufe der Zeit genauer zu verfolgen. Dies könnte durch die Berücksichtigung von Temperaturänderungen oder anderen meteorologischen Einflüssen geschehen.
-Bereits jetzt wird beim Session erfassen (siehe auch <a href="https://fabianruefenacht.github.io/6230_FRNMLW/capture_session.html">Session erfassen</a>) ein Zeitstempel erfasst, sodass man diese Information einer Session zuweisen und somit in einer Zeitreihenanalyse darstellen könnte.
+Bereits jetzt wird beim Session <a href="https://fabianruefenacht.github.io/6230_FRNMLW/capture_session.html">Session erfassen</a> ein Zeitstempel erfasst, sodass man diese Information einer Session zuweisen und somit in einer Zeitreihenanalyse darstellen könnte.
 
 ### Farbcodierte Punkte
 
@@ -144,7 +144,11 @@ Die Grösse eines Vektors im dreidimensionalen Raum ist schwierig zu vergleichen
 
 ### vollständige 3D-Karte
 
-Die Umsetzung einer ganzen Karte der Schweiz in 3D stellt uns vor Herausforderungen. In einem späteren Zeitpunkt würde es Sinn machen, die Karte über einen FME-Prozess vorzubereiten und dann zu komprimieren, um die Auflösung der Karte sowie die Kompression der Kartendaten zu optimieren.
+Die Erstellung einer vollständigen 3D-Karte der Schweiz stellt uns vor Herausforderungen. Es wäre sinnvoll, die Karte zukünftig durch einen FME-Prozess vorzubereiten und anschliessend zu komprimieren, um sowohl die Auflösung der Karte als auch die Kompression der Kartendaten zu optimieren. Sobald ein geeigneter Prozessablauf für diesen Schritt gefunden ist, kann die Karte weltweit erweitert werden.
+
+### Erweiterung des Sprachpakets
+
+Die App DEFVIS ist derzeit nur auf Deutsch verfügbar. Zukünftig wäre es sinnvoll, die Web-App in mehreren Sprachen anzubieten, darunter Englisch, Französisch und Italienisch, um eine breitere Nutzerbasis anzusprechen und die Benutzerfreundlichkeit zu verbessern. Dies würde es internationalen Nutzern ermöglichen, die App in ihrer bevorzugten Sprache zu nutzen, was die Zugänglichkeit und Akzeptanz erheblich steigern könnte.
 
 ---
 
