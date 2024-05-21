@@ -52,7 +52,7 @@ const ThreeScene: React.FC<ThreeSceneProps> = ({ width, height, basePts, nextPts
         const center = boundingBox.getCenter(new THREE.Vector3());
 
         // Setze die Kamera-Position und das OrbitControls-Ziel auf das Zentrum des Modells
-        
+
         if (basePts) {
           // `basePts` ist definiert und ein Array
           if (Array.isArray(basePts)) {
@@ -61,7 +61,7 @@ const ThreeScene: React.FC<ThreeSceneProps> = ({ width, height, basePts, nextPts
             const centerE = cameraposition[0] !== 0 ? cameraposition[0] : center.x;
             const centerN = cameraposition[1] !== 0 ? Math.floor(center.y / 1000) * 1000 - 500 - cameraposition[1] : center.y + boundingBox.max.z / 2;
             const centerH = cameraposition[2] !== 0 ? center.y + cameraposition[2] - largestH.H / 2 : center.y + largestH.H / 2;
-            
+
             camera.position.copy(new THREE.Vector3(centerE, centerH + 50, centerN));
             camera.lookAt(new THREE.Vector3(centerE, 0, centerN))
             controls.target.copy(new THREE.Vector3(centerE, centerH, centerN));
@@ -81,7 +81,7 @@ const ThreeScene: React.FC<ThreeSceneProps> = ({ width, height, basePts, nextPts
           // `basePts` ist nicht definiert oder kein Array
           console.error("basePts is not defined .");
         }
-        
+
         if (basePts && nextPts) {
           if (Array.isArray(basePts) && Array.isArray(nextPts)) {
             const largestH = basePts.reduce((prev, current) => (prev.H > current.H) ? prev : current);
@@ -101,7 +101,7 @@ const ThreeScene: React.FC<ThreeSceneProps> = ({ width, height, basePts, nextPts
 
                 scene.add(tubeMeshE)
 
-                
+
                 const deltaN = (npt.N - bpt.N) * 1000
 
                 const pathN = new THREE.CatmullRomCurve3([
@@ -179,11 +179,42 @@ const ThreeScene: React.FC<ThreeSceneProps> = ({ width, height, basePts, nextPts
   }, [width, height, cameraposition]);
 
   return (
-    <div
-      ref={threeContainerRef}
-      style={{ width, height }}
-      className="p-4 rounded-xl"
-    />
+    <>
+      <div
+        ref={threeContainerRef}
+        style={{ width, height }}
+        className="p-4 rounded-xl"
+      />
+      <div className=" absolute bottom-0">
+        <h3 className="legend-header">Legende:</h3>
+        <table>
+          <thead>
+            <tr className=" font-bold">
+              <td>Bezeichnung</td>
+              <td>Symbolisierung</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Zentrum Nullmessung </td>
+              <td className="text-center"><img src="./images/legend_pt_3d.png" width={120} /></td>
+            </tr>
+            <tr>
+              <td>Verschiebung Ost</td>
+              <td className="text-center"><img src="./images/legend_red_3d.png" width={120} /></td>
+            </tr>
+            <tr>
+              <td>Verschiebung Nord</td>
+              <td className="text-center"><img src="./images/legend_green_3d.png" width={120} /></td>
+            </tr>
+            <tr>
+              <td>Verschiebung Höhe</td>
+              <td className="text-center"><img src="./images/legend_blue_3d.png" width={120} /></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </>
   );
 };
 
