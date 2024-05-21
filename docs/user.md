@@ -37,9 +37,7 @@ Die Seite enthält zwei Buttons und zwei Texteingaben:
 - **Registrieren:** Ermöglicht es dem Benutzenden, sich über das Register-Menü zu registrieren, um auf die Projektverwaltung und Hauptansicht zuzugreifen.
 - **Mit Account anmelden:** Leitet den Benutzenden zur Login-Seite weiter.
 
----
-
-**Probleme und Verbesserungsvorschläge**
+**_Probleme und Verbesserungsvorschläge_**
 
 - _Es sollte überlegt werden, ob der Benutzende nach dem Registrieren direkt zur Hauptansicht weitergeleitet werden soll._
 - _Der Text "User existiert bereits" könnte verbessert werden, z.B. als "<code>infoicon</code> User existiert bereits", und die Farbe könnte auf rot geändert werden, um Warnungen hervorzuheben._
@@ -74,9 +72,7 @@ Die Seite enthält zwei Buttons und zwei Texteingaben:
 - **Anmelden:** Ermöglicht es dem Benutzenden, sich über das Anmelde-Menü anzumelden, um auf die Projektverwaltung und Hauptansicht zuzugreifen.
 - **Neu registrieren:** Leitet den Benutzenden zur Registerungs-Seite weiter.
 
----
-
-**Probleme und Verbesserungsvorschläge**
+**_Probleme und Verbesserungsvorschläge_**
 
 - _Die Warnmeldungen sollten angepasst werden:_
   - _"Dieser Benutzername wurde nicht gefunden" (für falschen Benutzernamen)_
