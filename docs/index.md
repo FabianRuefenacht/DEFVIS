@@ -23,7 +23,7 @@ Die Implementierung dieser Funktionen zielt darauf ab, eine effiziente und effek
 
 ## Wie wird die App installiert {#section1}
 
-hier gehts zur [Schnellinstallation](https://github.com/FabianRuefenacht/6230_FRNMLW/?tab=readme-ov-file#schnellinstallation){:target="\_blank"}
+hier gehts zur [Schnellinstallation](https://github.com/FabianRuefenacht/DEFVIS/?tab=readme-ov-file#schnellinstallation){:target="\_blank"}
 
 ---
 
@@ -70,7 +70,7 @@ Um die Daten nicht nur visuell zu haben, sondern auch in einer Tabelle, werden a
 
 Deformationsmessungen sind Teil des Fachbereichs Ingenieurvermessung und Geodäsie. Ziel einer Deformationsmessung ist es, die Verschiebung von Überwachungspunkten in Bezug zu den, als stabil angenommenen, Festpunkten zu bestimmen. Dabei können diverse Vermessungsmethoden wie zum Beispiel: Nivellement, Triangulation, Distanzmessung, Lotung, Inklinometer oder GNSS, je nach den projektspezifischen Ansprüchen, in Betracht gezogen werden. Aus den beobachteten Messgrössen werden mit der Methode der kleinsten Quadrate in einer geodätischen Ausgleichung Koordinaten berechnet. Die Koordinaten werden dann statistisch analysiert, um auf Grund der empirischen Genauigkeit signifikante Deformationsvektoren aus zwei zeitlich verschiedenen Messungen zu bestimmen.
 
-Die Interpretation und Kontrolle der Deformationsvektoren gestaltet sich aufgrund von Zahlen anspruchsvoll. Eine dreidimensionale Visualisierung der Deformationsvektoren auf einem Geländemodell vereinfacht die Kontrolle für die geodätische Fachperson und die Interpretation für die geologische Fachperson.
+Die Interpretation und Kontrolle der Deformationsvektoren gestaltet sich aufgrund von numerischen Werten anspruchsvoll, weil gute Kenntnisse über die Orientierung des Koordinatensystems vorhanden sein müssen. Eine dreidimensionale Visualisierung der Deformationsvektoren auf einem Geländemodell vereinfacht die Kontrolle für die geodätische Fachperson und die Interpretation für die geologische Fachperson massiv. Genau diese Prozesse einer Deformationsmessung werden durch den DEVVIS vereinfacht und möglichst Benutzerfreundlich eingebunden.
 
 ---
 

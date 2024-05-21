@@ -26,5 +26,5 @@ Die Seite enthält drei Buttons:
 
 - _ändern der Schritt für Schritt anleitung von "Sie" zu "Du"._
 
-<div style="text-align: left; float: left;"><a href="login.html">< Anmelden</a></div>
+<div style="text-align: left; float: left;"><a href="user.html">< Anmelden</a></div>
 <div style="text-align: right; float: right;"><a href="create_project.html">Projekt erstellen ></a></div>
