@@ -23,7 +23,7 @@ Code Organisation:
 
 **Allgemein**: Gute Übersicht zum Projekt, es fehlt eine grafische Übersicht der implementierten und geplanten Features. Zu den drei Claims der Hauptfeatures Verwaltung, Visualisierung und Überwachung, könnte man genauer aufzeigen, wie diese momentan erfüllt werden und welche Features in Zukunft hinzukommen und den Prototypen ergänzen.
 
-<!--- Auf Formulierungen wie *grossartig* und *ohne Dich zu überfordern* verzichten. Das eine erhöht die Erwartungen oder scheint ironisch und das Zweite ist für User nicht auf Augenhöhe formuliert.-->
+<!-- - Auf Formulierungen wie *grossartig* und *ohne Dich zu überfordern* verzichten. Das eine erhöht die Erwartungen oder scheint ironisch und das Zweite ist für User nicht auf Augenhöhe formuliert. -->
 
 - Reflektion einführen
 - Workflow einführen (Flussdiagramm oder eine aktualisierte Version aus dem Konzept verwenden, ev kennzeichnen was umgesetzt und was geplant ist.)
@@ -43,8 +43,10 @@ Kommentare zu den einzelnen Pages/Abschnitten:
   - Datenbank ist nur die _points_ Tabelle genauer beschriftet. Hier wäre eine Einleitung zusätzlich noch nützlich, sowie die Beschreibung aller Tabellen.
 
 - Benutzerhandbuch:
-  - Hier könnte man auf eine Seite untereinander das Registrieren und Einloggen zusammenfassen, sowie Projekt erstellen, laden und Session erfassen, so wird der Lesefluss weniger unterbrochen und User können direkt die einzelnen Schritte durchscrollen
+  <!-- - Hier könnte man auf eine Seite untereinander das Registrieren und Einloggen zusammenfassen, sowie Projekt erstellen, laden und Session erfassen, so wird der Lesefluss weniger unterbrochen und User können direkt die einzelnen Schritte durchscrollen -->
+
   - Da das Höhenmodell nicht automatisch online geladen wird, benötigt das Benutzerhandbuch noch eine Anleitung zu, wie ein Höhenmodell von einem anderen Gebiet aufbereitet und integriert wird.
+
 - Ressourcen:
 
   - Ergänzen mit Literaturangaben, respektive Daten-, Software- und Literatur als Quellen verlinken und aufführen.

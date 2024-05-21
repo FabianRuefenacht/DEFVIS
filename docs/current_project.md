@@ -3,8 +3,8 @@
 # Ansichten
 
 <ul>
-<li><a href="https://fabianruefenacht.github.io/DEFVIS/current_project.html#3D">3D-Ansicht</a></li>
-<li><a href="https://fabianruefenacht.github.io/DEFVIS/current_project.html#2D">2D-Ansicht</a></li>
+<li><a href="https://fabianruefenacht.github.io/DEFVIS/current_project.html#dreid">3D-Ansicht</a></li>
+<li><a href="https://fabianruefenacht.github.io/DEFVIS/current_project.html#zweid">2D-Ansicht</a></li>
 <li><a href="https://fabianruefenacht.github.io/DEFVIS/current_project.html#punktinfo">Punktinformation</a></li>
 </ul>
 
@@ -15,7 +15,7 @@ Die Vektoren werden im Bezug zur Hintergrundkarte 1000 mal grösser dargestellt.
 
 ---
 
-## 3D-Ansicht {#3D}
+## 3D-Ansicht {#dreid}
 
 <video controls autoplay muted loop style="max-width: 100%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);">
 <source src="./videos/3D.mp4" type="video/mp4">
@@ -26,7 +26,7 @@ Your browser does not support the video tag.
 
 Du kannst die 3D-Ansicht starten, indem Du auf den Button **3D** klickst oder einen Punkt auswählst und auf **3D-Modell laden** klickst. Dadurch wird ein 3D-Modell mit den erfassten Punkten gerendert. Die Punkte zeigen die Fehlerdifferenz zur Nullmessung in den Richtungen E (rot), N (grün) und Höhe (blau) an. Wenn Du die linke Maustaste gedrückt hältst, kannst Du Dich umsehen. Über das Mausrad kannst Du die Zoomstufen ändern. Mit der rechten Maustaste gedrückt bewegst Du Dich durch die Gegend.
 
-## 2D-Ansicht {#2D}
+## 2D-Ansicht {#zweid}
 
 <video controls autoplay muted loop style="max-width: 100%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);">
 <source src="./videos/2D.mp4" type="video/mp4">
