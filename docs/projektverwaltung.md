@@ -91,5 +91,7 @@ Um Sessionen zu erfassen kann man auf den Button **Session erfassen** klicken (e
 
 - **Session hochladen:** Durch das Klicken auf diesen Button wird die hinzugefügte Session in das ausgewählte Projekt importiert
 
+---
+
 <div style="text-align: left; float: left;"><a href="main_view.html">< Menü</a></div>
 <div style="text-align: right; float: right;"><a href="current_project.html">Ansichten ></a></div>

@@ -103,5 +103,7 @@ Your browser does not support the video tag.
 - **Abmelden:** Ermöglicht es dem Benutzenden, sich über den Button **Abmelden** abzumelden und wieder auf die Homeseite zu gelangen, um sich unter Umständen mit einem anderen Account anzumelden
 - **Zurück zur App:** Durch Draufklicken gelangt man wieder zurück zu der letzen geöffneten Sitzung der Web-App
 
+---
+
 <div style="text-align: left; float: left;"><a href="home.html">< Home</a></div>
 <div style="text-align: right; float: right;"><a href="main_view.html">Menü ></a></div>

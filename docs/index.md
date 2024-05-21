@@ -84,7 +84,6 @@ Entdecke die vielfältigen Tools und Funktionen, die DEFVIS bietet. Klicke auf d
 | **[Menü](main_view.html):** | ist die zentrale Ansicht Deiner App, wo Du Projekte verwalten und Daten visualisieren kannst |
 | **[Projektverwaltung](projektverwaltung.html):** | hier erfährst du alles über die Projektverwaltung und wie du Sessionen erfasst |
 | **[Ansichten](current_project.html):**| sehe die Daten in Deinem ausgewählten Projekt ein |
-| **[Abmelden](logout.html):** | melde Dich von deinem Benutzerkonto ab, wenn du die App verlassen möchtest |
 
 ---
 
