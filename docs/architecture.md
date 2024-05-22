@@ -2,7 +2,14 @@
 
 # Architektur
 
-Die Web-App DEFVIS basiert auf einer Server-Client-Architektur. Die Schnittstelle zwischen dem Client (frontend) und dem Server (backend) basiert auf FastAPI <a href="https://fastapi.tiangolo.com/" target="_blank">fastapi.com</a>. Als Speichermedium für die Daten dient eine SQLite-Datenbank [<a href="https://www.sqlite.org/" target="_blank">www.sqlite.org</a>.
+Die Web-App DEFVIS basiert auf einer Server-Client-Architektur. Die Schnittstelle zwischen dem Client (frontend) und dem Server (backend) basiert auf FastAPI (<a href="https://fastapi.tiangolo.com/" target="_blank">fastapi.com</a>). Als Speichermedium für die Daten dient eine SQLite-Datenbank (<a href="https://www.sqlite.org/" target="_blank">www.sqlite.org</a>).
+
+## Beschreibung der Architektur
+### Daten-Upload
+Nutzer und Nutzerinnen (user) unserer Web-App können eigene Punktdaten, in Sessionen als _.csv-Datei_ gebündelt in die Web-App einspeisen (im Bereich [_Session erfassen_](https://fabianruefenacht.github.io/DEFVIZ/capture_session.html)). Die Datei wird anschliessend mit _axios_ and die _FastAPI_-Schnittstelle im Backend gesendet. Das Backend erstellt in der Tabelle _Sessions_ in der Datenbank einen neuen Eintrag. Anschliessend werden die Punkte in die Tabelle _Points_ geschrieben und mit der eben erstellten Session verknüpft.
+
+### Anzeigen von Daten
+Nachdem ein Nutzer oder eine Nutzerin eingelogt ist, wird über _axios_ eine Anfrage an das Backend gestellt. Diese Anfrage an _FasAPI_ löst eine Funktion im Backend aus, welche alle Projekte für welche die Person Zugriffsrechte hat geladen werden. Diese Projekte werden dann von _FastAPI_ zurück an _axios_ im Frontend gesendet. Im Frontend kann die Nutzerin oder der Nutzer anschliessen ein Projekt auswählen. Geschieht dies, wird mit _axios_ eine Anfrage an die _Fast-API_-Schnittstelle gesendet. Diese Anfrage löst im Backend eine Funktion aus, welche alle Punkte des Projektes gebündelt in Sessionen zurückgibt. Die Antwort wird wiederum mit _FastAPI_ zurückgesendet und von _axios_ empfangen. Die Sessionen können nun im Frontend über das _Drop-Down-Menü_ ausgewählt werden. Sin sowohl _Nullmessung_ als auch _Folgemessung_ ausgewählt, werden die Punkte in die Tabelle am linken Bildschirmrand, die Karte und die 3D-Darstellung geladen. Über die blauen Knöpfe kann die Ansicht, je nach Auswahl in der Karte oder in der 3D-Ansicht, auf den selektierten Punkt verschoben werden.
 
 Die nachfolgende Grafik zeigt die Geodateninfrastruktur schematisch auf und verweist auf die wichtigsten Komponenten der Applikation.
 
