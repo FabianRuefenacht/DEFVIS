@@ -80,9 +80,95 @@ Um die Daten nicht nur visuell zu haben, sondern auch in einer Tabelle, werden a
 
 ## Angewandte Methoden {#section4}
 
-Deformationsmessungen sind Teil des Fachbereichs Ingenieurvermessung und Geodäsie. Ziel einer Deformationsmessung ist es, die Verschiebung von Überwachungspunkten in Bezug zu den, als stabil angenommenen, Festpunkten zu bestimmen. Dabei können diverse Vermessungsmethoden wie zum Beispiel: Nivellement, Triangulation, Distanzmessung, Lotung, Inklinometer oder GNSS, je nach den projektspezifischen Ansprüchen, in Betracht gezogen werden. Aus den beobachteten Messgrössen werden mit der Methode der kleinsten Quadrate in einer geodätischen Ausgleichung Koordinaten berechnet. Die Koordinaten werden dann statistisch analysiert, um auf Grund der empirischen Genauigkeit signifikante Deformationsvektoren aus zwei zeitlich verschiedenen Messungen zu bestimmen.
+Deformationsmessungen sind ein wesentlicher Bestandteil der Ingenieurvermessung und Geodäsie. Ziel ist es, die Verschiebung von Überwachungspunkten im Verhältnis zu stabilen Referenzpunkten zu bestimmen. Dabei kommen verschiedene Vermessungsmethoden zum Einsatz, darunter:
 
-Die Interpretation und Kontrolle der Deformationsvektoren gestaltet sich aufgrund von numerischen Werten anspruchsvoll, weil gute Kenntnisse über die Orientierung des Koordinatensystems vorhanden sein müssen. Eine dreidimensionale Visualisierung der Deformationsvektoren auf einem Geländemodell vereinfacht die Kontrolle für die geodätische Fachperson und die Interpretation für die geologische Fachperson massiv. Genau diese Prozesse einer Deformationsmessung werden durch den DEVVIS vereinfacht und möglichst Benutzerfreundlich eingebunden.
+- **Nivellement**
+- **Triangulation**
+- **Distanzmessung**
+- **Lotung**
+- **Inklinometer**
+- **GNSS (Global Navigation Satellite System)**
+
+### Prozess der Deformationsmessung
+
+1. **Datenerfassung**:
+
+   - **Nivellement**: Präzise Höhenmessung zur Erfassung von Höhenunterschieden.
+   - **Triangulation**: Bestimmung von Positionen durch Winkelmessungen in einem Netz von Punkten.
+   - **Distanzmessung**: Ermittlung von Entfernungen zwischen Punkten mittels elektronischer Distanzmessgeräte (Tachymeter).
+   - **Lotung**: Vertikale Abweichungsmessung von der Lotrichtung.
+   - **Inklinometer**: Messung von Neigungswinkeln zur Bestimmung von Verschiebungen in Strukturen.
+   - **GNSS**: Globale Positionsbestimmung mittels Satellitensignalen.
+
+2. **Datenverarbeitung**:
+   Die beobachteten Messgrössen werden mit der Methode der kleinsten Quadrate in einer geodätischen Ausgleichung verarbeitet, um präzise Koordinaten zu berechnen.
+
+   **Formel der Methode der kleinsten Quadrate**:
+   \[
+   \mathbf{X} = (\mathbf{A}^T \mathbf{P} \mathbf{A})^{-1} \mathbf{A}^T \mathbf{P} \mathbf{L}
+   \]
+   Dabei ist:
+
+   - \(\mathbf{X}\) der Vektor der Unbekannten (Koordinaten)
+   - \(\mathbf{A}\) die Designmatrix
+   - \(\mathbf{P}\) die Gewichtsmatrix
+   - \(\mathbf{L}\) der Beobachtungsvektor
+
+3. **Analyse und Interpretation**:
+   Die berechneten Koordinaten werden statistisch analysiert, um signifikante Deformationsvektoren zu bestimmen. Dies geschieht durch den Vergleich von Messungen aus verschiedenen Zeitpunkten.
+
+   **Literaturangaben**:
+
+   - Niemeier, W. (2008). Ausgleichungsrechnung: Statistische Auswertemethoden. Walter de Gruyter.
+   - Ghilani, C. D. (2017). Adjustment Computations: Spatial Data Analysis. John Wiley & Sons.
+
+### Herausforderungen bei der Interpretation und Kontrolle
+
+**Die Interpretation und Kontrolle der Deformationsvektoren ist anspruchsvoll, da:**
+
+- Gute Kenntnisse über die Orientierung des Koordinatensystems erforderlich sind.
+- Numerische Werte allein schwer zu interpretieren sind.
+
+**Die dreidimensionale Visualisierung der Deformationsvektoren auf einem Geländemodell erleichtert diese Aufgaben erheblich, indem sie:**
+
+- Eine intuitive Darstellung der Verschiebungen ermöglicht.
+- Eine schnellere Erkennung von Mustern und Anomalien erlaubt.
+- Die Kommunikation der Ergebnisse zwischen geodätischen und geologischen Fachpersonen verbessert.
+
+### Unterstützung durch DEFVIS
+
+Das Tool DEFVIS unterstützt die Nutzenden im gesamten Prozess der Deformationsmessung durch:
+
+- **Datenintegration**: Verschiedene Vermessungsmethoden können in das System integriert werden.
+- **Automatisierte Berechnungen**: Die Methode der kleinsten Quadrate wird automatisch angewendet, um genaue Koordinaten zu berechnen.
+- **3D-Visualisierung**: Die Ergebnisse werden auf einem dreidimensionalen Geländemodell dargestellt, was die Interpretation und Kontrolle der Deformationsvektoren vereinfacht.
+
+**Illustration der Prozesse**:
+
+Durch die Integration dieser Funktionen bietet DEFVIS eine benutzerfreundliche Plattform, die die Komplexität der Deformationsmessung und -interpretation reduziert und den Anwendern hilft, fundierte Entscheidungen zu treffen.
+
+### Literatur
+
+Ausgleichungsrechnung und Vermessungstechniken:
+
+Niemeier, W. (2008). Ausgleichungsrechnung: Statistische Auswertemethoden. Walter de Gruyter. ISBN: 978-3110194642.
+Ghilani, C. D. (2017). Adjustment Computations: Spatial Data Analysis. John Wiley & Sons. ISBN: 978-1119385983.
+Geodätische Messverfahren:
+
+Wolf, P. R., & Ghilani, C. D. (2014). Elementary Surveying: An Introduction to Geomatics. Pearson. ISBN: 978-0133758887.
+Torge, W., & Müller, J. (2012). Geodesy. Walter de Gruyter. ISBN: 978-3110207182.
+Deformationsmessung und -analyse:
+
+Caspary, W. F. (2000). Concepts of Network and Deformation Analysis. Taylor & Francis. ISBN: 978-0203476213.
+Kasser, M., & Egels, Y. (2002). Digital Photogrammetry. Taylor & Francis. ISBN: 978-0748409929.
+GNSS-Messmethoden:
+
+Hofmann-Wellenhof, B., Lichtenegger, H., & Wasle, E. (2008). GNSS – Global Navigation Satellite Systems: GPS, GLONASS, Galileo, and more. Springer. ISBN: 978-3211730126.
+Misra, P., & Enge, P. (2006). Global Positioning System: Signals, Measurements, and Performance. Ganga-Jamuna Press. ISBN: 978-0970954428.
+Ingenieurgeodäsie und Visualisierung:
+
+Vanicek, P., & Krakiwsky, E. J. (1986). Geodesy: The Concepts. North Holland. ISBN: 978-0444875284.
+Longley, P. A., Goodchild, M. F., Maguire, D. J., & Rhind, D. W. (2015). Geographic Information Systems and Science. John Wiley & Sons. ISBN: 978-1118676952.
 
 ---
 
