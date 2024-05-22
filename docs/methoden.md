@@ -20,6 +20,8 @@ Deformationsmessungen sind ein wesentlicher Bestandteil der Ingenieurvermessung 
 - **Inklinometer**
 - **GNSS (Global Navigation Satellite System)**
 
+---
+
 ## Prozess der Deformationsmessung {#prozess}
 
 1. **Datenerfassung**:
@@ -53,6 +55,8 @@ $$
    - Niemeier, W. (2008). Ausgleichungsrechnung: Statistische Auswertemethoden. Walter de Gruyter.
    - Ghilani, C. D. (2017). Adjustment Computations: Spatial Data Analysis. John Wiley & Sons.
 
+---
+
 ## Herausforderungen bei der Interpretation und Kontrolle {#herausforderung}
 
 **Die Interpretation und Kontrolle der Deformationsvektoren ist anspruchsvoll, da:**
@@ -66,6 +70,8 @@ $$
 - Eine schnellere Erkennung von Mustern und Anomalien erlaubt.
 - Die Kommunikation der Ergebnisse zwischen geodätischen und geologischen Fachpersonen verbessert.
 
+---
+
 ## Unterstützung durch DEFVIS {#unterstuetzung}
 
 Das Tool DEFVIS unterstützt die Nutzenden im gesamten Prozess der Deformationsmessung durch:
@@ -77,6 +83,8 @@ Das Tool DEFVIS unterstützt die Nutzenden im gesamten Prozess der Deformationsm
 **Illustration der Prozesse**:
 
 Durch die Integration dieser Funktionen bietet DEFVIS eine benutzerfreundliche Plattform, die die Komplexität der Deformationsmessung und -interpretation reduziert und den Anwendern hilft, fundierte Entscheidungen zu treffen.
+
+---
 
 ## Literatur {#literatur}
 
