@@ -50,13 +50,13 @@ Die Messdaten und Verschiebungen werden durch [OpenLayers](https://openlayers.or
 
 ### 3D-Modell
 
-Die dreidimensionale Darstellung der Punkte und Vektoren erfolgt durch [three.js](https://threejs.org/). Die Überwachungspunkte werden als Kugeln dargestellt, während die Verschiebungen in Ost, Nord und Höhe durch Röhren (TubeGeometries) visualisiert werden. Das Hintergrundmodell wird derzeit noch nicht automatisch erstellt, sondern mithilfe des QGIS-Plugins [Qgis2threejs](https://github.com/minorua/Qgis2threejs) vorprozessiert. Die Landeskarte aus der 2D-Darstellung wird auf das 3D-Modell projiziert, um die Orientierung zu erleichtern. Mehr Informationen findest Du unter dem Abschnitt<a href="https://fabianruefenacht.github.io/DEFVIS/current_project.html#dreid">3D-Ansicht</a>.
+Die dreidimensionale Darstellung der Punkte und Vektoren erfolgt durch [three.js](https://threejs.org/). Die Überwachungspunkte werden als Kugeln dargestellt, während die Verschiebungen in Ost, Nord und Höhe durch Röhren (TubeGeometries) visualisiert werden. Das Hintergrundmodell wird derzeit noch nicht automatisch erstellt, sondern mithilfe des QGIS-Plugins [Qgis2threejs](https://github.com/minorua/Qgis2threejs) vorprozessiert. Die Landeskarte aus der 2D-Darstellung wird auf das 3D-Modell projiziert, um die Orientierung zu erleichtern. Mehr Informationen findest Du unter dem Abschnitt <a href="https://fabianruefenacht.github.io/DEFVIS/current_project.html#dreid">3D-Ansicht</a>.
 
 ---
 
 ## Tabelle
 
-In einer Tabelle werden die Punktverschiebungen (in mm) zwischen den gewählten Sessions dargestellt. Die Verschiebungen werden aus der Differenz **neu - alt** berechnet. Durch Klick auf eine Punktnummer wird die 2D- oder 3D-Ansicht geladen.
+In einer Tabelle werden die Punktverschiebungen (in mm) zwischen den gewählten Sessions dargestellt. Die Verschiebungen werden aus der Differenz **neu - alt** berechnet. Durch Klick auf eine Punktnummer wird die 2D- oder 3D-Ansicht geladen. Mehr Informationen zur Berechnung findest du unter dem Abschnitt <a href="https://fabianruefenacht.github.io/DEFVIS/methoden.html#prozess">Prozess der Deformationsmessung</a>
 
 ---
 
