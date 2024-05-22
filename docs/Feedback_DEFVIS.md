@@ -21,12 +21,13 @@ Code Organisation:
 
 **GitHub Pages:**
 
-**Allgemein**: Gute Übersicht zum Projekt, es fehlt eine grafische Übersicht der implementierten und geplanten Features. Zu den drei Claims der Hauptfeatures Verwaltung, Visualisierung und Überwachung, könnte man genauer aufzeigen, wie diese momentan erfüllt werden und welche Features in Zukunft hinzukommen und den Prototypen ergänzen.
+<!-- **Allgemein**: Gute Übersicht zum Projekt, es fehlt eine grafische Übersicht der implementierten und geplanten Features. Zu den drei Claims der Hauptfeatures Verwaltung, Visualisierung und Überwachung, könnte man genauer aufzeigen, wie diese momentan erfüllt werden und welche Features in Zukunft hinzukommen und den Prototypen ergänzen. -->
 
-<!--- Auf Formulierungen wie *grossartig* und *ohne Dich zu überfordern* verzichten. Das eine erhöht die Erwartungen oder scheint ironisch und das Zweite ist für User nicht auf Augenhöhe formuliert.-->
+<!-- - Auf Formulierungen wie *grossartig* und *ohne Dich zu überfordern* verzichten. Das eine erhöht die Erwartungen oder scheint ironisch und das Zweite ist für User nicht auf Augenhöhe formuliert. -->
 
-- Reflektion einführen
-- Workflow einführen (Flussdiagramm oder eine aktualisierte Version aus dem Konzept verwenden, ev kennzeichnen was umgesetzt und was geplant ist.)
+<!-- - Reflektion einführen -->
+
+- **was ist damit gemeint? es gibt ja schritt für schritt anleitung** Workflow einführen (Flussdiagramm oder eine aktualisierte Version aus dem Konzept verwenden, ev kennzeichnen was umgesetzt und was geplant ist.)
 - Literatur Übersicht am Ende oder geeigneter Stelle einfügen
 
 Kommentare zu den einzelnen Pages/Abschnitten:
@@ -43,21 +44,24 @@ Kommentare zu den einzelnen Pages/Abschnitten:
   - Datenbank ist nur die _points_ Tabelle genauer beschriftet. Hier wäre eine Einleitung zusätzlich noch nützlich, sowie die Beschreibung aller Tabellen.
 
 - Benutzerhandbuch:
-  - Hier könnte man auf eine Seite untereinander das Registrieren und Einloggen zusammenfassen, sowie Projekt erstellen, laden und Session erfassen, so wird der Lesefluss weniger unterbrochen und User können direkt die einzelnen Schritte durchscrollen
-  - Da das Höhenmodell nicht automatisch online geladen wird, benötigt das Benutzerhandbuch noch eine Anleitung zu, wie ein Höhenmodell von einem anderen Gebiet aufbereitet und integriert wird.
+  <!-- - Hier könnte man auf eine Seite untereinander das Registrieren und Einloggen zusammenfassen, sowie Projekt erstellen, laden und Session erfassen, so wird der Lesefluss weniger unterbrochen und User können direkt die einzelnen Schritte durchscrollen -->
+
+  <!-- - Da das Höhenmodell nicht automatisch online geladen wird, benötigt das Benutzerhandbuch noch eine Anleitung zu, wie ein Höhenmodell von einem anderen Gebiet aufbereitet und integriert wird. -->
+
 - Ressourcen:
 
   - Ergänzen mit Literaturangaben, respektive Daten-, Software- und Literatur als Quellen verlinken und aufführen.
   - Die Aufführung und Ziel sowie Hierarchie der Unterabschnitte sind nicht ganz eindeutig. Sind nun die verwendeten Ressourcen aufgeführt oder wie die _verwendeten Ressourcen_ verwendet werden?
 
 - Ausblick:
-  - Einleitung/Text vor der nächsten Abschnitt mit Titel verwenden
+  <!-- - Einleitung/Text vor der nächsten Abschnitt mit Titel verwenden -->
   - Feature Übersicht als Grafik mit den erstellten und geplanten Features einfügen
   - Reflektion/Diskussion vor Ausblick oder im Ausblick einfügen
 
 **Visualisierung und weitere Kommentare**
 
-- **den Satz einfach entfernen** Die 3D-Visualisierung ermöglicht weder eine _effiziente_ noch _effektive_ visuelle Datenanalyse - solche Aussagen werden allenfalls für das Marketing gebraucht, sind aber schnell entlarvt, wenn nicht tatsächliche entweder eine Untersuchung der Effizienz und Effektivität oder das Abstützen auf Literatur vorhanden ist
+<!-- - **den Satz einfach entfernen** Die 3D-Visualisierung ermöglicht weder eine _effiziente_ noch _effektive_ visuelle Datenanalyse - solche Aussagen werden allenfalls für das Marketing gebraucht, sind aber schnell entlarvt, wenn nicht tatsächliche entweder eine Untersuchung der Effizienz und Effektivität oder das Abstützen auf Literatur vorhanden ist -->
+
 - spezifisch
   - **und was ist das Fazit?** die 3D-Elemente der Visualisierung werden je nach Perspektive unterschiedliche gelesen/interpretiert - 2D-Balken daneben zu stellen wäre nur bedingt eine Lösung
   - **und was soll das heissen???** Navigation ist immer ineffizienter als Blickvergleich

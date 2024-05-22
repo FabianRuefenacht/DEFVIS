@@ -20,11 +20,11 @@ Die Seite enthält drei Buttons:
 - **Projekt laden:** Ermöglicht es dem Benutzenden, ein bereits erfasstes Projekt zu laden, um dieses zu bearbeiten oder einzusehen.
 - **Abmelden:** Ermöglicht es dem Benutzenden, sich abzumelden.
 
----
-
-**Probleme und Verbesserungsvorschläge**
+**_Probleme und Verbesserungsvorschläge_**
 
 - _ändern der Schritt für Schritt anleitung von "Sie" zu "Du"._
 
-<div style="text-align: left; float: left;"><a href="user.html">< Anmelden</a></div>
-<div style="text-align: right; float: right;"><a href="create_project.html">Projekt erstellen ></a></div>
+---
+
+<div style="text-align: left; float: left;"><a href="user.html">< Benutzerverwaltung</a></div>
+<div style="text-align: right; float: right;"><a href="projektverwaltung.html">Projektverwaltung ></a></div>

@@ -37,9 +37,7 @@ Die Seite enthält zwei Buttons und zwei Texteingaben:
 - **Registrieren:** Ermöglicht es dem Benutzenden, sich über das Register-Menü zu registrieren, um auf die Projektverwaltung und Hauptansicht zuzugreifen.
 - **Mit Account anmelden:** Leitet den Benutzenden zur Login-Seite weiter.
 
----
-
-**Probleme und Verbesserungsvorschläge**
+**_Probleme und Verbesserungsvorschläge_**
 
 - _Es sollte überlegt werden, ob der Benutzende nach dem Registrieren direkt zur Hauptansicht weitergeleitet werden soll._
 - _Der Text "User existiert bereits" könnte verbessert werden, z.B. als "<code>infoicon</code> User existiert bereits", und die Farbe könnte auf rot geändert werden, um Warnungen hervorzuheben._
@@ -74,9 +72,7 @@ Die Seite enthält zwei Buttons und zwei Texteingaben:
 - **Anmelden:** Ermöglicht es dem Benutzenden, sich über das Anmelde-Menü anzumelden, um auf die Projektverwaltung und Hauptansicht zuzugreifen.
 - **Neu registrieren:** Leitet den Benutzenden zur Registerungs-Seite weiter.
 
----
-
-**Probleme und Verbesserungsvorschläge**
+**_Probleme und Verbesserungsvorschläge_**
 
 - _Die Warnmeldungen sollten angepasst werden:_
   - _"Dieser Benutzername wurde nicht gefunden" (für falschen Benutzernamen)_
@@ -106,6 +102,8 @@ Your browser does not support the video tag.
 
 - **Abmelden:** Ermöglicht es dem Benutzenden, sich über den Button **Abmelden** abzumelden und wieder auf die Homeseite zu gelangen, um sich unter Umständen mit einem anderen Account anzumelden
 - **Zurück zur App:** Durch Draufklicken gelangt man wieder zurück zu der letzen geöffneten Sitzung der Web-App
+
+---
 
 <div style="text-align: left; float: left;"><a href="home.html">< Home</a></div>
 <div style="text-align: right; float: right;"><a href="main_view.html">Menü ></a></div>
