@@ -105,14 +105,12 @@ Deformationsmessungen sind ein wesentlicher Bestandteil der Ingenieurvermessung 
 
    **Formel der Methode der kleinsten Quadrate**:
 
-$$
-\mathbf{X} = (\mathbf{A}^T \mathbf{P} \mathbf{A})^{-1} \mathbf{A}^T \mathbf{P} \mathbf{L}
-$$
+$$X = (A^T P A)^{-1} A^T P L$$
 
-- $$\(\mathbf{X}\)$$ der Vektor der Unbekannten (Koordinaten)
-- $$\(\mathbf{A}\)$$ die Designmatrix
-- $$\(\mathbf{P}\)$$ die Gewichtsmatrix
-- $$\(\mathbf{L}\)$$ der Beobachtungsvektor
+- $X$ der Vektor der Unbekannten (Koordinaten)
+- $A$ die Designmatrix
+- $P$ die Gewichtsmatrix
+- $L$ der Beobachtungsvektor
 
 3. **Analyse und Interpretation**:
    Die berechneten Koordinaten werden statistisch analysiert, um signifikante Deformationsvektoren zu bestimmen. Dies geschieht durch den Vergleich von Messungen aus verschiedenen Zeitpunkten.
