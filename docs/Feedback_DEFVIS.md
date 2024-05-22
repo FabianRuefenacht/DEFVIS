@@ -50,7 +50,8 @@ Kommentare zu den einzelnen Pages/Abschnitten:
 
 - Ressourcen:
 
-  - Ergänzen mit Literaturangaben, respektive Daten-, Software- und Literatur als Quellen verlinken und aufführen.
+  <!-- - Ergänzen mit Literaturangaben, respektive Daten-, Software- und Literatur als Quellen verlinken und aufführen. -->
+
   - Die Aufführung und Ziel sowie Hierarchie der Unterabschnitte sind nicht ganz eindeutig. Sind nun die verwendeten Ressourcen aufgeführt oder wie die _verwendeten Ressourcen_ verwendet werden?
 
 - Ausblick:
