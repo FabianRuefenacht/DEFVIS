@@ -24,19 +24,19 @@ Deformationsmessungen sind ein wesentlicher Bestandteil der Ingenieurvermessung 
 
 ## Prozess der Deformationsmessung {#prozess}
 
-1. **Datenerfassung**:
+(1.) **Datenerfassung**:
 
-   - **Nivellement**: Präzise Höhenmessung zur Erfassung von Höhenunterschieden.
-   - **Triangulation**: Bestimmung von Positionen durch Winkelmessungen in einem Netz von Punkten.
-   - **Distanzmessung**: Ermittlung von Entfernungen zwischen Punkten mittels elektronischer Distanzmessgeräte (Tachymeter).
-   - **Lotung**: Vertikale Abweichungsmessung von der Lotrichtung.
-   - **Inklinometer**: Messung von Neigungswinkeln zur Bestimmung von Verschiebungen in Strukturen.
-   - **GNSS**: Globale Positionsbestimmung mittels Satellitensignalen.
+- **Nivellement**: Präzise Höhenmessung zur Erfassung von Höhenunterschieden.
+- **Triangulation**: Bestimmung von Positionen durch Winkelmessungen in einem Netz von Punkten.
+- **Distanzmessung**: Ermittlung von Entfernungen zwischen Punkten mittels elektronischer Distanzmessgeräte (Tachymeter).
+- **Lotung**: Vertikale Abweichungsmessung von der Lotrichtung.
+- **Inklinometer**: Messung von Neigungswinkeln zur Bestimmung von Verschiebungen in Strukturen.
+- **GNSS**: Globale Positionsbestimmung mittels Satellitensignalen.
 
-2. **Datenverarbeitung**:
-   Die beobachteten Messgrössen werden mit der Methode der kleinsten Quadrate in einer geodätischen Ausgleichung verarbeitet, um präzise Koordinaten zu berechnen.
+(2.) **Datenverarbeitung**:
+Die beobachteten Messgrössen werden mit der Methode der kleinsten Quadrate in einer geodätischen Ausgleichung verarbeitet, um präzise Koordinaten zu berechnen.
 
-   **Formel der Methode der kleinsten Quadrate**:
+**Formel der Methode der kleinsten Quadrate**:
 
 $$
 X = (A^T P A)^{-1} A^T P L
@@ -47,13 +47,13 @@ $$
 - `P`: Gewichtsmatrix
 - `L`: Beobachtungsvektor
 
-3. **Analyse und Interpretation**:
-   Die berechneten Koordinaten werden statistisch analysiert, um signifikante Deformationsvektoren zu bestimmen. Dies geschieht durch den Vergleich von Messungen aus verschiedenen Zeitpunkten.
+(3.) **Analyse und Interpretation**:
+Die berechneten Koordinaten werden statistisch analysiert, um signifikante Deformationsvektoren zu bestimmen. Dies geschieht durch den Vergleich von Messungen aus verschiedenen Zeitpunkten.
 
-   **Literaturangaben**:
+**Literaturangaben**:
 
-   - Niemeier, W. (2008). Ausgleichungsrechnung: Statistische Auswertemethoden. Walter de Gruyter.
-   - Ghilani, C. D. (2017). Adjustment Computations: Spatial Data Analysis. John Wiley & Sons.
+- Niemeier, W. (2008). Ausgleichungsrechnung: Statistische Auswertemethoden. Walter de Gruyter.
+- Ghilani, C. D. (2017). Adjustment Computations: Spatial Data Analysis. John Wiley & Sons.
 
 ---
 
