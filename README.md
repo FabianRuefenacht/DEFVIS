@@ -1,4 +1,4 @@
-# 6230_FRNMLW
+# DEFVIS
 
 Server Client Projekt für eine Geodateninfrastruktur DEFVIS im Rahmen des Moduls 4230 und 6230
 
