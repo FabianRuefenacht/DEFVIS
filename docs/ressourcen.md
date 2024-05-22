@@ -56,7 +56,7 @@ Die dreidimensionale Darstellung der Punkte und Vektoren erfolgt durch [three.js
 
 ## Tabelle
 
-In einer Tabelle werden die Punktverschiebungen (in mm) zwischen den gewählten Sessions dargestellt. Die Verschiebungen werden aus der Differenz **neu - alt** berechnet. Durch Klick auf eine Punktnummer wird die 2D- oder 3D-Ansicht geladen. Mehr Informationen zur Berechnung findest du unter dem Abschnitt <a href="https://fabianruefenacht.github.io/DEFVIS/methoden.html#prozess">Prozess der Deformationsmessung</a>
+In einer Tabelle werden die Punktverschiebungen (in mm) zwischen den gewählten Sessions dargestellt. Die Verschiebungen werden aus der Differenz **neu - alt** berechnet. Durch Klick auf eine Punktnummer wird die 2D- oder 3D-Ansicht geladen. Mehr Informationen zur Berechnung findest du unter dem Abschnitt <a href="https://fabianruefenacht.github.io/DEFVIS/methoden.html#prozess">Prozess der Deformationsmessung</a>.
 
 ---
 
