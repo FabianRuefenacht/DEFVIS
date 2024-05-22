@@ -1,4 +1,4 @@
-# DEFVIS, die WebApp für Ingenieure
+# DEFVIS Wiki
 
 <video controls autoplay loop style="max-width: 100%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);">
 <source src="./videos/teaser.mp4" type="video/mp4">
@@ -109,10 +109,10 @@ $$
 X = (A^T P A)^{-1} A^T P L
 $$
 
-- $X$: Vektor der Unbekannten (Koordinaten)
-- $A$: Designmatrix
-- $P$: Gewichtsmatrix
-- $L$: Beobachtungsvektor
+- `X`: Vektor der Unbekannten (Koordinaten)
+- `A`: Designmatrix
+- `P`: Gewichtsmatrix
+- `L`: Beobachtungsvektor
 
 3. **Analyse und Interpretation**:
    Die berechneten Koordinaten werden statistisch analysiert, um signifikante Deformationsvektoren zu bestimmen. Dies geschieht durch den Vergleich von Messungen aus verschiedenen Zeitpunkten.
