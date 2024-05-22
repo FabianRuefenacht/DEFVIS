@@ -82,6 +82,10 @@ Das Tool DEFVIS unterstützt die Nutzenden im gesamten Prozess der Deformationsm
 
 **Illustration der Prozesse**:
 
+<img src="screenshots/illustration.png" alt="Illustration" style="max-width: 100%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);">
+
+<sub>https://tu-dresden.de/bu/umwelt/geo/gi/ig/ressourcen/dateien/lehrveranstaltungen/geodaesie/master_ig/BauWerkUeberw.pdf?lang=de [22. Mai 2024]</sub>
+
 Durch die Integration dieser Funktionen bietet DEFVIS eine benutzerfreundliche Plattform, die die Komplexität der Deformationsmessung und -interpretation reduziert und den Anwendern hilft, fundierte Entscheidungen zu treffen.
 
 ---
