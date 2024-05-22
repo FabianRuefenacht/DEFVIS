@@ -109,10 +109,10 @@ $$
 X = (A^T P A)^{-1} A^T P L
 $$
 
-- \(X\): Vektor der Unbekannten (Koordinaten)
-- \(A\): Designmatrix
-- \(P\): Gewichtsmatrix
-- \(L\): Beobachtungsvektor
+- $X$: Vektor der Unbekannten (Koordinaten)
+- $A$: Designmatrix
+- $P$: Gewichtsmatrix
+- $L$: Beobachtungsvektor
 
 3. **Analyse und Interpretation**:
    Die berechneten Koordinaten werden statistisch analysiert, um signifikante Deformationsvektoren zu bestimmen. Dies geschieht durch den Vergleich von Messungen aus verschiedenen Zeitpunkten.
