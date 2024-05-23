@@ -1,4 +1,4 @@
-[Gehe zurück zur Hauptseite](index.html)
+[Gehe zurück zur Hauptseite.](index.html)
 
 # Verwendete Ressourcen
 
@@ -25,15 +25,15 @@ Die Messdaten werden von den Nutzern in Sessions bereitgestellt und in einer zen
 
 Die Hintergrundkarte, **Landeskarte farbig 1:10'000**, wird von ©swisstopo bezogen und als Web-Map-Service (WMS) eingebunden. Weitere Details zur Karte findest Du auf [swisstopo](https://www.swisstopo.admin.ch/de/landeskarte-swiss-map-raster-10).
 
-| Attribut             | Wert                                                                    |
+| Attribut             | Wert                                                                    |
 | -------------------- | ----------------------------------------------------------------------- |
-| source.url           | https://wms.geo.admin.ch/                                               |
-| source.crossOrigin   | "anonymous"                                                             |
-| source.attributions  | [geo.admin.ch](http://www.geo.admin.ch/internet/geoportal/en/home.html) |
-| source.projection    | "EPSG:2056"                                                             |
-| source.params.LAYERS | "ch.swisstopo.landeskarte-farbe-10"                                     |
-| source.params.FORMAT | "image/jpeg"                                                            |
-| source.serverType    | "mapserver"                                                             |
+| source.url           | https://wms.geo.admin.ch/                                               |
+| source.crossOrigin   | "anonymous"                                                             |
+| source.attributions  | [geo.admin.ch](http://www.geo.admin.ch/internet/geoportal/en/home.html) |
+| source.projection    | "EPSG:2056"                                                             |
+| source.params.LAYERS | "ch.swisstopo.landeskarte-farbe-10"                                     |
+| source.params.FORMAT | "image/jpeg"                                                            |
+| source.serverType    | "mapserver"                                                             |
 
 ### Software und Bibliotheken
 
@@ -50,13 +50,13 @@ Die Messdaten und Verschiebungen werden durch [OpenLayers](https://openlayers.or
 
 ### 3D-Modell
 
-Die dreidimensionale Darstellung der Punkte und Vektoren erfolgt durch [three.js](https://threejs.org/). Die Überwachungspunkte werden als Kugeln dargestellt, während die Verschiebungen in Ost, Nord und Höhe durch Röhren (TubeGeometries) visualisiert werden. Das Hintergrundmodell wird derzeit noch nicht automatisch erstellt, sondern mithilfe des QGIS-Plugins [Qgis2threejs](https://github.com/minorua/Qgis2threejs) vorprozessiert. Die Landeskarte aus der 2D-Darstellung wird auf das 3D-Modell projiziert, um die Orientierung zu erleichtern. Mehr Informationen findest Du unter dem Abschnitt <a href="https://fabianruefenacht.github.io/DEFVIS/current_project.html#dreid">3D-Ansicht</a>.
+Die dreidimensionale Darstellung der Punkte und Vektoren erfolgt durch [three.js](https://threejs.org/). Die Überwachungspunkte werden als Kugeln dargestellt, während die Verschiebungen in Ost, Nord und Höhe durch Röhren (TubeGeometries) visualisiert werden. Das Hintergrundmodell wird derzeit bisher nicht automatisch erstellt, sondern mithilfe des QGIS-Plug-ins [Qgis2threejs](https://github.com/minorua/Qgis2threejs) vorprozessiert. Die Landeskarte aus der 2D-Darstellung wird auf das 3D-Modell projiziert, um die Orientierung zu erleichtern. Mehr Informationen findest Du unter dem Abschnitt <a href="https://fabianruefenacht.github.io/DEFVIS/current_project.html#dreid">3D-Ansicht</a>.
 
 ---
 
 ## Tabelle
 
-In einer Tabelle werden die Punktverschiebungen (in mm) zwischen den gewählten Sessions dargestellt. Die Verschiebungen werden aus der Differenz **neu - alt** berechnet. Durch Klick auf eine Punktnummer wird die 2D- oder 3D-Ansicht geladen. Mehr Informationen zur Berechnung findest du unter dem Abschnitt <a href="https://fabianruefenacht.github.io/DEFVIS/methoden.html#prozess">Prozess der Deformationsmessung</a>.
+In einer Tabelle werden die Punktverschiebungen (in mm) zwischen den gewählten Sessions dargestellt. Die Verschiebungen werden aus der Differenz **neu – alt** berechnet. Durch Klick auf eine Punktnummer wird die 2D- oder 3D-Ansicht geladen. Mehr Informationen zur Berechnung findest Du unter dem Abschnitt <a href="https://fabianruefenacht.github.io/DEFVIS/methoden.html#prozess">Prozess der Deformationsmessung</a>.
 
 ---
 
@@ -70,4 +70,4 @@ In einer Tabelle werden die Punktverschiebungen (in mm) zwischen den gewählten 
 
 ---
 
-[zurück nach ganz oben](ressourcen.html)
+[Zurück nach ganz oben.](ressourcen.html)
