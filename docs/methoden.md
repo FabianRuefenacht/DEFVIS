@@ -1,4 +1,4 @@
-[Gehe zurück zur Hauptseite](index.html)
+[Gehe zurück zur Hauptseite.](index.html)
 
 # Angewandte Methoden
 
@@ -59,7 +59,7 @@ Die berechneten Koordinaten werden statistisch analysiert, um signifikante Defor
 
 ## Herausforderungen bei der Interpretation und Kontrolle {#herausforderung}
 
-**Die Interpretation und Kontrolle der Deformationsvektoren ist anspruchsvoll, da:**
+**Die Interpretation und Kontrolle der Deformationsvektoren sind anspruchsvoll, da:**
 
 - Gute Kenntnisse über die Orientierung des Koordinatensystems erforderlich sind.
 - Numerische Werte allein schwer zu interpretieren sind.
@@ -74,7 +74,7 @@ Die berechneten Koordinaten werden statistisch analysiert, um signifikante Defor
 
 ## Unterstützung durch DEFVIS {#unterstuetzung}
 
-Das Tool DEFVIS unterstützt die Nutzenden im gesamten Prozess der Deformationsmessung durch:
+Das Tool DEFVIS unterstützt die Nutzenden im gesamten Prozess der Deformationsmessung:
 
 - **Datenintegration**: Verschiedene Vermessungsmethoden können in das System integriert werden.
 - **Automatisierte Berechnungen**: Die Methode der kleinsten Quadrate wird automatisch angewendet, um genaue Koordinaten zu berechnen.
@@ -86,7 +86,7 @@ Das Tool DEFVIS unterstützt die Nutzenden im gesamten Prozess der Deformationsm
 
 <sub>https://tu-dresden.de/bu/umwelt/geo/gi/ig/ressourcen/dateien/lehrveranstaltungen/geodaesie/master_ig/BauWerkUeberw.pdf?lang=de [22. Mai 2024]</sub>
 
-Die Illustration veranschaulicht den Prozess der messtechnischen Überwachung. Durch die Integration verschiedener Ansichten, insbesondere der 3D-Ansicht, bietet DEFVIS eine benutzerfreundliche Plattform, die die Komplexität der Deformationsmessung und -interpretation reduziert. Diese Integration ermöglicht es den Anwendern, bereits nach wenigen Messungen zu beurteilen, ob Konstruktive Massnahmen erforderlich sind oder Massnahmen- und Notfallkonzept. Somit wird auch der wirtschaftliche Aspekt dabei berücksichtigt. Im Vergleich zu einer Beurteilung in einer 2D-Ansicht kann mit der 3D-Ansicht von DEFVIS ein Bezug zum Höhenmodell erstellt werden. So ist beispielsweise gut sichtbar, ob sich ein Punkt durch natürliche Einflüsse oder durch sonstige Einflüsse bewegt.
+Die Illustration veranschaulicht den Prozess der messtechnischen Überwachung. Durch die Integration verschiedener Ansichten, insbesondere der 3D-Ansicht, bietet DEFVIS eine benutzerfreundliche Plattform, die die Komplexität der Deformationsmessung und -interpretation reduziert. Diese Integration ermöglicht es den Anwendern, bereits nach wenigen Messungen zu beurteilen, ob konstruktive Massnahmen erforderlich sind oder Massnahmen- und Notfallkonzepte. Somit wird auch der wirtschaftliche Aspekt dabei berücksichtigt. Im Vergleich zu einer Beurteilung in einer 2D-Ansicht kann mit der 3D-Ansicht von DEFVIS ein Bezug zum Höhenmodell erstellt werden. So ist etwa gut sichtbar, ob sich ein Punkt durch natürliche Einflüsse oder durch sonstige Einflüsse bewegt.
 
 ---
 
@@ -115,4 +115,4 @@ Longley, P. A., Goodchild, M. F., Maguire, D. J., & Rhind, D. W. (2015). Geograp
 
 ---
 
-[zurück nach ganz oben](methoden.html)
+[Zurück nach ganz oben.](methoden.html)
