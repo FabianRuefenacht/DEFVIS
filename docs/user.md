@@ -29,18 +29,18 @@ Die Seite enthält zwei Buttons und zwei Texteingaben:
 
 **Texteingaben**
 
-- **E-Mail:** Hier wird die E-Mail-Adresse, welche für die Registrierung verwendet wird erfasst.
-- **Passwort:** Um die Benutzenden zu schützen muss man ein Passwort erstellen.
+- **E-Mail:** Hier wird die E-Mail-Adresse, welche für die Registrierung verwendet wird, erfasst.
+- **Passwort:** Um die Benutzenden zu schützen, muss man ein Passwort erstellen.
 
 **Buttons**
 
 - **Registrieren:** Ermöglicht es dem Benutzenden, sich über das Register-Menü zu registrieren, um auf die Projektverwaltung und Hauptansicht zuzugreifen.
-- **Mit Account anmelden:** Leitet den Benutzenden zur Login-Seite weiter.
+- **Mit Account anmelden:** Leitet den Benutzenden zur Log-in-Seite weiter.
 
 **_Probleme und Verbesserungsvorschläge_**
 
 - _Es sollte überlegt werden, ob der Benutzende nach dem Registrieren direkt zur Hauptansicht weitergeleitet werden soll._
-- _Der Text "User existiert bereits" könnte verbessert werden, z.B. als "<code>infoicon</code> User existiert bereits", und die Farbe könnte auf rot geändert werden, um Warnungen hervorzuheben._
+- _Der Text «User existiert bereits» könnte verbessert werden, z. B. als «<code>infoicon</code> User existiert bereits», und die Farbe könnte auf Rot geändert werden, um Warnungen hervorzuheben._
 - _Möglicherweise könnte das Register-Fenster zentriert werden, um die Ästhetik zu verbessern._
 
 ---
@@ -75,11 +75,11 @@ Die Seite enthält zwei Buttons und zwei Texteingaben:
 **_Probleme und Verbesserungsvorschläge_**
 
 - _Die Warnmeldungen sollten angepasst werden:_
-  - _"Dieser Benutzername wurde nicht gefunden" (für falschen Benutzernamen)_
-  - _"Falsches Passwort. Bitte versuchen Sie es erneut oder klicken Sie auf 'Passwort vergessen', um das Passwort zurückzusetzen."_
-    _Die Schrift und die Umrandung der Textfelder (für Benutzername und Passwort) könnten rot gemacht werden, um Warnungen zu kennzeichnen._
+  - _«Dieser Benutzername wurde nicht gefunden» (für falschen Benutzernamen)_
+  - _«Falsches Passwort. Bitte versuchen Sie es erneut oder klicken Sie auf 'Passwort vergessen', um das Passwort zurückzusetzen.»_
+    _Die Schrift und die Umrandung der Textfelder (für Benutzername und Passwort) könnten rot gemacht werden, um Warnungen zu kennzeichnen._
 - _Möglicherweise könnte ein Home-Button hinzugefügt werden, um zurück zur Home-Ansicht zu gelangen._
-- _Das Login-Feld könnte zentriert werden, um die Benutzerfreundlichkeit zu verbessern._
+- _Das Log-in-Feld könnte zentriert werden, um die Benutzerfreundlichkeit zu verbessern._
 
 ---
 
@@ -94,14 +94,14 @@ Your browser does not support the video tag.
 
 ### Beschreibung
 
-Über den Button **Abmelden** kannst Du Dich abmelden. Wenn Du Dir nicht sicher bist kannst du wieder zurück zur Web-App gelangen, indem Du auf **zurück zur App** klickst.
+Über den Button **Abmelden** kannst Du Dich abmelden. Wenn Du Dir nicht sicher bist, kannst Du wieder zurück zur Web-App gelangen, indem Du auf **zurück zur App** klickst.
 
 ### Funktionen
 
 **Buttons**
 
 - **Abmelden:** Ermöglicht es dem Benutzenden, sich über den Button **Abmelden** abzumelden und wieder auf die Homeseite zu gelangen, um sich unter Umständen mit einem anderen Account anzumelden
-- **Zurück zur App:** Durch Draufklicken gelangt man wieder zurück zu der letzen geöffneten Sitzung der Web-App
+- **Zurück zur App:** Durch Draufklicken gelangt man wieder zurück zu der letzten geöffneten Sitzung der Web-App.
 
 ---
 
