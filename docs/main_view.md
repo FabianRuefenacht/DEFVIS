@@ -1,4 +1,4 @@
-[Gehe zurück zur Hauptseite](index.html)
+[Gehe zurück zur Hauptseite.](index.html)
 
 # Menü
 
@@ -6,11 +6,11 @@
 
 ## Beschreibung
 
-Als registrierte\*r Benutzer\*in wirst Du beim Anmelden direkt auf die Hauptseite der App weitergeleitet. Dort findest Du das Menü auf der linken Seite. Um Deine Projekte zu verwalten und sie auf einer Karte anzuzeigen, folge diesen nächsten Schritten.
+Als registrierter Benutzer oder als registrierte Benutzerin wirst Du beim Anmelden direkt auf die Hauptseite der App weitergeleitet. Dort findest Du das Menü auf der linken Seite. Um Deine Projekte zu verwalten und sie auf einer Karte anzuzeigen, folge diesen nächsten Schritten.
 
-1. Wähle oder erstelle ein Projekt
-2. Wähle die Nullmessung aus
-3. Wähle die Folgemessung aus
+1. Wähle oder erstelle ein Projekt.
+2. Wähle die Nullmessung aus.
+3. Wähle die Folgemessung aus.
 
 ## Funktionen
 
@@ -22,7 +22,7 @@ Die Seite enthält drei Buttons:
 
 **_Probleme und Verbesserungsvorschläge_**
 
-- _ändern der Schritt für Schritt anleitung von "Sie" zu "Du"._
+- _ändern der Schritt-für-Schritt-Anleitung von «Sie» zu «Du»._
 
 ---
 
