@@ -129,13 +129,31 @@ Die Einbindung einer Zeitreihenanalyse würde den Benutzenden ermöglichen, Posi
 
 Eine weitere geplante Erweiterung ist, dass Nutzende einen oder mehrere Schwellwerte eingeben können. Die Punkte und Verschiebungen könnten dann farblich codiert werden.
 
-### 2D-Balken neben 3D-Vektoren (Billboards)
+### 2D-Balkendiagramme neben 3D-Vektoren (Billboards)
 
-Die Grösse eines Vektors im dreidimensionalen Raum ist schwierig zu vergleichen, insbesondere aufgrund von Perspektive und Entfernung. Um dieses Problem anzugehen, könnte ein 2D-Balkendiagramm neben den Vektoren platziert werden. Dadurch erhalten Benutzer ein Verhältnis zu weiter entfernten oder näheren Punkten und können die Grössenverhältnisse besser einschätzen.
+Die Grössen von Vektoren im dreidimensionalen Raum sind aufgrund von Perspektive und Entfernung schwer vergleichbar. Um dieses Problem zu mildern, könnte ein 2D-Balkendiagramm neben den Vektoren angezeigt werden. Dies könnte den Benutzern helfen, die Grössenverhältnisse besser einzuschätzen, da die 2D-Darstellung unabhängig von der Perspektive ist.
 
-### vollständige 3D-Karte
+Allerdings hat die Verwendung von 2D-Balkendiagrammen auch ihre Einschränkungen. Die dreidimensionalen Elemente der Visualisierung werden je nach Perspektive unterschiedlich wahrgenommen und interpretiert. Ein Ansatz, der sich bewährt hat, basiert auf dem Paper "3D Geovisualization – Definition and Structures for the Assessment of Usefulness" von S. Bleisch. Laut Bleisch ist es wichtig, sowohl die dreidimensionale Darstellung als auch zusätzliche 2D-Informationen zu nutzen, um die Nützlichkeit und Verständlichkeit zu erhöhen.
 
-Die Erstellung einer vollständigen 3D-Karte der Schweiz stellt uns vor Herausforderungen. Es wäre sinnvoll, die Karte zukünftig durch einen FME-Prozess vorzubereiten und anschliessend zu komprimieren, um sowohl die Auflösung der Karte als auch die Kompression der Kartendaten zu optimieren. Sobald ein geeigneter Prozessablauf für diesen Schritt gefunden ist, kann die Karte schweizweit erweitert werden.
+In diesem Kontext könnte eine kombinierte Visualisierungsstrategie verfolgt werden, bei der:
+
+**2D-Balkendiagramme** als Ergänzung zu den 3D-Vektoren dienen, um die relative Grösse der Vektoren auf eine für den Benutzenden leicht verständliche Weise darzustellen.
+**Interaktive Elemente** implementiert werden, die es ermöglichen, zwischen verschiedenen Perspektiven zu wechseln oder die Vektoren dynamisch zu untersuchen.
+**Zusätzliche Beschriftungen und Hilfsmittel** wie Massstabsleisten oder Kontextinformationen eingeblendet werden, um die Wahrnehmung und Interpretation der 3D-Elemente zu verbessern.
+
+Durch diese Kombination aus 3D-Darstellung und unterstützenden 2D-Visualisierungen wird die Benutzerfreundlichkeit und Genauigkeit der Grösseninterpretation erhöht. Diese Vorgehensweise orientiert sich an den Empfehlungen aus der wissenschaftlichen Literatur und verbessert die Gesamtqualität der geovisualisierten Daten.
+
+### Vollständige 3D-Karte der Schweiz
+
+Die Erstellung einer vollständigen 3D-Karte der Schweiz stellt uns vor einige Herausforderungen. Derzeit verwenden wir [qgis2threejs](https://plugins.qgis.org/plugins/Qgis2threejs/), das jedoch nur kleine Ausschnitte in hoher Qualität unterstützt. Um die gesamte Karte in hoher Auflösung und guter Qualität darstellen zu können, ist ein effizienterer Ansatz erforderlich.
+
+Ein möglicher Ansatz wäre, die 3D-Karte zukünftig durch einen FME-Prozess (Feature Manipulation Engine) vorzubereiten und anschliessend zu komprimieren. Der FME-Prozess bietet leistungsstarke Werkzeuge zur Verarbeitung und Transformation von Geodaten, die es ermöglichen, die Auflösung der Karte zu optimieren und die Kartendaten effizient zu komprimieren.
+
+Sobald ein geeigneter Workflow für diesen Prozess entwickelt ist, könnte die 3D-Karte schrittweise auf die gesamte Schweiz ausgeweitet werden. Dabei ist es wichtig, sowohl die Datenqualität als auch die Performance zu berücksichtigen, um eine flüssige und präzise Visualisierung zu gewährleisten.
+
+Durch die Implementierung dieses optimierten Prozesses wird es möglich sein, umfassende und detaillierte 3D-Karten der Schweiz bereitzustellen, die für verschiedenste Anwendungen und Analysen genutzt werden können.
+
+Ich hoffe, dieser überarbeitete Abschnitt hilft Ihnen, Ihre App weiter zu verbessern und die Herausforderungen bei der Erstellung einer vollständigen 3D-Karte der Schweiz zu meistern.
 
 ### Erweiterung des Sprachpakets
 
