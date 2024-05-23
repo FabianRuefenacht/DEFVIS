@@ -5,6 +5,7 @@
 Die Web-App DEFVIS basiert auf einer Server-Client-Architektur. Die Schnittstelle zwischen dem Client (Frontend) und dem Server (backend) basiert auf FastAPI (<a href="https://fastapi.tiangolo.com/" target="_blank">fastapi.com</a>). Als Speichermedium für die Daten dient eine SQLite-Datenbank (<a href="https://www.sqlite.org/" target="_blank">www.sqlite.org</a>).
 
 ## Beschreibung der Architektur
+
 ### Daten-Upload
 Nutzer und Nutzerinnen (User) unserer Web-App können eigene Punktdaten in Sessionen als _.csv-Datei_ gebündelt in die Web-App einspeisen (im Bereich [_Session erfassen_](https://fabianruefenacht.github.io/DEFVIZ/capture_session.html)). Die Datei wird anschliessend mit _Axios_ an die _FastAPI_-Schnittstelle im Backend gesendet. Das Backend erstellt in der Tabelle _Sessions_ in der Datenbank einen neuen Eintrag. Anschliessend werden die Punkte in die Tabelle _Points_ geschrieben und mit der eben erstellten Session verknüpft.
 

@@ -32,10 +32,10 @@ Code Organisation:
 
 Kommentare zu den einzelnen Pages/Abschnitten:
 
-- Angewandte Methoden: sehr knapp.
+<!-- - Angewandte Methoden: sehr knapp.
 
   - mit einer Illustration ergänzen, wo sinnvoll mit einer Formel und zusätzlich mit Literaturangaben für die interessierten User. Sowie aufzeigen, wo im Prozess der Deformationsmessung Euer Tool die User unterstützt.
-  - Was ist genau anspruchsvoll bei der Interpretation und Kontrolle der Deformationsvektoren? Und inwiefern vereinfacht die 3D Visualisierung die Interpretation? Dies sollte erweitert werden, damit verständlicher wird, wie Euer Projekt dies unterstützt.
+  - Was ist genau anspruchsvoll bei der Interpretation und Kontrolle der Deformationsvektoren? Und inwiefern vereinfacht die 3D Visualisierung die Interpretation? Dies sollte erweitert werden, damit verständlicher wird, wie Euer Projekt dies unterstützt. -->
 
 - Architektur:
 
@@ -50,7 +50,8 @@ Kommentare zu den einzelnen Pages/Abschnitten:
 
 - Ressourcen:
 
-  - Ergänzen mit Literaturangaben, respektive Daten-, Software- und Literatur als Quellen verlinken und aufführen.
+  <!-- - Ergänzen mit Literaturangaben, respektive Daten-, Software- und Literatur als Quellen verlinken und aufführen. -->
+
   - Die Aufführung und Ziel sowie Hierarchie der Unterabschnitte sind nicht ganz eindeutig. Sind nun die verwendeten Ressourcen aufgeführt oder wie die _verwendeten Ressourcen_ verwendet werden?
 
 - Ausblick:

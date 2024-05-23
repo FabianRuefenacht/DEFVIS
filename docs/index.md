@@ -91,42 +91,6 @@ Entdecke die vielfältigen Tools und Funktionen, die DEFVIS bietet. Klicke auf d
 
 ---
 
-## Verwendete Ressourcen {#section5}
-
-Unsere App-Datenbank wird mit Benutzerdaten gefüllt und zur korrekten Darstellung verwenden wir <a href="https://threejs.org/" target="_blank">three.js</a>. Die Hintergrundkarte beziehen wir von swisstopo.ch (Situationsplan farbig).
-
-### Messdaten
-
-Die Messdaten werden von den Nutzern in Sessionen zur Verfügung gestellt und in einer zentralen SQLite-Datenbank verwaltet (siehe [www.sqlite.org](https://www.sqlite.org/)).
-
-### Tabelle
-
-In einer Tabelle werden die Punktverschiebungen (in mm) zwischen den gewählten Sessionen dargestellt. Die Verschiebungen werden aus der Differenz **neu - alt** berechnet. Durch Klick auf eine Punktnummer wird die 2D oder 3D Ansicht geladen.
-
-### 2D-Karte
-
-Die Messdaten und Verschiebungen\* werden durch _openlayers_ (siehe <a href="https://openlayers.org/" target="_blank">openlayers.org</a>) dargestellt. Um die Verschiebungen auf der Karte besser sichtbar zu machen, werden sie mit dem Faktor **1000** multipliziert.
-
-Als Hintergrundkarte wird die **Landeskarte farbe 1:10'000** von ©swisstopo verwendet (siehe <a href="https://www.swisstopo.admin.ch/de/landeskarte-swiss-map-raster-10" target="_blank">www.swisstopo.admin.ch/de/landeskarte-swiss-map-raster-10</a>). Die Einbindung der Karte erfolgt als Web-Map-Service mit folgenden Parametern.
-
-| Attribut             | Wert                                                                                               |
-| -------------------- | -------------------------------------------------------------------------------------------------- |
-| source.url           | https://wms.geo.admin.ch/                                                                          |
-| source.crossOrigin   | "anonymous"                                                                                        |
-| source.attributions  | <a href="http://www.geo.admin.ch/internet/geoportal/en/home.html" target="_blank">geo.admin.ch</a> |
-| source.projection    | "EPSG:2056"                                                                                        |
-| source.params.LAYERS | "ch.swisstopo.landeskarte-farbe-10"                                                                |
-| source.params.FORMAT | "image/jpeg"                                                                                       |
-| source.serverType    | "mapserver"                                                                                        |
-
-## 3D-Modell
-
-Die dreidimensionale Darstellung der Punkte und der Vektoren erfolgt durch _three.js_ (siehe <a href="https://threejs.org/docs/index.html#manual/en/introduction/Creating-a-scene" target="_blank">threejs.org/docs</a>). Die Überwachungspunkte werden als Sphere (Kugel) dargestellt. Die Verschiebungen in Ost, Nord und Höhe werden durch TubeGeometries (Röhren) dargestellt.
-
-Das Hintergrundmodell wird derzeit noch nicht automatisch erstellt. Das Modell, welches in der Web-App verwendet wird, wurde durch das QGIS-Plugin _Qgis2threejs_ <a href="https://github.com/minorua/Qgis2threejs" target="_blank">github.com/minorua</a> vorprozessiert. Um die Orientierung auf dem Geländemodell zu ermöglichen, wurde die Landeskarte aus der 2D-Darstellung auf das Modell projiziert.
-
----
-
 ## Projektanalyse {#reflektion}
 
 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
