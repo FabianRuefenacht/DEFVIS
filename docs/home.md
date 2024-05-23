@@ -1,4 +1,4 @@
-[Gehe zurück zur Hauptseite](index.html)
+[Gehe zurück zur Hauptseite.](index.html)
 
 # Home
 
