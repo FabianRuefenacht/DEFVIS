@@ -1,4 +1,4 @@
-[Gehe zurück zur Hauptseite](index.html)
+[Gehe zurück zur Hauptseite.](index.html)
 
 # Projektverwaltung
 
@@ -21,20 +21,20 @@ Your browser does not support the video tag.
 
 ### Beschreibung
 
-Als registrierte\*r Benutzer\*in kannst Du neue Projekte erstellen und sie einem Kunden/Auftraggeber zuweisen. Der Kunde/Auftraggeber hat dann die Möglichkeit, die ihm zugeordneten Projekte ebenfalls einzusehen, was bei der Analyse und Besprechung des Projekts hilfreich sein kann.
+Als registrierter Benutzer oder als registrierte Benutzerin kannst Du neue Projekte erstellen und sie einem Kunden/Auftraggeber zuweisen. Der Kunde/Auftraggeber hat dann die Möglichkeit, die ihm zugeordneten Projekte ebenfalls einzusehen, was bei der Analyse und Besprechung des Projekts hilfreich sein kann.
 
 ### Funktionen
 
-Um ein neues Projekt zu erstellen kann man auf den Button **Neues Projekt** klicken.
+Um ein neues Projekt zu erstellen, kann man auf den Button **Neues Projekt** klicken.
 
 **Texteingaben**
 
-- **Projektname:** Projektname definieren (z.B. 20240404_Musterbruecke)
+- **Projektname:** Projektname definieren (z. B. 20240404_Musterbruecke)
 - **Kunde:** Kundennamen eingeben
 
 **Buttons**
 
-- **Projekt erstellen:** Durch das Klicken auf diesen Button wird das Projekt erstellt
+- **Projekt erstellen:** Durch das Klicken auf diesen Button wird das Projekt erstellt.
 
 ---
 
@@ -49,16 +49,16 @@ Your browser does not support the video tag.
 
 ### Beschreibung
 
-Als registrierte\*r Benutzer\*in hast Du die Möglichkeit, bereits erstellte Projekte zu laden. Dies ermöglicht es Dir zum Beispiel, weitere Sessionen der Deformationsmessung hinzuzufügen oder mit der Analyse und Bewertung zu beginnen.
+Als registrierter Benutzer oder als registrierte Benutzerin hast Du die Möglichkeit, bereits erstellte Projekte zu laden. Dies ermöglicht es Dir zum Beispiel, weitere Sessionen der Deformationsmessung hinzuzufügen oder mit der Analyse und Bewertung zu beginnen.
 
 ### Funktionen
 
-Um ein Projekt zu laden kann man auf den Button **Projekt laden** klicken.
+Um ein Projekt zu laden, kann man auf den Button **Projekt laden** klicken.
 
 **Auswahlmöglichkeit**
 
-- **Eigene Projekte:** Hier werden alle Projekte aufgelistet, welche vom Benutzenden erstellt wurden
-- **Fremde Projekte:** Hier werden alle Projekte aufgelistet, welche dem Benutzenden zugewiesen wurden, um diese einzusehen
+- **Eigene Projekte:** Hier werden alle Projekte aufgelistet, welche vom Benutzenden erstellt wurden.
+- **Fremde Projekte:** Hier werden alle Projekte aufgelistet, welche dem Benutzenden zugewiesen wurden, um diese einzusehen.
 
 ---
 
@@ -77,19 +77,19 @@ Wenn ein neues Projekt erstellt oder ein bestehendes Projekt geladen wurde, best
 
 ### Funktionen
 
-Um Sessionen zu erfassen kann man auf den Button **Session erfassen** klicken (erst sichtbar, wenn ein Projekt ausgewählt wurde).
+Um Sessionen zu erfassen, kann man auf den Button **Session erfassen** klicken (erst sichtbar, wenn ein Projekt ausgewählt wurde).
 
 **Datei hochladen**
 
-- **dragNdrop:** Über dragNdrop kann eine kommagetrennte CSV-Datei (Punkt-Nr., E-Koordinate, N-Koordinate, Höhe) vom lokalen Pfad in DEFVIS hochgeladen werden
+- **Drag-and-drop:** Über Drag-and-drop kann eine kommagetrennte CSV-Datei (Punkt-Nummer, E-Koordinate, N-Koordinate, Höhe) vom lokalen Pfad in DEFVIS hochgeladen werden.
 
 **Zeiterfassung**
 
-- **Datum und Zeit:** Um Sessionen in einem späteren Zeitpunkt über die Zeitreihenanalyse zu beurteilen, wird eine Zeitinformation gemacht
+- **Datum und Zeit:** Um Sessionen in einem späteren Zeitpunkt über die Zeitreihenanalyse zu beurteilen, wird eine Zeitinformation gemacht.
 
 **Buttons**
 
-- **Session hochladen:** Durch das Klicken auf diesen Button wird die hinzugefügte Session in das ausgewählte Projekt importiert
+- **Session hochladen:** Durch das Klicken auf diesen Button wird die hinzugefügte Session in das ausgewählte Projekt importiert.
 
 ---
 
