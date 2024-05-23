@@ -56,7 +56,7 @@ Kommentare zu den einzelnen Pages/Abschnitten:
 
 - Ausblick:
   <!-- - Einleitung/Text vor der nächsten Abschnitt mit Titel verwenden -->
-  - Feature Übersicht als Grafik mit den erstellten und geplanten Features einfügen
+  - **ist ja bereits vorhanden, wo nötig..** Feature Übersicht als Grafik mit den erstellten und geplanten Features einfügen
   - Reflektion/Diskussion vor Ausblick oder im Ausblick einfügen
 
 **Visualisierung und weitere Kommentare**
