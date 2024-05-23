@@ -19,7 +19,7 @@ Die Web-App **DEFVIS** bietet Dir folgende Tools:
 
 | Feature                      | Status        | Beschreibung                                                                                                                                            |
 | ---------------------------- | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Deformationsmessungen        | Implementiert | Verwalten von Messdaten, Hinzufügen neuer Sessions und Organisieren von Projekten.                                                                     |
+| Deformationsmessungen        | Implementiert | Verwalten von Messdaten, Hinzufügen neuer Sessions und Organisieren von Projekten.                                                                      |
 | 3D-Visualisierung            | Implementiert | Darstellung von Verschiebungen in einer dreidimensionalen Ansicht, inklusive Fehlervektoren und detaillierten Punktinformationen.                       |
 | Zeitreihenanalyse            | Geplant       | Zukünftige Erweiterung zur Verfolgung von Positionsänderungen über die Zeit, inklusive Berücksichtigung von Temperatur- und Wetterdaten.                |
 | Farbcodierte Punkte          | Geplant       | Möglichkeit, Schwellwerte festzulegen und signifikante Bewegungen durch Farbcodierung hervorzuheben.                                                    |
@@ -129,7 +129,7 @@ Die Einbindung einer Zeitreihenanalyse würde den Benutzenden ermöglichen, Posi
 
 Eine weitere geplante Erweiterung ist, dass Nutzende einen oder mehrere Schwellwerte eingeben können. Die Punkte und Verschiebungen könnten dann farblich codiert werden.
 
-### 2D-Balken neben 3D-Vektoren
+### 2D-Balken neben 3D-Vektoren (Billboards)
 
 Die Grösse eines Vektors im dreidimensionalen Raum ist schwierig zu vergleichen, insbesondere aufgrund von Perspektive und Entfernung. Um dieses Problem anzugehen, könnte ein 2D-Balkendiagramm neben den Vektoren platziert werden. Dadurch erhalten Benutzer ein Verhältnis zu weiter entfernten oder näheren Punkten und können die Grössenverhältnisse besser einschätzen.
 
@@ -138,6 +138,8 @@ Die Grösse eines Vektors im dreidimensionalen Raum ist schwierig zu vergleichen
 Die Erstellung einer vollständigen 3D-Karte der Schweiz stellt uns vor Herausforderungen. Es wäre sinnvoll, die Karte zukünftig durch einen FME-Prozess vorzubereiten und anschliessend zu komprimieren, um sowohl die Auflösung der Karte als auch die Kompression der Kartendaten zu optimieren. Sobald ein geeigneter Prozessablauf für diesen Schritt gefunden ist, kann die Karte schweizweit erweitert werden.
 
 ### Erweiterung des Sprachpakets
+
+<img src="screenshots/ausblick/language.png" alt="Sprache" style="max-width: 100%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);">
 
 Die App DEFVIS ist derzeit nur auf Deutsch verfügbar. Zukünftig wäre es sinnvoll, die Web-App in mehreren Sprachen anzubieten, darunter Englisch, Französisch und Italienisch, um eine breitere Nutzerbasis anzusprechen und die Benutzerfreundlichkeit zu verbessern. Dies würde es internationalen Nutzern ermöglichen, die App in ihrer bevorzugten Sprache zu nutzen, was die Zugänglichkeit und Akzeptanz erheblich steigern könnte.
 
