@@ -40,7 +40,7 @@ Kommentare zu den einzelnen Pages/Abschnitten:
 - Architektur:
 
   - **done** Bildbeschriftung viel zu klein und die Pfeile zu dominant. Pfeil von User mit den Punktdaten zur Auswertung nicht ganz klar. Ev. die Pfeile beschriften.
-  - Backend-Frontend Kommunikation mit Axios und FastAPI genauer erläutern.
+  - **done** Backend-Frontend Kommunikation mit Axios und FastAPI genauer erläutern.
   - **done** Datenbank ist nur die _points_ Tabelle genauer beschriftet. Hier wäre eine Einleitung zusätzlich noch nützlich, sowie die Beschreibung aller Tabellen.
 
 - Benutzerhandbuch:
