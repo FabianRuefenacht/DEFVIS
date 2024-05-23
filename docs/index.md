@@ -19,7 +19,7 @@ Die Web-App **DEFVIS** bietet Dir folgende Tools:
 
 | Feature                      | Status        | Beschreibung                                                                                                                                            |
 | ---------------------------- | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Deformationsmessungen        | Implementiert | Verwalten von Messdaten, Hinzufügen neuer Sessions, und Organisieren von Projekten.                                                                     |
+| Deformationsmessungen        | Implementiert | Verwalten von Messdaten, Hinzufügen neuer Sessions und Organisieren von Projekten.                                                                     |
 | 3D-Visualisierung            | Implementiert | Darstellung von Verschiebungen in einer dreidimensionalen Ansicht, inklusive Fehlervektoren und detaillierten Punktinformationen.                       |
 | Zeitreihenanalyse            | Geplant       | Zukünftige Erweiterung zur Verfolgung von Positionsänderungen über die Zeit, inklusive Berücksichtigung von Temperatur- und Wetterdaten.                |
 | Farbcodierte Punkte          | Geplant       | Möglichkeit, Schwellwerte festzulegen und signifikante Bewegungen durch Farbcodierung hervorzuheben.                                                    |
@@ -29,7 +29,7 @@ Die Web-App **DEFVIS** bietet Dir folgende Tools:
 
 Detailliertere Infos, was DEFVIS in Zukunft noch bieten wird, findest Du unter <a href="https://fabianruefenacht.github.io/DEFVIS/index.html#section6">Ausblick</a>.
 
-ℹ️ Um die Web-App optimal zu nutzen, empfiehlt sich ein Laptop oder Desktopmonitor mit einer Mindestgröße von 15 Zoll.
+ℹ️ Um die Web-App optimal zu nutzen, empfiehlt sich ein Laptop oder Desktopmonitor mit einer Mindestgrösse von 15 Zoll (38,1 cm).
 
 ---
 
@@ -83,11 +83,11 @@ Um die Daten nicht nur visuell zu haben, sondern auch in einer Tabelle, werden a
 Entdecke die vielfältigen Tools und Funktionen, die DEFVIS bietet. Klicke auf die Links unten, um zu den einzelnen Seiten zu gelangen und mehr über ihre Funktionen zu erfahren:
 
 | ---------------------------------------------- | --------------------------------------------------------------------------------------------- |
-| **[Home](home.html):** | ist die Startseite der App, wo Du Dich orientieren und weitere Schritte planen kannst |
-| **[Benutzerverwaltung](user.html):** | hier wird erklärt wie Du Benutzerkonto erstellst, dich an- und auch wieder abmeldest |
-| **[Menü](main_view.html):** | ist die zentrale Ansicht Deiner App, wo Du Projekte verwalten und Daten visualisieren kannst |
-| **[Projektverwaltung](projektverwaltung.html):** | hier erfährst du alles über die Projektverwaltung und wie du Sessionen erfasst |
-| **[Ansichten](current_project.html):**| sehe die Daten in Deinem ausgewählten Projekt ein |
+| **[Home](home.html):** | Dies ist die Startseite der App.  |
+| **[Benutzerverwaltung](user.html):** | Hier wird erklärt, wie Du ein Benutzerkonto erstellst, Dich an- und abmeldest. |
+| **[Menü](main_view.html):** | Dies ist die zentrale Ansicht Deiner App, in der Du Projekte verwalten und Daten visualisieren kannst. |
+| **[Projektverwaltung](projektverwaltung.html):** | Hier erfährst Du alles über die Projektverwaltung und wie Du Sessionen erfasst. |
+| **[Ansichten](current_project.html):**| Sehe die Daten in Deinem ausgewählten Projekt ein. |
 
 ---
 
@@ -151,29 +151,27 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 
 
 ## Ausblick von DEFVIS {#section6}
 
-In diesem Kapitel werden zukünftige Erweiterungen und Verbesserungen, die DEFVIS optimierter und benutzerfreundlicher machen könnten erläutert. Diese möglichen Entwicklungen zielen darauf ab, die Funktionalität der App zu erweitern. Von der Einführung fortgeschrittener Analysetools über visuelle Verbesserungen bis hin zur sprachlichen Vielfalt gibt es zahlreiche Ideen, die DEFVIS in der Zukunft bereichern könnten.
+In diesem Kapitel werden zukünftige Erweiterungen und Verbesserungen, die DEFVIS optimierter und benutzerfreundlicher machen könnten, erläutert. Diese möglichen Entwicklungen zielen darauf ab, die Funktionalität der App zu erweitern. Von der Einführung fortgeschrittener Analysetools über visuelle Verbesserungen bis hin zur sprachlichen Vielfalt gibt es zahlreiche Ideen, die DEFVIS in der Zukunft bereichern könnten.
 
 ### Zeitreihenanalyse
 
 <img src="screenshots/ausblick/zra.png" alt="ZRA" style="max-width: 100%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);">
 
-Die Einbindung einer Zeitreihenanalyse würde den Benutzern ermöglichen, Positionsänderungen im Laufe der Zeit genauer zu verfolgen. Dies könnte durch die Berücksichtigung von Temperaturänderungen oder anderen meteorologischen Einflüssen geschehen.
-Bereits jetzt wird beim <a href="https://fabianruefenacht.github.io/DEFVIS/projektverwaltung.html#erfassen">Session erfassen</a> ein Zeitstempel erfasst, sodass man diese Information einer Session zuweisen und somit in einer Zeitreihenanalyse darstellen könnte.
-Wenn ein Punkt ausgewählt ist, kann durch das Klicken des Zeitreihenanalyse-Buttons die Zeitreihenanalyse geladen werden mit den dazugehörigen Punktinformationen.
+Die Einbindung einer Zeitreihenanalyse würde den Benutzenden ermöglichen, Positionsänderungen im Laufe der Zeit genauer zu verfolgen. Dies könnte durch die Berücksichtigung von Temperaturänderungen oder anderen meteorologischen Einflüssen geschehen. Bereits jetzt wird bei <a href="https://fabianruefenacht.github.io/DEFVIS/projektverwaltung.html#erfassen">Session erfassen</a> ein Zeitstempel erfasst, sodass man diese Information einer Session zuweisen und somit in einer Zeitreihenanalyse darstellen könnte. Wenn ein Punkt ausgewählt ist, kann durch das Klicken des Zeitreihenanalyse-Buttons die Zeitreihenanalyse mit den dazugehörigen Punktinformationen geladen werden.
 
 ### Farbcodierte Punkte
 
 <img src="screenshots/ausblick/schwellwert.png" alt="Schwellwert" style="max-width: 100%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);">
 
-Eine weitere mögliche Erweiterung für Benutzer wäre, Schwellwerte für jedes Projekt festzulegen. Punkte, die signifikante Bewegungen aufweisen, könnten anders eingefärbt oder markiert werden, um sofortige Aufmerksamkeit zu erregen.
+Eine weitere geplante Erweiterung ist, dass Nutzende einen oder mehrere Schwellwerte eingeben können. Die Punkte und Verschiebungen könnten dann farblich codiert werden.
 
 ### 2D-Balken neben 3D-Vektoren
 
-Die Grösse eines Vektors im dreidimensionalen Raum ist schwierig zu vergleichen, insbesondere aufgrund von Perspektive und Entfernung. Um dieses Problem anzugehen, könnte ein 2D-Balkendiagramm neben den Vektoren platziert werden. Dadurch erhalten Benutzer ein Verhältnis zu weiter entfernten oder näheren Punkten und können die Größenverhältnisse besser einschätzen.
+Die Grösse eines Vektors im dreidimensionalen Raum ist schwierig zu vergleichen, insbesondere aufgrund von Perspektive und Entfernung. Um dieses Problem anzugehen, könnte ein 2D-Balkendiagramm neben den Vektoren platziert werden. Dadurch erhalten Benutzer ein Verhältnis zu weiter entfernten oder näheren Punkten und können die Grössenverhältnisse besser einschätzen.
 
 ### vollständige 3D-Karte
 
-Die Erstellung einer vollständigen 3D-Karte der Schweiz stellt uns vor Herausforderungen. Es wäre sinnvoll, die Karte zukünftig durch einen FME-Prozess vorzubereiten und anschliessend zu komprimieren, um sowohl die Auflösung der Karte als auch die Kompression der Kartendaten zu optimieren. Sobald ein geeigneter Prozessablauf für diesen Schritt gefunden ist, kann die Karte weltweit erweitert werden.
+Die Erstellung einer vollständigen 3D-Karte der Schweiz stellt uns vor Herausforderungen. Es wäre sinnvoll, die Karte zukünftig durch einen FME-Prozess vorzubereiten und anschliessend zu komprimieren, um sowohl die Auflösung der Karte als auch die Kompression der Kartendaten zu optimieren. Sobald ein geeigneter Prozessablauf für diesen Schritt gefunden ist, kann die Karte schweizweit erweitert werden.
 
 ### Erweiterung des Sprachpakets
 
