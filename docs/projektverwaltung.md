@@ -21,7 +21,7 @@ Your browser does not support the video tag.
 
 ### Beschreibung
 
-Als registrierter Benutzer oder als registrierte Benutzerin kannst Du neue Projekte erstellen und sie einem Kunden/Auftraggeber zuweisen. Der Kunde/Auftraggeber hat dann die Möglichkeit, die ihm zugeordneten Projekte ebenfalls einzusehen, was bei der Analyse und Besprechung des Projekts hilfreich sein kann.
+Als registrierter Benutzer oder als registrierte Benutzerin kannst Du neue Projekte erstellen und sie einer Kundschaft/Auftraggeberschaft zuweisen. Die Kundschaft/Auftraggeberschaft hat dann die Möglichkeit, die ihr zugeordneten Projekte ebenfalls einzusehen, was bei der Analyse und Besprechung des Projekts hilfreich sein kann.
 
 ### Funktionen
 

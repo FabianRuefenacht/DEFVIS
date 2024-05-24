@@ -7,7 +7,7 @@ Your browser does not support the video tag.
 
 <p></p>
 
-DEFVIS ist Deine Lösung für die Visualisierung und Analyse von Messdaten aus Deformationen. DEFVIS bietet Dir die Tools, die du brauchst, um Deformationsdaten zu besser zu verstehen und fundierte Entscheidungen zu treffen.
+DEFVIS ist Deine Lösung für die Visualisierung und Analyse von Messdaten aus Deformationen. DEFVIS bietet Dir die Tools, die Du brauchst, um Deformationsdaten zu besser zu verstehen und fundierte Entscheidungen zu treffen.
 
 ## Überblick der Web-App DEFVIS
 
@@ -37,7 +37,7 @@ Detailliertere Infos, was DEFVIS in Zukunft noch bieten wird, findest Du unter <
 
 ## Wie wird die App installiert {#section1}
 
-hier gehts zur [Schnellinstallation](https://github.com/FabianRuefenacht/DEFVIS/?tab=readme-ov-file#schnellinstallation){:target="\_blank"}
+Hier gehts zur [Schnellinstallation](https://github.com/FabianRuefenacht/DEFVIS/?tab=readme-ov-file#schnellinstallation)!{:target="\_blank"}
 
 ---
 
