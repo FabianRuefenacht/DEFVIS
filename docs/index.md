@@ -37,7 +37,7 @@ Detailliertere Infos, was DEFVIS in Zukunft noch bieten wird, findest Du unter <
 
 ## Wie wird die App installiert {#section1}
 
-Hier gehts zur [Schnellinstallation](https://github.com/FabianRuefenacht/DEFVIS/?tab=readme-ov-file#schnellinstallation)!{:target="\_blank"}
+Hier gehts zur <a href="https://github.com/FabianRuefenacht/DEFVIS/?tab=readme-ov-file#schnellinstallation" target="_blank">Schnellinstallation</a>
 
 ---
 
