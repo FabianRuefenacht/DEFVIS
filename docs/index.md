@@ -43,7 +43,12 @@ Hier gehts zur <a href="https://github.com/FabianRuefenacht/DEFVIS/?tab=readme-o
 
 ## Entdecke die Features von DEFVIS {#section2}
 
-Erkunde die Funktionen von DEFVIS. Weitere Informationen und detaillierte Anleitungen zu den Funktionen findest Du alles im <a href="https://fabianruefenacht.github.io/DEFVIS/index.html#section3">Benutzerhandbuch</a>.
+Erkunde die Funktionen von DEFVIS. Weitere Informationen und detaillierte Anleitungen zu den Funktionen findest Du alles im <a href="https://fabianruefenacht.github.io/DEFVIS/index.html#section3">Benutzerhandbuch</a>.\
+Um einen besseren Überblich über den Arbeitsablauf und die Möglichkeiten zu bekommen, kannst Du den Arbeitablauf in der nachfolgenden Grafik studieren.
+
+![Flowchart](./screenshots/flowchart.png)
+
+
 
 ### 3D-Ansicht
 
