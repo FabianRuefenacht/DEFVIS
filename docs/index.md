@@ -43,8 +43,11 @@ Hier gehts zur <a href="https://github.com/FabianRuefenacht/DEFVIS/?tab=readme-o
 
 ## Entdecke die Features von DEFVIS {#section2}
 
-Erkunde die Funktionen von DEFVIS. Weitere Informationen und detaillierte Anleitungen zu den Funktionen findest Du alles im <a href="https://fabianruefenacht.github.io/DEFVIS/index.html#section3">Benutzerhandbuch</a>.\
-Um einen besseren Überblich über den Arbeitsablauf und die Möglichkeiten zu bekommen, kannst Du den Arbeitablauf in der nachfolgenden Grafik studieren.
+Erkunde die Funktionen von DEFVIS. Weitere Informationen und detaillierte Anleitungen zu den Funktionen findest Du alles im <a href="https://fabianruefenacht.github.io/DEFVIS/index.html#section3">Benutzerhandbuch</a>.
+
+Um einen besseren Überblich über den Arbeitsablauf und die Möglichkeiten zu bekommen, kannst Du den Arbeitsablauf in der nachfolgenden Grafik studieren.
+
+Nachdem Du Dich angemeldet hat, kannst Du entweder ein neues Projekt erstellen oder ein bestehendes Projekt öffnen. Anschliessend kann eine Session erfasst werden. Wenn dies nicht gewünscht ist, kannst Du zwei Sessionen (Nullmessung und Folgemessung) auswählen. Die Tabelle mit den Verschiebungen und die 2D-Karte wird geladen. Wenn Du in der Tabelle auf die Punktnummer klickst, springt die Ansicht automatisch zum gewählten Punkt. Diese Option funktioniert sowohl in der Karte als auch im 3D-Modell. In der Karte kannst Du die Messpunkte betrachten. Das Symbol unten rechts in der Karte öffnet die Legende. Mit Klick auf einen Punkt werden die Informationen angezeigt. In den Informationen findest Du einen Knopf, welcher dich automatisch zum 3D-Modell weiterleitet. Dieses ist direkt auf den gewählten Punkt zentriert. In der 3D-Ansicht kannst du die Punkte mit Bezug zum Höhenmodell betrachten. Die Vektoren werden für jede Dimension (E, N, h) seperat dargestellt.
 
 ![Flowchart](./screenshots/flowchart.png)
 
