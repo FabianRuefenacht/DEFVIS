@@ -21,7 +21,7 @@ Your browser does not support the video tag.
 
 ### Beschreibung
 
-Auf der Registrierungsseite hast Du die Möglichkeit, Dich als Benutzer\*in zu registrieren. Sollte der von Dir gewählte Benutzername bereits vergeben sein oder die Textformatierung nicht korrekt sein, erhältst Du umgehend entsprechende Hinweise.
+Auf der Registrierungsseite hast Du die Möglichkeit, Dich als Benutzer oder Benutzerin zu registrieren. Sollte der von Dir gewählte Benutzername bereits vergeben sein oder die Textformatierung nicht korrekt sein, erhältst Du umgehend entsprechende Hinweise.
 
 ### Funktionen
 

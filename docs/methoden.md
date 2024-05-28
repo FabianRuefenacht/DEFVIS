@@ -77,7 +77,6 @@ Die berechneten Koordinaten werden statistisch analysiert, um signifikante Defor
 Das Tool DEFVIS unterstützt die Nutzenden im gesamten Prozess der Deformationsmessung:
 
 - **Datenintegration**: Verschiedene Vermessungsmethoden können in das System integriert werden.
-- **Automatisierte Berechnungen**: Die Methode der kleinsten Quadrate wird automatisch angewendet, um genaue Koordinaten zu berechnen.
 - **3D-Visualisierung**: Die Ergebnisse werden auf einem dreidimensionalen Geländemodell dargestellt, was die Interpretation und Kontrolle der Deformationsvektoren vereinfacht.
 
 **Illustration der Prozesse**:

@@ -16,40 +16,47 @@
 
 ## Reflektion und Selbstbewertung {#reflektion}
 
-Das Projekt war erfolgreich, insbesondere durch die Nutzung moderner Tools und Technologien. Sorgfältige Planung und klare Aufgabenteilung führten zu einer reibungslosen Durchführung. Regelmässige Teammeetings und der Einsatz von Projektmanagement-Tools wie GitHub waren besonders effektiv. Iterative Arbeitsweisen förderten den kontinuierlichen Fortschritt und die frühzeitige Problemlösung.
-Effektiv waren die Teammeetings und die Nutzung von GitHub, um den Fortschritt zu dokumentieren und Aufgaben zu koordinieren. Iterative Arbeitsweisen, bei denen regelmässig Zwischenergebnisse überprüft und angepasst wurden, trugen massgeblich zum Erfolg des Projekts bei.
+Auch wenn nicht alle geplanten Funktionalitäten eingebaut werden konnten, war das Projekt erfolgreich. Im Rahmen der Projektarbeit wurden viele Technologien eingesetzt, welche wir zuvor nie verwendet haben. Das reicht vom Framework (Next.JS) über OpenLayers für die Kartendarstellung bis hin zu Three für die Darstellung des 3D-Modelles. So war ein stetiger Lernprozess vorhanden, welcher die Produktivität und schlussendlich auch den Umfang der Resultate einschränkte.
+
+Die Erstellung des Konzeptes und die klare Aufgabenverteilung führte dazu, dass alle Projektmitglieder stets wussten, was sie zu tun haben. Die Zusammenarbeit war hauptsächlich über GitHub organisiert und hat sich bewährt. Nach einigen Anfangsschwierigkeiten, hat die simultane Zusammenarbeit am Projekt mit GitHub reibungslos funktioniert. Als Kommunikationskanäle wurden hauptsächlich die persönliche Kommunikation, vor Ort am Campus und WhatsApp verwendet. Besonders die persönlichen Besprechungen unter den Teammitgliedern hat sich als wertvoll erwiesen.
 
 ## Herausforderungen und Schwierigkeiten {#herausforderung}
 
-Technische und organisatorische Herausforderungen traten während des Projekts auf. Zu den grössten Problemen zählten Dateninkonsistenzen und Schwierigkeiten bei der Integration unterschiedlicher Datensätze. Die Programmierung der 3D-Ansichten führte zu langen Ladezeiten und Softwareabstürzen, was benutzerfreundliche Interaktionen erschwerte und zusätzliche Debugging- und Optimierungsarbeit erforderte.
-Technische Probleme wurden durch intensive Fehlersuche und die Konsultation von Experten sowie Fachliteratur gelöst. Die Teamkommunikation wurde durch klare Verantwortlichkeiten und regelmässige Feedback-Runden verbessert. Ein fester Kommunikationsplan optimierte die Zusammenarbeit.
+Technische und organisatorische Herausforderungen traten während des Projekts auf. Zu den grössten Problemen zählten Dateninkonsistenzen und Schwierigkeiten bei der Integration unterschiedlicher Datensätze. Das grösste Problem stellte die Bereitstellung des dreidimensionalen Höhenmodells dar. Bis zum heutigen Zeitpunkt konnte keine zufriedenstellende Lösung für die dynamische Berechnung dessen gefunden werden. Im Nachhinein ist dies allerdings nicht verwunderlich, da die dreidimensionale Geoverarbeitung mit Python eine eigene Bachelorarbeit am Institut Geomatik im Jahr 2024 war.
+
+Weitere, kleine Probleme wie die Einbettung von Daten in die zweidimensionale Karte, das hin und her senden von Stati zwischen den Software-Komponenten und die Abfragen auf der Datenbank konnten durch Konsultation der jeweiligen Dokumentationen gelöst werden.
 
 ## Lernprozess {#lernprozess}
 
-Zahlreiche neue Kenntnisse und Fähigkeiten wurden erworben, darunter der Umgang mit grossen Datensätzen und die Fähigkeit, komplexe Datenanalysen durchzuführen. Soft Skills wie Teamarbeit, Projektmanagement und effektive Kommunikation wurden ebenfalls verbessert.
+Wie in Abschnitt [Reflektion](https://fabianruefenacht.github.io/DEFVIS/reflektion.html/#reflektion) beschrieben, wurden unbekannte Technologien eingesetzt. Dadurch wurden neue Kenntnisse und Fähigkeiten erworben. Darunter zählen der Umgang mit grossen Datensätzen und die Fähigkeit, komplexe Datenanalysen durchzuführen. Soft Skills wie Teamarbeit, Projektmanagement und effektive Kommunikation wurden ebenfalls verbessert. Ausserdem wurden das angesprochene Framework Next.JS und die Bibliotheken OpenLayers und Three.JS erlernt.
+
 Die Auseinandersetzung mit aktuellen Programmier-Tools und -Techniken erweiterte das technische Wissen und stärkte die beruflichen Kompetenzen im Bezug auf die Geoinformatik. Teamarbeit förderte soziale Fähigkeiten und das Verständnis für interdisziplinäre Zusammenarbeit.
 
 ## Teamarbeit {#teamarbeit}
 
 Die Zusammenarbeit im Team war insgesamt sehr positiv. Anfangs gab es Abstimmungsprobleme, die durch klare Kommunikation und Rollenverteilung gelöst wurden. Jeder im Team brachte seine individuellen Stärken ein, was zu einem produktiven und harmonischen Arbeitsumfeld führte.
-Regelmässige Meetings und transparenter Informationsaustausch über digitale Kanäle waren effektiv. Projektmanagement-Software ermöglichte die kontinuierliche Überwachung des Projektfortschritts. Feedback und Diskussion von Lösungsansätzen in der Gruppe trugen wesentlich zur erfolgreichen Zusammenarbeit bei.
+
+Regelmässige Meetings und transparenter Informationsaustausch über digitale und physische Kanäle waren effektiv. Das Konzept ermöglichte die kontinuierliche Überwachung des Projektfortschritts. Feedback und Diskussion von Lösungsansätzen in der Gruppe trugen wesentlich zur erfolgreichen Zusammenarbeit bei.
 
 ## Diskussion {#diskussion}
 
-Die Projektergebnisse zeigen, dass die angewendeten Methoden und Technologien effektiv waren, um die gesteckten Ziele (siehe <a href="https://fabianruefenacht.github.io/DEFVIS/drafts.html#zielsetzung">Zielsetzung</a> im Abschnitt "Konzept") zu erreichen. Die Datenanalyse ergab präzise und zuverlässige Ergebnisse, die neue Erkenntnisse über das untersuchte Gebiet lieferten.
-Die meisten Ziele wurden erreicht, einige Erwartungen wurden übertroffen, insbesondere in Bezug auf Datenqualität und Analysegenauigkeit. Unerwartete technische Schwierigkeiten, besonders mit der Darstellung von 3D-Elementen und Zeitmangel verhinderten das vollständige Erreichen kleinerer Ziele.
+Die Projektergebnisse zeigen, dass die angewendeten Methoden und Technologien effektiv waren, um die gesteckten Ziele (siehe <a href="https://fabianruefenacht.github.io/DEFVIS/drafts.html#zielsetzung">Zielsetzung</a> im Abschnitt "Konzept") zu erreichen. Durch die unterschiedlichen Implementationen können Benutzende einen tiefen Einblick in ihre Daten erhalten und so neue Erkenntnisse über die Verschiebungen gewinnen.
+
+Die meisten Ziele wurden erreicht. Unerwartete technische Schwierigkeiten, besonders mit der Darstellung von 3D-Elementen und Zeitmangel verhinderten das vollständige Erreichen kleinerer Ziele.
 
 ## Vergleich mit anderen Arbeiten {#vergleich}
 
-Die Ergebnisse unterscheiden sich in einigen Punkten von ähnlichen Studien, insbesondere hinsichtlich der angewendeten Methoden und der erzielten Genauigkeit. Dieses Projekt konnte durch den Einsatz moderner Tools präzisere Ergebnisse liefern.
-Der Vergleich zeigt, dass die angewandten Methoden und Technologien des Projekts zu höherer Genauigkeit und besserer Datenqualität führen. Dies bestätigt die Effektivität moderner Ansätze und bietet neue Perspektiven für zukünftige Forschungsprojekte.
+Die Ergebnisse unterscheiden sich in einigen Punkten von ähnlichen Studien, insbesondere hinsichtlich der angewendeten Methoden. Dieses Projekt konnte durch den Einsatz moderner Tools gute Ergebnisse liefern und Nutzenden eine neue Perspektive auf die Daten liefern.
 
 ### Fazit {#fazit}
 
-Das Projekt war erfolgreich und hat wichtige Erkenntnisse im Bereich der Geomatik geliefert. Die angewendeten Methoden und Technologien waren effektiv, und die Teamarbeit trug wesentlich zum Projekterfolg bei. Es wurden wertvolle Kenntnisse und Fähigkeiten erworben, die sowohl persönlich als auch professionell weiterentwickelt haben.
-Die meisten Projektziele wurden erreicht, einige wurden übertroffen, während andere aufgrund unerwarteter Herausforderungen und zeitlicher Einschränkungen nicht vollständig erreicht wurden. Insgesamt war das Projekt ein Erfolg und lieferte wertvolle Ergebnisse.
-Zukünftige Projekte könnten von einer erweiterten Datenbasis und verbesserten technischen Ressourcen profitieren. Weiterführende Forschung in den identifizierten Bereichen wäre sinnvoll, um die gewonnenen Erkenntnisse zu vertiefen und neue Anwendungen zu entwickeln. Praktisch gesehen sollten die Ergebnisse genutzt werden, um bestehende Geomatik-Prozesse zu optimieren und neue Technologien zu integrieren.
-Das Projekt hat gezeigt, dass durch effektive Teamarbeit, den Einsatz moderner Technologien und eine iterative Arbeitsweise bedeutende Fortschritte im Bereich der Geomatik erzielt werden können. Langfristig könnten die erzielten Ergebnisse und die daraus abgeleiteten Empfehlungen zu nachhaltigen Verbesserungen in der Praxis führen. Die Erfahrungen und Erkenntnisse aus diesem Projekt werden sicherlich auch zukünftige berufliche Tätigkeiten und Projekte positiv beeinflussen.
+Das Projekt war erfolgreich. Die angewendeten Methoden und Technologien waren effektiv, und die Teamarbeit trug wesentlich zum Projekterfolg bei. Es wurden wertvolle Kenntnisse und Fähigkeiten erworben, die sowohl persönlich als auch professionell weiterentwickelt haben.
+
+Die meisten Projektziele wurden erreicht, aufgrund unerwarteter Herausforderungen und zeitlicher Einschränkungen konnten gewisse Ziele nicht vollständig erreicht wurden. Insgesamt war das Projekt ein Erfolg und lieferte wertvolle Ergebnisse.
+
+Zukünftige Projekte könnten von einer erweiterten Datenbasis und verbesserten technischen Ressourcen profitieren. Weiterführende Forschung in den identifizierten Bereichen wäre sinnvoll, um die gewonnenen Erkenntnisse zu vertiefen und neue Anwendungen zu entwickeln. Praktisch gesehen sollten die Ergebnisse genutzt werden, um bestehende Geomatik-Prozesse zu optimieren und neue Technologien zu integrieren. Im Bereich der dreidimensionalen Darstellung besteht noch deutliches Verbesserungspotential. Die Grundlagen für die Darstellung wurden gelegt. Der nächste Schritt wäre die Suche nach Lösungen für die dynamische Modellerstellung unter Verwendung öffentlicher Geodaten.
+
+Das Projekt hat gezeigt, dass durch effektive Teamarbeit, den Einsatz moderner Technologien und eine iterative Arbeitsweise bedeutende Fortschritte im Bereich der Geoinformatik erzielt werden können. Die Erfahrungen und Erkenntnisse aus diesem Projekt werden sicherlich auch zukünftige berufliche Tätigkeiten und Projekte positiv beeinflussen.
 
 ---
 
