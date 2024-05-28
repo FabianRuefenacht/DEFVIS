@@ -81,7 +81,7 @@ Das Tool DEFVIS unterstützt die Nutzenden im gesamten Prozess der Deformationsm
 
 <img src="screenshots/illustration.png" alt="Illustration" style="max-width: 100%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);">
 
-<sub>https://tu-dresden.de/bu/umwelt/geo/gi/ig/ressourcen/dateien/lehrveranstaltungen/geodaesie/master_ig/BauWerkUeberw.pdf?lang=de [22. Mai 2024]</sub>
+<a href="https://fabianruefenacht.github.io/DEFVIS/methoden.html#literatur">Möser (2015)</a>
 
 Die Illustration veranschaulicht den Prozess der messtechnischen Überwachung. Durch die Integration verschiedener Ansichten, insbesondere der 3D-Ansicht, bietet DEFVIS eine benutzerfreundliche Plattform, die die Komplexität der Deformationsmessung und -interpretation reduziert. Diese Integration ermöglicht es den Anwendern, bereits nach wenigen Messungen zu beurteilen, ob konstruktive Massnahmen erforderlich sind oder Massnahmen- und Notfallkonzepte. Somit wird auch der wirtschaftliche Aspekt dabei berücksichtigt. Im Vergleich zu einer Beurteilung in einer 2D-Ansicht kann mit der 3D-Ansicht von DEFVIS ein Bezug zum Höhenmodell erstellt werden. So ist etwa gut sichtbar, ob sich ein Punkt durch natürliche Einflüsse oder durch sonstige Einflüsse bewegt.
 
