@@ -50,11 +50,6 @@ $$
 (3.) **Analyse und Interpretation**:
 Die berechneten Koordinaten werden statistisch analysiert, um signifikante Deformationsvektoren zu bestimmen. Dies geschieht durch den Vergleich von Messungen aus verschiedenen Zeitpunkten.
 
-**Literaturangaben**:
-
-- Niemeier, W. (2008). Ausgleichungsrechnung: Statistische Auswertemethoden. Walter de Gruyter.
-- Ghilani, C. D. (2017). Adjustment Computations: Spatial Data Analysis. John Wiley & Sons.
-
 ---
 
 ## Herausforderungen bei der Interpretation und Kontrolle {#herausforderung}
@@ -91,26 +86,22 @@ Die Illustration veranschaulicht den Prozess der messtechnischen Überwachung. D
 
 ## Literatur {#literatur}
 
-Ausgleichungsrechnung und Vermessungstechniken:
+Name, Vorname (Jahreszahl): _Titel._ Untertitel, Auflage. Verlagsort: Verlag (= Reihe).
 
-Niemeier, W. (2008). Ausgleichungsrechnung: Statistische Auswertemethoden. Walter de Gruyter. ISBN: 978-3110194642.
-Ghilani, C. D. (2017). Adjustment Computations: Spatial Data Analysis. John Wiley & Sons. ISBN: 978-1119385983.
-Geodätische Messverfahren:
+Methode der kleinsten Quadrate (MdkQ):
+Wikipedia (2024). _Methode der kleinsten Quadrate._ https://de.wikipedia.org/wiki/Methode_der_kleinsten_Quadrate (28 Mai 2024).
 
-Wolf, P. R., & Ghilani, C. D. (2014). Elementary Surveying: An Introduction to Geomatics. Pearson. ISBN: 978-0133758887.
-Torge, W., & Müller, J. (2012). Geodesy. Walter de Gruyter. ISBN: 978-3110207182.
-Deformationsmessung und -analyse:
+Triangulation:
+DETREKOI, A. (1976): _NETZAUSGLEICHUNG BEI INGENIEURGEODÄTISCHEN DEFORMATIONSMESSUNGEN._ Technische Universität Budapest: Geodätisches Institut, Lehrstuhl für Höhere Geodäsie.
 
-Caspary, W. F. (2000). Concepts of Network and Deformation Analysis. Taylor & Francis. ISBN: 978-0203476213.
-Kasser, M., & Egels, Y. (2002). Digital Photogrammetry. Taylor & Francis. ISBN: 978-0748409929.
-GNSS-Messmethoden:
+Lotung:
+Knoblach, Stefan: _Neue Methoden der Schachtlotung und Richtungsübertragung._ Kurzexposé. Technische Universität Dresden: Geodätisches Institut.
 
-Hofmann-Wellenhof, B., Lichtenegger, H., & Wasle, E. (2008). GNSS – Global Navigation Satellite Systems: GPS, GLONASS, Galileo, and more. Springer. ISBN: 978-3211730126.
-Misra, P., & Enge, P. (2006). Global Positioning System: Signals, Measurements, and Performance. Ganga-Jamuna Press. ISBN: 978-0970954428.
-Ingenieurgeodäsie und Visualisierung:
+GNSS:
+Semmling, Aaron Maximilian, Leister, Vera, Saynisch, Jan, Zus, Florian, Heise, Stefan, Wickert Jens (2016): _A Phase-Altimetric Simulator: Studying the Sensitivity of Earth-Reflected GNSS Signals to Ocean Topography._ IEEE Transactions on Geoscience and Remote Sensing.
 
-Vanicek, P., & Krakiwsky, E. J. (1986). Geodesy: The Concepts. North Holland. ISBN: 978-0444875284.
-Longley, P. A., Goodchild, M. F., Maguire, D. J., & Rhind, D. W. (2015). Geographic Information Systems and Science. John Wiley & Sons. ISBN: 978-1118676952.
+Nivellement:
+Möser, Michael, Fuhrland, Matthias (2006): _Ausgewählte Sensorik und Methodik zur Höhenbestimmung bei der Überwachung gefährdeter Objekte._ Technische Universität Dresden: Geodätisches Institut, Ingenieurgeodäsie.
 
 ---
 
