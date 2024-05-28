@@ -48,7 +48,7 @@ Die meisten Ziele wurden erreicht. Unerwartete technische Schwierigkeiten, beson
 
 Die Ergebnisse unterscheiden sich in einigen Punkten von ähnlichen Studien, insbesondere hinsichtlich der angewendeten Methoden. Dieses Projekt konnte durch den Einsatz moderner Tools gute Ergebnisse liefern und Nutzenden eine neue Perspektive auf die Daten liefern.
 
-### Fazit {#fazit}
+## Fazit {#fazit}
 
 Das Projekt war erfolgreich. Die angewendeten Methoden und Technologien waren effektiv, und die Teamarbeit trug wesentlich zum Projekterfolg bei. Es wurden wertvolle Kenntnisse und Fähigkeiten erworben, die sowohl persönlich als auch professionell weiterentwickelt haben.
 
