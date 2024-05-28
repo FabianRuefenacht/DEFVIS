@@ -60,7 +60,7 @@ const Settings = ({ userName }: { userName: string }) => {
     const customer = e.target[1].value;
 
     try {
-      const response = await axios.post("http://localhost:8000/newProject/", {
+      const response = await axios.post("http://0.0.0.0:8000/newProject/", {
         projectName: projectname,
         userEmail: userName,
         clientEmail: customer,
@@ -98,7 +98,7 @@ const Settings = ({ userName }: { userName: string }) => {
     changeOpenProj();
 
     try {
-      const response = await axios.post("http://localhost:8000/openProject/", {
+      const response = await axios.post("http://0.0.0.0:8000/openProject/", {
         email: userName,
         password: "a",
       });
@@ -128,7 +128,7 @@ const Settings = ({ userName }: { userName: string }) => {
 
   const loadSessionsInProject = async (loadP: string) => {
     try {
-      const response = await axios.post("http://localhost:8000/getSessions/", {
+      const response = await axios.post("http://0.0.0.0:8000/getSessions/", {
         projectName: loadP,
         user: userId,
       });
@@ -190,7 +190,7 @@ const Settings = ({ userName }: { userName: string }) => {
       formData.append("datetime", datetimeOfMeas); // Hinzugefügt
 
       const response = await axios.post(
-        "http://localhost:8000/newSession/",
+        "http://0.0.0.0:8000/newSession/",
         formData,
         {
           headers: {
