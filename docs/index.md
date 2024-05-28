@@ -147,6 +147,27 @@ Ich hoffe, dieser überarbeitete Abschnitt hilft Ihnen, Ihre App weiter zu verbe
 
 Die App DEFVIS ist derzeit nur auf Deutsch verfügbar. Zukünftig wäre es sinnvoll, die Web-App in mehreren Sprachen anzubieten, darunter Englisch, Französisch und Italienisch, um eine breitere Nutzerbasis anzusprechen und die Benutzerfreundlichkeit zu verbessern. Dies würde es internationalen Nutzern ermöglichen, die App in ihrer bevorzugten Sprache zu nutzen, was die Zugänglichkeit und Akzeptanz erheblich steigern könnte.
 
+### Darstellung 3D-Vektoren
+
+<table>
+  <tr>
+    <td>
+      <div>
+        <img src="screenshots/ausblick/3D_oben.png" alt="3D oben" style="max-width: 100%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);">
+        <p>Screenshot aus der App mit 3D-Ansicht von "oben": bei einigen Punkten sind nicht alle Fehlervektoren sichtbar</p>
+      </div>
+    </td>
+    <td>
+      <div>
+        <img src="screenshots/ausblick/3D_unten.png" alt="3D unten" style="max-width: 100%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);">
+        <p>Screenshot aus der App mit 3D-Ansicht von "unten": Punkte mitsamt Vektoren werden unter der Karte erst angezeigt.</p>
+      </div>
+    </td>
+  </tr>
+</table>
+
+Die Vektoren werden in der 3D-Ansicht nicht komplett sichtbar gerendert. Das Problem ist, dass die Vektoren teilweise im Modell "verschwinden" und es dem Betrachtenden schwierig machen die Daten nicht fehlzuinterpretieren. Ein Lösungsansatz wäre, die Karte mit einer Transparenz zu versehen, damit auch Vektoren, welche in das Modell verschwinden sichtbar werden. Zurzeit macht die Umsetzung keinen Sinn, da zuerst ein korektes Modell gerendert werden muss, bei welchem die Modellparameter genau bestimmt werden können.
+
 ---
 
 [zurück nach ganz oben](index.html)
