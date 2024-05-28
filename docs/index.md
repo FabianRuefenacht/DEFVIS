@@ -153,13 +153,13 @@ Die App DEFVIS ist derzeit nur auf Deutsch verfügbar. Zukünftig wäre es sinnv
   <tr>
     <td style="width: 50%; vertical-align: top;">
       <div style="text-align: center;">
-        <img src="screenshots/ausblick/3D_oben.png" alt="3D oben" style="width: 100%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);">
+        <img src="screenshots/ausblick/3D-oben.png" alt="3D oben" style="width: 100%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);">
         <p>Screenshot aus der App mit 3D-Ansicht von "oben": Bei einigen Punkten sind nicht alle Fehlervektoren sichtbar</p>
       </div>
     </td>
     <td style="width: 50%; vertical-align: top;">
       <div style="text-align: center;">
-        <img src="screenshots/ausblick/3D_unten.png" alt="3D unten" style="width: 100%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);">
+        <img src="screenshots/ausblick/3D-unten.png" alt="3D unten" style="width: 100%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);">
         <p>Screenshot aus der App mit 3D-Ansicht von "unten": Punkte mitsamt Vektoren werden unter der Karte erst angezeigt.</p>
       </div>
     </td>
