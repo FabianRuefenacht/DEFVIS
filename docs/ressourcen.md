@@ -5,7 +5,6 @@
 <ul>
 <li><a href="https://fabianruefenacht.github.io/DEFVIS/ressourcen.html#datenquellen">Datenquellen</a></li>
 <li><a href="https://fabianruefenacht.github.io/DEFVIS/ressourcen.html#visualisierung">Visualisierungsansätze</a></li>
-<li><a href="https://fabianruefenacht.github.io/DEFVIS/ressourcen.html#tabelle">Tabelle</a></li>
 </ul>
 
 ---
