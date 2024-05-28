@@ -7,7 +7,7 @@ Your browser does not support the video tag.
 
 <p></p>
 
-DEFVIS ist Deine Lösung für die Visualisierung und Analyse von Messdaten aus Deformationen. DEFVIS bietet Dir die Tools, die Du brauchst, um Deformationsdaten zu besser zu verstehen und fundierte Entscheidungen zu treffen.
+DEFVIS ist Deine Lösung für die Visualisierung und Analyse von Messdaten aus Deformationen. DEFVIS bietet Dir die Tools, die Du brauchst, um Deformationsdaten besser zu verstehen und fundierte Entscheidungen zu treffen.
 
 ## Überblick der Web-App DEFVIS
 
@@ -50,8 +50,6 @@ Um einen besseren Überblich über den Arbeitsablauf und die Möglichkeiten zu b
 Nachdem Du Dich angemeldet hat, kannst Du entweder ein neues Projekt erstellen oder ein bestehendes Projekt öffnen. Anschliessend kann eine Session erfasst werden. Wenn dies nicht gewünscht ist, kannst Du zwei Sessionen (Nullmessung und Folgemessung) auswählen. Die Tabelle mit den Verschiebungen und die 2D-Karte wird geladen. Wenn Du in der Tabelle auf die Punktnummer klickst, springt die Ansicht automatisch zum gewählten Punkt. Diese Option funktioniert sowohl in der Karte als auch im 3D-Modell. In der Karte kannst Du die Messpunkte betrachten. Das Symbol unten rechts in der Karte öffnet die Legende. Mit Klick auf einen Punkt werden die Informationen angezeigt. In den Informationen findest Du einen Knopf, welcher dich automatisch zum 3D-Modell weiterleitet. Dieses ist direkt auf den gewählten Punkt zentriert. In der 3D-Ansicht kannst du die Punkte mit Bezug zum Höhenmodell betrachten. Die Vektoren werden für jede Dimension (E, N, h) seperat dargestellt.
 
 ![Flowchart](./screenshots/flowchart.png)
-
-
 
 ### 3D-Ansicht
 
