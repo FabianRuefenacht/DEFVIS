@@ -147,26 +147,28 @@ Ich hoffe, dieser überarbeitete Abschnitt hilft Ihnen, Ihre App weiter zu verbe
 
 Die App DEFVIS ist derzeit nur auf Deutsch verfügbar. Zukünftig wäre es sinnvoll, die Web-App in mehreren Sprachen anzubieten, darunter Englisch, Französisch und Italienisch, um eine breitere Nutzerbasis anzusprechen und die Benutzerfreundlichkeit zu verbessern. Dies würde es internationalen Nutzern ermöglichen, die App in ihrer bevorzugten Sprache zu nutzen, was die Zugänglichkeit und Akzeptanz erheblich steigern könnte.
 
-### Darstellung 3D-Vektoren
+### Darstellung und Beschriftung der Vektoren/Punkte in der 3D-Ansicht
 
-<table>
+<table style="width: 100%;">
   <tr>
-    <td>
-      <div>
-        <img src="screenshots/ausblick/3D_oben.png" alt="3D oben" style="max-width: 100%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);">
+    <td style="width: 50%; vertical-align: top;">
+      <div style="text-align: center;">
+        <img src="screenshots/ausblick/3D_oben.png" alt="3D oben" style="width: 100%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);">
         <p>Screenshot aus der App mit 3D-Ansicht von "oben": bei einigen Punkten sind nicht alle Fehlervektoren sichtbar</p>
       </div>
     </td>
-    <td>
-      <div>
-        <img src="screenshots/ausblick/3D_unten.png" alt="3D unten" style="max-width: 100%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);">
+    <td style="width: 50%; vertical-align: top;">
+      <div style="text-align: center;">
+        <img src="screenshots/ausblick/3D_unten.png" alt="3D unten" style="width: 100%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);">
         <p>Screenshot aus der App mit 3D-Ansicht von "unten": Punkte mitsamt Vektoren werden unter der Karte erst angezeigt.</p>
       </div>
     </td>
   </tr>
 </table>
 
-Die Vektoren werden in der 3D-Ansicht nicht komplett sichtbar gerendert. Das Problem ist, dass die Vektoren teilweise im Modell "verschwinden" und es dem Betrachtenden schwierig machen die Daten nicht fehlzuinterpretieren. Ein Lösungsansatz wäre, die Karte mit einer Transparenz zu versehen, damit auch Vektoren, welche in das Modell verschwinden sichtbar werden. Zurzeit macht die Umsetzung keinen Sinn, da zuerst ein korektes Modell gerendert werden muss, bei welchem die Modellparameter genau bestimmt werden können.
+In der 3D-Ansicht werden die Vektoren nicht vollständig sichtbar gerendert. Das Problem besteht darin, dass die Vektoren teilweise im Modell verschwinden, was es dem Betrachter erschwert, die Daten korrekt zu interpretieren. Ein möglicher Lösungsansatz wäre, die Karte mit einer gewissen Transparenz zu versehen, sodass auch die Vektoren, die im Modell verschwinden, sichtbar bleiben. Derzeit ist diese Umsetzung jedoch nicht sinnvoll, da zunächst ein korrektes Modell gerendert werden muss, bei dem die Modellparameter genau bestimmt werden können.
+
+Um die Punkte besser identifizieren zu können, sollte zudem eine Beschriftung im 3D-Modell für die jeweiligen Punkte dargestellt werden.
 
 ---
 
