@@ -11,14 +11,13 @@
 
 ---
 
-Deformationsmessungen sind ein wesentlicher Bestandteil der Ingenieurvermessung und Geodäsie. Ziel ist es, die Verschiebung von Überwachungspunkten im Verhältnis zu stabilen Referenzpunkten zu bestimmen. Dabei kommen verschiedene Vermessungsmethoden zum Einsatz, darunter:
+Deformationsmessungen sind Teil des Fachbereichs Ingenieurvermessung und Geodäsie. Ziel einer Deformationsmessung ist es, die Verschiebung von Überwachungspunkten in Bezug zu den, als stabil angenommenen, Festpunkten zu bestimmen. Dabei können diverse Vermessungsmethoden wie zum Beispiel: Nivellement, Triangulation, Distanzmessung, Lotung, Inklinometer oder GNSS, je nach den projektspezifischen Ansprüchen, in Betracht gezogen werden. Aus den beobachteten Messgrössen werden mit der Methode der kleinsten Quadrate in einer geodätischen Ausgleichung Koordinaten berechnet. Die Koordinaten werden dann statistisch analysiert um auf Grund der empirischen Genauigkeit signifikante Deformationsvektoren aus zwei zeitlich verschiedenen Messungen zu bestimmen.
+Die Interpretation und Kontrolle der Deformationsvektoren gestaltet sich aufgrund von numerischen Werten anspruchsvoll, weil gute Kenntnisse über die Orientierung des Koordinatensystems vorhanden sein müssen. Eine dreidimensionale Visualisierung der Deformationsvektoren auf einem Geländemodell vereinfacht die Kontrolle für die geodätische Fachperson und die Interpretation für die geologische Fachperson massiv. Genau diese Prozesse einer Deformationsmessung werden durch den DEVVIS vereinfacht und möglichst Benutzerfreundlich eingebunden.
 
-- **Nivellement**
-- **Triangulation**
-- **Distanzmessung**
-- **Lotung**
-- **Inklinometer**
-- **GNSS (Global Navigation Satellite System)**
+<a href="https://fabianruefenacht.github.io/DEFVIS/methoden.html#literatur">DETREKOI (1976)</a>\
+<a href="https://fabianruefenacht.github.io/DEFVIS/methoden.html#literatur">Knoblach (o.J.)</a>\
+<a href="https://fabianruefenacht.github.io/DEFVIS/methoden.html#literatur">Semmling, Leister, Saynisch, Zus, Heise, Wickert (2016)</a>\
+<a href="https://fabianruefenacht.github.io/DEFVIS/methoden.html#literatur">Möser, Fuhrland (2006)</a>
 
 ---
 
@@ -34,6 +33,7 @@ Deformationsmessungen sind ein wesentlicher Bestandteil der Ingenieurvermessung 
 - **GNSS**: Globale Positionsbestimmung mittels Satellitensignalen.
 
 (2.) **Datenverarbeitung**:
+
 Die beobachteten Messgrössen werden mit der Methode der kleinsten Quadrate in einer geodätischen Ausgleichung verarbeitet, um präzise Koordinaten zu berechnen.
 
 **Formel der Methode der kleinsten Quadrate**:
@@ -47,7 +47,10 @@ $$
 - `P`: Gewichtsmatrix
 - `L`: Beobachtungsvektor
 
+<a href="https://fabianruefenacht.github.io/DEFVIS/methoden.html#literatur">Wikipedia (2024)</a>
+
 (3.) **Analyse und Interpretation**:
+
 Die berechneten Koordinaten werden statistisch analysiert, um signifikante Deformationsvektoren zu bestimmen. Dies geschieht durch den Vergleich von Messungen aus verschiedenen Zeitpunkten.
 
 ---
@@ -86,22 +89,23 @@ Die Illustration veranschaulicht den Prozess der messtechnischen Überwachung. D
 
 ## Literatur {#literatur}
 
-Name, Vorname (Jahreszahl): _Titel._ Untertitel, Auflage. Verlagsort: Verlag (= Reihe).
+Methode der kleinsten Quadrate (MdkQ):\
+Wikipedia (2024). _Methode der kleinsten Quadrate._ https://de.wikipedia.org/wiki/Methode_der_kleinsten_Quadrate (28. Mai 2024).
 
-Methode der kleinsten Quadrate (MdkQ):
-Wikipedia (2024). _Methode der kleinsten Quadrate._ https://de.wikipedia.org/wiki/Methode_der_kleinsten_Quadrate (28 Mai 2024).
-
-Triangulation:
+Triangulation:\
 DETREKOI, A. (1976): _NETZAUSGLEICHUNG BEI INGENIEURGEODÄTISCHEN DEFORMATIONSMESSUNGEN._ Technische Universität Budapest: Geodätisches Institut, Lehrstuhl für Höhere Geodäsie.
 
-Lotung:
-Knoblach, Stefan: _Neue Methoden der Schachtlotung und Richtungsübertragung._ Kurzexposé. Technische Universität Dresden: Geodätisches Institut.
+Lotung:\
+Knoblach, Stefan (o.J.): _Neue Methoden der Schachtlotung und Richtungsübertragung._ Kurzexposé. Technische Universität Dresden: Geodätisches Institut.
 
-GNSS:
-Semmling, Aaron Maximilian, Leister, Vera, Saynisch, Jan, Zus, Florian, Heise, Stefan, Wickert Jens (2016): _A Phase-Altimetric Simulator: Studying the Sensitivity of Earth-Reflected GNSS Signals to Ocean Topography._ IEEE Transactions on Geoscience and Remote Sensing.
+GNSS:\
+Semmling, Aaron Maximilian, Leister, Vera, Saynisch, Jan, Zus, Florian, Heise, Stefan, Wickert, Jens (2016): _A Phase-Altimetric Simulator: Studying the Sensitivity of Earth-Reflected GNSS Signals to Ocean Topography._ IEEE Transactions on Geoscience and Remote Sensing.
 
-Nivellement:
+Nivellement:\
 Möser, Michael, Fuhrland, Matthias (2006): _Ausgewählte Sensorik und Methodik zur Höhenbestimmung bei der Überwachung gefährdeter Objekte._ Technische Universität Dresden: Geodätisches Institut, Ingenieurgeodäsie.
+
+Illustration des Prozesses:\
+Möser, Michael (2015): _MSc G 03 Bauwerksüberwachung Deformationsanalyse._ Ingenieurgeodäsie 1. Semester. Technische Universität Dresden: Geodätisches Institut.
 
 ---
 
