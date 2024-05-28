@@ -17,7 +17,7 @@ const Login = () => {
     const hashedPassword = await bcrypt.hash(password, 10);
 
     try {
-      const response = await axios.post("http://0.0.0.0:8000/login/", {
+      const response = await axios.post("http://localhost:8000/login/", {
         // send API-request
         email,
         password: hashedPassword,

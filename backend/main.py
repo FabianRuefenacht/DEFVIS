@@ -5,7 +5,6 @@ import uvicorn
 
 from db import DatabaseManager
 
-
 # Database-Setup
 DBM = DatabaseManager(db_name="../GeoInformatik.db")
 DBM.create_all_Tables()
@@ -207,4 +206,4 @@ def shutdown_event():
     DBM.close_DB()
 
 # run the app
-uvicorn.run(app, host="0.0.0.0", port=8000)
+uvicorn.run(app, host='localhost', port=8000)
