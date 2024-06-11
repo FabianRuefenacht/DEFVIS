@@ -45,7 +45,7 @@ Hier gehts zur <a href="https://github.com/FabianRuefenacht/DEFVIS/?tab=readme-o
 
 Erkunde die Funktionen von DEFVIS. Weitere Informationen und detaillierte Anleitungen zu den Funktionen findest Du alles im <a href="https://fabianruefenacht.github.io/DEFVIS/index.html#section3">Benutzerhandbuch</a>.
 
-Um einen besseren Überblich über den Arbeitsablauf und die Möglichkeiten zu bekommen, kannst Du den Arbeitsablauf in der nachfolgenden Grafik studieren.
+Um einen besseren Überblick über den Arbeitsablauf und die Möglichkeiten zu bekommen, kannst Du den Arbeitsablauf in der nachfolgenden Grafik studieren.
 
 Nachdem Du Dich angemeldet hat, kannst Du entweder ein neues Projekt erstellen oder ein bestehendes Projekt öffnen. Anschliessend kann eine Session erfasst werden. Wenn dies nicht gewünscht ist, kannst Du zwei Sessionen (Nullmessung und Folgemessung) auswählen. Die Tabelle mit den Verschiebungen und die 2D-Karte wird geladen. Wenn Du in der Tabelle auf die Punktnummer klickst, springt die Ansicht automatisch zum gewählten Punkt. Diese Option funktioniert sowohl in der Karte als auch im 3D-Modell. In der Karte kannst Du die Messpunkte betrachten. Das Symbol unten rechts in der Karte öffnet die Legende. Mit Klick auf einen Punkt werden die Informationen angezeigt. In den Informationen findest Du einen Knopf, welcher dich automatisch zum 3D-Modell weiterleitet. Dieses ist direkt auf den gewählten Punkt zentriert. In der 3D-Ansicht kannst du die Punkte mit Bezug zum Höhenmodell betrachten. Die Vektoren werden für jede Dimension (E, N, h) seperat dargestellt.
 
@@ -60,7 +60,7 @@ Your browser does not support the video tag.
 
 <p></p>
 
-Unsere App bietet eine breite Palette von Funktionen, die Dir vielfältige Möglichkeiten bieten. Eine Funktion ist der 3D-Viewer, der es Dir ermöglicht, Fehlervektoren in einer dreidimensionalen Ansicht zu betrachten. Durch diese Darstellung in Bezug auf das Gelände kannst Du nicht nur 2D-Informationen erhalten, sondern auch den Fehlervektor im Kontext einer Oberfläche visualisieren. Dies ermöglicht es Dir, einen direkten Bezug herzustellen, beispielsweise um zu sehen, wie ein Punkt am Hang abrutscht.
+DEFVIS bitetet mehrere Funktionen. Eine davon ist der 3D-Viewer, der es Dir ermöglicht, Fehlervektoren in einer dreidimensionalen Ansicht zu betrachten. Durch diese Darstellung in Bezug auf das Gelände kannst Du nicht nur 2D-Informationen erhalten, sondern auch den Fehlervektor im Kontext einer Oberfläche visualisieren. Dies ermöglicht es Dir, einen direkten Bezug herzustellen, beispielsweise um zu sehen, wie ein Punkt am Hang abrutscht.
 
 ### 2D-Ansicht
 
@@ -88,7 +88,7 @@ Um die Daten nicht nur visuell zu haben, sondern auch in einer Tabelle, werden a
 
 ## Benutzerhandbuch {#section3}
 
-Entdecke die vielfältigen Tools und Funktionen, die DEFVIS bietet. Klicke auf die Links unten, um zu den einzelnen Seiten zu gelangen und mehr über ihre Funktionen zu erfahren:
+Klicke auf die Links unten, um mehr über die Funktionen und Seiten-Inhalte dieser Themen zu erfahren:
 
 | ---------------------------------------------- | --------------------------------------------------------------------------------------------- |
 | **[Home](home.html):** | Dies ist die Startseite der App.  |
@@ -101,7 +101,7 @@ Entdecke die vielfältigen Tools und Funktionen, die DEFVIS bietet. Klicke auf d
 
 ## Ausblick von DEFVIS {#section6}
 
-In diesem Kapitel werden zukünftige Erweiterungen und Verbesserungen, die DEFVIS optimierter und benutzerfreundlicher machen könnten, erläutert. Diese möglichen Entwicklungen zielen darauf ab, die Funktionalität der App zu erweitern. Von der Einführung fortgeschrittener Analysetools über visuelle Verbesserungen bis hin zur sprachlichen Vielfalt gibt es zahlreiche Ideen, die DEFVIS in der Zukunft bereichern könnten.
+In diesem Kapitel werden zukünftige Erweiterungen und Verbesserungen, die DEFVIS optimierter und benutzerfreundlicher machen könnten, erläutert. Diese möglichen Entwicklungen zielen darauf ab, die Funktionalität der App zu erweitern. Von der Einführung von Analysetools über visuelle Verbesserungen bis hin zum sprachlichen Erweiterungspaket gibt es einige Ideen, die DEFVIS in der Zukunft bereichern könnten.
 
 ### Zeitreihenanalyse
 
@@ -127,7 +127,7 @@ In diesem Kontext könnte eine kombinierte Visualisierungsstrategie verfolgt wer
 **Interaktive Elemente** implementiert werden, die es ermöglichen, zwischen verschiedenen Perspektiven zu wechseln oder die Vektoren dynamisch zu untersuchen.
 **Zusätzliche Beschriftungen und Hilfsmittel** wie Massstabsleisten oder Kontextinformationen eingeblendet werden, um die Wahrnehmung und Interpretation der 3D-Elemente zu verbessern.
 
-Durch diese Kombination aus 3D-Darstellung und unterstützenden 2D-Visualisierungen wird die Benutzerfreundlichkeit und Genauigkeit der Grösseninterpretation erhöht. Diese Vorgehensweise orientiert sich an den Empfehlungen aus der wissenschaftlichen Literatur und verbessert die Gesamtqualität der geovisualisierten Daten.
+Durch diese Kombination aus 3D-Darstellung und unterstützenden 2D-Visualisierungen wird die Benutzerfreundlichkeit und Genauigkeit der Grösseninterpretation erhöht.
 
 ### Vollständige 3D-Karte der Schweiz
 
@@ -137,13 +137,11 @@ Ein möglicher Ansatz wäre, die 3D-Karte zukünftig durch einen FME-Prozess (Fe
 
 Sobald ein geeigneter Workflow für diesen Prozess entwickelt ist, könnte die 3D-Karte schrittweise auf die gesamte Schweiz ausgeweitet werden. Dabei ist es wichtig, sowohl die Datenqualität als auch die Performance zu berücksichtigen, um eine flüssige und präzise Visualisierung zu gewährleisten.
 
-Durch die Implementierung dieses optimierten Prozesses wird es möglich sein, umfassende und detaillierte 3D-Karten der Schweiz bereitzustellen, die für verschiedenste Anwendungen und Analysen genutzt werden können.
-
 ### Erweiterung des Sprachpakets
 
 <img src="screenshots/ausblick/language.png" alt="Sprache" style="max-width: 100%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);">
 
-Die App DEFVIS ist derzeit nur auf Deutsch verfügbar. Zukünftig wäre es sinnvoll, die Web-App in mehreren Sprachen anzubieten, darunter Englisch, Französisch und Italienisch, um eine breitere Nutzerbasis anzusprechen und die Benutzerfreundlichkeit zu verbessern. Dies würde es internationalen Nutzern ermöglichen, die App in ihrer bevorzugten Sprache zu nutzen, was die Zugänglichkeit und Akzeptanz erheblich steigern könnte.
+Die App DEFVIS ist derzeit nur auf Deutsch verfügbar. Zukünftig wäre es sinnvoll, die Web-App in mehreren Sprachen anzubieten, darunter Englisch, Französisch und Italienisch, um eine breitere Nutzerbasis anzusprechen und die Benutzerfreundlichkeit zu verbessern. Dies würde es internationalen Nutzern ermöglichen, die App in ihrer bevorzugten Sprache zu nutzen, was die Zugänglichkeit steigern könnte.
 
 ### Darstellung und Beschriftung der Vektoren/Punkte in der 3D-Ansicht
 

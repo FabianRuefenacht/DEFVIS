@@ -36,7 +36,7 @@ Die Auseinandersetzung mit aktuellen Programmier-Tools und -Techniken erweiterte
 
 Die Zusammenarbeit im Team war insgesamt sehr positiv. Anfangs gab es Abstimmungsprobleme, die durch klare Kommunikation und Rollenverteilung gelöst wurden. Jeder im Team brachte seine individuellen Stärken ein, was zu einem produktiven und harmonischen Arbeitsumfeld führte.
 
-Regelmässige Meetings und transparenter Informationsaustausch über digitale und physische Kanäle waren effektiv. Das Konzept ermöglichte die kontinuierliche Überwachung des Projektfortschritts. Feedback und Diskussion von Lösungsansätzen in der Gruppe trugen wesentlich zur erfolgreichen Zusammenarbeit bei.
+Regelmässige Meetings vor Ort halfen uns zudem die gesammelten Informationen zusammenzutragen und weiter zu verfolgen. Das Konzept ermöglichte die Überwachung des Projektfortschritts. Feedback und Diskussion von Lösungsansätzen in der Gruppe trugen zur erfolgreichen Zusammenarbeit bei.
 
 ## Diskussion {#diskussion}
 
