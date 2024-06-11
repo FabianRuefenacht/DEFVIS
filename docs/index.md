@@ -60,7 +60,7 @@ Your browser does not support the video tag.
 
 <p></p>
 
-Unsere App bietet eine breite Palette von Funktionen, die Dir vielfältige Möglichkeiten bieten. Eine herausragende Funktion ist der 3D-Viewer, der es Dir ermöglicht, Fehlervektoren in einer dreidimensionalen Ansicht zu betrachten. Durch diese Darstellung in Bezug auf das Gelände kannst Du nicht nur 2D-Informationen erhalten, sondern auch den Fehlervektor im Kontext einer Oberfläche visualisieren. Dies ermöglicht es Dir, einen direkten Bezug herzustellen, beispielsweise um zu sehen, wie ein Punkt am Hang abrutscht.
+Unsere App bietet eine breite Palette von Funktionen, die Dir vielfältige Möglichkeiten bieten. Eine Funktion ist der 3D-Viewer, der es Dir ermöglicht, Fehlervektoren in einer dreidimensionalen Ansicht zu betrachten. Durch diese Darstellung in Bezug auf das Gelände kannst Du nicht nur 2D-Informationen erhalten, sondern auch den Fehlervektor im Kontext einer Oberfläche visualisieren. Dies ermöglicht es Dir, einen direkten Bezug herzustellen, beispielsweise um zu sehen, wie ein Punkt am Hang abrutscht.
 
 ### 2D-Ansicht
 
@@ -138,8 +138,6 @@ Ein möglicher Ansatz wäre, die 3D-Karte zukünftig durch einen FME-Prozess (Fe
 Sobald ein geeigneter Workflow für diesen Prozess entwickelt ist, könnte die 3D-Karte schrittweise auf die gesamte Schweiz ausgeweitet werden. Dabei ist es wichtig, sowohl die Datenqualität als auch die Performance zu berücksichtigen, um eine flüssige und präzise Visualisierung zu gewährleisten.
 
 Durch die Implementierung dieses optimierten Prozesses wird es möglich sein, umfassende und detaillierte 3D-Karten der Schweiz bereitzustellen, die für verschiedenste Anwendungen und Analysen genutzt werden können.
-
-Ich hoffe, dieser überarbeitete Abschnitt hilft Ihnen, Ihre App weiter zu verbessern und die Herausforderungen bei der Erstellung einer vollständigen 3D-Karte der Schweiz zu meistern.
 
 ### Erweiterung des Sprachpakets
 
