@@ -168,4 +168,10 @@ Um die Punkte besser identifizieren zu können, sollte zudem eine Beschriftung i
 
 ---
 
+## Hilfsmittelverzeichnis
+
+Bei dieser Dokumentation wurde das KI-Assistenzsystem ChatGPT, ein fortschrittliches Sprachmodell entwickelt von OpenAI, das auf der GPT-3.5 Architektur basiert, als Inspirationsquelle oder Gedankenanstoss sowie zur Formatierungshilfe für Markdown eingesetzt.
+
+---
+
 [zurück nach ganz oben](index.html)
