@@ -38,7 +38,7 @@ Die Auseinandersetzung mit aktuellen Programmier-Tools und -Techniken erweiterte
 
 ## Teamarbeit {#teamarbeit}
 
-Der nachfolgende Abschnitt wurden mithilfe von ChatGPT überarbeitet. Der Inhalt wurde vom Projektteam vorgegeben, die Satzstellung wurde von ChatGPT überarbeitet.
+Der nachfolgende Abschnitt wurde mithilfe von ChatGPT überarbeitet. Der Inhalt wurde vom Projektteam vorgegeben, die Satzstellung wurde von ChatGPT überarbeitet.
 
 Die Zusammenarbeit im Team war insgesamt sehr positiv. Anfangs gab es Abstimmungsprobleme, die durch klare Kommunikation und Rollenverteilung gelöst wurden. Jeder im Team brachte seine individuellen Stärken ein, was zu einem produktiven und harmonischen Arbeitsumfeld führte.
 
@@ -56,7 +56,7 @@ Gegenüber anderen Programmen, welche die Beurteilung von Verschiebungen ermögl
 
 ## Fazit {#fazit}
 
-Der nachfolgende Abschnitt wurden mithilfe von ChatGPT überarbeitet. Der Inhalt wurde vom Projektteam vorgegeben, die Satzstellung wurde von ChatGPT überarbeitet.
+Die nachfolgenden Abschnitte wurden mithilfe von ChatGPT überarbeitet. Der Inhalt wurde vom Projektteam vorgegeben, die Satzstellung wurde von ChatGPT überarbeitet.
 
 Das Projekt war erfolgreich. Die angewendeten Methoden und Technologien waren effektiv, und die Teamarbeit trug wesentlich zum Projekterfolg bei. Es wurden wertvolle Kenntnisse und Fähigkeiten erworben, die sowohl persönlich als auch professionell weiterentwickelt haben.
 
