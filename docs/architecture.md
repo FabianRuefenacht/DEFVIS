@@ -63,7 +63,7 @@ In der Datenbank wurden vier Tabellen erstellt, welche die Nutzer und deren Proj
 - **sessions**
 - **points**
 
-</br>
+
 
 In diesen vier Tabellen werden alle nötigen Informationen gespeichert. Die Integrität der Daten wird durch Python im backend sichergestellt und durch entsprechende Fehlermeldungen im frontend den Nutzenden mitgeteilt. In der anschliessenden Grafik ist das Datenbankschema ersichtlich. Die **fett** geschriebenen Attribute sind gemeinsam, eindeutig.
 
