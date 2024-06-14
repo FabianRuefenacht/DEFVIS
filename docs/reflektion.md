@@ -22,17 +22,23 @@ Die Erstellung des Konzeptes und die klare Aufgabenverteilung führte dazu, dass
 
 ## Herausforderungen und Schwierigkeiten {#herausforderung}
 
+Die beiden Nachfolgenden Abschnitte wurden mithilfe von ChatGPT überarbeitet. Der Inhalt wurde vom Projektteam vorgegeben, die Satzstellung wurde von ChatGPT überarbeitet.
+
 Technische und organisatorische Herausforderungen traten während des Projekts auf. Zu den grössten Problemen zählten Dateninkonsistenzen und Schwierigkeiten bei der Integration unterschiedlicher Datensätze. Das grösste Problem stellte die Bereitstellung des dreidimensionalen Höhenmodells dar. Bis zum heutigen Zeitpunkt konnte keine zufriedenstellende Lösung für die dynamische Berechnung dessen gefunden werden. Im Nachhinein ist dies allerdings nicht verwunderlich, da die dreidimensionale Geoverarbeitung mit Python eine eigene Bachelorarbeit am Institut Geomatik im Jahr 2024 war.
 
 Weitere, kleine Probleme wie die Einbettung von Daten in die zweidimensionale Karte, das hin und her senden von Stati zwischen den Software-Komponenten und die Abfragen auf der Datenbank konnten durch Konsultation der jeweiligen Dokumentationen gelöst werden.
 
 ## Lernprozess {#lernprozess}
 
+Der letzte Abschnitt in diesem Kapitel wurde durch ChatGPT überarbeitet. Der Inhalt wurde vom Projektteam vorgegeben, die Satzstellung wurde von ChatGPT überarbeitet.
+
 Wie in Abschnitt [Reflektion](https://fabianruefenacht.github.io/DEFVIS/reflektion.html/#reflektion) beschrieben, wurden unbekannte Technologien eingesetzt. Dadurch wurden neue Kenntnisse und Fähigkeiten erworben. Darunter zählen der Umgang mit grossen Datensätzen und die Fähigkeit, komplexe Datenanalysen durchzuführen. Soft Skills wie Teamarbeit, Projektmanagement und effektive Kommunikation wurden ebenfalls verbessert. Ausserdem wurden das angesprochene Framework Next.JS und die Bibliotheken OpenLayers und Three.JS erlernt.
 
 Die Auseinandersetzung mit aktuellen Programmier-Tools und -Techniken erweiterte das technische Wissen und stärkte die beruflichen Kompetenzen im Bezug auf die Geoinformatik. Teamarbeit förderte soziale Fähigkeiten und das Verständnis für interdisziplinäre Zusammenarbeit.
 
 ## Teamarbeit {#teamarbeit}
+
+Der nachfolgende Abschnitt wurden mithilfe von ChatGPT überarbeitet. Der Inhalt wurde vom Projektteam vorgegeben, die Satzstellung wurde von ChatGPT überarbeitet.
 
 Die Zusammenarbeit im Team war insgesamt sehr positiv. Anfangs gab es Abstimmungsprobleme, die durch klare Kommunikation und Rollenverteilung gelöst wurden. Jeder im Team brachte seine individuellen Stärken ein, was zu einem produktiven und harmonischen Arbeitsumfeld führte.
 
@@ -46,15 +52,15 @@ Die meisten Ziele wurden erreicht. Unerwartete technische Schwierigkeiten, beson
 
 ## Vergleich mit anderen Arbeiten {#vergleich}
 
-Die Ergebnisse unterscheiden sich in einigen Punkten von ähnlichen Studien, insbesondere hinsichtlich der angewendeten Methoden. Dieses Projekt konnte durch den Einsatz moderner Tools gute Ergebnisse liefern und Nutzenden eine neue Perspektive auf die Daten liefern.
+Gegenüber anderen Programmen, welche die Beurteilung von Verschiebungen ermöglichen sticht diese Web-Applikation besonders durch die dreidimensionale Betrachtung hervor. Dadurch konnten neue Weichen in Richtung der Darstellung von Verschiebungsvektoren gelegt werden. Inwiefern sich die weiterentwicklung der gewählten Ansätze lohnt müsste in einer umfangreichen Nutzerstudie getestet werden. Man muss testen, ob die Visualisierung in drei Dimensionen den erhofften Mehrwert bietet.
 
 ## Fazit {#fazit}
+
+Der nachfolgende Abschnitt wurden mithilfe von ChatGPT überarbeitet. Der Inhalt wurde vom Projektteam vorgegeben, die Satzstellung wurde von ChatGPT überarbeitet.
 
 Das Projekt war erfolgreich. Die angewendeten Methoden und Technologien waren effektiv, und die Teamarbeit trug wesentlich zum Projekterfolg bei. Es wurden wertvolle Kenntnisse und Fähigkeiten erworben, die sowohl persönlich als auch professionell weiterentwickelt haben.
 
 Die meisten Projektziele wurden erreicht, aufgrund unerwarteter Herausforderungen und zeitlicher Einschränkungen konnten gewisse Ziele nicht vollständig erreicht wurden. Insgesamt war das Projekt ein Erfolg und lieferte wertvolle Ergebnisse.
-
-Zukünftige Projekte könnten von einer erweiterten Datenbasis und verbesserten technischen Ressourcen profitieren. Weiterführende Forschung in den identifizierten Bereichen wäre sinnvoll, um die gewonnenen Erkenntnisse zu vertiefen und neue Anwendungen zu entwickeln. Praktisch gesehen sollten die Ergebnisse genutzt werden, um bestehende Geomatik-Prozesse zu optimieren und neue Technologien zu integrieren. Im Bereich der dreidimensionalen Darstellung besteht noch deutliches Verbesserungspotential. Die Grundlagen für die Darstellung wurden gelegt. Der nächste Schritt wäre die Suche nach Lösungen für die dynamische Modellerstellung unter Verwendung öffentlicher Geodaten.
 
 Das Projekt hat gezeigt, dass durch effektive Teamarbeit, den Einsatz moderner Technologien und eine iterative Arbeitsweise bedeutende Fortschritte im Bereich der Geoinformatik erzielt werden können. Die Erfahrungen und Erkenntnisse aus diesem Projekt werden sicherlich auch zukünftige berufliche Tätigkeiten und Projekte positiv beeinflussen.
 
